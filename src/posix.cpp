@@ -1,6 +1,7 @@
 /*!
- * @file      child-test.cpp
- * @brief     Definitions related to testing code inside a child process.
+ * @file      posix.cpp
+ * @brief     POSIX implementation of @ref grading::MapSharedData and
+ *            @ref grading::RunTest.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014 Jonathan Anderson. All rights reserved.
