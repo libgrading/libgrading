@@ -1,0 +1,6 @@
+<plugin name="ca.mun.engr.anderson.libgrading" id="ca.mun.engr.anderson.libgrading"
+        version="1.0.0" provider-name="Doxygen">
+  <extension point="org.eclipse.help.toc">
+    <toc file="toc.xml" primary="true" />
+  </extension>
+</plugin>

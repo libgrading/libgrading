@@ -1,0 +1,17 @@
+body, table, div, p, dl,
+	.title, .tabs, .tabs2, .tabs3,
+	#projectname, #projectbrief, #MSearchField,
+	#nav-tree
+{
+	font-family: "Avenir Book", "Avenir", "Helvetica", sans-serif;
+}
+
+#projectname
+{
+	font-weight: bold;
+}
+
+.fragment .line
+{
+	font-family: "Droid Sans Mono", "DejaVu Sans Mono", monospace;
+}

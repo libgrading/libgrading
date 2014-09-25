@@ -1,0 +1,5 @@
+<map id="grading::RunTest" name="grading::RunTest">
+<area shape="rect" id="node2" href="$namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a" title="Map data into the address space that can be shared with other processes. " alt="" coords="185,5,372,37"/>
+<area shape="rect" id="node3" href="$classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89" title="grading::SharedMemory\l::rawPointer" alt="" coords="188,62,369,114"/>
+<area shape="rect" id="node4" href="$namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17" title="grading::RunTest" alt="" coords="213,139,344,171"/>
+</map>

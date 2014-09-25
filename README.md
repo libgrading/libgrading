@@ -1,5 +1,0 @@
-# libgrading
-
-This is a simple library for grading C- and C++-language assignments.
-It runs each test case in a child process in order to capture common
-programming errors such as segmentation faults.
