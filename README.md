@@ -31,12 +31,14 @@ $ make           # or ninja
 
 ~~~cpp
 #include <libgrading.h>
-
 using grading::TestResult;
 using namespace std;
 
 
-//! Describes a test case in the problem domain.
+//
+// First, you need to describe some test cases *in the problem domain*:
+// we don't need any libgrading boilerplate or TEST_CASE syntax.
+//
 struct AdditionExpectation
 {
 	int x;
@@ -44,8 +46,6 @@ struct AdditionExpectation
 	int sum;
 };
 
-
-//! Test vectors to pass in to the (erroneous) @ref FunctionUnderTest.
 const AdditionExpectation tests[] =
 {
 	{ 1, 1, 2 },
@@ -61,6 +61,16 @@ const AdditionExpectation tests[] =
 };
 
 
+//
+// Next, define a function (or a lambda in a std::function) that takes
+// a single input expectation, runs the code under test and (optionally)
+// copies out a value by reference.
+//
+// It will be run in a separate process in case the code under test causes
+// a segmentation fault or other termination error.
+//
+// This function needs to return a grading::TestResult.
+//
 TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& value)
 {
 	// In a real test suite, you'd link against submitted code.
@@ -76,6 +86,12 @@ TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& value
 }
 
 
+//
+// Finally, in your main function, call grading::RunTest() for each
+// of your test cases and accumulate the results however you like.
+//
+// Future versions of libgrading might include a test runner if I need one.
+//
 int main(int argc, char *argv[])
 {
 	constexpr size_t testCount = sizeof(tests) / sizeof(tests[0]);
