@@ -121,18 +121,20 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="line">$ make           # or ninja</div>
 </div><!-- fragment --><h2>Use it</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="libgrading_8h.html">libgrading.h</a>&gt;</span></div>
-<div class="line"></div>
 <div class="line"><span class="keyword">using</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">grading::TestResult</a>;</div>
 <div class="line"><span class="keyword">using namespace </span>std;</div>
 <div class="line"></div>
 <div class="line"></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// First, you need to describe some test cases *in the problem domain*:</span></div>
+<div class="line"><span class="comment">// we don&#39;t need any libgrading boilerplate or TEST_CASE syntax.</span></div>
+<div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="keyword">struct </span>AdditionExpectation</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">int</span> x;</div>
 <div class="line">    <span class="keywordtype">int</span> y;</div>
 <div class="line">    <span class="keywordtype">int</span> sum;</div>
 <div class="line">};</div>
-<div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">const</span> AdditionExpectation tests[] =</div>
 <div class="line">{</div>
@@ -149,6 +151,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// Next, define a function (or a lambda in a std::function) that takes</span></div>
+<div class="line"><span class="comment">// a single input expectation, runs the code under test and (optionally)</span></div>
+<div class="line"><span class="comment">// copies out a value by reference.</span></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// It will be run in a separate process in case the code under test causes</span></div>
+<div class="line"><span class="comment">// a segmentation fault or other termination error.</span></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// This function needs to return a grading::TestResult.</span></div>
+<div class="line"><span class="comment">//</span></div>
 <div class="line"><a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> TestSubmittedFunction(<span class="keyword">const</span> AdditionExpectation&amp; expected, <span class="keywordtype">int</span>&amp; value)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// In a real test suite, you&#39;d link against submitted code.</span></div>
@@ -164,6 +176,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// Finally, in your main function, call grading::RunTest() for each</span></div>
+<div class="line"><span class="comment">// of your test cases and accumulate the results however you like.</span></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// Future versions of libgrading might include a test runner if I need one.</span></div>
+<div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
 <div class="line">    constexpr <span class="keywordtype">size_t</span> testCount = <span class="keyword">sizeof</span>(tests) / <span class="keyword">sizeof</span>(tests[0]);</div>
