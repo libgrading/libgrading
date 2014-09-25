@@ -54,6 +54,9 @@ static TestResult ProcessChildStatus(int status)
 
 
 
+/**
+ * @internal @brief A memory-mapped POSIX shared memory segment.
+ */
 class PosixSharedMemory : public SharedMemory
 {
 	public:

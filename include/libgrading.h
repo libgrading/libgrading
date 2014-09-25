@@ -50,6 +50,11 @@ class SharedMemory
 {
 	public:
 	virtual ~SharedMemory() {}
+
+	/**
+	 * A pointer to the shared memory, which will be @b invalidated
+	 * after this object is destructed.
+	 */
 	virtual void* rawPointer() const = 0;
 };
 
@@ -71,7 +76,7 @@ TestResult RunTest(std::function<TestResult ()> test);
 /**
  * Run a test with output but no explicit input.
  *
- * @param    test    a @ref std::function that copies out an output value
+ * @param    test    a test function that copies out an output value
  *                   and returns a @ref TestResult
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
@@ -95,8 +100,9 @@ TestResult RunTest(std::function<TestResult (T&)> test, T& output)
 /**
  * Run a test with input and output.
  *
- * @param    test    a @ref std::function that takes an input expectation,
+ * @param    t       a test function that takes an input expectation,
  *                   copies out an output value and returns a @ref TestResult
+ * @param    expect  our test expectation (inputs, expected output, etc.)
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
  *
