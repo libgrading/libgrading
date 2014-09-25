@@ -32,7 +32,7 @@
 #include <unistd.h>
 
 using namespace grading;
-using namespace std;
+using std::unique_ptr;
 
 
 static TestResult ProcessChildStatus(int status)
@@ -90,7 +90,7 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
-TestResult grading::RunTest(function<TestResult ()> test)
+TestResult grading::RunTest(std::function<TestResult ()> test)
 {
 	pid_t child = fork();
 
