@@ -96,7 +96,7 @@ TestResult TestInChild(std::function<TestResult (const Input&, Output&)> test,
                        const Input& expectation, Output& output)
 {
 	using std::placeholders::_1;
-	return TestInChild(std::bind(test, expectation, _1), output);
+	return TestInChild<Output>(std::bind(test, expectation, _1), output);
 }
 
 } // namespace grading
