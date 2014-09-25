@@ -14,6 +14,7 @@ check_include_files("sys/mman.h;unistd.h" POSIX)
 
 include_directories(include)
 
+add_subdirectory(doc)
 add_subdirectory(include)
 add_subdirectory(src)
 add_subdirectory(test)
