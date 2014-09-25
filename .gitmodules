@@ -1,0 +1,3 @@
+[submodule "doxygen"]
+	path = website
+	url = git@github:trombonehero/libgrading.git
