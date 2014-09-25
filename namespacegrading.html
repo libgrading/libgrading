@@ -130,6 +130,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4">TestResult::Segfault</a>, 
 <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052">TestResult::OtherError</a>
  }</td></tr>
+<tr class="memdesc:ae890cd55c5a0db0c68f9f683bca07e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of running one test within a separate process.  <a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">More...</a><br /></td></tr>
 <tr class="separator:ae890cd55c5a0db0c68f9f683bca07e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -166,18 +167,24 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The result of running one test within a separate process. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c"></a>Pass&#160;</td><td class="fielddoc">
+<p>the test succeeded </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1"></a>Fail&#160;</td><td class="fielddoc">
+<p>the test failed </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4"></a>Segfault&#160;</td><td class="fielddoc">
+<p>the test caused a segmentation fault </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052"></a>OtherError&#160;</td><td class="fielddoc">
+<p>the test terminated for another reason </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00031">31</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00033">33</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +207,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="posix_8cpp_source.html#l00083">83</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00088">RunTest()</a>.</p>
+<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00090">RunTest()</a>.</p>
 
 <p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -259,7 +266,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="posix_8cpp_source.html#l00093">93</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00088">RunTest()</a>.</p>
+<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00090">RunTest()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -307,7 +314,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00088">88</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00090">90</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
 <p>References <a class="el" href="posix_8cpp_source.html#l00083">MapSharedData()</a>, <a class="el" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">grading::SharedMemory::rawPointer()</a>, and <a class="el" href="posix_8cpp_source.html#l00093">RunTest()</a>.</p>
 
@@ -364,7 +371,7 @@ template&lt;class Expectation , class Output &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00113">113</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00115">115</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +381,7 @@ template&lt;class Expectation , class Output &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegrading.html">grading</a></li>
-    <li class="footer">Generated on Thu Sep 25 2014 13:28:53 for libgrading by
+    <li class="footer">Generated on Thu Sep 25 2014 13:45:30 for libgrading by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

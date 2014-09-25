@@ -183,6 +183,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c</Anchor>
+    <Abstract>the test succeeded </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -193,6 +194,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1</Anchor>
+    <Abstract>the test failed </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -203,6 +205,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4</Anchor>
+    <Abstract>the test caused a segmentation fault </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -213,6 +216,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052</Anchor>
+    <Abstract>the test terminated for another reason </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>

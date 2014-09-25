@@ -1,4 +1,4 @@
-<map id="/Users/jon/Documents/Dev/libgrading/include/libgrading.h" name="/Users/jon/Documents/Dev/libgrading/include/libgrading.h">
-<area shape="rect" id="node2" href="$posix_8cpp.html" title="POSIX implementation of grading::MapSharedData and grading::RunTest. " alt="" coords="5,125,223,178"/>
-<area shape="rect" id="node3" href="$_test_result_8cpp.html" title="Definitions of grading::TestResult functions. " alt="" coords="247,125,496,178"/>
+<map id="include/libgrading.h" name="include/libgrading.h">
+<area shape="rect" id="node2" href="$posix_8cpp.html" title="POSIX implementation of grading::MapSharedData and grading::RunTest. " alt="" coords="5,85,114,117"/>
+<area shape="rect" id="node3" href="$_test_result_8cpp.html" title="Definitions of grading::TestResult functions. " alt="" coords="138,85,277,117"/>
 </map>
