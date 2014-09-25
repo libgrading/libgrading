@@ -9,6 +9,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a7f6a40c5d4a973fea01a308e8d06d9d0</Anchor>
+    <Abstract>Output a human-readable representation of a TestResult. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -117,6 +118,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
+    <Abstract>Container for all libgrading names. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -127,6 +129,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a7f6a40c5d4a973fea01a308e8d06d9d0</Anchor>
+    <Abstract>Output a human-readable representation of a TestResult. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
