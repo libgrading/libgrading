@@ -103,12 +103,12 @@ TestResult RunTest(std::function<TestResult (T&)> test, T& output)
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
  */
-template<class Input, class Output>
-TestResult RunTest(std::function<TestResult (const Input&, Output&)> test,
-                       const Input& expectation, Output& output)
+template<class Expectation, class Output>
+TestResult RunTest(std::function<TestResult (const Expectation&, Output&)> t,
+                       const Expectation& expect, Output& output)
 {
 	using std::placeholders::_1;
-	return RunTest<Output>(std::bind(test, expectation, _1), output);
+	return RunTest<Output>(std::bind(t, expect, _1), output);
 }
 
 } // namespace grading
