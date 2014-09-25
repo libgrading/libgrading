@@ -33,6 +33,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a3032dd86a185b5f7c99d81041fd56f17</Anchor>
+    <Abstract>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -44,6 +45,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a10fbeabf2ee3b32cf6e78b3c401e9645</Anchor>
+    <Abstract>Run a test with output but no explicit input. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -55,59 +57,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a5d16468739b8910802b98aea95f304c6</Anchor>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>PosixSharedMemory</Name>
-      <APILanguage>c</APILanguage>
-      <Type>cl</Type>
-      <Scope>PosixSharedMemory</Scope>
-    </TokenIdentifier>
-    <Path>class_posix_shared_memory.html</Path>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>PosixSharedMemory</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>PosixSharedMemory</Scope>
-    </TokenIdentifier>
-    <Path>class_posix_shared_memory.html</Path>
-    <Anchor>aae5b1b9025eaf2c963036377b33cc90f</Anchor>
-    <DeclaredIn>posix.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>~PosixSharedMemory</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>PosixSharedMemory</Scope>
-    </TokenIdentifier>
-    <Path>class_posix_shared_memory.html</Path>
-    <Anchor>acffa99991edb2f5660ec3607eaedcf8a</Anchor>
-    <DeclaredIn>posix.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>rawPointer</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>PosixSharedMemory</Scope>
-    </TokenIdentifier>
-    <Path>class_posix_shared_memory.html</Path>
-    <Anchor>adb18f80f906f2a4b2e664e8e4edd50e7</Anchor>
-    <DeclaredIn>posix.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>~SharedMemory</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>grading::SharedMemory</Scope>
-    </TokenIdentifier>
-    <Path>classgrading_1_1_shared_memory.html</Path>
-    <Anchor>aca6c5db023c5b560d07f04f2ac6d42ce</Anchor>
+    <Abstract>Run a test with input and output. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -153,6 +103,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a3032dd86a185b5f7c99d81041fd56f17</Anchor>
+    <Abstract>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -164,6 +115,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a10fbeabf2ee3b32cf6e78b3c401e9645</Anchor>
+    <Abstract>Run a test with output but no explicit input. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -175,6 +127,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a5d16468739b8910802b98aea95f304c6</Anchor>
+    <Abstract>Run a test with input and output. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -229,17 +182,7 @@
       <Scope>grading::SharedMemory</Scope>
     </TokenIdentifier>
     <Path>classgrading_1_1_shared_memory.html</Path>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>~SharedMemory</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>grading::SharedMemory</Scope>
-    </TokenIdentifier>
-    <Path>classgrading_1_1_shared_memory.html</Path>
-    <Anchor>aca6c5db023c5b560d07f04f2ac6d42ce</Anchor>
+    <Abstract>A representation of a shared memory object. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -251,6 +194,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_shared_memory.html</Path>
     <Anchor>aed4149f33e92951014d8dd8c0d1b3b89</Anchor>
+    <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
 </Tokens>

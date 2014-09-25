@@ -18,17 +18,10 @@
           <topic label="rawPointer" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89"/>
         </topic>
       </topic>
-      <topic label="PosixSharedMemory" href="class_posix_shared_memory.html">
-        <topic label="PosixSharedMemory" href="class_posix_shared_memory.html#aae5b1b9025eaf2c963036377b33cc90f"/>
-        <topic label="~PosixSharedMemory" href="class_posix_shared_memory.html#acffa99991edb2f5660ec3607eaedcf8a"/>
-        <topic label="rawPointer" href="class_posix_shared_memory.html#adb18f80f906f2a4b2e664e8e4edd50e7"/>
-      </topic>
     </topic>
     <topic label="Class Index" href="classes.html"/>
     <topic label="Class Hierarchy" href="hierarchy.html">
-      <topic label="grading::SharedMemory" href="classgrading_1_1_shared_memory.html">
-        <topic label="PosixSharedMemory" href="class_posix_shared_memory.html"/>
-      </topic>
+      <topic label="grading::SharedMemory" href="classgrading_1_1_shared_memory.html"/>
     </topic>
     <topic label="Class Members" href="functions.html">
       <topic label="All" href="functions.html"/>
@@ -58,11 +51,6 @@
       </topic>
       <topic label="src" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">
         <topic label="posix.cpp" href="posix_8cpp.html">
-          <topic label="PosixSharedMemory" href="class_posix_shared_memory.html">
-            <topic label="PosixSharedMemory" href="class_posix_shared_memory.html#aae5b1b9025eaf2c963036377b33cc90f"/>
-            <topic label="~PosixSharedMemory" href="class_posix_shared_memory.html#acffa99991edb2f5660ec3607eaedcf8a"/>
-            <topic label="rawPointer" href="class_posix_shared_memory.html#adb18f80f906f2a4b2e664e8e4edd50e7"/>
-          </topic>
         </topic>
         <topic label="TestResult.cpp" href="_test_result_8cpp.html"/>
       </topic>

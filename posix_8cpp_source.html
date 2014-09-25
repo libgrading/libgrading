@@ -8,24 +8,11 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="documentation.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -79,21 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('posix_8cpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -108,6 +80,11 @@ $(document).ready(function(){initNavTree('posix_8cpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">posix.cpp</div>  </div>
@@ -148,21 +125,21 @@ $(document).ready(function(){initNavTree('posix_8cpp_source.html','');});
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_posix_shared_memory.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_posix_shared_memory.html">PosixSharedMemory</a> : <span class="keyword">public</span> <a class="code" href="classgrading_1_1_shared_memory.html">SharedMemory</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">class </span>PosixSharedMemory : <span class="keyword">public</span> <a class="code" href="classgrading_1_1_shared_memory.html">SharedMemory</a></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_posix_shared_memory.html#aae5b1b9025eaf2c963036377b33cc90f">   63</a></span>&#160;    <a class="code" href="class_posix_shared_memory.html#aae5b1b9025eaf2c963036377b33cc90f">PosixSharedMemory</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">size_t</span> len, <span class="keywordtype">void</span> *rawPtr)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    PosixSharedMemory(<span class="keywordtype">int</span> fd, <span class="keywordtype">size_t</span> len, <span class="keywordtype">void</span> *rawPtr)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        : shmfd(fd), length(len), ptr(rawPtr)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_posix_shared_memory.html#acffa99991edb2f5660ec3607eaedcf8a">   68</a></span>&#160;    <a class="code" href="class_posix_shared_memory.html#acffa99991edb2f5660ec3607eaedcf8a">~PosixSharedMemory</a>()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ~PosixSharedMemory()</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        munmap(ptr, length);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        close(shmfd);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_posix_shared_memory.html#adb18f80f906f2a4b2e664e8e4edd50e7">   74</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> *<a class="code" href="class_posix_shared_memory.html#adb18f80f906f2a4b2e664e8e4edd50e7">rawPointer</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> ptr; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> *rawPointer()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> ptr; }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> shmfd;</div>
@@ -177,7 +154,7 @@ $(document).ready(function(){initNavTree('posix_8cpp_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> *map = mmap(0, len, PROT_READ | PROT_WRITE,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                     MAP_ANON | MAP_SHARED, shmfd, 0);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> unique_ptr&lt;SharedMemory&gt;(<span class="keyword">new</span> <a class="code" href="class_posix_shared_memory.html">PosixSharedMemory</a>(shmfd, len, map));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> unique_ptr&lt;SharedMemory&gt;(<span class="keyword">new</span> PosixSharedMemory(shmfd, len, map));</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
@@ -200,27 +177,19 @@ $(document).ready(function(){initNavTree('posix_8cpp_source.html','');});
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> ProcessChildStatus(status);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="ttc" id="class_posix_shared_memory_html_adb18f80f906f2a4b2e664e8e4edd50e7"><div class="ttname"><a href="class_posix_shared_memory.html#adb18f80f906f2a4b2e664e8e4edd50e7">PosixSharedMemory::rawPointer</a></div><div class="ttdeci">virtual void * rawPointer() const override</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00074">posix.cpp:74</a></div></div>
 <div class="ttc" id="libgrading_8h_html"><div class="ttname"><a href="libgrading_8h.html">libgrading.h</a></div><div class="ttdoc">A library for grading C- and C++-based assignments. </div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2c"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">grading::TestResult</a></div><div class="ttdeci">TestResult</div><div class="ttdoc">The result of running one test within a separate process. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00035">libgrading.h:35</a></div></div>
 <div class="ttc" id="namespacegrading_html_a7e1850cba45d8bced4b418e9eb36163a"><div class="ttname"><a href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">grading::MapSharedData</a></div><div class="ttdeci">std::unique_ptr&lt; SharedMemory &gt; MapSharedData(size_t size)</div><div class="ttdoc">Map data into the address space that can be shared with other processes. </div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00083">posix.cpp:83</a></div></div>
-<div class="ttc" id="class_posix_shared_memory_html"><div class="ttname"><a href="class_posix_shared_memory.html">PosixSharedMemory</a></div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00060">posix.cpp:60</a></div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4">grading::TestResult::Segfault</a></div><div class="ttdoc">the test caused a segmentation fault </div></div>
-<div class="ttc" id="class_posix_shared_memory_html_acffa99991edb2f5660ec3607eaedcf8a"><div class="ttname"><a href="class_posix_shared_memory.html#acffa99991edb2f5660ec3607eaedcf8a">PosixSharedMemory::~PosixSharedMemory</a></div><div class="ttdeci">~PosixSharedMemory()</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00068">posix.cpp:68</a></div></div>
-<div class="ttc" id="namespacegrading_html_a3032dd86a185b5f7c99d81041fd56f17"><div class="ttname"><a href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">grading::RunTest</a></div><div class="ttdeci">TestResult RunTest(std::function&lt; TestResult()&gt; test)</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00093">posix.cpp:93</a></div></div>
-<div class="ttc" id="class_posix_shared_memory_html_aae5b1b9025eaf2c963036377b33cc90f"><div class="ttname"><a href="class_posix_shared_memory.html#aae5b1b9025eaf2c963036377b33cc90f">PosixSharedMemory::PosixSharedMemory</a></div><div class="ttdeci">PosixSharedMemory(int fd, size_t len, void *rawPtr)</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00063">posix.cpp:63</a></div></div>
-<div class="ttc" id="classgrading_1_1_shared_memory_html"><div class="ttname"><a href="classgrading_1_1_shared_memory.html">grading::SharedMemory</a></div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00054">libgrading.h:54</a></div></div>
+<div class="ttc" id="namespacegrading_html_a3032dd86a185b5f7c99d81041fd56f17"><div class="ttname"><a href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">grading::RunTest</a></div><div class="ttdeci">TestResult RunTest(std::function&lt; TestResult()&gt; test)</div><div class="ttdoc">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00093">posix.cpp:93</a></div></div>
+<div class="ttc" id="classgrading_1_1_shared_memory_html"><div class="ttname"><a href="classgrading_1_1_shared_memory.html">grading::SharedMemory</a></div><div class="ttdoc">A representation of a shared memory object. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00054">libgrading.h:54</a></div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052">grading::TestResult::OtherError</a></div><div class="ttdoc">the test terminated for another reason </div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="posix_8cpp.html">posix.cpp</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
 </body>
 </html>

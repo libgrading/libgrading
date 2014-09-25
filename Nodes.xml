@@ -73,27 +73,6 @@
              </Node>
             </Subnodes>
            </Node>
-           <Node>
-            <Name>PosixSharedMemory</Name>
-            <Path>class_posix_shared_memory.html</Path>
-            <Subnodes>
-             <Node>
-              <Name>PosixSharedMemory</Name>
-              <Path>class_posix_shared_memory.html</Path>
-              <Anchor>aae5b1b9025eaf2c963036377b33cc90f</Anchor>
-             </Node>
-             <Node>
-              <Name>~PosixSharedMemory</Name>
-              <Path>class_posix_shared_memory.html</Path>
-              <Anchor>acffa99991edb2f5660ec3607eaedcf8a</Anchor>
-             </Node>
-             <Node>
-              <Name>rawPointer</Name>
-              <Path>class_posix_shared_memory.html</Path>
-              <Anchor>adb18f80f906f2a4b2e664e8e4edd50e7</Anchor>
-             </Node>
-            </Subnodes>
-           </Node>
           </Subnodes>
          </Node>
          <Node>
@@ -107,12 +86,6 @@
            <Node>
             <Name>grading::SharedMemory</Name>
             <Path>classgrading_1_1_shared_memory.html</Path>
-            <Subnodes>
-             <Node>
-              <Name>PosixSharedMemory</Name>
-              <Path>class_posix_shared_memory.html</Path>
-             </Node>
-            </Subnodes>
            </Node>
           </Subnodes>
          </Node>
@@ -228,27 +201,6 @@
               <Name>posix.cpp</Name>
               <Path>posix_8cpp.html</Path>
               <Subnodes>
-               <Node>
-                <Name>PosixSharedMemory</Name>
-                <Path>class_posix_shared_memory.html</Path>
-                <Subnodes>
-                 <Node>
-                  <Name>PosixSharedMemory</Name>
-                  <Path>class_posix_shared_memory.html</Path>
-                  <Anchor>aae5b1b9025eaf2c963036377b33cc90f</Anchor>
-                 </Node>
-                 <Node>
-                  <Name>~PosixSharedMemory</Name>
-                  <Path>class_posix_shared_memory.html</Path>
-                  <Anchor>acffa99991edb2f5660ec3607eaedcf8a</Anchor>
-                 </Node>
-                 <Node>
-                  <Name>rawPointer</Name>
-                  <Path>class_posix_shared_memory.html</Path>
-                  <Anchor>adb18f80f906f2a4b2e664e8e4edd50e7</Anchor>
-                 </Node>
-                </Subnodes>
-               </Node>
               </Subnodes>
              </Node>
              <Node>

@@ -8,24 +8,11 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="documentation.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -79,21 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('libgrading_8h.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -108,6 +80,11 @@ $(document).ready(function(){initNavTree('libgrading_8h.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -144,6 +121,7 @@ $(document).ready(function(){initNavTree('libgrading_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrading_1_1_shared_memory.html">grading::SharedMemory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A representation of a shared memory object.  <a href="classgrading_1_1_shared_memory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -171,12 +149,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7e1850cba45d8bced4b418e9eb36163a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map data into the address space that can be shared with other processes.  <a href="#a7e1850cba45d8bced4b418e9eb36163a">More...</a><br /></td></tr>
 <tr class="separator:a7e1850cba45d8bced4b418e9eb36163a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3032dd86a185b5f7c99d81041fd56f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">grading::RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt; test)</td></tr>
+<tr class="memdesc:a3032dd86a185b5f7c99d81041fd56f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination.  <a href="#a3032dd86a185b5f7c99d81041fd56f17">More...</a><br /></td></tr>
 <tr class="separator:a3032dd86a185b5f7c99d81041fd56f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="memTemplItemLeft" align="right" valign="top">TestResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a10fbeabf2ee3b32cf6e78b3c401e9645">grading::RunTest</a> (std::function&lt; TestResult(T &amp;)&gt; test, T &amp;output)</td></tr>
+<tr class="memdesc:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with output but no explicit input.  <a href="#a10fbeabf2ee3b32cf6e78b3c401e9645">More...</a><br /></td></tr>
 <tr class="separator:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d16468739b8910802b98aea95f304c6"><td class="memTemplParams" colspan="2">template&lt;class Expectation , class Output &gt; </td></tr>
 <tr class="memitem:a5d16468739b8910802b98aea95f304c6"><td class="memTemplItemLeft" align="right" valign="top">TestResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a5d16468739b8910802b98aea95f304c6">grading::RunTest</a> (std::function&lt; TestResult(const Expectation &amp;, Output &amp;)&gt; t, const Expectation &amp;expect, Output &amp;output)</td></tr>
+<tr class="memdesc:a5d16468739b8910802b98aea95f304c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with input and output.  <a href="#a5d16468739b8910802b98aea95f304c6">More...</a><br /></td></tr>
 <tr class="separator:a5d16468739b8910802b98aea95f304c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -189,15 +170,11 @@ Functions</h2></td></tr>
 
 <p>Definition in file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 </div></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="libgrading_8h.html">libgrading.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
 </body>
 </html>
