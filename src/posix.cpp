@@ -53,27 +53,6 @@ static TestResult ProcessChildStatus(int status)
 
 
 
-TestResult grading::RunTest(function<TestResult ()> test)
-{
-	pid_t child = fork();
-
-	if (child == 0)
-	{
-		TestResult result = test();
-		exit(static_cast<int>(result));
-	}
-	else
-	{
-		int status;
-		while (waitpid(child, &status, 0) < 0)
-			if (errno != EINTR)
-				err(-1, "unknown error in child process");
-
-		return ProcessChildStatus(status);
-	}
-}
-
-
 class PosixSharedMemory : public SharedMemory
 {
 	public:
@@ -107,4 +86,22 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
+TestResult grading::RunTest(function<TestResult ()> test)
+{
+	pid_t child = fork();
 
+	if (child == 0)
+	{
+		TestResult result = test();
+		exit(static_cast<int>(result));
+	}
+	else
+	{
+		int status;
+		while (waitpid(child, &status, 0) < 0)
+			if (errno != EINTR)
+				err(-1, "unknown error in child process");
+
+		return ProcessChildStatus(status);
+	}
+}
