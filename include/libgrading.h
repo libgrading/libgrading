@@ -28,12 +28,14 @@
 
 namespace grading {
 
+
+//! The result of running one test within a separate process.
 enum class TestResult : char
 {
-	Pass,
-	Fail,
-	Segfault,
-	OtherError
+	Pass,          //!< the test succeeded
+	Fail,          //!< the test failed
+	Segfault,      //!< the test caused a segmentation fault
+	OtherError     //!< the test terminated for another reason
 };
 
 std::ostream& operator << (std::ostream&, TestResult);
