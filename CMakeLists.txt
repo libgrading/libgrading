@@ -3,8 +3,9 @@ project (libgrading)
 
 add_definitions("-std=c++11")
 
-set(CMAKE_CXX_FLAGS
-	"${CMAKE_CXX_FLAGS} -Weverything -Wno-c++98-compat -Wno-padded -Wno-weak-vtables")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Weverything")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-c++98-compat")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-padded -Wno-weak-vtables")
 
 set(CMAKE_INSTALL_NAME_DIR @rpath)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH on)
