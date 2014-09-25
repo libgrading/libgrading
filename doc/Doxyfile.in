@@ -1,6 +1,6 @@
 PROJECT_NAME           = "libgrading"
 PROJECT_NUMBER         =
-PROJECT_BRIEF          = A simple library for grading C and C++ assignments.
+PROJECT_BRIEF          = "A simple library for grading C and C++ assignments."
 PROJECT_LOGO           =
 OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BUILD_DIR@
 
@@ -123,12 +123,12 @@ HTML_OUTPUT            = html
 HTML_HEADER            =
 HTML_FOOTER            =
 HTML_STYLESHEET        =
-HTML_EXTRA_STYLESHEET  =
+HTML_EXTRA_STYLESHEET  = @CMAKE_CURRENT_SOURCE_DIR@/documentation.css
 
 HTML_EXTRA_FILES       =
 
 HTML_COLORSTYLE_HUE    = 352
-HTML_COLORSTYLE_SAT    = 70
+HTML_COLORSTYLE_SAT    = 0
 HTML_COLORSTYLE_GAMMA  = 80
 
 HTML_TIMESTAMP         = YES
