@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	{
 		int sum;
 		const TestResult result =
-			grading::TestInChild(TestSubmittedFunction, i, sum);
+			grading::RunTest(TestSubmittedFunction, i, sum);
 
 		if (result != i.expectedTestResult)
 		{

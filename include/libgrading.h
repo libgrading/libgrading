@@ -40,13 +40,6 @@ std::ostream& operator << (std::ostream&, TestResult);
 
 
 /**
- * Run a test closure in a separate process, capturing segmentation faults
- * and other errors that lead to termination.
- */
-TestResult RunInChild(std::function<TestResult ()> test);
-
-
-/**
  * A representation of a shared memory object.
  *
  * This class is specialized by platform-specific code to represent
@@ -65,10 +58,18 @@ class SharedMemory
 std::unique_ptr<SharedMemory> MapSharedData(size_t size);
 
 
+/**
+ * Run a test closure in a separate process, capturing segmentation faults
+ * and other errors that lead to termination.
+ *
+ * @returns  the result of the test, either pass/fail as reported by @b test
+ *           or else segfault/other as captured by libgrading
+ */
+TestResult RunTest(std::function<TestResult ()> test);
 
 
 /**
- * Run a test that takes no explicit input.
+ * Run a test with output but no explicit input.
  *
  * @param    test    a @ref std::function that copies out an output value
  *                   and returns a @ref TestResult
@@ -76,27 +77,38 @@ std::unique_ptr<SharedMemory> MapSharedData(size_t size);
  *                   (if it executes normally, e.g., without segfaulting)
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
- *           or else segfault/other as captured by @ref RunInChild.
+ *           or else segfault/other as captured by libgrading
  */
 template<class T>
-TestResult TestInChild(std::function<TestResult (T&)> test, T& output)
+TestResult RunTest(std::function<TestResult (T&)> test, T& output)
 {
 	std::unique_ptr<SharedMemory> mem(MapSharedData(sizeof(T)));
 	T *testOutput = static_cast<T*>(mem->rawPointer());
 
-	TestResult result = RunInChild([&]() { return test(*testOutput); });
+	TestResult result = RunTest([&]() { return test(*testOutput); });
 
 	output = *testOutput;
 	return result;
 }
 
-//! Run a test that takes an input, copies out a value and returns a TestResult.
+
+/**
+ * Run a test with input and output.
+ *
+ * @param    test    a @ref std::function that takes an input expectation,
+ *                   copies out an output value and returns a @ref TestResult
+ * @param    output  the output value produced by @b test
+ *                   (if it executes normally, e.g., without segfaulting)
+ *
+ * @returns  the result of the test, either pass/fail as reported by @b test
+ *           or else segfault/other as captured by libgrading
+ */
 template<class Input, class Output>
-TestResult TestInChild(std::function<TestResult (const Input&, Output&)> test,
+TestResult RunTest(std::function<TestResult (const Input&, Output&)> test,
                        const Input& expectation, Output& output)
 {
 	using std::placeholders::_1;
-	return TestInChild<Output>(std::bind(test, expectation, _1), output);
+	return RunTest<Output>(std::bind(test, expectation, _1), output);
 }
 
 } // namespace grading

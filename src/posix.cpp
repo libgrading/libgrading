@@ -53,7 +53,7 @@ static TestResult ProcessChildStatus(int status)
 
 
 
-TestResult grading::RunInChild(function<TestResult ()> test)
+TestResult grading::RunTest(function<TestResult ()> test)
 {
 	pid_t child = fork();
 

@@ -80,7 +80,7 @@ int main(int /*argc*/, char* /*argv*/[])
 				return TestResult::Fail;
 		};
 
-		const TestResult result = grading::TestInChild(test, value);
+		const TestResult result = grading::RunTest(test, value);
 
 		if (result == i.expectedTestResult)
 		{
