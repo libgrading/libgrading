@@ -53,7 +53,7 @@ SUBGROUPING            = YES
 # Build related configuration options
 #---------------------------------------------------------------------------
 
-EXTRACT_ALL            = YES
+EXTRACT_ALL            = NO
 EXTRACT_ANON_NSPACES   = YES
 EXTRACT_PRIVATE        = NO
 EXTRACT_PACKAGE        = NO
@@ -78,7 +78,7 @@ QUIET                  = YES
 WARNINGS               = YES
 WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
-WARN_NO_PARAMDOC       = YES
+WARN_NO_PARAMDOC       = NO
 
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
@@ -148,10 +148,10 @@ QHP_VIRTUAL_FOLDER     = doc
 GENERATE_ECLIPSEHELP   = YES
 ECLIPSE_DOC_ID         = ca.mun.engr.anderson.libgrading
 
-GENERATE_TREEVIEW      = YES
+GENERATE_TREEVIEW      = NO
 TREEVIEW_WIDTH         = 250
 
-USE_MATHJAX            = YES
+USE_MATHJAX            = NO
 MATHJAX_FORMAT         = HTML-CSS
 MATHJAX_RELPATH        = http://cdn.mathjax.org/mathjax/latest
 MATHJAX_EXTENSIONS     = TeX/AMSmath TeX/AMSsymbols
@@ -217,7 +217,7 @@ DOT_FONTNAME           = Avenir-Book
 DOT_FONTSIZE           = 11
 DOT_FONTPATH           =
 CLASS_GRAPH            = YES
-COLLABORATION_GRAPH    = YES
+COLLABORATION_GRAPH    = NO
 GROUP_GRAPHS           = YES
 
 UML_LOOK               = YES
