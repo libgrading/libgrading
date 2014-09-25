@@ -26,6 +26,8 @@
 #include <memory>
 #include <string>
 
+
+//! Container for all libgrading names.
 namespace grading {
 
 
@@ -38,6 +40,7 @@ enum class TestResult : char
 	OtherError     //!< the test terminated for another reason
 };
 
+//! Output a human-readable representation of a @ref TestResult.
 std::ostream& operator << (std::ostream&, TestResult);
 
 
