@@ -6,16 +6,16 @@ programming errors such as segmentation faults.
 
 ## Build it
 
-```sh
+~~~sh
 $ mkdir build
 $ cd build
 $ cmake ..       # or cmake -G Ninja ..
 $ make           # or ninja
-```
+~~~
 
 ## Use it
 
-```cpp
+~~~cpp
 #include <libgrading.h>
 
 using grading::TestResult;
@@ -89,4 +89,4 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
-```
+~~~
