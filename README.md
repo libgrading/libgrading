@@ -4,6 +4,20 @@ This is a simple library for grading C- and C++-language assignments.
 It runs each test case in a child process in order to capture common
 programming errors such as segmentation faults.
 
+## Get it
+
+libgrading is
+[hosted on GitHub](https://github.com/trombonehero/libgrading).
+You can get the most recent version with either of the following commands:
+
+~~~sh
+$ git clone https://github.com/trombonehero/libgrading.git
+$ svn checkout https://github.com/trombonehero/libgrading
+~~~
+
+At some point, I might also create releases.
+
+
 ## Build it
 
 ~~~sh
