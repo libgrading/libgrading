@@ -7,6 +7,7 @@ else()
 endif ()
 
 add_library(grading SHARED
+	checks.cpp
 	TestResult.cpp
 	${PLATFORM_SOURCES}
 )

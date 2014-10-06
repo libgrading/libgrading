@@ -35,6 +35,23 @@ using namespace grading;
 using std::unique_ptr;
 
 
+CheckResult::~CheckResult()
+{
+	if (reportError_)
+	{
+		std::cerr
+			<< "Check failed:\n"
+			<< "  expected `" << expected_
+			<< "`, got `" << actual_ << "`\n"
+			<< "  " << message_.str()
+			<< "\n"
+			;
+
+		exit(static_cast<int>(TestResult::Fail));
+	}
+}
+
+
 static TestResult ProcessChildStatus(int status)
 {
 	if (WIFEXITED(status))
@@ -90,12 +107,16 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
-TestResult grading::RunTest(std::function<TestResult ()> test)
+TestResult grading::RunTest(std::function<TestResult ()> test,
+                            std::ostream& errorStream)
 {
 	pid_t child = fork();
 
 	if (child == 0)
 	{
+		// Redirect cerr in the child process to the designated stream.
+		std::cerr.rdbuf(errorStream.rdbuf());
+
 		TestResult result = test();
 		exit(static_cast<int>(result));
 	}

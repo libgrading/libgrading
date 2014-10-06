@@ -23,12 +23,50 @@
 #define LIBGRADING_H
 
 #include <functional>
+#include <iostream>
 #include <memory>
+#include <sstream>
 #include <string>
 
 
 //! Container for all libgrading names.
 namespace grading {
+
+
+class CheckResult
+{
+	public:
+	CheckResult();
+	CheckResult(std::string exected, std::string actual);
+
+	CheckResult(const CheckResult&) = delete;
+	CheckResult(CheckResult&&);
+
+	~CheckResult();
+
+	template<class T>
+	CheckResult& operator << (const T& x)
+	{
+		message_ << x;
+	}
+
+	private:
+	bool reportError_;
+
+	const std::string expected_;
+	const std::string actual_;
+
+	std::ostringstream message_;
+};
+
+
+//
+// Checks for tests:
+//
+
+CheckResult CheckInt(int expected, int actual);
+CheckResult CheckFloat(double exp, double act, double tolerance = 0.000001);
+CheckResult CheckString(std::string expected, std::string actual);
 
 
 //! The result of running one test within a separate process.
@@ -72,10 +110,13 @@ std::unique_ptr<SharedMemory> MapSharedData(size_t size);
  * Run a test closure in a separate process, capturing segmentation faults
  * and other errors that lead to termination.
  *
+ * @param    errorStream  where to write messages (e.g., "expected X, got Y")
+ *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
  */
-TestResult RunTest(std::function<TestResult ()> test);
+TestResult RunTest(std::function<TestResult ()> test,
+                   std::ostream& errorStream = std::cerr);
 
 
 /**
@@ -85,17 +126,20 @@ TestResult RunTest(std::function<TestResult ()> test);
  *                   and returns a @ref TestResult
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
+ * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
  */
 template<class T>
-TestResult RunTest(std::function<TestResult (T&)> test, T& output)
+TestResult RunTest(std::function<TestResult (T&)> test, T& output,
+                   std::ostream& errorStream = std::cerr)
 {
 	std::unique_ptr<SharedMemory> mem(MapSharedData(sizeof(T)));
 	T *testOutput = static_cast<T*>(mem->rawPointer());
 
-	TestResult result = RunTest([&]() { return test(*testOutput); });
+	TestResult result =
+		RunTest([&]() { return test(*testOutput); }, errorStream);
 
 	output = *testOutput;
 	return result;
@@ -110,16 +154,18 @@ TestResult RunTest(std::function<TestResult (T&)> test, T& output)
  * @param    expect  our test expectation (inputs, expected output, etc.)
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
+ * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
  */
 template<class Expectation, class Output>
 TestResult RunTest(std::function<TestResult (const Expectation&, Output&)> t,
-                       const Expectation& expect, Output& output)
+                   const Expectation& expect, Output& output,
+                   std::ostream& errorStream = std::cerr)
 {
 	using std::placeholders::_1;
-	return RunTest<Output>(std::bind(t, expect, _1), output);
+	return RunTest<Output>(std::bind(t, expect, _1), output, errorStream);
 }
 
 } // namespace grading
