@@ -110,6 +110,10 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 TestResult grading::RunTest(std::function<TestResult ()> test,
                             std::ostream& errorStream)
 {
+	std::cout.flush();
+	std::cerr.flush();
+	std::clog.flush();
+
 	pid_t child = fork();
 
 	if (child == 0)
