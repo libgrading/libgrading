@@ -27,6 +27,7 @@
 #include <memory>
 #include <sstream>
 #include <string>
+#include <vector>
 
 
 //! Container for all libgrading names.
@@ -44,11 +45,20 @@ class CheckResult
 
 	~CheckResult();
 
+	CheckResult& operator << (const std::vector<std::string>&);
+
 	template<class T>
 	CheckResult& operator << (const T& x)
 	{
 		message_ << x;
+		return *this;
 	}
+
+	bool error() const { return reportError_; }
+	void cancel() { reportError_ = false; }
+
+	std::string expected() const { return expected_; }
+	std::string actual() const { return actual_; }
 
 	private:
 	bool reportError_;
@@ -59,11 +69,15 @@ class CheckResult
 	std::ostringstream message_;
 };
 
+CheckResult operator && (CheckResult&&, CheckResult&&);
+CheckResult operator || (CheckResult&&, CheckResult&&);
+
 
 //
 // Checks for tests:
 //
 
+CheckResult Check(bool, std::string description);
 CheckResult CheckInt(int expected, int actual);
 CheckResult CheckFloat(double exp, double act, double tolerance = 0.000001);
 CheckResult CheckString(std::string expected, std::string actual);

@@ -56,9 +56,85 @@ CheckResult::CheckResult(CheckResult&& other)
 //
 
 
+CheckResult operator && (CheckResult&& x, CheckResult&& y)
+{
+	if (not x.error() and not y.error())
+	{
+		x.cancel();
+		y.cancel();
+
+		return CheckResult();
+	}
+
+	if (not x.error())
+		return std::move(y);
+
+	else if (not y.error())
+		return std::move(x);
+
+	const string exp = "(" + x.expected() + " and " + y.expected() + ")";
+	const string actual = 
+		(x.actual() == y.actual())
+		? x.actual()
+		: "(" + x.actual() + " or " + y.actual() + ")"
+		;
+
+	x.cancel();
+	y.cancel();
+
+	return CheckResult(exp, actual);
+}
+
+
+CheckResult operator || (CheckResult&& x, CheckResult&& y)
+{
+	if (not x.error() or not y.error())
+	{
+		x.cancel();
+		y.cancel();
+
+		return CheckResult();
+	}
+
+	
+	const string exp = "(" + x.expected() + " or " + y.expected() + ")";
+	const string actual = 
+		(x.actual() == y.actual())
+		? x.actual()
+		: "(" + x.actual() + " or " + y.actual() + ")"
+		;
+
+	x.cancel();
+	y.cancel();
+
+	return CheckResult(exp, actual);
+}
+
+
+CheckResult& CheckResult::operator << (const std::vector<std::string>& v)
+{
+	message_ << "[";
+
+	for (const string& s : v)
+		message_ << " " << s;
+
+	message_ << " ]";
+
+	return *this;
+}
+
+
 //
 // Checks for tests:
 //
+
+CheckResult Check(bool condition, string description)
+{
+	if (condition)
+		return CheckResult();
+
+	return CheckResult(description, "false");
+}
 
 CheckResult CheckInt(int expected, int actual)
 {
