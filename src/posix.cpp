@@ -110,6 +110,9 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 TestResult grading::RunTest(std::function<TestResult ()> test,
                             std::ostream& errorStream)
 {
+	if (getenv("LIBGRADING_NOFORK"))
+		return test();
+
 	pid_t child = fork();
 
 	if (child == 0)
