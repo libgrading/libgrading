@@ -70,7 +70,10 @@ class CheckResult
 	std::ostringstream message_;
 };
 
+//! Combine the results of two checks using a product (AND): both must pass.
 CheckResult operator && (CheckResult&&, CheckResult&&);
+
+//! Combine the results of two checks using a sum (OR): at least one must pass.
 CheckResult operator || (CheckResult&&, CheckResult&&);
 
 
@@ -78,9 +81,23 @@ CheckResult operator || (CheckResult&&, CheckResult&&);
 // Checks for tests:
 //
 
+//! Check an arbitrary condition, failing the test if false.
 CheckResult Check(bool, std::string description);
+
+//! Check that two integers are equal, failing the test if they are not.
 CheckResult CheckInt(int expected, int actual);
+
+//! Check that two floating-point numbers are equal within some tolerance.
 CheckResult CheckFloat(double exp, double act, double tolerance = 0.000001);
+
+/**
+ * Check that two strings are (approximately) equal.
+ *
+ * @param   expected            the string we expected
+ * @param   actual              the string we got
+ * @param   maxEditDistance     how fuzzy the match can be: the maximum
+ *                              Levenshtein distance between them
+ */
 CheckResult CheckString(std::string expected, std::string actual,
                         size_t maxEditDistance = 0);
 
@@ -126,6 +143,7 @@ std::unique_ptr<SharedMemory> MapSharedData(size_t size);
  * Run a test closure in a separate process, capturing segmentation faults
  * and other errors that lead to termination.
  *
+ * @param    test         the test to run
  * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
