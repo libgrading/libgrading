@@ -81,7 +81,8 @@ CheckResult operator || (CheckResult&&, CheckResult&&);
 CheckResult Check(bool, std::string description);
 CheckResult CheckInt(int expected, int actual);
 CheckResult CheckFloat(double exp, double act, double tolerance = 0.000001);
-CheckResult CheckString(std::string expected, std::string actual);
+CheckResult CheckString(std::string expected, std::string actual,
+                        size_t maxEditDistance = 0);
 
 
 //! The result of running one test within a separate process.

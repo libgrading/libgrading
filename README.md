@@ -20,6 +20,9 @@ At some point, I might also create releases.
 
 ## Build it
 
+First, install [libdistance](http://monkey.org/~jose/software/libdistance/).
+Then:
+
 ~~~sh
 $ mkdir build
 $ cd build

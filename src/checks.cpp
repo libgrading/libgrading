@@ -21,6 +21,8 @@
 
 #include <libgrading.h>
 
+#include <distance.h>
+
 #include <cassert>
 #include <cmath>
 #include <functional>
@@ -164,9 +166,16 @@ CheckResult CheckFloat(double exp, double actual, double tolerance)
 	return CheckResult(to_string(exp), to_string(actual));
 }
 
-CheckResult CheckString(string expected, string actual)
+CheckResult CheckString(string expected, string actual, size_t maxDistance)
 {
 	if (expected == actual)
+		return CheckResult();
+
+	const size_t editDistance = static_cast<size_t>(
+		levenshtein_d(expected.c_str(), expected.length(),
+		              actual.c_str(), actual.length()));
+
+	if (editDistance <= maxDistance)
 		return CheckResult();
 
 	return CheckResult(expected, actual);
