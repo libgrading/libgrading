@@ -38,6 +38,7 @@ class CheckResult
 {
 	public:
 	CheckResult();
+	CheckResult(std::string message);
 	CheckResult(std::string exected, std::string actual);
 
 	CheckResult(const CheckResult&) = delete;

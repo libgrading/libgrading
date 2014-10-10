@@ -39,10 +39,17 @@ CheckResult::~CheckResult()
 {
 	if (reportError_)
 	{
+		std::cerr << "Check failed:\n";
+		if (expected_.empty())
+			std::cerr << "  " << actual_ << "\n";
+
+		else
+			std::cerr
+				<< "  expected `" << expected_
+				<< "`, got `" << actual_ << "`\n"
+				;
+
 		std::cerr
-			<< "Check failed:\n"
-			<< "  expected `" << expected_
-			<< "`, got `" << actual_ << "`\n"
 			<< "  " << message_.str()
 			<< "\n\n"
 			;

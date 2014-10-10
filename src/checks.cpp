@@ -36,6 +36,11 @@ CheckResult::CheckResult()
 {
 }
 
+CheckResult::CheckResult(string message)
+	: reportError_(true), expected_(""), actual_(message)
+{
+}
+
 CheckResult::CheckResult(string expected, string actual)
 	: reportError_(true), expected_(expected), actual_(actual)
 {
@@ -133,7 +138,7 @@ CheckResult Check(bool condition, string description)
 	if (condition)
 		return CheckResult();
 
-	return CheckResult(description, "false");
+	return CheckResult(description);
 }
 
 CheckResult CheckInt(int expected, int actual)
