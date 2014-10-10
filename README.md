@@ -74,13 +74,14 @@ const AdditionExpectation tests[] =
 //
 // This function needs to return a grading::TestResult.
 //
-TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& value)
+TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& sum)
 {
 	// In a real test suite, you'd link against submitted code.
 	// For this demo, we'll use a lambda.
 	auto studentFunction = [](int x, int y) { return x + y + 1; };
 
-	CheckInt(expected.value, studentFunction(expected.x, expected.y))
+	sum = studentFunction(expected.x, expected.y);
+	CheckInt(expected.sum, sum)
 		<< "some more detail to be output if this check fails";
 
 	return TestResult::Pass;
