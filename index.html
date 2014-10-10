@@ -135,13 +135,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="comment">// This function needs to return a grading::TestResult.</span></div>
 <div class="line"><span class="comment">//</span></div>
-<div class="line"><a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> TestSubmittedFunction(<span class="keyword">const</span> AdditionExpectation&amp; expected, <span class="keywordtype">int</span>&amp; value)</div>
+<div class="line"><a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> TestSubmittedFunction(<span class="keyword">const</span> AdditionExpectation&amp; expected, <span class="keywordtype">int</span>&amp; sum)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// In a real test suite, you&#39;d link against submitted code.</span></div>
 <div class="line">    <span class="comment">// For this demo, we&#39;ll use a lambda.</span></div>
 <div class="line">    <span class="keyword">auto</span> studentFunction = [](<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) { <span class="keywordflow">return</span> x + y + 1; };</div>
 <div class="line"></div>
-<div class="line">    <a class="code" href="namespacegrading.html#a864eb3b1d2dd47d602d98e77776702cb">CheckInt</a>(expected.value, studentFunction(expected.x, expected.y))</div>
+<div class="line">    sum = studentFunction(expected.x, expected.y);</div>
+<div class="line">    <a class="code" href="namespacegrading.html#a864eb3b1d2dd47d602d98e77776702cb">CheckInt</a>(expected.sum, sum)</div>
 <div class="line">        &lt;&lt; <span class="stringliteral">&quot;some more detail to be output if this check fails&quot;</span>;</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">TestResult::Pass</a>;</div>
