@@ -7,10 +7,10 @@
 
 var indexSectionsWithContent =
 {
-  0: "fglmoprst",
+  0: "cfglmoprst",
   1: "s",
   2: "g",
-  3: "lpt",
+  3: "clpt",
   4: "mor",
   5: "t",
   6: "fops"

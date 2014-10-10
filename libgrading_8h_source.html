@@ -95,72 +95,130 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define LIBGRADING_H</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacegrading.html">   31</a></span>&#160;<span class="keyword">namespace </span>grading {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">   35</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> : char</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">Pass</a>,          </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1">Fail</a>,          </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4">Segfault</a>,      </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052">OtherError</a>     </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;std::ostream&amp; <a class="code" href="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0">operator &lt;&lt; </a>(std::ostream&amp;, <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespacegrading.html">   34</a></span>&#160;<span class="keyword">namespace </span>grading {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>CheckResult</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CheckResult();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    CheckResult(std::string message);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    CheckResult(std::string exected, std::string actual);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    CheckResult(<span class="keyword">const</span> CheckResult&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    CheckResult(CheckResult&amp;&amp;);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classgrading_1_1_shared_memory.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgrading_1_1_shared_memory.html">SharedMemory</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgrading_1_1_shared_memory.html">SharedMemory</a>() {}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>* <a class="code" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">rawPointer</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ~CheckResult();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    CheckResult&amp; operator &lt;&lt; (const std::vector&lt;std::string&gt;&amp;);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    CheckResult&amp; <a class="code" href="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0">operator &lt;&lt; </a>(<span class="keyword">const</span> T&amp; x)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        message_ &lt;&lt; x;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> error()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> reportError_; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> cancel() { reportError_ = <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string expected()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> expected_; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::string actual()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actual_; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> reportError_;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;std::unique_ptr&lt;SharedMemory&gt; <a class="code" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">MapSharedData</a>(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> std::string expected_;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> std::string actual_;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> <a class="code" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">RunTest</a>(std::function&lt;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> ()&gt; test);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::ostringstream message_;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;CheckResult operator &amp;&amp; (CheckResult&amp;&amp;, CheckResult&amp;&amp;);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;CheckResult operator || (CheckResult&amp;&amp;, CheckResult&amp;&amp;);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// Checks for tests:</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespacegrading.html#a10fbeabf2ee3b32cf6e78b3c401e9645">   93</a></span>&#160;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> <a class="code" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">RunTest</a>(std::function&lt;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> (T&amp;)&gt; test, T&amp; output)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::unique_ptr&lt;SharedMemory&gt; mem(<a class="code" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">MapSharedData</a>(<span class="keyword">sizeof</span>(T)));</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    T *testOutput = <span class="keyword">static_cast&lt;</span>T*<span class="keyword">&gt;</span>(mem-&gt;<a class="code" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">rawPointer</a>());</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> result = <a class="code" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">RunTest</a>([&amp;]() { <span class="keywordflow">return</span> test(*testOutput); });</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;CheckResult Check(<span class="keywordtype">bool</span>, std::string description);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;CheckResult CheckInt(<span class="keywordtype">int</span> expected, <span class="keywordtype">int</span> actual);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;CheckResult CheckFloat(<span class="keywordtype">double</span> exp, <span class="keywordtype">double</span> act, <span class="keywordtype">double</span> tolerance = 0.000001);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;CheckResult CheckString(std::string expected, std::string actual,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        <span class="keywordtype">size_t</span> maxEditDistance = 0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">   89</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> : char</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">Pass</a>,          </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1">Fail</a>,          </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4">Segfault</a>,      </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052">OtherError</a>     </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;std::ostream&amp; <a class="code" href="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0">operator &lt;&lt; </a>(std::ostream&amp;, <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    output = *testOutput;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> Expectation, <span class="keyword">class</span> Output&gt;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="namespacegrading.html#a5d16468739b8910802b98aea95f304c6">  118</a></span>&#160;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> <a class="code" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">RunTest</a>(std::function&lt;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> (<span class="keyword">const</span> Expectation&amp;, Output&amp;)&gt; t,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                       <span class="keyword">const</span> Expectation&amp; expect, Output&amp; output)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">using</span> std::placeholders::_1;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> RunTest&lt;Output&gt;(std::bind(t, expect, _1), output);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classgrading_1_1_shared_memory.html">  108</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgrading_1_1_shared_memory.html">SharedMemory</a></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgrading_1_1_shared_memory.html">SharedMemory</a>() {}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>* <a class="code" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">rawPointer</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;std::unique_ptr&lt;SharedMemory&gt; <a class="code" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">MapSharedData</a>(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} <span class="comment">// namespace grading</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> <a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">RunTest</a>(std::function&lt;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> ()&gt; test,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                   std::ostream&amp; errorStream = std::cerr);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="namespacegrading.html#a950e67a944ddc810ca475d91ba53454b">  151</a></span>&#160;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> <a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">RunTest</a>(std::function&lt;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> (T&amp;)&gt; test, T&amp; output,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                   std::ostream&amp; errorStream = std::cerr)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::unique_ptr&lt;SharedMemory&gt; mem(<a class="code" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">MapSharedData</a>(<span class="keyword">sizeof</span>(T)));</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    T *testOutput = <span class="keyword">static_cast&lt;</span>T*<span class="keyword">&gt;</span>(mem-&gt;<a class="code" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">rawPointer</a>());</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> result =</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">RunTest</a>([&amp;]() { <span class="keywordflow">return</span> test(*testOutput); }, errorStream);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    output = *testOutput;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> Expectation, <span class="keyword">class</span> Output&gt;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="namespacegrading.html#a9849135ae8235970c021823fecdbd5ec">  179</a></span>&#160;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> <a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">RunTest</a>(std::function&lt;<a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> (<span class="keyword">const</span> Expectation&amp;, Output&amp;)&gt; t,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                   <span class="keyword">const</span> Expectation&amp; expect, Output&amp; output,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                   std::ostream&amp; errorStream = std::cerr)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">using</span> std::placeholders::_1;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> RunTest&lt;Output&gt;(std::bind(t, expect, _1), output, errorStream);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;} <span class="comment">// namespace grading</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classgrading_1_1_shared_memory_html_aed4149f33e92951014d8dd8c0d1b3b89"><div class="ttname"><a href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">grading::SharedMemory::rawPointer</a></div><div class="ttdeci">virtual void * rawPointer() const =0</div><div class="ttdoc">A pointer to the shared memory, which will be invalidated after this object is destructed. </div></div>
-<div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2c"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">grading::TestResult</a></div><div class="ttdeci">TestResult</div><div class="ttdoc">The result of running one test within a separate process. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00035">libgrading.h:35</a></div></div>
+<div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2c"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">grading::TestResult</a></div><div class="ttdeci">TestResult</div><div class="ttdoc">The result of running one test within a separate process. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00089">libgrading.h:89</a></div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1">grading::TestResult::Fail</a></div><div class="ttdoc">the test failed </div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">grading::TestResult::Pass</a></div><div class="ttdoc">the test succeeded </div></div>
-<div class="ttc" id="namespacegrading_html_a7e1850cba45d8bced4b418e9eb36163a"><div class="ttname"><a href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">grading::MapSharedData</a></div><div class="ttdeci">std::unique_ptr&lt; SharedMemory &gt; MapSharedData(size_t size)</div><div class="ttdoc">Map data into the address space that can be shared with other processes. </div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00083">posix.cpp:83</a></div></div>
+<div class="ttc" id="namespacegrading_html_a7e1850cba45d8bced4b418e9eb36163a"><div class="ttname"><a href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">grading::MapSharedData</a></div><div class="ttdeci">std::unique_ptr&lt; SharedMemory &gt; MapSharedData(size_t size)</div><div class="ttdoc">Map data into the address space that can be shared with other processes. </div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00107">posix.cpp:107</a></div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4">grading::TestResult::Segfault</a></div><div class="ttdoc">the test caused a segmentation fault </div></div>
 <div class="ttc" id="namespacegrading_html_a7f6a40c5d4a973fea01a308e8d06d9d0"><div class="ttname"><a href="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0">grading::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;, TestResult)</div><div class="ttdoc">Output a human-readable representation of a TestResult. </div><div class="ttdef"><b>Definition:</b> <a href="_test_result_8cpp_source.html#l00026">TestResult.cpp:26</a></div></div>
-<div class="ttc" id="namespacegrading_html_a3032dd86a185b5f7c99d81041fd56f17"><div class="ttname"><a href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">grading::RunTest</a></div><div class="ttdeci">TestResult RunTest(std::function&lt; TestResult()&gt; test)</div><div class="ttdoc">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00093">posix.cpp:93</a></div></div>
-<div class="ttc" id="classgrading_1_1_shared_memory_html"><div class="ttname"><a href="classgrading_1_1_shared_memory.html">grading::SharedMemory</a></div><div class="ttdoc">A representation of a shared memory object. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00054">libgrading.h:54</a></div></div>
+<div class="ttc" id="namespacegrading_html_a352730bd52a26e60601ba3cbe1719049"><div class="ttname"><a href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">grading::RunTest</a></div><div class="ttdeci">TestResult RunTest(std::function&lt; TestResult()&gt; test, std::ostream &amp;errorStream=std::cerr)</div><div class="ttdoc">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</div><div class="ttdef"><b>Definition:</b> <a href="posix_8cpp_source.html#l00117">posix.cpp:117</a></div></div>
+<div class="ttc" id="classgrading_1_1_shared_memory_html"><div class="ttname"><a href="classgrading_1_1_shared_memory.html">grading::SharedMemory</a></div><div class="ttdoc">A representation of a shared memory object. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00108">libgrading.h:108</a></div></div>
 <div class="ttc" id="namespacegrading_html_ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052"><div class="ttname"><a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052">grading::TestResult::OtherError</a></div><div class="ttdoc">the test terminated for another reason </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

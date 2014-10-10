@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>libgrading: include/libgrading.h File Reference</title>
+<title>libgrading: src/checks.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,68 +82,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">libgrading.h File Reference</div>  </div>
+<div class="title">checks.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A library for grading C- and C++-based assignments.  
+<p>Implementation of various expectation checks.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="libgrading_8h_source.html">libgrading.h</a>&gt;</code><br />
+<code>#include &lt;distance.h&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for libgrading.h:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for checks.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="libgrading_8h__incl.svg" width="560" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="libgrading_8h__dep__incl.svg" width="424" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="checks_8cpp__incl.svg" width="598" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
-<p><a href="libgrading_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="checks_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrading_1_1_shared_memory.html">grading::SharedMemory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A representation of a shared memory object.  <a href="classgrading_1_1_shared_memory.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegrading"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html">grading</a></td></tr>
 <tr class="memdesc:namespacegrading"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for all libgrading names. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ae890cd55c5a0db0c68f9f683bca07e2c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">grading::TestResult</a> : char { <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">grading::TestResult::Pass</a>, 
-<a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1">grading::TestResult::Fail</a>, 
-<a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4">grading::TestResult::Segfault</a>, 
-<a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052">grading::TestResult::OtherError</a>
- }</td></tr>
-<tr class="memdesc:ae890cd55c5a0db0c68f9f683bca07e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of running one test within a separate process.  <a href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">More...</a><br /></td></tr>
-<tr class="separator:ae890cd55c5a0db0c68f9f683bca07e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -165,33 +138,16 @@ CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::Check
 <tr class="memitem:a6a12ba1dfc6c557a610481af0e167466"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a12ba1dfc6c557a610481af0e167466"></a>
 CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::CheckString</b> (std::string expected, std::string actual, size_t maxEditDistance=0)</td></tr>
 <tr class="separator:a6a12ba1dfc6c557a610481af0e167466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6a40c5d4a973fea01a308e8d06d9d0"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0">grading::operator&lt;&lt;</a> (std::ostream &amp;, TestResult)</td></tr>
-<tr class="memdesc:a7f6a40c5d4a973fea01a308e8d06d9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a human-readable representation of a <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>.  <a href="#a7f6a40c5d4a973fea01a308e8d06d9d0">More...</a><br /></td></tr>
-<tr class="separator:a7f6a40c5d4a973fea01a308e8d06d9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e1850cba45d8bced4b418e9eb36163a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgrading_1_1_shared_memory.html">SharedMemory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">grading::MapSharedData</a> (size_t size)</td></tr>
-<tr class="memdesc:a7e1850cba45d8bced4b418e9eb36163a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map data into the address space that can be shared with other processes.  <a href="#a7e1850cba45d8bced4b418e9eb36163a">More...</a><br /></td></tr>
-<tr class="separator:a7e1850cba45d8bced4b418e9eb36163a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352730bd52a26e60601ba3cbe1719049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">grading::RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt; test, std::ostream &amp;errorStream=std::cerr)</td></tr>
-<tr class="memdesc:a352730bd52a26e60601ba3cbe1719049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination.  <a href="#a352730bd52a26e60601ba3cbe1719049">More...</a><br /></td></tr>
-<tr class="separator:a352730bd52a26e60601ba3cbe1719049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a950e67a944ddc810ca475d91ba53454b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a950e67a944ddc810ca475d91ba53454b"><td class="memTemplItemLeft" align="right" valign="top">TestResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a950e67a944ddc810ca475d91ba53454b">grading::RunTest</a> (std::function&lt; TestResult(T &amp;)&gt; test, T &amp;output, std::ostream &amp;errorStream=std::cerr)</td></tr>
-<tr class="memdesc:a950e67a944ddc810ca475d91ba53454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with output but no explicit input.  <a href="#a950e67a944ddc810ca475d91ba53454b">More...</a><br /></td></tr>
-<tr class="separator:a950e67a944ddc810ca475d91ba53454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9849135ae8235970c021823fecdbd5ec"><td class="memTemplParams" colspan="2">template&lt;class Expectation , class Output &gt; </td></tr>
-<tr class="memitem:a9849135ae8235970c021823fecdbd5ec"><td class="memTemplItemLeft" align="right" valign="top">TestResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a9849135ae8235970c021823fecdbd5ec">grading::RunTest</a> (std::function&lt; TestResult(const Expectation &amp;, Output &amp;)&gt; t, const Expectation &amp;expect, Output &amp;output, std::ostream &amp;errorStream=std::cerr)</td></tr>
-<tr class="memdesc:a9849135ae8235970c021823fecdbd5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with input and output.  <a href="#a9849135ae8235970c021823fecdbd5ec">More...</a><br /></td></tr>
-<tr class="separator:a9849135ae8235970c021823fecdbd5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A library for grading C- and C++-based assignments. </p>
+<div class="textblock"><p>Implementation of various expectation checks. </p>
 <dl class="section author"><dt>Author</dt><dd>Jonathan Anderson <a href="#" onclick="location.href='mai'+'lto:'+'jon'+'at'+'han'+'.a'+'nde'+'rs'+'on@'+'mu'+'n.c'+'a'; return false;">jonat<span style="display: none;">.nosp@m.</span>han.<span style="display: none;">.nosp@m.</span>ander<span style="display: none;">.nosp@m.</span>son@<span style="display: none;">.nosp@m.</span>mun.c<span style="display: none;">.nosp@m.</span>a</a> </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>(c) 2014 Jonathan Anderson. All rights reserved. </dd></dl>
 <dl class="section user"><dt>License:</dt><dd>Apache License, Version 2.0</dd></dl>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
 </pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 
-<p>Definition in file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition in file <a class="el" href="checks_8cpp_source.html">checks.cpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

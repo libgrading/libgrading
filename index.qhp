@@ -49,14 +49,28 @@
                   <section title="Segfault" ref="libgrading_8h.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4" />
                   <section title="OtherError" ref="libgrading_8h.html#ae890cd55c5a0db0c68f9f683bca07e2ca611572ba77cbd55463aeb65f1f77a052" />
                 </section>
+                <section title="Check" ref="libgrading_8h.html#a5af105030311d3c4a6cf7382d99ad1b9" />
+                <section title="CheckFloat" ref="libgrading_8h.html#aa95730bc4450e5202019fe6f6b631185" />
+                <section title="CheckInt" ref="libgrading_8h.html#a864eb3b1d2dd47d602d98e77776702cb" />
+                <section title="CheckString" ref="libgrading_8h.html#a6a12ba1dfc6c557a610481af0e167466" />
                 <section title="MapSharedData" ref="libgrading_8h.html#a7e1850cba45d8bced4b418e9eb36163a" />
+                <section title="operator&amp;&amp;" ref="libgrading_8h.html#a408d2501b1f610426acd4a22007c6b95" />
                 <section title="operator&lt;&lt;" ref="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
-                <section title="RunTest" ref="libgrading_8h.html#a3032dd86a185b5f7c99d81041fd56f17" />
-                <section title="RunTest" ref="libgrading_8h.html#a10fbeabf2ee3b32cf6e78b3c401e9645" />
-                <section title="RunTest" ref="libgrading_8h.html#a5d16468739b8910802b98aea95f304c6" />
+                <section title="operator||" ref="libgrading_8h.html#ae879c550a264e817453c5a0611aead83" />
+                <section title="RunTest" ref="libgrading_8h.html#a352730bd52a26e60601ba3cbe1719049" />
+                <section title="RunTest" ref="libgrading_8h.html#a950e67a944ddc810ca475d91ba53454b" />
+                <section title="RunTest" ref="libgrading_8h.html#a9849135ae8235970c021823fecdbd5ec" />
               </section>
             </section>
             <section title="src" ref="dir_68267d1309a1af8e8297ef4c3efbcdba.html">
+              <section title="checks.cpp" ref="checks_8cpp.html">
+                <section title="Check" ref="checks_8cpp.html#a5af105030311d3c4a6cf7382d99ad1b9" />
+                <section title="CheckFloat" ref="checks_8cpp.html#aa95730bc4450e5202019fe6f6b631185" />
+                <section title="CheckInt" ref="checks_8cpp.html#a864eb3b1d2dd47d602d98e77776702cb" />
+                <section title="CheckString" ref="checks_8cpp.html#a6a12ba1dfc6c557a610481af0e167466" />
+                <section title="operator&amp;&amp;" ref="checks_8cpp.html#a408d2501b1f610426acd4a22007c6b95" />
+                <section title="operator||" ref="checks_8cpp.html#ae879c550a264e817453c5a0611aead83" />
+              </section>
               <section title="posix.cpp" ref="posix_8cpp.html" />
               <section title="TestResult.cpp" ref="_test_result_8cpp.html" />
             </section>
@@ -65,17 +79,35 @@
       </section>
     </toc>
     <keywords>
+      <keyword name="operator&amp;&amp;" id="libgrading.h::operator&amp;&amp;" ref="libgrading_8h.html#a408d2501b1f610426acd4a22007c6b95" />
+      <keyword name="operator||" id="libgrading.h::operator||" ref="libgrading_8h.html#ae879c550a264e817453c5a0611aead83" />
+      <keyword name="Check" id="libgrading.h::Check" ref="libgrading_8h.html#a5af105030311d3c4a6cf7382d99ad1b9" />
+      <keyword name="CheckInt" id="libgrading.h::CheckInt" ref="libgrading_8h.html#a864eb3b1d2dd47d602d98e77776702cb" />
+      <keyword name="CheckFloat" id="libgrading.h::CheckFloat" ref="libgrading_8h.html#aa95730bc4450e5202019fe6f6b631185" />
+      <keyword name="CheckString" id="libgrading.h::CheckString" ref="libgrading_8h.html#a6a12ba1dfc6c557a610481af0e167466" />
       <keyword name="operator&lt;&lt;" id="libgrading.h::operator&lt;&lt;" ref="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
       <keyword name="MapSharedData" id="libgrading.h::MapSharedData" ref="libgrading_8h.html#a7e1850cba45d8bced4b418e9eb36163a" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a3032dd86a185b5f7c99d81041fd56f17" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a10fbeabf2ee3b32cf6e78b3c401e9645" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a5d16468739b8910802b98aea95f304c6" />
+      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a352730bd52a26e60601ba3cbe1719049" />
+      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a950e67a944ddc810ca475d91ba53454b" />
+      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a9849135ae8235970c021823fecdbd5ec" />
+      <keyword name="operator&amp;&amp;" id="checks.cpp::operator&amp;&amp;" ref="checks_8cpp.html#a408d2501b1f610426acd4a22007c6b95" />
+      <keyword name="operator||" id="checks.cpp::operator||" ref="checks_8cpp.html#ae879c550a264e817453c5a0611aead83" />
+      <keyword name="Check" id="checks.cpp::Check" ref="checks_8cpp.html#a5af105030311d3c4a6cf7382d99ad1b9" />
+      <keyword name="CheckInt" id="checks.cpp::CheckInt" ref="checks_8cpp.html#a864eb3b1d2dd47d602d98e77776702cb" />
+      <keyword name="CheckFloat" id="checks.cpp::CheckFloat" ref="checks_8cpp.html#aa95730bc4450e5202019fe6f6b631185" />
+      <keyword name="CheckString" id="checks.cpp::CheckString" ref="checks_8cpp.html#a6a12ba1dfc6c557a610481af0e167466" />
       <keyword name="grading" id="grading" ref="namespacegrading.html" />
+      <keyword name="operator&amp;&amp;" id="grading::operator&amp;&amp;" ref="namespacegrading.html#a408d2501b1f610426acd4a22007c6b95" />
+      <keyword name="operator||" id="grading::operator||" ref="namespacegrading.html#ae879c550a264e817453c5a0611aead83" />
+      <keyword name="Check" id="grading::Check" ref="namespacegrading.html#a5af105030311d3c4a6cf7382d99ad1b9" />
+      <keyword name="CheckInt" id="grading::CheckInt" ref="namespacegrading.html#a864eb3b1d2dd47d602d98e77776702cb" />
+      <keyword name="CheckFloat" id="grading::CheckFloat" ref="namespacegrading.html#aa95730bc4450e5202019fe6f6b631185" />
+      <keyword name="CheckString" id="grading::CheckString" ref="namespacegrading.html#a6a12ba1dfc6c557a610481af0e167466" />
       <keyword name="operator&lt;&lt;" id="grading::operator&lt;&lt;" ref="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
       <keyword name="MapSharedData" id="grading::MapSharedData" ref="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a10fbeabf2ee3b32cf6e78b3c401e9645" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a5d16468739b8910802b98aea95f304c6" />
+      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049" />
+      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a950e67a944ddc810ca475d91ba53454b" />
+      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a9849135ae8235970c021823fecdbd5ec" />
       <keyword name="Pass" id="grading::Pass" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c" />
       <keyword name="Fail" id="grading::Fail" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1" />
       <keyword name="Segfault" id="grading::Segfault" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4" />
@@ -123,19 +155,22 @@
       <file>search/search.js</file>
       <file>libgrading_8h_source.html</file>
       <file>_r_e_a_d_m_e_8md_source.html</file>
+      <file>checks_8cpp_source.html</file>
       <file>posix_8cpp_source.html</file>
       <file>_test_result_8cpp_source.html</file>
       <file>libgrading_8h.html</file>
       <file>libgrading_8h__incl.svg</file>
       <file>libgrading_8h__dep__incl.svg</file>
+      <file>checks_8cpp.html</file>
+      <file>checks_8cpp__incl.svg</file>
       <file>posix_8cpp.html</file>
       <file>posix_8cpp__incl.svg</file>
       <file>_test_result_8cpp.html</file>
       <file>_test_result_8cpp__incl.svg</file>
       <file>namespacegrading.html</file>
       <file>namespacegrading_a7e1850cba45d8bced4b418e9eb36163a_icgraph.svg</file>
-      <file>namespacegrading_a3032dd86a185b5f7c99d81041fd56f17_icgraph.svg</file>
-      <file>namespacegrading_a10fbeabf2ee3b32cf6e78b3c401e9645_cgraph.svg</file>
+      <file>namespacegrading_a352730bd52a26e60601ba3cbe1719049_icgraph.svg</file>
+      <file>namespacegrading_a950e67a944ddc810ca475d91ba53454b_cgraph.svg</file>
       <file>classgrading_1_1_shared_memory.html</file>
       <file>classgrading_1_1_shared_memory_aed4149f33e92951014d8dd8c0d1b3b89_icgraph.svg</file>
       <file>classgrading_1_1_shared_memory-members.html</file>

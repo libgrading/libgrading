@@ -113,23 +113,41 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a408d2501b1f610426acd4a22007c6b95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a408d2501b1f610426acd4a22007c6b95"></a>
+CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;&amp;</b> (CheckResult &amp;&amp;, CheckResult &amp;&amp;)</td></tr>
+<tr class="separator:a408d2501b1f610426acd4a22007c6b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae879c550a264e817453c5a0611aead83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae879c550a264e817453c5a0611aead83"></a>
+CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>operator||</b> (CheckResult &amp;&amp;, CheckResult &amp;&amp;)</td></tr>
+<tr class="separator:ae879c550a264e817453c5a0611aead83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af105030311d3c4a6cf7382d99ad1b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5af105030311d3c4a6cf7382d99ad1b9"></a>
+CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>Check</b> (bool, std::string description)</td></tr>
+<tr class="separator:a5af105030311d3c4a6cf7382d99ad1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864eb3b1d2dd47d602d98e77776702cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a864eb3b1d2dd47d602d98e77776702cb"></a>
+CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>CheckInt</b> (int expected, int actual)</td></tr>
+<tr class="separator:a864eb3b1d2dd47d602d98e77776702cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95730bc4450e5202019fe6f6b631185"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa95730bc4450e5202019fe6f6b631185"></a>
+CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>CheckFloat</b> (double exp, double act, double tolerance=0.000001)</td></tr>
+<tr class="separator:aa95730bc4450e5202019fe6f6b631185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a12ba1dfc6c557a610481af0e167466"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a12ba1dfc6c557a610481af0e167466"></a>
+CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>CheckString</b> (std::string expected, std::string actual, size_t maxEditDistance=0)</td></tr>
+<tr class="separator:a6a12ba1dfc6c557a610481af0e167466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6a40c5d4a973fea01a308e8d06d9d0"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>)</td></tr>
 <tr class="memdesc:a7f6a40c5d4a973fea01a308e8d06d9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a human-readable representation of a <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>.  <a href="#a7f6a40c5d4a973fea01a308e8d06d9d0">More...</a><br /></td></tr>
 <tr class="separator:a7f6a40c5d4a973fea01a308e8d06d9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1850cba45d8bced4b418e9eb36163a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgrading_1_1_shared_memory.html">SharedMemory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">MapSharedData</a> (size_t size)</td></tr>
 <tr class="memdesc:a7e1850cba45d8bced4b418e9eb36163a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map data into the address space that can be shared with other processes.  <a href="#a7e1850cba45d8bced4b418e9eb36163a">More...</a><br /></td></tr>
 <tr class="separator:a7e1850cba45d8bced4b418e9eb36163a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3032dd86a185b5f7c99d81041fd56f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt; test)</td></tr>
-<tr class="memdesc:a3032dd86a185b5f7c99d81041fd56f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination.  <a href="#a3032dd86a185b5f7c99d81041fd56f17">More...</a><br /></td></tr>
-<tr class="separator:a3032dd86a185b5f7c99d81041fd56f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a10fbeabf2ee3b32cf6e78b3c401e9645">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(T &amp;)&gt; test, T &amp;output)</td></tr>
-<tr class="memdesc:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with output but no explicit input.  <a href="#a10fbeabf2ee3b32cf6e78b3c401e9645">More...</a><br /></td></tr>
-<tr class="separator:a10fbeabf2ee3b32cf6e78b3c401e9645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d16468739b8910802b98aea95f304c6"><td class="memTemplParams" colspan="2">template&lt;class Expectation , class Output &gt; </td></tr>
-<tr class="memitem:a5d16468739b8910802b98aea95f304c6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a5d16468739b8910802b98aea95f304c6">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(const Expectation &amp;, Output &amp;)&gt; t, const Expectation &amp;expect, Output &amp;output)</td></tr>
-<tr class="memdesc:a5d16468739b8910802b98aea95f304c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with input and output.  <a href="#a5d16468739b8910802b98aea95f304c6">More...</a><br /></td></tr>
-<tr class="separator:a5d16468739b8910802b98aea95f304c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352730bd52a26e60601ba3cbe1719049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt; test, std::ostream &amp;errorStream=std::cerr)</td></tr>
+<tr class="memdesc:a352730bd52a26e60601ba3cbe1719049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination.  <a href="#a352730bd52a26e60601ba3cbe1719049">More...</a><br /></td></tr>
+<tr class="separator:a352730bd52a26e60601ba3cbe1719049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950e67a944ddc810ca475d91ba53454b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a950e67a944ddc810ca475d91ba53454b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a950e67a944ddc810ca475d91ba53454b">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(T &amp;)&gt; test, T &amp;output, std::ostream &amp;errorStream=std::cerr)</td></tr>
+<tr class="memdesc:a950e67a944ddc810ca475d91ba53454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with output but no explicit input.  <a href="#a950e67a944ddc810ca475d91ba53454b">More...</a><br /></td></tr>
+<tr class="separator:a950e67a944ddc810ca475d91ba53454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9849135ae8235970c021823fecdbd5ec"><td class="memTemplParams" colspan="2">template&lt;class Expectation , class Output &gt; </td></tr>
+<tr class="memitem:a9849135ae8235970c021823fecdbd5ec"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a9849135ae8235970c021823fecdbd5ec">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(const Expectation &amp;, Output &amp;)&gt; t, const Expectation &amp;expect, Output &amp;output, std::ostream &amp;errorStream=std::cerr)</td></tr>
+<tr class="memdesc:a9849135ae8235970c021823fecdbd5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with input and output.  <a href="#a9849135ae8235970c021823fecdbd5ec">More...</a><br /></td></tr>
+<tr class="separator:a9849135ae8235970c021823fecdbd5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for all libgrading names. </p>
@@ -168,7 +186,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00035">35</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00089">89</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
 </div>
 </div>
@@ -189,9 +207,9 @@ Functions</h2></td></tr>
 
 <p>Map data into the address space that can be shared with other processes. </p>
 
-<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00083">83</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00107">107</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00093">RunTest()</a>.</p>
+<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00151">RunTest()</a>.</p>
 
 <p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -235,7 +253,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3032dd86a185b5f7c99d81041fd56f17"></a>
+<a class="anchor" id="a352730bd52a26e60601ba3cbe1719049"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -243,32 +261,48 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> grading::RunTest </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt;&#160;</td>
-          <td class="paramname"><em>test</em></td><td>)</td>
+          <td class="paramname"><em>test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y")</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00093">93</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00117">117</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00093">RunTest()</a>.</p>
+<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00151">RunTest()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a3032dd86a185b5f7c99d81041fd56f17_icgraph.svg" width="322" height="43"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a352730bd52a26e60601ba3cbe1719049_icgraph.svg" width="322" height="43"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a10fbeabf2ee3b32cf6e78b3c401e9645"></a>
+<a class="anchor" id="a950e67a944ddc810ca475d91ba53454b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -284,7 +318,13 @@ template&lt;class T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -298,29 +338,30 @@ template&lt;class T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">test</td><td>a test function that copies out an output value and returns a <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> </td></tr>
-    <tr><td class="paramname">output</td><td>the output value produced by <b>test</b> (if it executes normally, e.g., without segfaulting)</td></tr>
+    <tr><td class="paramname">output</td><td>the output value produced by <b>test</b> (if it executes normally, e.g., without segfaulting) </td></tr>
+    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y")</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00093">93</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00151">151</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
-<p>References <a class="el" href="posix_8cpp_source.html#l00083">MapSharedData()</a>, <a class="el" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">grading::SharedMemory::rawPointer()</a>, and <a class="el" href="posix_8cpp_source.html#l00093">RunTest()</a>.</p>
+<p>References <a class="el" href="posix_8cpp_source.html#l00107">MapSharedData()</a>, <a class="el" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">grading::SharedMemory::rawPointer()</a>, and <a class="el" href="posix_8cpp_source.html#l00117">RunTest()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a10fbeabf2ee3b32cf6e78b3c401e9645_cgraph.svg" width="378" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a950e67a944ddc810ca475d91ba53454b_cgraph.svg" width="378" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a5d16468739b8910802b98aea95f304c6"></a>
+<a class="anchor" id="a9849135ae8235970c021823fecdbd5ec"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -342,7 +383,13 @@ template&lt;class Expectation , class Output &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Output &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -357,13 +404,14 @@ template&lt;class Expectation , class Output &gt; </div>
   <table class="params">
     <tr><td class="paramname">t</td><td>a test function that takes an input expectation, copies out an output value and returns a <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> </td></tr>
     <tr><td class="paramname">expect</td><td>our test expectation (inputs, expected output, etc.) </td></tr>
-    <tr><td class="paramname">output</td><td>the output value produced by <b>test</b> (if it executes normally, e.g., without segfaulting)</td></tr>
+    <tr><td class="paramname">output</td><td>the output value produced by <b>test</b> (if it executes normally, e.g., without segfaulting) </td></tr>
+    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y")</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00118">118</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00179">179</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
 </div>
 </div>

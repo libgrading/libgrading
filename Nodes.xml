@@ -165,9 +165,34 @@
                 </Subnodes>
                </Node>
                <Node>
+                <Name>Check</Name>
+                <Path>libgrading_8h.html</Path>
+                <Anchor>a5af105030311d3c4a6cf7382d99ad1b9</Anchor>
+               </Node>
+               <Node>
+                <Name>CheckFloat</Name>
+                <Path>libgrading_8h.html</Path>
+                <Anchor>aa95730bc4450e5202019fe6f6b631185</Anchor>
+               </Node>
+               <Node>
+                <Name>CheckInt</Name>
+                <Path>libgrading_8h.html</Path>
+                <Anchor>a864eb3b1d2dd47d602d98e77776702cb</Anchor>
+               </Node>
+               <Node>
+                <Name>CheckString</Name>
+                <Path>libgrading_8h.html</Path>
+                <Anchor>a6a12ba1dfc6c557a610481af0e167466</Anchor>
+               </Node>
+               <Node>
                 <Name>MapSharedData</Name>
                 <Path>libgrading_8h.html</Path>
                 <Anchor>a7e1850cba45d8bced4b418e9eb36163a</Anchor>
+               </Node>
+               <Node>
+                <Name>operator&amp;&amp;</Name>
+                <Path>libgrading_8h.html</Path>
+                <Anchor>a408d2501b1f610426acd4a22007c6b95</Anchor>
                </Node>
                <Node>
                 <Name>operator&lt;&lt;</Name>
@@ -175,19 +200,24 @@
                 <Anchor>a7f6a40c5d4a973fea01a308e8d06d9d0</Anchor>
                </Node>
                <Node>
-                <Name>RunTest</Name>
+                <Name>operator||</Name>
                 <Path>libgrading_8h.html</Path>
-                <Anchor>a3032dd86a185b5f7c99d81041fd56f17</Anchor>
+                <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
                </Node>
                <Node>
                 <Name>RunTest</Name>
                 <Path>libgrading_8h.html</Path>
-                <Anchor>a10fbeabf2ee3b32cf6e78b3c401e9645</Anchor>
+                <Anchor>a352730bd52a26e60601ba3cbe1719049</Anchor>
                </Node>
                <Node>
                 <Name>RunTest</Name>
                 <Path>libgrading_8h.html</Path>
-                <Anchor>a5d16468739b8910802b98aea95f304c6</Anchor>
+                <Anchor>a950e67a944ddc810ca475d91ba53454b</Anchor>
+               </Node>
+               <Node>
+                <Name>RunTest</Name>
+                <Path>libgrading_8h.html</Path>
+                <Anchor>a9849135ae8235970c021823fecdbd5ec</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -197,6 +227,42 @@
             <Name>src</Name>
             <Path>dir_68267d1309a1af8e8297ef4c3efbcdba.html</Path>
             <Subnodes>
+             <Node>
+              <Name>checks.cpp</Name>
+              <Path>checks_8cpp.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>Check</Name>
+                <Path>checks_8cpp.html</Path>
+                <Anchor>a5af105030311d3c4a6cf7382d99ad1b9</Anchor>
+               </Node>
+               <Node>
+                <Name>CheckFloat</Name>
+                <Path>checks_8cpp.html</Path>
+                <Anchor>aa95730bc4450e5202019fe6f6b631185</Anchor>
+               </Node>
+               <Node>
+                <Name>CheckInt</Name>
+                <Path>checks_8cpp.html</Path>
+                <Anchor>a864eb3b1d2dd47d602d98e77776702cb</Anchor>
+               </Node>
+               <Node>
+                <Name>CheckString</Name>
+                <Path>checks_8cpp.html</Path>
+                <Anchor>a6a12ba1dfc6c557a610481af0e167466</Anchor>
+               </Node>
+               <Node>
+                <Name>operator&amp;&amp;</Name>
+                <Path>checks_8cpp.html</Path>
+                <Anchor>a408d2501b1f610426acd4a22007c6b95</Anchor>
+               </Node>
+               <Node>
+                <Name>operator||</Name>
+                <Path>checks_8cpp.html</Path>
+                <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
              <Node>
               <Name>posix.cpp</Name>
               <Path>posix_8cpp.html</Path>

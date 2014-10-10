@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">$ svn checkout https:<span class="comment">//github.com/trombonehero/libgrading</span></div>
 </div><!-- fragment --><p>At some point, I might also create releases.</p>
 <h2>Build it</h2>
+<p>First, install <a href="http://monkey.org/~jose/software/libdistance/">libdistance</a>. Then:</p>
 <div class="fragment"><div class="line">$ mkdir build</div>
 <div class="line">$ cd build</div>
 <div class="line">$ cmake ..       # or cmake -G Ninja ..</div>
@@ -164,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    {</div>
 <div class="line">        <span class="keywordtype">int</span> sum;</div>
 <div class="line">        <span class="keyword">const</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> result =</div>
-<div class="line">            <a class="code" href="namespacegrading.html#a3032dd86a185b5f7c99d81041fd56f17">grading::RunTest</a>(TestSubmittedFunction, i, sum);</div>
+<div class="line">            <a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">grading::RunTest</a>(TestSubmittedFunction, i, sum);</div>
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">if</span> (result != i.expectedTestResult)</div>
 <div class="line">        {</div>

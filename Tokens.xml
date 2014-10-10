@@ -32,7 +32,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a3032dd86a185b5f7c99d81041fd56f17</Anchor>
+    <Anchor>a352730bd52a26e60601ba3cbe1719049</Anchor>
     <Abstract>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -44,7 +44,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a10fbeabf2ee3b32cf6e78b3c401e9645</Anchor>
+    <Anchor>a950e67a944ddc810ca475d91ba53454b</Anchor>
     <Abstract>Run a test with output but no explicit input. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -56,7 +56,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a5d16468739b8910802b98aea95f304c6</Anchor>
+    <Anchor>a9849135ae8235970c021823fecdbd5ec</Anchor>
     <Abstract>Run a test with input and output. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -102,7 +102,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a3032dd86a185b5f7c99d81041fd56f17</Anchor>
+    <Anchor>a352730bd52a26e60601ba3cbe1719049</Anchor>
     <Abstract>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -114,7 +114,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a10fbeabf2ee3b32cf6e78b3c401e9645</Anchor>
+    <Anchor>a950e67a944ddc810ca475d91ba53454b</Anchor>
     <Abstract>Run a test with output but no explicit input. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -126,7 +126,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a5d16468739b8910802b98aea95f304c6</Anchor>
+    <Anchor>a9849135ae8235970c021823fecdbd5ec</Anchor>
     <Abstract>Run a test with input and output. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
