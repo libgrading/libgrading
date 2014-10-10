@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   1: "s",
   2: "g",
   3: "clpt",
-  4: "mor",
+  4: "cmor",
   5: "t",
   6: "fops"
 };

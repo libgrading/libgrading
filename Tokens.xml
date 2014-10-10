@@ -2,6 +2,78 @@
 <Tokens version="1.0">
   <Token>
     <TokenIdentifier>
+      <Name>operator&amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a408d2501b1f610426acd4a22007c6b95</Anchor>
+    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
+    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Check</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a5af105030311d3c4a6cf7382d99ad1b9</Anchor>
+    <Abstract>Check an arbitrary condition, failing the test if false. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckInt</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a864eb3b1d2dd47d602d98e77776702cb</Anchor>
+    <Abstract>Check that two integers are equal, failing the test if they are not. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckFloat</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>aa95730bc4450e5202019fe6f6b631185</Anchor>
+    <Abstract>Check that two floating-point numbers are equal within some tolerance. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckString</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a6a12ba1dfc6c557a610481af0e167466</Anchor>
+    <Abstract>Check that two strings are (approximately) equal. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>operator&lt;&lt;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -62,6 +134,78 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>operator&amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a408d2501b1f610426acd4a22007c6b95</Anchor>
+    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
+    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Check</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a5af105030311d3c4a6cf7382d99ad1b9</Anchor>
+    <Abstract>Check an arbitrary condition, failing the test if false. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckInt</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a864eb3b1d2dd47d602d98e77776702cb</Anchor>
+    <Abstract>Check that two integers are equal, failing the test if they are not. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckFloat</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>aa95730bc4450e5202019fe6f6b631185</Anchor>
+    <Abstract>Check that two floating-point numbers are equal within some tolerance. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckString</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a6a12ba1dfc6c557a610481af0e167466</Anchor>
+    <Abstract>Check that two strings are (approximately) equal. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>grading</Name>
       <APILanguage>c</APILanguage>
       <Type>ns</Type>
@@ -69,6 +213,78 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Abstract>Container for all libgrading names. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator&amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a408d2501b1f610426acd4a22007c6b95</Anchor>
+    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
+    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Check</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a5af105030311d3c4a6cf7382d99ad1b9</Anchor>
+    <Abstract>Check an arbitrary condition, failing the test if false. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckInt</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a864eb3b1d2dd47d602d98e77776702cb</Anchor>
+    <Abstract>Check that two integers are equal, failing the test if they are not. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckFloat</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>aa95730bc4450e5202019fe6f6b631185</Anchor>
+    <Abstract>Check that two floating-point numbers are equal within some tolerance. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckString</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a6a12ba1dfc6c557a610481af0e167466</Anchor>
+    <Abstract>Check that two strings are (approximately) equal. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>

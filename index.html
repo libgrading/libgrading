@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">$ make           # or ninja</div>
 </div><!-- fragment --><h2>Use it</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="libgrading_8h.html">libgrading.h</a>&gt;</span></div>
-<div class="line"><span class="keyword">using</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">grading::TestResult</a>;</div>
+<div class="line"><span class="keyword">using namespace </span>grading;</div>
 <div class="line"><span class="keyword">using namespace </span>std;</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -141,12 +141,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// For this demo, we&#39;ll use a lambda.</span></div>
 <div class="line">    <span class="keyword">auto</span> studentFunction = [](<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) { <span class="keywordflow">return</span> x + y + 1; };</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordflow">if</span> (studentFunction(expected.x, expected.y) == expected.value)</div>
-<div class="line">        <span class="keywordflow">return</span> TestResult::Pass;</div>
-<div class="line">    <span class="keywordflow">else</span></div>
-<div class="line">        <span class="keywordflow">return</span> TestResult::Fail;</div>
+<div class="line">    <a class="code" href="namespacegrading.html#a864eb3b1d2dd47d602d98e77776702cb">CheckInt</a>(expected.value, studentFunction(expected.x, expected.y))</div>
+<div class="line">        &lt;&lt; <span class="stringliteral">&quot;some more detail to be output if this check fails&quot;</span>;</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">// libgrading will take care of the other cases</span></div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">TestResult::Pass</a>;</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -164,10 +162,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> Expectation&amp; i : tests)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordtype">int</span> sum;</div>
-<div class="line">        <span class="keyword">const</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> result =</div>
-<div class="line">            <a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">grading::RunTest</a>(TestSubmittedFunction, i, sum);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> result(<a class="code" href="namespacegrading.html#a352730bd52a26e60601ba3cbe1719049">RunTest</a>(TestSubmittedFunction, i, sum));</div>
 <div class="line"></div>
-<div class="line">        <span class="keywordflow">if</span> (result != i.expectedTestResult)</div>
+<div class="line">        <span class="keywordflow">if</span> (result != <a class="code" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c">TestResult::Pass</a>)</div>
 <div class="line">        {</div>
 <div class="line">            failures++;</div>
 <div class="line">            <span class="comment">// maybe save the failure information somewhere?</span></div>

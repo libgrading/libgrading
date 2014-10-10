@@ -106,8 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="checks_8cpp__incl.svg" width="598" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="checks_8cpp__incl.svg" width="598" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="checks_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -120,23 +119,23 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a408d2501b1f610426acd4a22007c6b95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a408d2501b1f610426acd4a22007c6b95"></a>
-CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::operator&amp;&amp;</b> (CheckResult &amp;&amp;, CheckResult &amp;&amp;)</td></tr>
+<tr class="memitem:a408d2501b1f610426acd4a22007c6b95"><td class="memItemLeft" align="right" valign="top">CheckResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a408d2501b1f610426acd4a22007c6b95">grading::operator&amp;&amp;</a> (CheckResult &amp;&amp;, CheckResult &amp;&amp;)</td></tr>
+<tr class="memdesc:a408d2501b1f610426acd4a22007c6b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine the results of two checks using a product (AND): both must pass.  <a href="#a408d2501b1f610426acd4a22007c6b95">More...</a><br /></td></tr>
 <tr class="separator:a408d2501b1f610426acd4a22007c6b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae879c550a264e817453c5a0611aead83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae879c550a264e817453c5a0611aead83"></a>
-CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::operator||</b> (CheckResult &amp;&amp;, CheckResult &amp;&amp;)</td></tr>
+<tr class="memitem:ae879c550a264e817453c5a0611aead83"><td class="memItemLeft" align="right" valign="top">CheckResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#ae879c550a264e817453c5a0611aead83">grading::operator||</a> (CheckResult &amp;&amp;, CheckResult &amp;&amp;)</td></tr>
+<tr class="memdesc:ae879c550a264e817453c5a0611aead83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine the results of two checks using a sum (OR): at least one must pass.  <a href="#ae879c550a264e817453c5a0611aead83">More...</a><br /></td></tr>
 <tr class="separator:ae879c550a264e817453c5a0611aead83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af105030311d3c4a6cf7382d99ad1b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5af105030311d3c4a6cf7382d99ad1b9"></a>
-CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::Check</b> (bool, std::string description)</td></tr>
+<tr class="memitem:a5af105030311d3c4a6cf7382d99ad1b9"><td class="memItemLeft" align="right" valign="top">CheckResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a5af105030311d3c4a6cf7382d99ad1b9">grading::Check</a> (bool, std::string description)</td></tr>
+<tr class="memdesc:a5af105030311d3c4a6cf7382d99ad1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check an arbitrary condition, failing the test if false.  <a href="#a5af105030311d3c4a6cf7382d99ad1b9">More...</a><br /></td></tr>
 <tr class="separator:a5af105030311d3c4a6cf7382d99ad1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864eb3b1d2dd47d602d98e77776702cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a864eb3b1d2dd47d602d98e77776702cb"></a>
-CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::CheckInt</b> (int expected, int actual)</td></tr>
+<tr class="memitem:a864eb3b1d2dd47d602d98e77776702cb"><td class="memItemLeft" align="right" valign="top">CheckResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a864eb3b1d2dd47d602d98e77776702cb">grading::CheckInt</a> (int expected, int actual)</td></tr>
+<tr class="memdesc:a864eb3b1d2dd47d602d98e77776702cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that two integers are equal, failing the test if they are not.  <a href="#a864eb3b1d2dd47d602d98e77776702cb">More...</a><br /></td></tr>
 <tr class="separator:a864eb3b1d2dd47d602d98e77776702cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa95730bc4450e5202019fe6f6b631185"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa95730bc4450e5202019fe6f6b631185"></a>
-CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::CheckFloat</b> (double exp, double act, double tolerance=0.000001)</td></tr>
+<tr class="memitem:aa95730bc4450e5202019fe6f6b631185"><td class="memItemLeft" align="right" valign="top">CheckResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#aa95730bc4450e5202019fe6f6b631185">grading::CheckFloat</a> (double exp, double act, double tolerance=0.000001)</td></tr>
+<tr class="memdesc:aa95730bc4450e5202019fe6f6b631185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that two floating-point numbers are equal within some tolerance.  <a href="#aa95730bc4450e5202019fe6f6b631185">More...</a><br /></td></tr>
 <tr class="separator:aa95730bc4450e5202019fe6f6b631185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a12ba1dfc6c557a610481af0e167466"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a12ba1dfc6c557a610481af0e167466"></a>
-CheckResult&#160;</td><td class="memItemRight" valign="bottom"><b>grading::CheckString</b> (std::string expected, std::string actual, size_t maxEditDistance=0)</td></tr>
+<tr class="memitem:a6a12ba1dfc6c557a610481af0e167466"><td class="memItemLeft" align="right" valign="top">CheckResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a6a12ba1dfc6c557a610481af0e167466">grading::CheckString</a> (std::string expected, std::string actual, size_t maxEditDistance=0)</td></tr>
+<tr class="memdesc:a6a12ba1dfc6c557a610481af0e167466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that two strings are (approximately) equal.  <a href="#a6a12ba1dfc6c557a610481af0e167466">More...</a><br /></td></tr>
 <tr class="separator:a6a12ba1dfc6c557a610481af0e167466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
