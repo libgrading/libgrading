@@ -34,7 +34,7 @@ $ make           # or ninja
 
 ~~~cpp
 #include <libgrading.h>
-using grading::TestResult;
+using namespace grading;
 using namespace std;
 
 
@@ -80,12 +80,10 @@ TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& value
 	// For this demo, we'll use a lambda.
 	auto studentFunction = [](int x, int y) { return x + y + 1; };
 
-	if (studentFunction(expected.x, expected.y) == expected.value)
-		return TestResult::Pass;
-	else
-		return TestResult::Fail;
+	CheckInt(expected.value, studentFunction(expected.x, expected.y))
+		<< "some more detail to be output if this check fails";
 
-	// libgrading will take care of the other cases
+	return TestResult::Pass;
 }
 
 
@@ -103,10 +101,9 @@ int main(int argc, char *argv[])
 	for (const Expectation& i : tests)
 	{
 		int sum;
-		const TestResult result =
-			grading::RunTest(TestSubmittedFunction, i, sum);
+		const TestResult result(RunTest(TestSubmittedFunction, i, sum));
 
-		if (result != i.expectedTestResult)
+		if (result != TestResult::Pass)
 		{
 			failures++;
 			// maybe save the failure information somewhere?
