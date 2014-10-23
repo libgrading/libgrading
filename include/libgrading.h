@@ -153,16 +153,17 @@ std::unique_ptr<SharedMemory> MapSharedData(size_t size);
  *
  * @param    test         the test to run
  * @param    name         a developer-friendly name
- * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  * @param    timeout      the number of seconds to let the test run
  *                        (default 0, meaning "no timeout, run forever")
+ * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
  */
 TestResult RunTest(std::function<TestResult ()> test,
                    std::string name = "<unnamed test>",
-                   std::ostream& errorStream = std::cerr, time_t timeout = 0);
+                   time_t timeout = 0,
+                   std::ostream& errorStream = std::cerr);
 
 
 /**
@@ -173,9 +174,9 @@ TestResult RunTest(std::function<TestResult ()> test,
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
  * @param    name    a developer-friendly name
- * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  * @param    timeout      the number of seconds to let the test run
  *                        (default 0, meaning "no timeout, run forever")
+ * @param    errorStream  where to write messages (e.g., "expected X, got Y")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
@@ -183,15 +184,15 @@ TestResult RunTest(std::function<TestResult ()> test,
 template<class T>
 TestResult RunTest(std::function<TestResult (T&)> test, T& output,
                    std::string name = "<unnamed test>",
-                   std::ostream& errorStream = std::cerr,
-                   time_t timeout = 0)
+                   time_t timeout = 0,
+                   std::ostream& errorStream = std::cerr)
 {
 	std::unique_ptr<SharedMemory> mem(MapSharedData(sizeof(T)));
 	T *testOutput = static_cast<T*>(mem->rawPointer());
 
 	TestResult result =
 		RunTest([&]() { return test(*testOutput); }, name,
-		        errorStream, timeout);
+		        timeout, errorStream);
 
 	output = *testOutput;
 	return result;
@@ -207,9 +208,9 @@ TestResult RunTest(std::function<TestResult (T&)> test, T& output,
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
  * @param    name    a developer-friendly name
+ * @param    timeout the number of seconds to let the test run
+ *                   (default 0, meaning "no timeout, run forever")
  * @param    errorStream  where to write messages (e.g., "expected X, got Y")
- * @param    timeout      the number of seconds to let the test run
- *                        (default 0, meaning "no timeout, run forever")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
@@ -217,12 +218,12 @@ TestResult RunTest(std::function<TestResult (T&)> test, T& output,
 template<class Expectation, class Output>
 TestResult RunTest(std::function<TestResult (const Expectation&, Output&)> t,
                    const Expectation& expect, Output& output,
-                   std::string name = "<unnamed test>",
-                   std::ostream& errorStream = std::cerr, time_t timeout = 0)
+                   std::string name = "<unnamed test>", time_t timeout = 0,
+                   std::ostream& errorStream = std::cerr)
 {
 	using std::placeholders::_1;
 	return RunTest<Output>(
-		std::bind(t, expect, _1), output, name, errorStream, timeout);
+		std::bind(t, expect, _1), output, name, timeout, errorStream);
 }
 
 } // namespace grading

@@ -126,7 +126,7 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 
 
 TestResult grading::RunTest(std::function<TestResult ()> test, std::string name,
-                            std::ostream& errorStream, time_t timeout)
+                            time_t timeout, std::ostream& errorStream)
 {
 	std::cout.flush();
 	std::cerr.flush();
