@@ -147,17 +147,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a7e1850cba45d8bced4b418e9eb36163a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgrading_1_1_shared_memory.html">SharedMemory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a">MapSharedData</a> (size_t size)</td></tr>
 <tr class="memdesc:a7e1850cba45d8bced4b418e9eb36163a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map data into the address space that can be shared with other processes.  <a href="#a7e1850cba45d8bced4b418e9eb36163a">More...</a><br /></td></tr>
 <tr class="separator:a7e1850cba45d8bced4b418e9eb36163a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab096ea85a5a43015bb3552fc6236d4c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#ab096ea85a5a43015bb3552fc6236d4c2">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt; test, std::string name=&quot;&lt;unnamed test&gt;&quot;, std::ostream &amp;errorStream=std::cerr, time_t timeout=0)</td></tr>
-<tr class="memdesc:ab096ea85a5a43015bb3552fc6236d4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination.  <a href="#ab096ea85a5a43015bb3552fc6236d4c2">More...</a><br /></td></tr>
-<tr class="separator:ab096ea85a5a43015bb3552fc6236d4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bacbd63368c228ce69ee6ce80f1f1a6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0bacbd63368c228ce69ee6ce80f1f1a6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a0bacbd63368c228ce69ee6ce80f1f1a6">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(T &amp;)&gt; test, T &amp;output, std::string name=&quot;&lt;unnamed test&gt;&quot;, std::ostream &amp;errorStream=std::cerr, time_t timeout=0)</td></tr>
-<tr class="memdesc:a0bacbd63368c228ce69ee6ce80f1f1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with output but no explicit input.  <a href="#a0bacbd63368c228ce69ee6ce80f1f1a6">More...</a><br /></td></tr>
-<tr class="separator:a0bacbd63368c228ce69ee6ce80f1f1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa1b45aa2c292399c59b7e3c196d34f"><td class="memTemplParams" colspan="2">template&lt;class Expectation , class Output &gt; </td></tr>
-<tr class="memitem:aeaa1b45aa2c292399c59b7e3c196d34f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#aeaa1b45aa2c292399c59b7e3c196d34f">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(const Expectation &amp;, Output &amp;)&gt; t, const Expectation &amp;expect, Output &amp;output, std::string name=&quot;&lt;unnamed test&gt;&quot;, std::ostream &amp;errorStream=std::cerr, time_t timeout=0)</td></tr>
-<tr class="memdesc:aeaa1b45aa2c292399c59b7e3c196d34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with input and output.  <a href="#aeaa1b45aa2c292399c59b7e3c196d34f">More...</a><br /></td></tr>
-<tr class="separator:aeaa1b45aa2c292399c59b7e3c196d34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbaf9da1bcc399da922d5ed6d1d70466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegrading.html#acbaf9da1bcc399da922d5ed6d1d70466">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>()&gt; test, std::string name=&quot;&lt;unnamed test&gt;&quot;, time_t timeout=0, std::ostream &amp;errorStream=std::cerr)</td></tr>
+<tr class="memdesc:acbaf9da1bcc399da922d5ed6d1d70466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test closure in a separate process, capturing segmentation faults and other errors that lead to termination.  <a href="#acbaf9da1bcc399da922d5ed6d1d70466">More...</a><br /></td></tr>
+<tr class="separator:acbaf9da1bcc399da922d5ed6d1d70466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae91939646bbd1381f50f44f3589ddf9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aae91939646bbd1381f50f44f3589ddf9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#aae91939646bbd1381f50f44f3589ddf9">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(T &amp;)&gt; test, T &amp;output, std::string name=&quot;&lt;unnamed test&gt;&quot;, time_t timeout=0, std::ostream &amp;errorStream=std::cerr)</td></tr>
+<tr class="memdesc:aae91939646bbd1381f50f44f3589ddf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with output but no explicit input.  <a href="#aae91939646bbd1381f50f44f3589ddf9">More...</a><br /></td></tr>
+<tr class="separator:aae91939646bbd1381f50f44f3589ddf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f33a6ad9c09cfd06fef7628513b1757"><td class="memTemplParams" colspan="2">template&lt;class Expectation , class Output &gt; </td></tr>
+<tr class="memitem:a2f33a6ad9c09cfd06fef7628513b1757"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegrading.html#a2f33a6ad9c09cfd06fef7628513b1757">RunTest</a> (std::function&lt; <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a>(const Expectation &amp;, Output &amp;)&gt; t, const Expectation &amp;expect, Output &amp;output, std::string name=&quot;&lt;unnamed test&gt;&quot;, time_t timeout=0, std::ostream &amp;errorStream=std::cerr)</td></tr>
+<tr class="memdesc:a2f33a6ad9c09cfd06fef7628513b1757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a test with input and output.  <a href="#a2f33a6ad9c09cfd06fef7628513b1757">More...</a><br /></td></tr>
+<tr class="separator:a2f33a6ad9c09cfd06fef7628513b1757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for all libgrading names. </p>
@@ -360,16 +360,17 @@ Functions</h2></td></tr>
 
 <p>Map data into the address space that can be shared with other processes. </p>
 
-<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00117">117</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00118">118</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00184">RunTest()</a>.</p>
+<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00185">RunTest()</a>.</p>
 
 <p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a7e1850cba45d8bced4b418e9eb36163a_icgraph.svg" width="378" height="43"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a7e1850cba45d8bced4b418e9eb36163a_icgraph.svg" width="378" height="43"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -525,7 +526,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab096ea85a5a43015bb3552fc6236d4c2"></a>
+<a class="anchor" id="acbaf9da1bcc399da922d5ed6d1d70466"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -544,14 +545,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>, </td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -566,31 +567,32 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">test</td><td>the test to run </td></tr>
     <tr><td class="paramname">name</td><td>a developer-friendly name </td></tr>
-    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y") </td></tr>
-    <tr><td class="paramname">timeout</td><td>the number of seconds to let the test run (default 0, meaning "no timeout, run forever")</td></tr>
+    <tr><td class="paramname">timeout</td><td>the number of seconds to let the test run (default 0, meaning "no timeout, run forever") </td></tr>
+    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y")</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00127">127</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00128">128</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
 <p>References <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cac85a251cc457840f1e032f1b733e9398">Timeout</a>.</p>
 
-<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00184">RunTest()</a>.</p>
+<p>Referenced by <a class="el" href="libgrading_8h_source.html#l00185">RunTest()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_ab096ea85a5a43015bb3552fc6236d4c2_icgraph.svg" width="322" height="43"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_acbaf9da1bcc399da922d5ed6d1d70466_icgraph.svg" width="322" height="43"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0bacbd63368c228ce69ee6ce80f1f1a6"></a>
+<a class="anchor" id="aae91939646bbd1381f50f44f3589ddf9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -617,14 +619,14 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>, </td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -640,29 +642,30 @@ template&lt;class T &gt; </div>
     <tr><td class="paramname">test</td><td>a test function that copies out an output value and returns a <a class="el" href="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c">TestResult</a> </td></tr>
     <tr><td class="paramname">output</td><td>the output value produced by <b>test</b> (if it executes normally, e.g., without segfaulting) </td></tr>
     <tr><td class="paramname">name</td><td>a developer-friendly name </td></tr>
-    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y") </td></tr>
-    <tr><td class="paramname">timeout</td><td>the number of seconds to let the test run (default 0, meaning "no timeout, run forever")</td></tr>
+    <tr><td class="paramname">timeout</td><td>the number of seconds to let the test run (default 0, meaning "no timeout, run forever") </td></tr>
+    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y")</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00184">184</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00185">185</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
-<p>References <a class="el" href="posix_8cpp_source.html#l00117">MapSharedData()</a>, <a class="el" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">grading::SharedMemory::rawPointer()</a>, and <a class="el" href="posix_8cpp_source.html#l00127">RunTest()</a>.</p>
+<p>References <a class="el" href="posix_8cpp_source.html#l00118">MapSharedData()</a>, <a class="el" href="classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89">grading::SharedMemory::rawPointer()</a>, and <a class="el" href="posix_8cpp_source.html#l00128">RunTest()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_a0bacbd63368c228ce69ee6ce80f1f1a6_cgraph.svg" width="378" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacegrading_aae91939646bbd1381f50f44f3589ddf9_cgraph.svg" width="378" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aeaa1b45aa2c292399c59b7e3c196d34f"></a>
+<a class="anchor" id="a2f33a6ad9c09cfd06fef7628513b1757"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -695,14 +698,14 @@ template&lt;class Expectation , class Output &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>, </td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>errorStream</em> = <code>std::cerr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -719,14 +722,14 @@ template&lt;class Expectation , class Output &gt; </div>
     <tr><td class="paramname">expect</td><td>our test expectation (inputs, expected output, etc.) </td></tr>
     <tr><td class="paramname">output</td><td>the output value produced by <b>test</b> (if it executes normally, e.g., without segfaulting) </td></tr>
     <tr><td class="paramname">name</td><td>a developer-friendly name </td></tr>
-    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y") </td></tr>
-    <tr><td class="paramname">timeout</td><td>the number of seconds to let the test run (default 0, meaning "no timeout, run forever")</td></tr>
+    <tr><td class="paramname">timeout</td><td>the number of seconds to let the test run (default 0, meaning "no timeout, run forever") </td></tr>
+    <tr><td class="paramname">errorStream</td><td>where to write messages (e.g., "expected X, got Y")</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the test, either pass/fail as reported by <b>test</b> or else segfault/other as captured by libgrading </dd></dl>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00218">218</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
+<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00219">219</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
 
 </div>
 </div>

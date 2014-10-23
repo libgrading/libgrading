@@ -52,9 +52,9 @@
           <topic label="operator&lt;&lt;" href="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0"/>
           <topic label="operator||" href="libgrading_8h.html#ae879c550a264e817453c5a0611aead83"/>
           <topic label="operator||" href="libgrading_8h.html#a2dd247b47e98c57c01a2bdf73e013d2b"/>
-          <topic label="RunTest" href="libgrading_8h.html#ab096ea85a5a43015bb3552fc6236d4c2"/>
-          <topic label="RunTest" href="libgrading_8h.html#a0bacbd63368c228ce69ee6ce80f1f1a6"/>
-          <topic label="RunTest" href="libgrading_8h.html#aeaa1b45aa2c292399c59b7e3c196d34f"/>
+          <topic label="RunTest" href="libgrading_8h.html#acbaf9da1bcc399da922d5ed6d1d70466"/>
+          <topic label="RunTest" href="libgrading_8h.html#aae91939646bbd1381f50f44f3589ddf9"/>
+          <topic label="RunTest" href="libgrading_8h.html#a2f33a6ad9c09cfd06fef7628513b1757"/>
         </topic>
       </topic>
       <topic label="src" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">
@@ -69,7 +69,6 @@
           <topic label="operator||" href="checks_8cpp.html#a2dd247b47e98c57c01a2bdf73e013d2b"/>
         </topic>
         <topic label="posix.cpp" href="posix_8cpp.html">
-          <topic label="currentTestName" href="posix_8cpp.html#a0b699717c2d6dbc8a398c8aab085c1b3"/>
         </topic>
         <topic label="TestResult.cpp" href="_test_result_8cpp.html"/>
       </topic>

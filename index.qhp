@@ -59,9 +59,9 @@
                 <section title="operator&lt;&lt;" ref="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
                 <section title="operator||" ref="libgrading_8h.html#ae879c550a264e817453c5a0611aead83" />
                 <section title="operator||" ref="libgrading_8h.html#a2dd247b47e98c57c01a2bdf73e013d2b" />
-                <section title="RunTest" ref="libgrading_8h.html#ab096ea85a5a43015bb3552fc6236d4c2" />
-                <section title="RunTest" ref="libgrading_8h.html#a0bacbd63368c228ce69ee6ce80f1f1a6" />
-                <section title="RunTest" ref="libgrading_8h.html#aeaa1b45aa2c292399c59b7e3c196d34f" />
+                <section title="RunTest" ref="libgrading_8h.html#acbaf9da1bcc399da922d5ed6d1d70466" />
+                <section title="RunTest" ref="libgrading_8h.html#aae91939646bbd1381f50f44f3589ddf9" />
+                <section title="RunTest" ref="libgrading_8h.html#a2f33a6ad9c09cfd06fef7628513b1757" />
               </section>
             </section>
             <section title="src" ref="dir_68267d1309a1af8e8297ef4c3efbcdba.html">
@@ -75,9 +75,7 @@
                 <section title="operator||" ref="checks_8cpp.html#ae879c550a264e817453c5a0611aead83" />
                 <section title="operator||" ref="checks_8cpp.html#a2dd247b47e98c57c01a2bdf73e013d2b" />
               </section>
-              <section title="posix.cpp" ref="posix_8cpp.html">
-                <section title="currentTestName" ref="posix_8cpp.html#a0b699717c2d6dbc8a398c8aab085c1b3" />
-              </section>
+              <section title="posix.cpp" ref="posix_8cpp.html" />
               <section title="TestResult.cpp" ref="_test_result_8cpp.html" />
             </section>
           </section>
@@ -95,9 +93,9 @@
       <keyword name="CheckString" id="libgrading.h::CheckString" ref="libgrading_8h.html#a6a12ba1dfc6c557a610481af0e167466" />
       <keyword name="operator&lt;&lt;" id="libgrading.h::operator&lt;&lt;" ref="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
       <keyword name="MapSharedData" id="libgrading.h::MapSharedData" ref="libgrading_8h.html#a7e1850cba45d8bced4b418e9eb36163a" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#ab096ea85a5a43015bb3552fc6236d4c2" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a0bacbd63368c228ce69ee6ce80f1f1a6" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#aeaa1b45aa2c292399c59b7e3c196d34f" />
+      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#acbaf9da1bcc399da922d5ed6d1d70466" />
+      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#aae91939646bbd1381f50f44f3589ddf9" />
+      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a2f33a6ad9c09cfd06fef7628513b1757" />
       <keyword name="operator&amp;&amp;" id="checks.cpp::operator&amp;&amp;" ref="checks_8cpp.html#a408d2501b1f610426acd4a22007c6b95" />
       <keyword name="operator&amp;&amp;" id="checks.cpp::operator&amp;&amp;" ref="checks_8cpp.html#ae7e6496f6d9a2eaf0ee06bac0c73a90c" />
       <keyword name="operator||" id="checks.cpp::operator||" ref="checks_8cpp.html#ae879c550a264e817453c5a0611aead83" />
@@ -106,7 +104,6 @@
       <keyword name="CheckInt" id="checks.cpp::CheckInt" ref="checks_8cpp.html#a864eb3b1d2dd47d602d98e77776702cb" />
       <keyword name="CheckFloat" id="checks.cpp::CheckFloat" ref="checks_8cpp.html#aa95730bc4450e5202019fe6f6b631185" />
       <keyword name="CheckString" id="checks.cpp::CheckString" ref="checks_8cpp.html#a6a12ba1dfc6c557a610481af0e167466" />
-      <keyword name="currentTestName" id="posix.cpp::currentTestName" ref="posix_8cpp.html#a0b699717c2d6dbc8a398c8aab085c1b3" />
       <keyword name="grading" id="grading" ref="namespacegrading.html" />
       <keyword name="operator&amp;&amp;" id="grading::operator&amp;&amp;" ref="namespacegrading.html#a408d2501b1f610426acd4a22007c6b95" />
       <keyword name="operator&amp;&amp;" id="grading::operator&amp;&amp;" ref="namespacegrading.html#ae7e6496f6d9a2eaf0ee06bac0c73a90c" />
@@ -118,9 +115,9 @@
       <keyword name="CheckString" id="grading::CheckString" ref="namespacegrading.html#a6a12ba1dfc6c557a610481af0e167466" />
       <keyword name="operator&lt;&lt;" id="grading::operator&lt;&lt;" ref="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
       <keyword name="MapSharedData" id="grading::MapSharedData" ref="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#ab096ea85a5a43015bb3552fc6236d4c2" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a0bacbd63368c228ce69ee6ce80f1f1a6" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#aeaa1b45aa2c292399c59b7e3c196d34f" />
+      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#acbaf9da1bcc399da922d5ed6d1d70466" />
+      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#aae91939646bbd1381f50f44f3589ddf9" />
+      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a2f33a6ad9c09cfd06fef7628513b1757" />
       <keyword name="Pass" id="grading::Pass" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c" />
       <keyword name="Fail" id="grading::Fail" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1" />
       <keyword name="Segfault" id="grading::Segfault" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4" />
@@ -183,8 +180,8 @@
       <file>_test_result_8cpp__incl.svg</file>
       <file>namespacegrading.html</file>
       <file>namespacegrading_a7e1850cba45d8bced4b418e9eb36163a_icgraph.svg</file>
-      <file>namespacegrading_ab096ea85a5a43015bb3552fc6236d4c2_icgraph.svg</file>
-      <file>namespacegrading_a0bacbd63368c228ce69ee6ce80f1f1a6_cgraph.svg</file>
+      <file>namespacegrading_acbaf9da1bcc399da922d5ed6d1d70466_icgraph.svg</file>
+      <file>namespacegrading_aae91939646bbd1381f50f44f3589ddf9_cgraph.svg</file>
       <file>classgrading_1_1_shared_memory.html</file>
       <file>classgrading_1_1_shared_memory_aed4149f33e92951014d8dd8c0d1b3b89_icgraph.svg</file>
       <file>classgrading_1_1_shared_memory-members.html</file>

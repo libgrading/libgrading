@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="namespacegrading.html#a0bacbd63368c228ce69ee6ce80f1f1a6" target="_top" xlink:title="Run a test with output but no explicit input. ">
+<g id="a_node2"><a xlink:href="namespacegrading.html#aae91939646bbd1381f50f44f3589ddf9" target="_top" xlink:title="Run a test with output but no explicit input. ">
 <polygon fill="none" stroke="black" points="171.383,-8.01299 171.383,-31.039 270.081,-31.039 270.081,-8.01299 171.383,-8.01299"/>
 <text text-anchor="middle" x="220.732" y="-18.239" font-family="Avenir-Book" font-size="11.00">grading::RunTest</text>
 </a>
