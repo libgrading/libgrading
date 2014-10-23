@@ -60,6 +60,7 @@ class CheckResult
 
 	std::string expected() const { return expected_; }
 	std::string actual() const { return actual_; }
+	std::string message() const { return message_.str(); }
 
 	private:
 	bool reportError_;
