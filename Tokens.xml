@@ -14,6 +14,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>operator&amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae7e6496f6d9a2eaf0ee06bac0c73a90c</Anchor>
+    <Abstract>L-value version of above. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>operator||</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -22,6 +34,18 @@
     <Path>namespacegrading.html</Path>
     <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
     <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a2dd247b47e98c57c01a2bdf73e013d2b</Anchor>
+    <Abstract>L-value version of above. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -104,7 +128,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a352730bd52a26e60601ba3cbe1719049</Anchor>
+    <Anchor>ab096ea85a5a43015bb3552fc6236d4c2</Anchor>
     <Abstract>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -116,7 +140,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a950e67a944ddc810ca475d91ba53454b</Anchor>
+    <Anchor>a0bacbd63368c228ce69ee6ce80f1f1a6</Anchor>
     <Abstract>Run a test with output but no explicit input. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -128,7 +152,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a9849135ae8235970c021823fecdbd5ec</Anchor>
+    <Anchor>aeaa1b45aa2c292399c59b7e3c196d34f</Anchor>
     <Abstract>Run a test with input and output. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -146,6 +170,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>operator&amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae7e6496f6d9a2eaf0ee06bac0c73a90c</Anchor>
+    <Abstract>L-value version of above. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>operator||</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -154,6 +190,18 @@
     <Path>namespacegrading.html</Path>
     <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
     <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a2dd247b47e98c57c01a2bdf73e013d2b</Anchor>
+    <Abstract>L-value version of above. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -228,6 +276,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>operator&amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae7e6496f6d9a2eaf0ee06bac0c73a90c</Anchor>
+    <Abstract>L-value version of above. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>operator||</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -236,6 +296,18 @@
     <Path>namespacegrading.html</Path>
     <Anchor>ae879c550a264e817453c5a0611aead83</Anchor>
     <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a2dd247b47e98c57c01a2bdf73e013d2b</Anchor>
+    <Abstract>L-value version of above. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -318,7 +390,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a352730bd52a26e60601ba3cbe1719049</Anchor>
+    <Anchor>ab096ea85a5a43015bb3552fc6236d4c2</Anchor>
     <Abstract>Run a test closure in a separate process, capturing segmentation faults and other errors that lead to...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -330,7 +402,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a950e67a944ddc810ca475d91ba53454b</Anchor>
+    <Anchor>a0bacbd63368c228ce69ee6ce80f1f1a6</Anchor>
     <Abstract>Run a test with output but no explicit input. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -342,7 +414,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a9849135ae8235970c021823fecdbd5ec</Anchor>
+    <Anchor>aeaa1b45aa2c292399c59b7e3c196d34f</Anchor>
     <Abstract>Run a test with input and output. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -378,6 +450,17 @@
     <Path>namespacegrading.html</Path>
     <Anchor>ae890cd55c5a0db0c68f9f683bca07e2ca6dec3eff895251a583a6983d621296b4</Anchor>
     <Abstract>the test caused a segmentation fault </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Timeout</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>econst</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae890cd55c5a0db0c68f9f683bca07e2cac85a251cc457840f1e032f1b733e9398</Anchor>
+    <Abstract>the test took too long to run </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>

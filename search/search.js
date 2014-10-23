@@ -13,7 +13,7 @@ var indexSectionsWithContent =
   3: "clpt",
   4: "cmor",
   5: "t",
-  6: "fops"
+  6: "fopst"
 };
 
 var indexSectionNames =
