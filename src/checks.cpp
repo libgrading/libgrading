@@ -89,7 +89,10 @@ CheckResult operator && (CheckResult&& x, CheckResult&& y)
 	x.cancel();
 	y.cancel();
 
-	return CheckResult(exp, actual);
+	return std::move(
+		CheckResult(exp, actual)
+		<< x.message() << y.message()
+	);
 }
 
 
