@@ -80,7 +80,7 @@ CheckResult operator && (CheckResult&& x, CheckResult&& y)
 		return std::move(x);
 
 	const string exp = "(" + x.expected() + " and " + y.expected() + ")";
-	const string actual = 
+	const string actual =
 		(x.actual() == y.actual())
 		? x.actual()
 		: "(" + x.actual() + " or " + y.actual() + ")"
@@ -112,9 +112,8 @@ CheckResult operator || (CheckResult&& x, CheckResult&& y)
 		return CheckResult();
 	}
 
-	
 	const string exp = "(" + x.expected() + " or " + y.expected() + ")";
-	const string actual = 
+	const string actual =
 		(x.actual() == y.actual())
 		? x.actual()
 		: "(" + x.actual() + " or " + y.actual() + ")"
