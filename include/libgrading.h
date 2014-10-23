@@ -115,6 +115,7 @@ enum class TestResult : char
 	Pass,          //!< the test succeeded
 	Fail,          //!< the test failed
 	Segfault,      //!< the test caused a segmentation fault
+	Timeout,       //!< the test took too long to run
 	OtherError     //!< the test terminated for another reason
 };
 
@@ -152,6 +153,8 @@ std::unique_ptr<SharedMemory> MapSharedData(size_t size);
  *
  * @param    test         the test to run
  * @param    errorStream  where to write messages (e.g., "expected X, got Y")
+ * @param    timeout      the number of seconds to let the test run
+ *                        (default 0, meaning "no timeout, run forever")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
@@ -168,6 +171,8 @@ TestResult RunTest(std::function<TestResult ()> test,
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
  * @param    errorStream  where to write messages (e.g., "expected X, got Y")
+ * @param    timeout      the number of seconds to let the test run
+ *                        (default 0, meaning "no timeout, run forever")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
@@ -196,6 +201,8 @@ TestResult RunTest(std::function<TestResult (T&)> test, T& output,
  * @param    output  the output value produced by @b test
  *                   (if it executes normally, e.g., without segfaulting)
  * @param    errorStream  where to write messages (e.g., "expected X, got Y")
+ * @param    timeout      the number of seconds to let the test run
+ *                        (default 0, meaning "no timeout, run forever")
  *
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading

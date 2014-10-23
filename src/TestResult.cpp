@@ -30,6 +30,7 @@ std::ostream& grading::operator << (std::ostream& out, TestResult result)
 		case TestResult::Pass:       out << "Pass"; break;
 		case TestResult::Fail:       out << "Fail"; break;
 		case TestResult::Segfault:   out << "Segfault"; break;
+		case TestResult::Timeout :   out << "Timeout"; break;
 		case TestResult::OtherError: out << "OtherError"; break;
 	}
 

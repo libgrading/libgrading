@@ -29,6 +29,7 @@
 #include <err.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <signal.h>
 #include <unistd.h>
 
 using namespace grading;
@@ -134,9 +135,36 @@ TestResult grading::RunTest(std::function<TestResult ()> test,
 	else
 	{
 		int status;
-		while (waitpid(child, &status, 0) < 0)
-			if (errno != EINTR)
-				err(-1, "unknown error in child process");
+		int options = (timeout ? WNOHANG : 0);
+
+		time_t start = time(nullptr);
+
+		while (true)
+		{
+			pid_t result = waitpid(child, &status, options);
+
+			// Success: the child process has returned.
+			if (result == child)
+				break;
+
+			// Error in waitpid()?
+			if (result < 0)
+			{
+				assert(errno == EINTR);
+				continue;
+			}
+
+			// Child process isn't finished yet.
+			const time_t now = time(nullptr);
+			if ((now - start) > timeout)
+			{
+				kill(child, SIGKILL);
+				waitpid(child, &status, 0);
+				return TestResult::Timeout;
+			}
+
+			usleep(100);
+		}
 
 		return ProcessChildStatus(status);
 	}
