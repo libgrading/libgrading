@@ -93,6 +93,12 @@ CheckResult operator && (CheckResult&& x, CheckResult&& y)
 }
 
 
+CheckResult operator && (CheckResult&& x, CheckResult& y)
+{
+	return std::move(x) and std::move(y);
+}
+
+
 CheckResult operator || (CheckResult&& x, CheckResult&& y)
 {
 	if (not x.error() or not y.error())
@@ -115,6 +121,12 @@ CheckResult operator || (CheckResult&& x, CheckResult&& y)
 	y.cancel();
 
 	return CheckResult(exp, actual);
+}
+
+
+CheckResult operator || (CheckResult&& x, CheckResult& y)
+{
+	return std::move(x) or std::move(y);
 }
 
 

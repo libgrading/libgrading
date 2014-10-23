@@ -73,8 +73,14 @@ class CheckResult
 //! Combine the results of two checks using a product (AND): both must pass.
 CheckResult operator && (CheckResult&&, CheckResult&&);
 
+//! L-value version of above.
+CheckResult operator && (CheckResult&&, CheckResult&);
+
 //! Combine the results of two checks using a sum (OR): at least one must pass.
 CheckResult operator || (CheckResult&&, CheckResult&&);
+
+//! L-value version of above.
+CheckResult operator || (CheckResult&&, CheckResult&);
 
 
 //
