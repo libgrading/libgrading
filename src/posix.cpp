@@ -66,7 +66,7 @@ static TestResult ProcessChildStatus(int status)
 
 	if (WIFSIGNALED(status))
 	{
-		if (WTERMSIG(status) == 11)
+		if (WTERMSIG(status) == SIGSEGV)
 			return TestResult::Segfault;
 
 		else
