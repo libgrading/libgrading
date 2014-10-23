@@ -135,10 +135,14 @@ CheckResult operator || (CheckResult&& x, CheckResult& y)
 
 CheckResult& CheckResult::operator << (const std::vector<std::string>& v)
 {
-	message_ << "[";
+	message_ << "[ ";
 
-	for (const string& s : v)
-		message_ << " " << s;
+	for (size_t i = 0; i < v.size(); i++)
+	{
+		message_ << "'" << v[i] << "'";
+		if (i < (v.size() - 1))
+			message_ << ", ";
+	}
 
 	message_ << " ]";
 
