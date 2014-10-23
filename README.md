@@ -2,7 +2,7 @@
 
 This is a simple library for grading C- and C++-language assignments.
 It runs each test case in a child process in order to capture common
-programming errors such as segmentation faults.
+programming errors such as infinite loops and segmentation faults.
 
 ## Get it
 
@@ -97,12 +97,14 @@ TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& sum)
 int main(int argc, char *argv[])
 {
 	constexpr size_t testCount = sizeof(tests) / sizeof(tests[0]);
+	constexpr size_t testTimeout = 5;    // kill tests after 5 s
 	size_t failures = 0;
 
 	for (const Expectation& i : tests)
 	{
 		int sum;
-		const TestResult result(RunTest(TestSubmittedFunction, i, sum));
+		const TestResult result =
+			RunTest(TestSubmittedFunction, i, sum, testTimeout);
 
 		if (result != TestResult::Pass)
 		{
