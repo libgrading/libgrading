@@ -36,11 +36,21 @@ using namespace grading;
 using std::unique_ptr;
 
 
+//! Global variable used only in the test (child) process.
+static std::string currentTestName;
+
+
 CheckResult::~CheckResult()
 {
 	if (reportError_)
 	{
-		std::cerr << "Check failed:\n";
+		std::cerr << "Check failed";
+
+		if (not currentTestName.empty())
+			std::cerr << " in test '" << currentTestName << "'";
+
+		std::cerr << "\n";
+
 		if (expected_.empty())
 			std::cerr << "  " << actual_ << "\n";
 
@@ -115,8 +125,8 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
-TestResult grading::RunTest(std::function<TestResult ()> test,
-                            std::ostream& errorStream)
+TestResult grading::RunTest(std::function<TestResult ()> test, std::string name,
+                            std::ostream& errorStream, time_t timeout)
 {
 	std::cout.flush();
 	std::cerr.flush();
@@ -126,6 +136,8 @@ TestResult grading::RunTest(std::function<TestResult ()> test,
 
 	if (child == 0)
 	{
+		currentTestName = name;
+
 		// Redirect cerr in the child process to the designated stream.
 		std::cerr.rdbuf(errorStream.rdbuf());
 
