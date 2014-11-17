@@ -34,6 +34,25 @@
 namespace grading {
 
 
+//! Ways that we can run tests.
+enum class TestRunStrategy
+{
+	Inline,      //!< In the same process, in the current call stack.
+	Separated,   //!< In separate but unsandboxed processes.
+	Sandboxed,   //!< In a separate, sandboxed process (if supported).
+};
+
+//! The @ref TestRunStrategy currently in use.
+TestRunStrategy CurrentStrategy();
+
+/**
+ * Set a new @ref TestRunStrategy.
+ *
+ * @returns   the previous @ref TestRunStrategy
+ */
+TestRunStrategy SetStrategy(TestRunStrategy);
+
+
 class CheckResult
 {
 	public:

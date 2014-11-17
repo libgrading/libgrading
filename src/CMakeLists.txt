@@ -31,6 +31,7 @@ endif ()
 
 add_library(grading SHARED
 	checks.cpp
+	strategy.cpp
 	TestResult.cpp
 	${PLATFORM_SOURCES}
 )

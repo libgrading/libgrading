@@ -21,6 +21,7 @@
  */
 
 #include <libgrading.h>
+#include "private.h"
 
 #include <cassert>
 #include <functional>
@@ -38,6 +39,11 @@ using std::unique_ptr;
 
 //! Global variable used only in the test (child) process.
 static std::string currentTestName;
+
+//! Run a test in a forked process.
+static TestResult ForkTest(TestClosure test, std::string name,
+                           time_t timeout, std::ostream& errorStream,
+                           bool sandbox = false);
 
 
 CheckResult::~CheckResult()
@@ -125,8 +131,26 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
-TestResult grading::RunTest(std::function<TestResult ()> test, std::string name,
+TestResult grading::RunTest(TestClosure test, std::string name,
                             time_t timeout, std::ostream& errorStream)
+{
+	switch (CurrentStrategy())
+	{
+		case TestRunStrategy::Inline:
+			return test();
+
+		case TestRunStrategy::Separated:
+			return ForkTest(test, name, timeout, errorStream);
+
+		case TestRunStrategy::Sandboxed:
+			return ForkTest(test, name, timeout, errorStream, true);
+	}
+}
+
+
+static TestResult ForkTest(TestClosure test, std::string name,
+                           time_t timeout, std::ostream& errorStream,
+                           bool sandbox)
 {
 	std::cout.flush();
 	std::cerr.flush();
@@ -136,6 +160,9 @@ TestResult grading::RunTest(std::function<TestResult ()> test, std::string name,
 
 	if (child == 0)
 	{
+		if (sandbox)
+			EnterSandbox();
+
 		currentTestName = name;
 
 		// Redirect cerr in the child process to the designated stream.
@@ -197,3 +224,25 @@ TestResult grading::RunTest(std::function<TestResult ()> test, std::string name,
 		return ProcessChildStatus(status);
 	}
 }
+
+
+#ifdef __FreeBSD__
+#include <sys/capsicum.h>
+
+#include <err.h>
+#include <errno.h>
+#include <sysexit.h>
+
+void grading::EnterSandbox()
+{
+	if ((cap_enter() != 0) and (errno != ENOSYS))
+		err(EX_OSERR, "Error in cap_enter()");
+}
+#else
+
+#warning EnterSandbox() does nothing on the current platform
+void grading::EnterSandbox()
+{
+}
+
+#endif
