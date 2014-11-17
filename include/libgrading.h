@@ -112,11 +112,12 @@ CheckResult CheckString(std::string expected, std::string actual,
 //! The result of running one test within a separate process.
 enum class TestResult : char
 {
-	Pass,          //!< the test succeeded
-	Fail,          //!< the test failed
-	Segfault,      //!< the test caused a segmentation fault
-	Timeout,       //!< the test took too long to run
-	OtherError     //!< the test terminated for another reason
+	Pass,                //!< the test succeeded
+	Fail,                //!< the test failed
+	Segfault,            //!< the test caused a segmentation fault
+	Timeout,             //!< the test took too long to run
+	UncaughtException,   //!< the test threw an exception
+	OtherError           //!< the test terminated for another reason
 };
 
 //! Output a human-readable representation of a @ref TestResult.

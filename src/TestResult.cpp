@@ -31,6 +31,9 @@ std::ostream& grading::operator << (std::ostream& out, TestResult result)
 		case TestResult::Fail:       out << "Fail"; break;
 		case TestResult::Segfault:   out << "Segfault"; break;
 		case TestResult::Timeout :   out << "Timeout"; break;
+		case TestResult::UncaughtException:
+			out << "UncaughtException";
+			break;
 		case TestResult::OtherError: out << "OtherError"; break;
 	}
 

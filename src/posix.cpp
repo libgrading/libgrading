@@ -141,7 +141,23 @@ TestResult grading::RunTest(std::function<TestResult ()> test, std::string name,
 		// Redirect cerr in the child process to the designated stream.
 		std::cerr.rdbuf(errorStream.rdbuf());
 
-		TestResult result = test();
+		TestResult result;
+		try { result = test(); }
+		catch (const std::exception& e)
+		{
+			std::cerr
+				<< typeid(e).name() << ": "
+				<< e.what() << std::endl
+				;
+
+			result = TestResult::UncaughtException;
+		}
+		catch (...)
+		{
+			std::cerr << "unknown exception!" << std::endl;
+			result = TestResult::UncaughtException;
+		}
+
 		exit(static_cast<int>(result));
 	}
 	else
