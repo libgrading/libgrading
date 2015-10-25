@@ -3,7 +3,7 @@
  * @brief     Definitions of @ref grading::TestResult functions.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2014 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -29,6 +29,7 @@ std::ostream& grading::operator << (std::ostream& out, TestResult result)
 	{
 		case TestResult::Pass:       out << "Pass"; break;
 		case TestResult::Fail:       out << "Fail"; break;
+		case TestResult::Abort:      out << "aborted"; break;
 		case TestResult::Segfault:   out << "Segfault"; break;
 		case TestResult::Timeout :   out << "Timeout"; break;
 		case TestResult::UncaughtException:
