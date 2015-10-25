@@ -130,7 +130,7 @@ class PosixSharedMemory : public SharedMemory
 
 unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 {
-	int shmfd = shm_open("shm.tmp", O_RDWR);
+	int shmfd = shm_open("shm.tmp", 0, O_RDWR);
 	void *map = mmap(0, len, PROT_READ | PROT_WRITE,
 	                 MAP_ANON | MAP_SHARED, shmfd, 0);
 
