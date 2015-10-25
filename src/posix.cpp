@@ -83,11 +83,17 @@ static TestResult ProcessChildStatus(int status)
 
 	if (WIFSIGNALED(status))
 	{
-		if (WTERMSIG(status) == SIGSEGV)
+		switch (WTERMSIG(status))
+		{
+			case SIGABRT:
+			return TestResult::Abort;
+
+			case SIGSEGV:
 			return TestResult::Segfault;
 
-		else
+			default:
 			return TestResult::OtherError;
+		}
 	}
 
 	assert(false && "unhandled child exit mode");
