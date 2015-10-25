@@ -38,4 +38,8 @@ add_library(grading SHARED
 
 target_link_libraries(grading ${LIBDISTANCE})
 
+if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux")
+	target_link_libraries(grading rt)
+endif ()
+
 install(TARGETS grading LIBRARY DESTINATION lib)
