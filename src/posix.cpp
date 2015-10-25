@@ -27,6 +27,7 @@
 #include <functional>
 
 #include <sys/mman.h>
+#include <sys/wait.h>
 #include <err.h>
 #include <errno.h>
 #include <fcntl.h>
