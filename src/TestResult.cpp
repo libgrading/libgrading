@@ -27,15 +27,17 @@ std::ostream& grading::operator << (std::ostream& out, TestResult result)
 {
 	switch (result)
 	{
-		case TestResult::Pass:       out << "Pass"; break;
-		case TestResult::Fail:       out << "Fail"; break;
+		case TestResult::Pass:       out << "passed"; break;
+		case TestResult::Fail:       out << "failed"; break;
 		case TestResult::Abort:      out << "aborted"; break;
-		case TestResult::Segfault:   out << "Segfault"; break;
-		case TestResult::Timeout :   out << "Timeout"; break;
-		case TestResult::UncaughtException:
-			out << "UncaughtException";
+		case TestResult::Segfault:
+			out << "segmentation fault";
 			break;
-		case TestResult::OtherError: out << "OtherError"; break;
+		case TestResult::Timeout :   out << "timeout"; break;
+		case TestResult::UncaughtException:
+			out << "uncaught exception";
+			break;
+		case TestResult::OtherError: out << "unknown test error"; break;
 	}
 
 	return out;
