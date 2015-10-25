@@ -143,6 +143,10 @@ enum class TestResult : char
 std::ostream& operator << (std::ostream&, TestResult);
 
 
+//! A closure that wraps a single test case.
+typedef std::function<TestResult ()> TestClosure;
+
+
 /**
  * A representation of a shared memory object.
  *
@@ -180,10 +184,8 @@ std::unique_ptr<SharedMemory> MapSharedData(size_t size);
  * @returns  the result of the test, either pass/fail as reported by @b test
  *           or else segfault/other as captured by libgrading
  */
-TestResult RunTest(std::function<TestResult ()> test,
-                   std::string name = "<unnamed test>",
-                   time_t timeout = 0,
-                   std::ostream& errorStream = std::cerr);
+TestResult RunTest(TestClosure test, std::string name = "<unnamed test>",
+                   time_t timeout = 0, std::ostream& errorStream = std::cerr);
 
 
 /**
