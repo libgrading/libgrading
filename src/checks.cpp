@@ -51,7 +51,7 @@ CheckResult::CheckResult(string expected, string actual)
 CheckResult::CheckResult(CheckResult&& other)
 	: reportError_(other.reportError_),
 	  expected_(other.expected_), actual_(other.actual_),
-	  message_(std::move(other.message_))
+	  message_(other.message_.str())
 {
 	other.reportError_ = false;
 }
