@@ -3,7 +3,7 @@
  * @brief     A library for grading C- and C++-based assignments.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2014 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -133,6 +133,7 @@ enum class TestResult : char
 {
 	Pass,                //!< the test succeeded
 	Fail,                //!< the test failed
+	Abort,               //!< the test was aborted (e.g., assert() fired)
 	Segfault,            //!< the test caused a segmentation fault
 	Timeout,             //!< the test took too long to run
 	UncaughtException,   //!< the test threw an exception
