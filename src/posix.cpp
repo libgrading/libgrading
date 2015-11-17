@@ -238,7 +238,7 @@ static TestResult ForkTest(TestClosure test, std::string name,
 
 #include <err.h>
 #include <errno.h>
-#include <sysexit.h>
+#include <sysexits.h>
 
 void grading::EnterSandbox()
 {
