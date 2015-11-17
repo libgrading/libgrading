@@ -7,28 +7,6 @@ else()
 endif ()
 
 
-#
-# We use libdistance for fuzzy string matching.
-#
-find_path(LIBDISTANCE_INCLUDE_DIR distance.h)
-find_library(LIBDISTANCE distance)
-
-if (LIBDISTANCE_INCLUDE_DIR)
-	message("-- Found distance.h in ${LIBDISTANCE_INCLUDE_DIR}")
-else ()
-	message(FATAL_ERROR
-		"Unable to find libdistance header 'distance.h'"
-		" in standard include paths.")
-endif ()
-
-if (LIBDISTANCE)
-	message("-- Found libdistance: ${LIBDISTANCE}")
-else()
-	message(FATAL_ERROR
-		"Unable to find libdistance in standard library paths")
-endif ()
-
-
 add_library(grading SHARED
 	checks.cpp
 	strategy.cpp
