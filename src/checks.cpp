@@ -215,4 +215,14 @@ CheckResult CheckString(string expected, string actual, size_t maxDistance)
 	return CheckResult(expected, actual);
 }
 
+CheckResult Fail(string message)
+{
+	// CheckResult's constructor interprets an empty string as "no problem",
+	// so we must pass in a non-empty string.
+	if (message.empty())
+		message = "test failed";
+
+	return CheckResult(message);
+}
+
 } // namespace grading

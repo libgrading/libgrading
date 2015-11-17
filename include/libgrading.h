@@ -133,6 +133,9 @@ CheckResult CheckNull(const void*, std::string message);
 CheckResult CheckString(std::string expected, std::string actual,
                         size_t maxEditDistance = 0);
 
+//! Fail the current test.
+CheckResult Fail(std::string message);
+
 
 //! The result of running one test within a separate process.
 enum class TestResult : char
