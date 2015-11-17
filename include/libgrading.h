@@ -116,6 +116,12 @@ CheckResult CheckInt(int expected, int actual);
 //! Check that two floating-point numbers are equal within some tolerance.
 CheckResult CheckFloat(double exp, double act, double tolerance = 0.000001);
 
+//! Check that a pointer is not equal to nullptr.
+CheckResult CheckNonNull(const void*, std::string message);
+
+//! Check that a pointer is equal to nullptr.
+CheckResult CheckNull(const void*, std::string message);
+
 /**
  * Check that two strings are (approximately) equal.
  *

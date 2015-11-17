@@ -169,6 +169,22 @@ CheckResult CheckInt(int expected, int actual)
 	return CheckResult(to_string(expected), to_string(actual));
 }
 
+CheckResult CheckNonNull(const void *ptr, string message)
+{
+	if (ptr != nullptr)
+		return CheckResult();
+
+	return CheckResult(message);
+}
+
+CheckResult CheckNull(const void *ptr, string message)
+{
+	if (ptr == nullptr)
+		return CheckResult();
+
+	return CheckResult(message);
+}
+
 CheckResult CheckFloat(double exp, double actual, double tolerance)
 {
 	const double error = fabs(actual - exp);
