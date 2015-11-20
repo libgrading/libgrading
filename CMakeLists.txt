@@ -37,7 +37,7 @@ set(CMAKE_BUILD_WITH_INSTALL_RPATH on)
 include(CheckIncludeFiles)
 check_include_files("sys/mman.h;unistd.h" POSIX)
 
-include_directories(include)
+include_directories(include vendor)
 
 add_subdirectory(doc)
 add_subdirectory(include)
