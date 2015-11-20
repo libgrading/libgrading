@@ -1,9 +1,9 @@
 /*!
- * @file      strategy.cpp
- * @brief     Implementation of test running strategy bookkeeping.
+ * @file      TestBuilder.cpp
+ * @brief     Definitions of @ref grading::TestBuilder.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2014 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2015 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -20,21 +20,24 @@
  */
 
 #include <libgrading.h>
+using namespace grading;
+using std::string;
 
-namespace grading {
 
-static TestRunStrategy strategy = TestRunStrategy::Sandboxed;
-
-TestRunStrategy CurrentStrategy()
+TestBuilder::TestBuilder(TestSuite& suite, string name)
+	: suite_(suite), name_(name), timeout_(0), weight_(1)
 {
-	return strategy;
 }
 
-TestRunStrategy SetStrategy(TestRunStrategy newStrategy)
+
+TestBuilder::~TestBuilder()
 {
-	TestRunStrategy previous = strategy;
-	strategy = newStrategy;
-	return previous;
+	suite_.add(Test(name_, description_, test_, timeout_, weight_));
 }
 
-} // namespace grading
+
+TestBuilder& TestBuilder::description(string d)
+{
+	description_ = d;
+	return *this;
+}

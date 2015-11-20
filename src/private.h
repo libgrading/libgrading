@@ -48,6 +48,16 @@ struct Arguments
  */
 void EnterSandbox();
 
+/**
+ * @internal Run a test in another process.
+ */
+TestResult ForkTest(TestClosure test, time_t timeout, std::ostream& errStream);
+
+/**
+ * @internal Run a test in the current process, catching all exceptions.
+ */
+TestResult RunInProcess(TestClosure test);
+
 } // namespace grading
 
 #endif

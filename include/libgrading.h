@@ -27,11 +27,17 @@
 #include <memory>
 #include <sstream>
 #include <string>
+#include <unordered_set>
 #include <vector>
 
 
 //! Container for all libgrading names.
 namespace grading {
+
+
+class Test;
+class TestBuilder;
+class TestSuite;
 
 
 //! The result of running one test.
@@ -60,19 +66,179 @@ enum class TestRunStrategy
 	Sandboxed,   //!< In a separate, sandboxed process (if supported).
 };
 
-//! The @ref TestRunStrategy currently in use.
-TestRunStrategy CurrentStrategy();
 
 /**
- * Set a new @ref TestRunStrategy.
- *
- * @returns   the previous @ref TestRunStrategy
+ * A collection of tests that we can run.
  */
-TestRunStrategy SetStrategy(TestRunStrategy);
+class TestSuite
+{
+	public:
+	TestSuite();
+	TestSuite(std::initializer_list<Test>);
+
+	/**
+	 * Start creating a test with a given name.
+	 *
+	 * When the @ref TestBuilder goes out of scope, it will add a complete
+	 * @ref Test to this suite.
+	 */
+	TestBuilder add(std::string name);
+
+	/**
+	 * Add an already-complete @ref Test to this suite.
+	 */
+	TestSuite& add(Test);
+
+	//! The total weight of all tests in the suite.
+	unsigned int totalWeight() const;
+
+	//! Summary statistics about the execution of a TestSuite.
+	struct Statistics
+	{
+		unsigned int passed;
+		unsigned int failed;
+		float score;
+		unsigned int total;
+	};
+
+	/**
+	 * Run all tests, using command-line arguments to guide the
+	 * testing strategy, timeouts, etc.
+	 *
+	 * @returns  summary statistics about the suite run
+	 */
+	Statistics Run(int argc, char *argv[]) const;
+
+	private:
+	std::vector<Test> tests_;
+};
 
 
 //! A closure that wraps a single test case.
 typedef std::function<void ()> TestClosure;
+
+
+/**
+ * An object used to construct a complete @ref Test.
+ */
+class TestBuilder
+{
+	public:
+	TestBuilder(TestSuite&, std::string name);
+	~TestBuilder();
+
+	//! Set description (which will be printed when run in verbose mode).
+	TestBuilder& description(std::string);
+
+	//! Set description (which will be printed when run in verbose mode).
+	TestBuilder& desc(std::string d) { return description(d); }
+
+	//! Set the test timeout (0 means "run forever").
+	TestBuilder& timeout(time_t);
+
+	/**
+	 * Set the weight accorded to a test.
+	 *
+	 * Unlike many unit testing libraries, this library is intended for
+	 * use in automatic grading software. In such software, we may wish
+	 * to assign different amounts of weight to different tests for the
+	 * purpose of fair and equitable grading.
+	 */
+	TestBuilder& weight(unsigned int);
+
+	private:
+	TestSuite& suite_;
+
+	const std::string name_;
+	std::string description_;
+	TestClosure test_;
+	time_t timeout_;
+	unsigned int weight_;
+};
+
+
+/**
+ * A single, completely-initialized test.
+ */
+class Test
+{
+	public:
+	/**
+	 * A set of arbitrary tags that can be used when selecting tests.
+	 *
+	 * Tag-informed test running isn't implemented yet, but we want to be
+	 * able to select, e.g., only the short tests or only the bonus tests.
+	 */
+	typedef std::unordered_set<std::string> TagSet;
+
+	/**
+	 * Standard constructor.
+	 *
+	 * Takes a @ref TestClosure that represents the test we are
+	 * actually going to run.
+	 */
+	Test(std::string name, std::string description, TestClosure,
+	     time_t timeout = 0, unsigned int weight = 1,
+	     TagSet tags = TagSet());
+
+	/**
+	 * Function-plus-expectation constructor.
+	 *
+	 * Takes a single-argument std::function and a single value
+	 * to pass into that function (e.g., a common-to-all-tests
+	 * `TestStudentFunction(const Expectation&)` and an `Expectation`
+	 * value that describes a particular test case).
+	 */
+	template<class Expectation>
+	Test(std::string name, std::string description,
+	     std::function<void (const Expectation&)> fn,
+	     Expectation e, time_t timeout = 0, unsigned int weight = 1)
+		: Test(name, description, std::bind(fn, e), timeout, weight)
+	{
+	}
+
+	/**
+	 * Function-pointer constructor.
+	 *
+	 * Takes a pointer to a single-argument function and a single value
+	 * to pass into that function (e.g., a common-to-all-tests
+	 * `TestStudentFunction(const Expectation&)` and an `Expectation`
+	 * value that describes a particular test case).
+	 */
+	template<class Expectation>
+	Test(std::string name, std::string description,
+	     void (*fn)(const Expectation&),
+	     Expectation e, time_t timeout = 0, unsigned int weight = 1)
+		: Test(name, description, std::bind(fn, e), timeout, weight)
+	{
+	}
+
+	std::string name() const { return name_; }
+	std::string description() const { return description_; }
+	time_t timeout() const { return timeout_; }
+	unsigned int weight() const { return weight_; }
+
+	/**
+	 * Run this test.
+	 *
+	 * @param  strategy     how to run the test (e.g., sandboxed)
+	 * @param  timeout      how long to wait for completion (0 = forever)
+	 * @param  errorStream  stream to redirect test cerr into
+	 */
+	TestResult Run(TestRunStrategy strategy, time_t timeout = 0,
+	               std::ostream& errorStream = std::cerr) const;
+
+
+	private:
+	const std::string name_;
+	const std::string description_;
+	const TestClosure test_;
+	const time_t timeout_;
+	const unsigned int weight_;
+	const TagSet tags_;
+
+	friend class TestBuilder;
+};
 
 
 /**

@@ -10,8 +10,10 @@ endif ()
 add_library(grading SHARED
 	Arguments.cpp
 	checks.cpp
-	strategy.cpp
+	Test.cpp
+	TestBuilder.cpp
 	TestResult.cpp
+	TestSuite.cpp
 	${PLATFORM_SOURCES}
 )
 

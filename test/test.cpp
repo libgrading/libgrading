@@ -20,9 +20,11 @@
  */
 
 #include <libgrading.h>
+
+#include <algorithm>
 #include <iostream>
 
-using grading::TestResult;
+using namespace grading;
 using namespace std;
 
 
@@ -30,7 +32,6 @@ using namespace std;
 struct Expectation
 {
 	// These fields describe a normal test expectation:
-	const string name;
 	const int *values;
 	const unsigned int index;
 	const int value;
@@ -46,64 +47,77 @@ int FunctionUnderTest(const int v[], unsigned int index)
 	return v[index * 10000000 + 1];
 }
 
+void TestStudentFn(const Expectation& e)
+{
+	int output = FunctionUnderTest(e.values, e.index);
+	CheckInt(e.value, output);
+};
+
 
 const int EvenNumbers[] = { 2, 4, 6, 8, 10 };
 const int Fibbonacci[] = { 1, 1, 2, 3, 5 };
 
 
-//! Test vectors to pass in to the (erroneous) @ref FunctionUnderTest.
-const Expectation tests[] =
+const TestSuite tests =
 {
-	{ "first element", Fibbonacci, 0, 1, TestResult::Pass },
-	{ "wrong element", EvenNumbers, 0, 2, TestResult::Fail },
-	{ "out of bounds", EvenNumbers, 4, 10, TestResult::Segfault },
+	{
+		"should pass",
+		" - correct expectation: the first element in the"
+		" Fibonnacci sequence is 1\n"
+		" - FunctionUnderTest will return the correct value\n"
+		" - this test should pass",
+		TestStudentFn,
+		{ Fibbonacci, 0, 1, TestResult::Pass },
+	},
+
+	{
+		"should fail",
+		" - incorrect expectation: the first even number is 2\n"
+		" - FunctionUnderTest will return the wrong number\n"
+		" - this test should fail",
+		TestStudentFn,
+		{ EvenNumbers, 0, 2, TestResult::Fail },
+		0, 10
+	},
+
+	{
+		"should segfault",
+		" - test deferences nullptr\n"
+		" - FunctionUnderTest will segfault\n"
+		" - this test's segfault should be contained",
+		[]()
+		{
+			*static_cast<volatile double*>(nullptr);
+		},
+	},
+
+	{
+		"should timeout",
+		" - test times out\n"
+		" - the timeout should be interrupted after 1s",
+		[]()
+		{
+			while (true) {}
+		},
+		1
+	},
 };
 
+const static unsigned int ExpectedPasses = 1;
 
-int main(int /*argc*/, char* /*argv*/[])
+
+int main(int argc, char* argv[])
 {
-	size_t passes = 0;
-	size_t failures = 0;
+	const TestSuite::Statistics stats = tests.Run(argc, argv);
 
-	for (const Expectation& i : tests)
+	if (stats.total > 0)
 	{
-		cout << "Running test '" << i.name << "'... ";
-		cout.flush();
-
-		int value;
-		std::function<TestResult (int&)> test = [&](int& output)
-		{
-			output = FunctionUnderTest(i.values, i.index);
-			if (output == i.value)
-				return TestResult::Pass;
-			else
-				return TestResult::Fail;
-		};
-
-		const TestResult result = grading::RunTest(test, value);
-
-		if (result == i.expectedTestResult)
-		{
-			passes++;
-			cout << "success.\n";
-		}
-		else
-		{
-			failures++;
-			cout
-				<< "\n  ERROR: expected "
-				<< i.expectedTestResult
-				<< ", got " << result
-				<< "\n"
-				;
-		}
+		cout
+			<< "Passed " << stats.passed << " out of "
+			<< stats.total << " tests"
+			<< " (expected: " << ExpectedPasses << ")\n"
+			;
 	}
-
-	cout
-		<< "\n"
-		<< "Passed " << passes << " out of "
-		<< (sizeof(tests) / sizeof(tests[0])) << " tests.\n"
-		;
 
 	return 0;
 }

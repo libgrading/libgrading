@@ -1,10 +1,10 @@
 /*!
  * @file      posix.cpp
  * @brief     POSIX implementation of @ref grading::MapSharedData and
- *            @ref grading::RunTest.
+ *            @ref grading::ForkTest..
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2014 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -35,39 +35,25 @@
 #include <unistd.h>
 
 using namespace grading;
-using std::unique_ptr;
-
-
-//! Global variable used only in the test (child) process.
-static std::string currentTestName;
-
-//! Run a test in a forked process.
-static TestResult ForkTest(TestClosure test, std::string name,
-                           time_t timeout, std::ostream& errorStream,
-                           bool sandbox = false);
+using namespace std;
 
 
 CheckResult::~CheckResult()
 {
 	if (reportError_)
 	{
-		std::cerr << "Check failed";
-
-		if (not currentTestName.empty())
-			std::cerr << " in test '" << currentTestName << "'";
-
-		std::cerr << "\n";
+		cerr << "Check failed.\n";
 
 		if (expected_.empty())
-			std::cerr << "  " << actual_ << "\n";
+			cerr << "  " << actual_ << "\n";
 
 		else
-			std::cerr
+			cerr
 				<< "  expected `" << expected_
 				<< "`, got `" << actual_ << "`\n"
 				;
 
-		std::cerr
+		cerr
 			<< "  " << message_.str()
 			<< "\n\n"
 			;
@@ -138,26 +124,8 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
-TestResult grading::RunTest(TestClosure test, std::string name,
-                            time_t timeout, std::ostream& errorStream)
-{
-	switch (CurrentStrategy())
-	{
-		case TestRunStrategy::Inline:
-			return test();
-
-		case TestRunStrategy::Separated:
-			return ForkTest(test, name, timeout, errorStream);
-
-		case TestRunStrategy::Sandboxed:
-			return ForkTest(test, name, timeout, errorStream, true);
-	}
-}
-
-
-static TestResult ForkTest(TestClosure test, std::string name,
-                           time_t timeout, std::ostream& errorStream,
-                           bool sandbox)
+TestResult grading::ForkTest(TestClosure test, time_t timeout,
+                             ostream& errorStream)
 {
 	std::cout.flush();
 	std::cerr.flush();
@@ -167,44 +135,10 @@ static TestResult ForkTest(TestClosure test, std::string name,
 
 	if (child == 0)
 	{
-		if (sandbox)
-			EnterSandbox();
-
-		currentTestName = name;
-
 		// Redirect cerr in the child process to the designated stream.
 		std::cerr.rdbuf(errorStream.rdbuf());
 
-		TestResult result;
-		try { result = test(); }
-		catch (const std::exception& e)
-		{
-			std::cerr
-				<< typeid(e).name() << ": "
-				<< e.what() << std::endl
-				;
-
-			result = TestResult::UncaughtException;
-		}
-		catch (int i)
-		{
-			std::cerr << "caught int: " << i << std::endl;
-			result = TestResult::UncaughtException;
-		}
-		catch (const std::string& s)
-		{
-			std::cerr
-				<< "caught string: '" << s << "'"
-				<< std::endl;
-
-			result = TestResult::UncaughtException;
-		}
-		catch (...)
-		{
-			std::cerr << "uncaught exception!" << std::endl;
-			result = TestResult::UncaughtException;
-		}
-
+		TestResult result = RunInProcess(test);
 		exit(static_cast<int>(result));
 	}
 	else

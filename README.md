@@ -39,8 +39,8 @@ using namespace std;
 
 
 //
-// First, you need to describe some test cases *in the problem domain*:
-// we don't need any libgrading boilerplate or TEST_CASE syntax.
+// One way to define tests is to define a domain-relevant expectation
+// (inputs and outputs) and a function that will check that expectation:
 //
 struct AdditionExpectation
 {
@@ -49,76 +49,69 @@ struct AdditionExpectation
 	int sum;
 };
 
-const AdditionExpectation tests[] =
+void TestStudentFn(const AdditionExpectation& expected)
 {
-	{ 1, 1, 2 },
-	{ 1, 2, 3 },
-	{ 2, 3, 5 },
-	{ 3, 5, 8 },
+	// In a real test suite, you'd link against submitted code.
+	// For this demo, we'll use a lambda.
+	auto studentFunction = [](int x, int y) { return x + y + 1; };
 
-	{ 0, 0, 0 },
-	{ 0, -2, -2 },
-	{ -4, 2, -2 },
+	int sum = studentFunction(expected.x, expected.y);
+	CheckInt(expected.sum, sum)
+		<< "some more detail to be output if this check fails";
+}
+
+
+//
+// You can define a grading::TestSuite declaratively, if you like such things
+// (vs. using the TestBuilder class, as inside the `main` function below):
+//
+const TestSuite testClosures =
+{
+	// This is an example of a Test derived from an expectation and an
+	// evaluation function.
+	{
+		"simple addition test",
+		" - first part of the long description\n"
+		" - second part of the long description",
+		TestStudentFn,
+		{ 2, 2, 5 },
+		0,	// timeout: optional, 0 (the default) means forever
+		1,	// weight to give this test (optional, default 1)
+	},
+
+	// Tests can also be created from self-contained test closures:
+	{
+		"test name",
+		"long description ...",
+		[]()
+		{
+			int x = foo();
+			CheckInt(42, x)
+				<< "the result of calling foo() should be 42"
+				;
+
+			// segmentation faults will be caught and handled
+			// properly when running with --strategy=separated
+			// or --strategy=sandboxed (the default)
+			double *x = nullptr;
+			double y = *x;
+		},
+	},
 
 	// ...
 };
 
 
 //
-// Next, define a function (or a lambda in a std::function) that takes
-// a single input expectation, runs the code under test and (optionally)
-// copies out a value by reference.
-//
-// It will be run in a separate process in case the code under test causes
-// a segmentation fault or other termination error.
-//
-// This function needs to return a grading::TestResult.
-//
-TestResult TestSubmittedFunction(const AdditionExpectation& expected, int& sum)
-{
-	// In a real test suite, you'd link against submitted code.
-	// For this demo, we'll use a lambda.
-	auto studentFunction = [](int x, int y) { return x + y + 1; };
-
-	sum = studentFunction(expected.x, expected.y);
-	CheckInt(expected.sum, sum)
-		<< "some more detail to be output if this check fails";
-
-	return TestResult::Pass;
-}
-
-
-//
-// Finally, in your main function, call grading::RunTest() for each
-// of your test cases and accumulate the results however you like.
-//
-// Future versions of libgrading might include a test runner if I need one.
+// You need to write a `main` function to actually run the tests,
+// but it can be very simple indeed:
 //
 int main(int argc, char *argv[])
 {
-	constexpr size_t testCount = sizeof(tests) / sizeof(tests[0]);
-	constexpr size_t testTimeout = 5;    // kill tests after 5 s
-	size_t failures = 0;
+	const TestSuite::Statistics stats = tests.Run(argc, argv);
 
-	for (const Expectation& i : tests)
-	{
-		int sum;
-		const TestResult result =
-			RunTest(TestSubmittedFunction, i, sum, testTimeout);
-
-		if (result != TestResult::Pass)
-		{
-			failures++;
-			// maybe save the failure information somewhere?
-			// maybe output an error message?
-		}
-	}
-
-	cout
-		<< "\n"
-		<< "Passed " << (testCount - failures) << " out of "
-		<< testCount << " tests.\n"
-		;
+	// optionally do something with the stats, such as:
+	cout << "Grade: " << stats.score << endl;
 
 	return 0;
 }
