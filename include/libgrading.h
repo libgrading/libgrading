@@ -75,11 +75,19 @@ TestRunStrategy SetStrategy(TestRunStrategy);
 typedef std::function<void ()> TestClosure;
 
 
+/**
+ * The result of executing a `CheckSomething()` function.
+ */
 class CheckResult
 {
 	public:
+	//! "All's-well" constructor (i.e., the check passed).
 	CheckResult();
+
+	//! Constructor that takes a simple error message.
 	CheckResult(std::string message);
+
+	//! Constructor that takes an expected and actual value.
 	CheckResult(std::string exected, std::string actual);
 
 	CheckResult(const CheckResult&) = delete;
@@ -87,8 +95,10 @@ class CheckResult
 
 	~CheckResult();
 
+	//! Add further error details to this result, should it be a failure.
 	CheckResult& operator << (const std::vector<std::string>&);
 
+	//! Add further error details to this result, should it be a failure.
 	template<class T>
 	CheckResult& operator << (const T& x)
 	{
