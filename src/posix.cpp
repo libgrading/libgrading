@@ -188,7 +188,7 @@ static TestResult ForkTest(TestClosure test, std::string name,
 		}
 		catch (...)
 		{
-			std::cerr << "unknown exception!" << std::endl;
+			std::cerr << "uncaught exception!" << std::endl;
 			result = TestResult::UncaughtException;
 		}
 
