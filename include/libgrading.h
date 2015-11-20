@@ -34,6 +34,19 @@
 namespace grading {
 
 
+//! The result of running one test.
+enum class TestResult : char
+{
+	Pass,                //!< the test succeeded
+	Fail,                //!< the test failed
+	Abort,               //!< the test was aborted (e.g., assert() fired)
+	Segfault,            //!< the test caused a segmentation fault
+	Timeout,             //!< the test took too long to run
+	UncaughtException,   //!< the test threw an exception
+	OtherError           //!< the test terminated for another reason
+};
+
+
 /**
  * Ways that we can run tests.
  *
@@ -56,6 +69,10 @@ TestRunStrategy CurrentStrategy();
  * @returns   the previous @ref TestRunStrategy
  */
 TestRunStrategy SetStrategy(TestRunStrategy);
+
+
+//! A closure that wraps a single test case.
+typedef std::function<void ()> TestClosure;
 
 
 class CheckResult
@@ -142,24 +159,8 @@ CheckResult CheckString(std::string expected, std::string actual,
 CheckResult Fail(std::string message);
 
 
-//! The result of running one test within a separate process.
-enum class TestResult : char
-{
-	Pass,                //!< the test succeeded
-	Fail,                //!< the test failed
-	Abort,               //!< the test was aborted (e.g., assert() fired)
-	Segfault,            //!< the test caused a segmentation fault
-	Timeout,             //!< the test took too long to run
-	UncaughtException,   //!< the test threw an exception
-	OtherError           //!< the test terminated for another reason
-};
-
 //! Output a human-readable representation of a @ref TestResult.
 std::ostream& operator << (std::ostream&, TestResult);
-
-
-//! A closure that wraps a single test case.
-typedef std::function<TestResult ()> TestClosure;
 
 
 /**
