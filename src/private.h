@@ -22,7 +22,26 @@
 #ifndef LIBGRADING_PRIVATE_H
 #define LIBGRADING_PRIVATE_H
 
+#include <libgrading.h>
+
+
 namespace grading {
+
+/**
+ * @internal Parsed command-line arguments.
+ */
+struct Arguments
+{
+	//! Parse command-line arguments.
+	static Arguments Parse(int argc, char *argv[]);
+
+	const bool error;
+	const bool help;
+	const bool verbose;
+
+	const TestRunStrategy runStrategy;
+	const time_t timeout;
+};
 
 /**
  * @internal Enter unprivileged testing sandbox, if supported.

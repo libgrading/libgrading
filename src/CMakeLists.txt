@@ -8,6 +8,7 @@ endif ()
 
 
 add_library(grading SHARED
+	Arguments.cpp
 	checks.cpp
 	strategy.cpp
 	TestResult.cpp

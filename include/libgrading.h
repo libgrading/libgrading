@@ -34,7 +34,12 @@
 namespace grading {
 
 
-//! Ways that we can run tests.
+/**
+ * Ways that we can run tests.
+ *
+ * We can select among these at run-time with the command-line argument
+ * `--strategy=inline|separated|sandboxed`.
+ */
 enum class TestRunStrategy
 {
 	Inline,      //!< In the same process, in the current call stack.
