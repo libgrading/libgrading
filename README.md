@@ -8,14 +8,14 @@ programming errors such as infinite loops and segmentation faults.
 
 libgrading is
 [hosted on GitHub](https://github.com/trombonehero/libgrading).
-You can get the most recent version with either of the following commands:
+Releases are available on
+[the GitHub releases page](https://github.com/trombonehero/libgrading/releases),
+and you can always get the most latest version by running either:
 
 ~~~sh
 $ git clone https://github.com/trombonehero/libgrading.git
 $ svn checkout https://github.com/trombonehero/libgrading
 ~~~
-
-At some point, I might also create releases.
 
 
 ## Build it
