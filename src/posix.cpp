@@ -186,6 +186,19 @@ static TestResult ForkTest(TestClosure test, std::string name,
 
 			result = TestResult::UncaughtException;
 		}
+		catch (int i)
+		{
+			std::cerr << "caught int: " << i << std::endl;
+			result = TestResult::UncaughtException;
+		}
+		catch (const std::string& s)
+		{
+			std::cerr
+				<< "caught string: '" << s << "'"
+				<< std::endl;
+
+			result = TestResult::UncaughtException;
+		}
 		catch (...)
 		{
 			std::cerr << "uncaught exception!" << std::endl;
