@@ -223,10 +223,8 @@ class Test
 	 *
 	 * @param  strategy     how to run the test (e.g., sandboxed)
 	 * @param  timeout      how long to wait for completion (0 = forever)
-	 * @param  errorStream  stream to redirect test cerr into
 	 */
-	TestResult Run(TestRunStrategy strategy, time_t timeout = 0,
-	               std::ostream& errorStream = std::cerr) const;
+	TestResult Run(TestRunStrategy strategy, time_t timeout = 0) const;
 
 
 	private:

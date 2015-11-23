@@ -34,8 +34,7 @@ Test::Test(string name, string description, TestClosure test,
 }
 
 
-TestResult Test::Run(TestRunStrategy strategy, time_t timeout,
-                     std::ostream& errorStream) const
+TestResult Test::Run(TestRunStrategy strategy, time_t timeout) const
 {
 	if (timeout == 0)
 		timeout = timeout_;
@@ -51,7 +50,7 @@ TestResult Test::Run(TestRunStrategy strategy, time_t timeout,
 			return TestResult::Pass;
 
 		case TestRunStrategy::Separated:
-			return ForkTest(test_, timeout, errorStream);
+			return ForkTest(test_, timeout);
 
 		case TestRunStrategy::Sandboxed:
 		{
@@ -61,7 +60,7 @@ TestResult Test::Run(TestRunStrategy strategy, time_t timeout,
 				test_();
 			};
 
-			return ForkTest(t, timeout, errorStream);
+			return ForkTest(t, timeout);
 		}
 	}
 }

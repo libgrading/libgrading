@@ -93,21 +93,20 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 
 		stats.total++;
 
-		ostringstream errors;
-		TestResult result =
-			test.Run(args.runStrategy, args.timeout, errors);
+		TestResult result = test.Run(args.runStrategy, args.timeout);
 
 		if (args.verbose)
 		{
 			cout
 				<< line << "\n"
-				<< "Test '" << test.name() << "' complete.\n"
+				<< "Test '" << test.name() << "' complete: "
+				<< result << ".\n"
 				<< doubleLine << "\n\n"
 				;
 		}
 		else
 		{
-			cout << result << std::endl;
+			cout << result << "." << std::endl;
 		}
 
 		if (result == TestResult::Pass)
@@ -118,7 +117,6 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 		else
 		{
 			stats.failed++;
-			cerr << errors.str();
 		}
 	}
 

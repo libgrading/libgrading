@@ -124,8 +124,7 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 }
 
 
-TestResult grading::ForkTest(TestClosure test, time_t timeout,
-                             ostream& errorStream)
+TestResult grading::ForkTest(TestClosure test, time_t timeout)
 {
 	std::cout.flush();
 	std::cerr.flush();
@@ -135,9 +134,6 @@ TestResult grading::ForkTest(TestClosure test, time_t timeout,
 
 	if (child == 0)
 	{
-		// Redirect cerr in the child process to the designated stream.
-		std::cerr.rdbuf(errorStream.rdbuf());
-
 		TestResult result = RunInProcess(test);
 		exit(static_cast<int>(result));
 	}
