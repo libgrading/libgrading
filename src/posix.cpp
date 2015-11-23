@@ -42,7 +42,7 @@ CheckResult::~CheckResult()
 {
 	if (reportError_)
 	{
-		cerr << "Check failed.\n";
+		cerr << "\nCheck failed!\n";
 
 		if (expected_.empty())
 			cerr << "  " << actual_ << "\n";
