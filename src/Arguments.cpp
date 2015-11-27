@@ -88,11 +88,14 @@ const option::Descriptor usage[] =
 
 Arguments Arguments::Parse(int argc, char *argv[])
 {
+	argc -= 1;
+	argv += 1;
+
 	option::Stats stats(usage, argc, argv);
 	vector<option::Option> options(stats.options_max);
 	vector<option::Option> buffer(stats.buffer_max);
 
-	option::Parser parse(usage, argc - 1, argv + 1,
+	option::Parser parse(usage, argc, argv,
 	                     options.data(), buffer.data());
 
 	if (parse.error())
