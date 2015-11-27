@@ -35,6 +35,7 @@ enum Options
 	HELP,
 	VERBOSE,
 	STRATEGY,
+	TIMEOUT,
 };
 
 static option::ArgStatus Required(const option::Option& option, bool msg)
@@ -74,6 +75,12 @@ const option::Descriptor usage[] =
 		Required,
 		"  -s, --strategy      Strategy for running tests"
 		" (inline, separated, sandboxed)."
+	},
+	{
+		TIMEOUT, 0,
+		"t", "timeout",
+		Required,
+		"  -t, --timeout       Kill tests after n seconds."
 	},
 	{0,0,0,0,0,0}
 };
@@ -128,11 +135,19 @@ Arguments Arguments::Parse(int argc, char *argv[])
 		}
 	}
 
+	time_t timeout = 0;
+	if (options[TIMEOUT])
+	{
+		const std::string arg = options[TIMEOUT].arg;
+		timeout = std::atol(arg.c_str());
+	}
+
 	return Arguments
 	{
 		.error = false,
 		.help = false,
 		.verbose = verbose,
 		.runStrategy = strategy,
+		.timeout = timeout,
 	};
 }
