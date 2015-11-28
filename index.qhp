@@ -20,69 +20,69 @@
         <section title="Classes" ref="annotated.html">
           <section title="Class List" ref="annotated.html">
             <section title="grading" ref="namespacegrading.html">
-              <section title="CheckResult" ref="classgrading_1_1_check_result.html">
-                <section title="CheckResult" ref="classgrading_1_1_check_result.html#ae6870355bbc4c77a9806abb32a9ef4bf" />
-                <section title="CheckResult" ref="classgrading_1_1_check_result.html#a62be6967bcdf4b426063abfcdabb1fdc" />
-                <section title="CheckResult" ref="classgrading_1_1_check_result.html#acc0a42107b9a7340768ecc5d7a8f4552" />
-                <section title="CheckResult" ref="classgrading_1_1_check_result.html#a86b6a6ae2a329d445245c9ae8ad39896" />
-                <section title="CheckResult" ref="classgrading_1_1_check_result.html#a2ec2c6c5cd56c815d06e39acfa2b0bad" />
-                <section title="~CheckResult" ref="classgrading_1_1_check_result.html#a7707cc3b4f29b80aad69a5926f8000f7" />
-                <section title="actual" ref="classgrading_1_1_check_result.html#a0669a9c5b9e898bc79c89dbc51dc766a" />
-                <section title="cancel" ref="classgrading_1_1_check_result.html#ad02c8fb5c001080578f1486b436cb901" />
-                <section title="error" ref="classgrading_1_1_check_result.html#a11a96e2f4455fcb9f4c3aad254197338" />
-                <section title="expected" ref="classgrading_1_1_check_result.html#a43c2c304fc2368dc14eca9170e985700" />
-                <section title="message" ref="classgrading_1_1_check_result.html#ac18139025d3746382c1dd44a4a5b363a" />
-                <section title="operator&lt;&lt;" ref="classgrading_1_1_check_result.html#a874fcd2efa6b3603b8cad87e9382f2c9" />
-                <section title="operator&lt;&lt;" ref="classgrading_1_1_check_result.html#a3545ae30f105104ee618e4036cfda1cd" />
+              <section title="CheckResult" ref="classgrading_1_1CheckResult.html">
+                <section title="CheckResult" ref="classgrading_1_1CheckResult.html#ae6870355bbc4c77a9806abb32a9ef4bf" />
+                <section title="CheckResult" ref="classgrading_1_1CheckResult.html#a62be6967bcdf4b426063abfcdabb1fdc" />
+                <section title="CheckResult" ref="classgrading_1_1CheckResult.html#acc0a42107b9a7340768ecc5d7a8f4552" />
+                <section title="CheckResult" ref="classgrading_1_1CheckResult.html#a86b6a6ae2a329d445245c9ae8ad39896" />
+                <section title="CheckResult" ref="classgrading_1_1CheckResult.html#a2ec2c6c5cd56c815d06e39acfa2b0bad" />
+                <section title="~CheckResult" ref="classgrading_1_1CheckResult.html#a7707cc3b4f29b80aad69a5926f8000f7" />
+                <section title="actual" ref="classgrading_1_1CheckResult.html#a0669a9c5b9e898bc79c89dbc51dc766a" />
+                <section title="cancel" ref="classgrading_1_1CheckResult.html#ad02c8fb5c001080578f1486b436cb901" />
+                <section title="error" ref="classgrading_1_1CheckResult.html#a11a96e2f4455fcb9f4c3aad254197338" />
+                <section title="expected" ref="classgrading_1_1CheckResult.html#a43c2c304fc2368dc14eca9170e985700" />
+                <section title="message" ref="classgrading_1_1CheckResult.html#ac18139025d3746382c1dd44a4a5b363a" />
+                <section title="operator&lt;&lt;" ref="classgrading_1_1CheckResult.html#a874fcd2efa6b3603b8cad87e9382f2c9" />
+                <section title="operator&lt;&lt;" ref="classgrading_1_1CheckResult.html#a3545ae30f105104ee618e4036cfda1cd" />
               </section>
-              <section title="SharedMemory" ref="classgrading_1_1_shared_memory.html">
-                <section title="~SharedMemory" ref="classgrading_1_1_shared_memory.html#aca6c5db023c5b560d07f04f2ac6d42ce" />
-                <section title="rawPointer" ref="classgrading_1_1_shared_memory.html#aec3102de425f4ff2f692e8f28d53b01a" />
+              <section title="SharedMemory" ref="classgrading_1_1SharedMemory.html">
+                <section title="~SharedMemory" ref="classgrading_1_1SharedMemory.html#aca6c5db023c5b560d07f04f2ac6d42ce" />
+                <section title="rawPointer" ref="classgrading_1_1SharedMemory.html#aec3102de425f4ff2f692e8f28d53b01a" />
               </section>
-              <section title="Test" ref="classgrading_1_1_test.html">
-                <section title="TagSet" ref="classgrading_1_1_test.html#a9b4ae08e5e3294d24910d18198a3ac60" />
-                <section title="Test" ref="classgrading_1_1_test.html#aaea436313497649e4cce2ce35c7eb652" />
-                <section title="Test" ref="classgrading_1_1_test.html#a427ff2f2da2032285ded61d94c5f73f8" />
-                <section title="Test" ref="classgrading_1_1_test.html#a829b5558352b9b246617167781384807" />
-                <section title="description" ref="classgrading_1_1_test.html#aadcea3975e327c7d6bfce7ca1b24d184" />
-                <section title="name" ref="classgrading_1_1_test.html#a4abad0966891ee2ad7047a9ac7bce75c" />
-                <section title="Run" ref="classgrading_1_1_test.html#afa9da166d4d137499345ef14e5d906a5" />
-                <section title="timeout" ref="classgrading_1_1_test.html#a3c336d7cef69dfe6f6023dc0e0a47b22" />
-                <section title="weight" ref="classgrading_1_1_test.html#a9183bbd29bbac0d3264530c1a6f75734" />
-                <section title="TestBuilder" ref="classgrading_1_1_test.html#a0d601ee11ceeb73369a7bcda89822b0d" />
+              <section title="Test" ref="classgrading_1_1Test.html">
+                <section title="TagSet" ref="classgrading_1_1Test.html#a9b4ae08e5e3294d24910d18198a3ac60" />
+                <section title="Test" ref="classgrading_1_1Test.html#aaea436313497649e4cce2ce35c7eb652" />
+                <section title="Test" ref="classgrading_1_1Test.html#a427ff2f2da2032285ded61d94c5f73f8" />
+                <section title="Test" ref="classgrading_1_1Test.html#a829b5558352b9b246617167781384807" />
+                <section title="description" ref="classgrading_1_1Test.html#aadcea3975e327c7d6bfce7ca1b24d184" />
+                <section title="name" ref="classgrading_1_1Test.html#a4abad0966891ee2ad7047a9ac7bce75c" />
+                <section title="Run" ref="classgrading_1_1Test.html#a06d32f69216f34a87b0b0917d1ddea1e" />
+                <section title="timeout" ref="classgrading_1_1Test.html#a3c336d7cef69dfe6f6023dc0e0a47b22" />
+                <section title="weight" ref="classgrading_1_1Test.html#a9183bbd29bbac0d3264530c1a6f75734" />
+                <section title="TestBuilder" ref="classgrading_1_1Test.html#a0d601ee11ceeb73369a7bcda89822b0d" />
               </section>
-              <section title="TestBuilder" ref="classgrading_1_1_test_builder.html">
-                <section title="TestBuilder" ref="classgrading_1_1_test_builder.html#a08e697d22234a038d074f5960d903652" />
-                <section title="~TestBuilder" ref="classgrading_1_1_test_builder.html#a8fadbf90810d74d6754278c61fa2c413" />
-                <section title="desc" ref="classgrading_1_1_test_builder.html#a06703610689bd7577f971cc0b3fcc8f3" />
-                <section title="description" ref="classgrading_1_1_test_builder.html#a11b97de939c74a02fbb9e5ec038d3f11" />
-                <section title="timeout" ref="classgrading_1_1_test_builder.html#a3731235cafe01f5dbd582afd8f7fffde" />
-                <section title="weight" ref="classgrading_1_1_test_builder.html#a3b2f336bdf4263885f0ef96d20877eb1" />
+              <section title="TestBuilder" ref="classgrading_1_1TestBuilder.html">
+                <section title="TestBuilder" ref="classgrading_1_1TestBuilder.html#a08e697d22234a038d074f5960d903652" />
+                <section title="~TestBuilder" ref="classgrading_1_1TestBuilder.html#a8fadbf90810d74d6754278c61fa2c413" />
+                <section title="desc" ref="classgrading_1_1TestBuilder.html#a06703610689bd7577f971cc0b3fcc8f3" />
+                <section title="description" ref="classgrading_1_1TestBuilder.html#a11b97de939c74a02fbb9e5ec038d3f11" />
+                <section title="timeout" ref="classgrading_1_1TestBuilder.html#a3731235cafe01f5dbd582afd8f7fffde" />
+                <section title="weight" ref="classgrading_1_1TestBuilder.html#a3b2f336bdf4263885f0ef96d20877eb1" />
               </section>
-              <section title="TestSuite" ref="classgrading_1_1_test_suite.html">
-                <section title="Statistics" ref="structgrading_1_1_test_suite_1_1_statistics.html">
-                  <section title="failed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
-                  <section title="passed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a63372b8d2455093e8f976b94bf887514" />
-                  <section title="score" ref="structgrading_1_1_test_suite_1_1_statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
-                  <section title="total" ref="structgrading_1_1_test_suite_1_1_statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
+              <section title="TestSuite" ref="classgrading_1_1TestSuite.html">
+                <section title="Statistics" ref="structgrading_1_1TestSuite_1_1Statistics.html">
+                  <section title="failed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
+                  <section title="passed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a63372b8d2455093e8f976b94bf887514" />
+                  <section title="score" ref="structgrading_1_1TestSuite_1_1Statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
+                  <section title="total" ref="structgrading_1_1TestSuite_1_1Statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
                 </section>
-                <section title="TestSuite" ref="classgrading_1_1_test_suite.html#af7291e6d8b53443604ee0c1fcf1fadfc" />
-                <section title="TestSuite" ref="classgrading_1_1_test_suite.html#ae4855c5911eead0b03f37f7f8c72226c" />
-                <section title="add" ref="classgrading_1_1_test_suite.html#a0d0717051f59926f779ed7a67eefef8b" />
-                <section title="add" ref="classgrading_1_1_test_suite.html#a83cd3b7090e3a7ab3dcc04577a636500" />
-                <section title="Run" ref="classgrading_1_1_test_suite.html#aed19308d0831a296ece062105ccc1688" />
-                <section title="totalWeight" ref="classgrading_1_1_test_suite.html#a370b4e2e35e2d571edb8430f35e71001" />
+                <section title="TestSuite" ref="classgrading_1_1TestSuite.html#af7291e6d8b53443604ee0c1fcf1fadfc" />
+                <section title="TestSuite" ref="classgrading_1_1TestSuite.html#ae4855c5911eead0b03f37f7f8c72226c" />
+                <section title="add" ref="classgrading_1_1TestSuite.html#a0d0717051f59926f779ed7a67eefef8b" />
+                <section title="add" ref="classgrading_1_1TestSuite.html#a83cd3b7090e3a7ab3dcc04577a636500" />
+                <section title="Run" ref="classgrading_1_1TestSuite.html#aed19308d0831a296ece062105ccc1688" />
+                <section title="totalWeight" ref="classgrading_1_1TestSuite.html#a370b4e2e35e2d571edb8430f35e71001" />
               </section>
             </section>
           </section>
           <section title="Class Index" ref="classes.html" />
           <section title="Class Hierarchy" ref="hierarchy.html">
-            <section title="grading::CheckResult" ref="classgrading_1_1_check_result.html" />
-            <section title="grading::SharedMemory" ref="classgrading_1_1_shared_memory.html" />
-            <section title="grading::TestSuite::Statistics" ref="structgrading_1_1_test_suite_1_1_statistics.html" />
-            <section title="grading::Test" ref="classgrading_1_1_test.html" />
-            <section title="grading::TestBuilder" ref="classgrading_1_1_test_builder.html" />
-            <section title="grading::TestSuite" ref="classgrading_1_1_test_suite.html" />
+            <section title="grading::CheckResult" ref="classgrading_1_1CheckResult.html" />
+            <section title="grading::SharedMemory" ref="classgrading_1_1SharedMemory.html" />
+            <section title="grading::TestSuite::Statistics" ref="structgrading_1_1TestSuite_1_1Statistics.html" />
+            <section title="grading::Test" ref="classgrading_1_1Test.html" />
+            <section title="grading::TestBuilder" ref="classgrading_1_1TestBuilder.html" />
+            <section title="grading::TestSuite" ref="classgrading_1_1TestSuite.html" />
           </section>
           <section title="Class Members" ref="functions.html">
             <section title="All" ref="functions.html" />
@@ -94,64 +94,64 @@
           <section title="File List" ref="files.html">
             <section title="include" ref="dir_d44c64559bbebec7f509842c48db8b23.html">
               <section title="libgrading.h" ref="libgrading_8h.html">
-                <section title="TestSuite" ref="classgrading_1_1_test_suite.html">
-                  <section title="Statistics" ref="structgrading_1_1_test_suite_1_1_statistics.html">
-                    <section title="failed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
-                    <section title="passed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a63372b8d2455093e8f976b94bf887514" />
-                    <section title="score" ref="structgrading_1_1_test_suite_1_1_statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
-                    <section title="total" ref="structgrading_1_1_test_suite_1_1_statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
+                <section title="TestSuite" ref="classgrading_1_1TestSuite.html">
+                  <section title="Statistics" ref="structgrading_1_1TestSuite_1_1Statistics.html">
+                    <section title="failed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
+                    <section title="passed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a63372b8d2455093e8f976b94bf887514" />
+                    <section title="score" ref="structgrading_1_1TestSuite_1_1Statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
+                    <section title="total" ref="structgrading_1_1TestSuite_1_1Statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
                   </section>
-                  <section title="TestSuite" ref="classgrading_1_1_test_suite.html#af7291e6d8b53443604ee0c1fcf1fadfc" />
-                  <section title="TestSuite" ref="classgrading_1_1_test_suite.html#ae4855c5911eead0b03f37f7f8c72226c" />
-                  <section title="add" ref="classgrading_1_1_test_suite.html#a0d0717051f59926f779ed7a67eefef8b" />
-                  <section title="add" ref="classgrading_1_1_test_suite.html#a83cd3b7090e3a7ab3dcc04577a636500" />
-                  <section title="Run" ref="classgrading_1_1_test_suite.html#aed19308d0831a296ece062105ccc1688" />
-                  <section title="totalWeight" ref="classgrading_1_1_test_suite.html#a370b4e2e35e2d571edb8430f35e71001" />
+                  <section title="TestSuite" ref="classgrading_1_1TestSuite.html#af7291e6d8b53443604ee0c1fcf1fadfc" />
+                  <section title="TestSuite" ref="classgrading_1_1TestSuite.html#ae4855c5911eead0b03f37f7f8c72226c" />
+                  <section title="add" ref="classgrading_1_1TestSuite.html#a0d0717051f59926f779ed7a67eefef8b" />
+                  <section title="add" ref="classgrading_1_1TestSuite.html#a83cd3b7090e3a7ab3dcc04577a636500" />
+                  <section title="Run" ref="classgrading_1_1TestSuite.html#aed19308d0831a296ece062105ccc1688" />
+                  <section title="totalWeight" ref="classgrading_1_1TestSuite.html#a370b4e2e35e2d571edb8430f35e71001" />
                 </section>
-                <section title="Statistics" ref="structgrading_1_1_test_suite_1_1_statistics.html">
-                  <section title="failed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
-                  <section title="passed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a63372b8d2455093e8f976b94bf887514" />
-                  <section title="score" ref="structgrading_1_1_test_suite_1_1_statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
-                  <section title="total" ref="structgrading_1_1_test_suite_1_1_statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
+                <section title="Statistics" ref="structgrading_1_1TestSuite_1_1Statistics.html">
+                  <section title="failed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
+                  <section title="passed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a63372b8d2455093e8f976b94bf887514" />
+                  <section title="score" ref="structgrading_1_1TestSuite_1_1Statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
+                  <section title="total" ref="structgrading_1_1TestSuite_1_1Statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
                 </section>
-                <section title="TestBuilder" ref="classgrading_1_1_test_builder.html">
-                  <section title="TestBuilder" ref="classgrading_1_1_test_builder.html#a08e697d22234a038d074f5960d903652" />
-                  <section title="~TestBuilder" ref="classgrading_1_1_test_builder.html#a8fadbf90810d74d6754278c61fa2c413" />
-                  <section title="desc" ref="classgrading_1_1_test_builder.html#a06703610689bd7577f971cc0b3fcc8f3" />
-                  <section title="description" ref="classgrading_1_1_test_builder.html#a11b97de939c74a02fbb9e5ec038d3f11" />
-                  <section title="timeout" ref="classgrading_1_1_test_builder.html#a3731235cafe01f5dbd582afd8f7fffde" />
-                  <section title="weight" ref="classgrading_1_1_test_builder.html#a3b2f336bdf4263885f0ef96d20877eb1" />
+                <section title="TestBuilder" ref="classgrading_1_1TestBuilder.html">
+                  <section title="TestBuilder" ref="classgrading_1_1TestBuilder.html#a08e697d22234a038d074f5960d903652" />
+                  <section title="~TestBuilder" ref="classgrading_1_1TestBuilder.html#a8fadbf90810d74d6754278c61fa2c413" />
+                  <section title="desc" ref="classgrading_1_1TestBuilder.html#a06703610689bd7577f971cc0b3fcc8f3" />
+                  <section title="description" ref="classgrading_1_1TestBuilder.html#a11b97de939c74a02fbb9e5ec038d3f11" />
+                  <section title="timeout" ref="classgrading_1_1TestBuilder.html#a3731235cafe01f5dbd582afd8f7fffde" />
+                  <section title="weight" ref="classgrading_1_1TestBuilder.html#a3b2f336bdf4263885f0ef96d20877eb1" />
                 </section>
-                <section title="Test" ref="classgrading_1_1_test.html">
-                  <section title="TagSet" ref="classgrading_1_1_test.html#a9b4ae08e5e3294d24910d18198a3ac60" />
-                  <section title="Test" ref="classgrading_1_1_test.html#aaea436313497649e4cce2ce35c7eb652" />
-                  <section title="Test" ref="classgrading_1_1_test.html#a427ff2f2da2032285ded61d94c5f73f8" />
-                  <section title="Test" ref="classgrading_1_1_test.html#a829b5558352b9b246617167781384807" />
-                  <section title="description" ref="classgrading_1_1_test.html#aadcea3975e327c7d6bfce7ca1b24d184" />
-                  <section title="name" ref="classgrading_1_1_test.html#a4abad0966891ee2ad7047a9ac7bce75c" />
-                  <section title="Run" ref="classgrading_1_1_test.html#afa9da166d4d137499345ef14e5d906a5" />
-                  <section title="timeout" ref="classgrading_1_1_test.html#a3c336d7cef69dfe6f6023dc0e0a47b22" />
-                  <section title="weight" ref="classgrading_1_1_test.html#a9183bbd29bbac0d3264530c1a6f75734" />
-                  <section title="TestBuilder" ref="classgrading_1_1_test.html#a0d601ee11ceeb73369a7bcda89822b0d" />
+                <section title="Test" ref="classgrading_1_1Test.html">
+                  <section title="TagSet" ref="classgrading_1_1Test.html#a9b4ae08e5e3294d24910d18198a3ac60" />
+                  <section title="Test" ref="classgrading_1_1Test.html#aaea436313497649e4cce2ce35c7eb652" />
+                  <section title="Test" ref="classgrading_1_1Test.html#a427ff2f2da2032285ded61d94c5f73f8" />
+                  <section title="Test" ref="classgrading_1_1Test.html#a829b5558352b9b246617167781384807" />
+                  <section title="description" ref="classgrading_1_1Test.html#aadcea3975e327c7d6bfce7ca1b24d184" />
+                  <section title="name" ref="classgrading_1_1Test.html#a4abad0966891ee2ad7047a9ac7bce75c" />
+                  <section title="Run" ref="classgrading_1_1Test.html#a06d32f69216f34a87b0b0917d1ddea1e" />
+                  <section title="timeout" ref="classgrading_1_1Test.html#a3c336d7cef69dfe6f6023dc0e0a47b22" />
+                  <section title="weight" ref="classgrading_1_1Test.html#a9183bbd29bbac0d3264530c1a6f75734" />
+                  <section title="TestBuilder" ref="classgrading_1_1Test.html#a0d601ee11ceeb73369a7bcda89822b0d" />
                 </section>
-                <section title="CheckResult" ref="classgrading_1_1_check_result.html">
-                  <section title="CheckResult" ref="classgrading_1_1_check_result.html#ae6870355bbc4c77a9806abb32a9ef4bf" />
-                  <section title="CheckResult" ref="classgrading_1_1_check_result.html#a62be6967bcdf4b426063abfcdabb1fdc" />
-                  <section title="CheckResult" ref="classgrading_1_1_check_result.html#acc0a42107b9a7340768ecc5d7a8f4552" />
-                  <section title="CheckResult" ref="classgrading_1_1_check_result.html#a86b6a6ae2a329d445245c9ae8ad39896" />
-                  <section title="CheckResult" ref="classgrading_1_1_check_result.html#a2ec2c6c5cd56c815d06e39acfa2b0bad" />
-                  <section title="~CheckResult" ref="classgrading_1_1_check_result.html#a7707cc3b4f29b80aad69a5926f8000f7" />
-                  <section title="actual" ref="classgrading_1_1_check_result.html#a0669a9c5b9e898bc79c89dbc51dc766a" />
-                  <section title="cancel" ref="classgrading_1_1_check_result.html#ad02c8fb5c001080578f1486b436cb901" />
-                  <section title="error" ref="classgrading_1_1_check_result.html#a11a96e2f4455fcb9f4c3aad254197338" />
-                  <section title="expected" ref="classgrading_1_1_check_result.html#a43c2c304fc2368dc14eca9170e985700" />
-                  <section title="message" ref="classgrading_1_1_check_result.html#ac18139025d3746382c1dd44a4a5b363a" />
-                  <section title="operator&lt;&lt;" ref="classgrading_1_1_check_result.html#a874fcd2efa6b3603b8cad87e9382f2c9" />
-                  <section title="operator&lt;&lt;" ref="classgrading_1_1_check_result.html#a3545ae30f105104ee618e4036cfda1cd" />
+                <section title="CheckResult" ref="classgrading_1_1CheckResult.html">
+                  <section title="CheckResult" ref="classgrading_1_1CheckResult.html#ae6870355bbc4c77a9806abb32a9ef4bf" />
+                  <section title="CheckResult" ref="classgrading_1_1CheckResult.html#a62be6967bcdf4b426063abfcdabb1fdc" />
+                  <section title="CheckResult" ref="classgrading_1_1CheckResult.html#acc0a42107b9a7340768ecc5d7a8f4552" />
+                  <section title="CheckResult" ref="classgrading_1_1CheckResult.html#a86b6a6ae2a329d445245c9ae8ad39896" />
+                  <section title="CheckResult" ref="classgrading_1_1CheckResult.html#a2ec2c6c5cd56c815d06e39acfa2b0bad" />
+                  <section title="~CheckResult" ref="classgrading_1_1CheckResult.html#a7707cc3b4f29b80aad69a5926f8000f7" />
+                  <section title="actual" ref="classgrading_1_1CheckResult.html#a0669a9c5b9e898bc79c89dbc51dc766a" />
+                  <section title="cancel" ref="classgrading_1_1CheckResult.html#ad02c8fb5c001080578f1486b436cb901" />
+                  <section title="error" ref="classgrading_1_1CheckResult.html#a11a96e2f4455fcb9f4c3aad254197338" />
+                  <section title="expected" ref="classgrading_1_1CheckResult.html#a43c2c304fc2368dc14eca9170e985700" />
+                  <section title="message" ref="classgrading_1_1CheckResult.html#ac18139025d3746382c1dd44a4a5b363a" />
+                  <section title="operator&lt;&lt;" ref="classgrading_1_1CheckResult.html#a874fcd2efa6b3603b8cad87e9382f2c9" />
+                  <section title="operator&lt;&lt;" ref="classgrading_1_1CheckResult.html#a3545ae30f105104ee618e4036cfda1cd" />
                 </section>
-                <section title="SharedMemory" ref="classgrading_1_1_shared_memory.html">
-                  <section title="~SharedMemory" ref="classgrading_1_1_shared_memory.html#aca6c5db023c5b560d07f04f2ac6d42ce" />
-                  <section title="rawPointer" ref="classgrading_1_1_shared_memory.html#aec3102de425f4ff2f692e8f28d53b01a" />
+                <section title="SharedMemory" ref="classgrading_1_1SharedMemory.html">
+                  <section title="~SharedMemory" ref="classgrading_1_1SharedMemory.html#aca6c5db023c5b560d07f04f2ac6d42ce" />
+                  <section title="rawPointer" ref="classgrading_1_1SharedMemory.html#aec3102de425f4ff2f692e8f28d53b01a" />
                 </section>
                 <section title="TestClosure" ref="libgrading_8h.html#ad6aa40631a1162771cd1600e40e62105" />
                 <section title="TestResult" ref="libgrading_8h.html#ae890cd55c5a0db0c68f9f683bca07e2c">
@@ -181,20 +181,18 @@
                 <section title="operator&lt;&lt;" ref="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
                 <section title="operator||" ref="libgrading_8h.html#ae879c550a264e817453c5a0611aead83" />
                 <section title="operator||" ref="libgrading_8h.html#a2dd247b47e98c57c01a2bdf73e013d2b" />
-                <section title="RunTest" ref="libgrading_8h.html#ae7891f559b352cc4063d6170ac537e30" />
-                <section title="RunTest" ref="libgrading_8h.html#aae91939646bbd1381f50f44f3589ddf9" />
-                <section title="RunTest" ref="libgrading_8h.html#a2f33a6ad9c09cfd06fef7628513b1757" />
               </section>
             </section>
             <section title="src" ref="dir_68267d1309a1af8e8297ef4c3efbcdba.html">
-              <section title="Arguments.cpp" ref="_arguments_8cpp.html">
-                <section title="Options" ref="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99">
-                  <section title="UNKNOWN" ref="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a6ce26a62afab55d7606ad4e92428b30c" />
-                  <section title="HELP" ref="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a9f5cb747b2e1f0ea781d2b1f2a5b4824" />
-                  <section title="VERBOSE" ref="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99ace3e26676763569084c86b8c3b67d601" />
-                  <section title="STRATEGY" ref="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a2c36b9b15642557c7d30a429a9723aad" />
+              <section title="Arguments.cpp" ref="Arguments_8cpp.html">
+                <section title="Options" ref="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99">
+                  <section title="UNKNOWN" ref="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a6ce26a62afab55d7606ad4e92428b30c" />
+                  <section title="HELP" ref="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a9f5cb747b2e1f0ea781d2b1f2a5b4824" />
+                  <section title="VERBOSE" ref="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99ace3e26676763569084c86b8c3b67d601" />
+                  <section title="STRATEGY" ref="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a2c36b9b15642557c7d30a429a9723aad" />
+                  <section title="TIMEOUT" ref="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99aad9dee005a3d0f9137b2ac1e0869f89b" />
                 </section>
-                <section title="usage" ref="_arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12" />
+                <section title="usage" ref="Arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12" />
               </section>
               <section title="checks.cpp" ref="checks_8cpp.html">
                 <section title="Check" ref="checks_8cpp.html#a5af105030311d3c4a6cf7382d99ad1b9" />
@@ -212,13 +210,13 @@
               <section title="posix.cpp" ref="posix_8cpp.html" />
               <section title="private.h" ref="private_8h.html">
                 <section title="EnterSandbox" ref="private_8h.html#a5d98269221e6b4c09096d4ae2daa7e79" />
-                <section title="ForkTest" ref="private_8h.html#ae2b494ba783e700e554f672b6c949deb" />
+                <section title="ForkTest" ref="private_8h.html#a37c099580cc9e671911f5366b6ae9db5" />
                 <section title="RunInProcess" ref="private_8h.html#afb35b03796b42705a1093a6de7fcda92" />
               </section>
-              <section title="Test.cpp" ref="_test_8cpp.html" />
-              <section title="TestBuilder.cpp" ref="_test_builder_8cpp.html" />
-              <section title="TestResult.cpp" ref="_test_result_8cpp.html" />
-              <section title="TestSuite.cpp" ref="_test_suite_8cpp.html" />
+              <section title="Test.cpp" ref="Test_8cpp.html" />
+              <section title="TestBuilder.cpp" ref="TestBuilder_8cpp.html" />
+              <section title="TestResult.cpp" ref="TestResult_8cpp.html" />
+              <section title="TestSuite.cpp" ref="TestSuite_8cpp.html" />
             </section>
           </section>
         </section>
@@ -239,10 +237,7 @@
       <keyword name="Fail" id="libgrading.h::Fail" ref="libgrading_8h.html#af96907301ae88bb00615efa5793bb104" />
       <keyword name="operator&lt;&lt;" id="libgrading.h::operator&lt;&lt;" ref="libgrading_8h.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
       <keyword name="MapSharedData" id="libgrading.h::MapSharedData" ref="libgrading_8h.html#a7e1850cba45d8bced4b418e9eb36163a" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#ae7891f559b352cc4063d6170ac537e30" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#aae91939646bbd1381f50f44f3589ddf9" />
-      <keyword name="RunTest" id="libgrading.h::RunTest" ref="libgrading_8h.html#a2f33a6ad9c09cfd06fef7628513b1757" />
-      <keyword name="usage" id="Arguments.cpp::usage" ref="_arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12" />
+      <keyword name="usage" id="Arguments.cpp::usage" ref="Arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12" />
       <keyword name="operator&amp;&amp;" id="checks.cpp::operator&amp;&amp;" ref="checks_8cpp.html#a408d2501b1f610426acd4a22007c6b95" />
       <keyword name="operator&amp;&amp;" id="checks.cpp::operator&amp;&amp;" ref="checks_8cpp.html#ae7e6496f6d9a2eaf0ee06bac0c73a90c" />
       <keyword name="operator||" id="checks.cpp::operator||" ref="checks_8cpp.html#ae879c550a264e817453c5a0611aead83" />
@@ -255,7 +250,7 @@
       <keyword name="CheckString" id="checks.cpp::CheckString" ref="checks_8cpp.html#a6a12ba1dfc6c557a610481af0e167466" />
       <keyword name="Fail" id="checks.cpp::Fail" ref="checks_8cpp.html#af96907301ae88bb00615efa5793bb104" />
       <keyword name="EnterSandbox" id="private.h::EnterSandbox" ref="private_8h.html#a5d98269221e6b4c09096d4ae2daa7e79" />
-      <keyword name="ForkTest" id="private.h::ForkTest" ref="private_8h.html#ae2b494ba783e700e554f672b6c949deb" />
+      <keyword name="ForkTest" id="private.h::ForkTest" ref="private_8h.html#a37c099580cc9e671911f5366b6ae9db5" />
       <keyword name="RunInProcess" id="private.h::RunInProcess" ref="private_8h.html#afb35b03796b42705a1093a6de7fcda92" />
       <keyword name="grading" id="grading" ref="namespacegrading.html" />
       <keyword name="TestClosure" id="grading::TestClosure" ref="namespacegrading.html#ad6aa40631a1162771cd1600e40e62105" />
@@ -272,11 +267,8 @@
       <keyword name="Fail" id="grading::Fail" ref="namespacegrading.html#af96907301ae88bb00615efa5793bb104" />
       <keyword name="operator&lt;&lt;" id="grading::operator&lt;&lt;" ref="namespacegrading.html#a7f6a40c5d4a973fea01a308e8d06d9d0" />
       <keyword name="MapSharedData" id="grading::MapSharedData" ref="namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#ae7891f559b352cc4063d6170ac537e30" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#aae91939646bbd1381f50f44f3589ddf9" />
-      <keyword name="RunTest" id="grading::RunTest" ref="namespacegrading.html#a2f33a6ad9c09cfd06fef7628513b1757" />
       <keyword name="EnterSandbox" id="grading::EnterSandbox" ref="namespacegrading.html#a5d98269221e6b4c09096d4ae2daa7e79" />
-      <keyword name="ForkTest" id="grading::ForkTest" ref="namespacegrading.html#ae2b494ba783e700e554f672b6c949deb" />
+      <keyword name="ForkTest" id="grading::ForkTest" ref="namespacegrading.html#a37c099580cc9e671911f5366b6ae9db5" />
       <keyword name="RunInProcess" id="grading::RunInProcess" ref="namespacegrading.html#afb35b03796b42705a1093a6de7fcda92" />
       <keyword name="Pass" id="grading::Pass" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2cab9b57aae83585e17ede4570dcede353c" />
       <keyword name="Fail" id="grading::Fail" ref="namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2caceaa0734f0b3c738120c67344d8f3ec1" />
@@ -288,49 +280,49 @@
       <keyword name="Inline" id="grading::Inline" ref="namespacegrading.html#ac8190bf48f671e9cce3d2253bb2661a2a0125cf5f3ca38b312ca5d3b511c45a13" />
       <keyword name="Separated" id="grading::Separated" ref="namespacegrading.html#ac8190bf48f671e9cce3d2253bb2661a2a606970f24025625f40867ff6d152fa1e" />
       <keyword name="Sandboxed" id="grading::Sandboxed" ref="namespacegrading.html#ac8190bf48f671e9cce3d2253bb2661a2a7b8a250802343eae5e2d3b3fd34aea64" />
-      <keyword name="grading::CheckResult" id="grading::CheckResult" ref="classgrading_1_1_check_result.html" />
-      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1_check_result.html#ae6870355bbc4c77a9806abb32a9ef4bf" />
-      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1_check_result.html#a62be6967bcdf4b426063abfcdabb1fdc" />
-      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1_check_result.html#acc0a42107b9a7340768ecc5d7a8f4552" />
-      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1_check_result.html#a86b6a6ae2a329d445245c9ae8ad39896" />
-      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1_check_result.html#a2ec2c6c5cd56c815d06e39acfa2b0bad" />
-      <keyword name="operator&lt;&lt;" id="grading::CheckResult::operator&lt;&lt;" ref="classgrading_1_1_check_result.html#a874fcd2efa6b3603b8cad87e9382f2c9" />
-      <keyword name="operator&lt;&lt;" id="grading::CheckResult::operator&lt;&lt;" ref="classgrading_1_1_check_result.html#a3545ae30f105104ee618e4036cfda1cd" />
-      <keyword name="error" id="grading::CheckResult::error" ref="classgrading_1_1_check_result.html#a11a96e2f4455fcb9f4c3aad254197338" />
-      <keyword name="cancel" id="grading::CheckResult::cancel" ref="classgrading_1_1_check_result.html#ad02c8fb5c001080578f1486b436cb901" />
-      <keyword name="expected" id="grading::CheckResult::expected" ref="classgrading_1_1_check_result.html#a43c2c304fc2368dc14eca9170e985700" />
-      <keyword name="actual" id="grading::CheckResult::actual" ref="classgrading_1_1_check_result.html#a0669a9c5b9e898bc79c89dbc51dc766a" />
-      <keyword name="message" id="grading::CheckResult::message" ref="classgrading_1_1_check_result.html#ac18139025d3746382c1dd44a4a5b363a" />
-      <keyword name="grading::SharedMemory" id="grading::SharedMemory" ref="classgrading_1_1_shared_memory.html" />
-      <keyword name="rawPointer" id="grading::SharedMemory::rawPointer" ref="classgrading_1_1_shared_memory.html#aec3102de425f4ff2f692e8f28d53b01a" />
-      <keyword name="grading::Test" id="grading::Test" ref="classgrading_1_1_test.html" />
-      <keyword name="TagSet" id="grading::Test::TagSet" ref="classgrading_1_1_test.html#a9b4ae08e5e3294d24910d18198a3ac60" />
-      <keyword name="Test" id="grading::Test::Test" ref="classgrading_1_1_test.html#aaea436313497649e4cce2ce35c7eb652" />
-      <keyword name="Test" id="grading::Test::Test" ref="classgrading_1_1_test.html#a427ff2f2da2032285ded61d94c5f73f8" />
-      <keyword name="Test" id="grading::Test::Test" ref="classgrading_1_1_test.html#a829b5558352b9b246617167781384807" />
-      <keyword name="name" id="grading::Test::name" ref="classgrading_1_1_test.html#a4abad0966891ee2ad7047a9ac7bce75c" />
-      <keyword name="description" id="grading::Test::description" ref="classgrading_1_1_test.html#aadcea3975e327c7d6bfce7ca1b24d184" />
-      <keyword name="timeout" id="grading::Test::timeout" ref="classgrading_1_1_test.html#a3c336d7cef69dfe6f6023dc0e0a47b22" />
-      <keyword name="weight" id="grading::Test::weight" ref="classgrading_1_1_test.html#a9183bbd29bbac0d3264530c1a6f75734" />
-      <keyword name="Run" id="grading::Test::Run" ref="classgrading_1_1_test.html#afa9da166d4d137499345ef14e5d906a5" />
-      <keyword name="TestBuilder" id="grading::Test::TestBuilder" ref="classgrading_1_1_test.html#a0d601ee11ceeb73369a7bcda89822b0d" />
-      <keyword name="grading::TestBuilder" id="grading::TestBuilder" ref="classgrading_1_1_test_builder.html" />
-      <keyword name="TestBuilder" id="grading::TestBuilder::TestBuilder" ref="classgrading_1_1_test_builder.html#a08e697d22234a038d074f5960d903652" />
-      <keyword name="description" id="grading::TestBuilder::description" ref="classgrading_1_1_test_builder.html#a11b97de939c74a02fbb9e5ec038d3f11" />
-      <keyword name="desc" id="grading::TestBuilder::desc" ref="classgrading_1_1_test_builder.html#a06703610689bd7577f971cc0b3fcc8f3" />
-      <keyword name="timeout" id="grading::TestBuilder::timeout" ref="classgrading_1_1_test_builder.html#a3731235cafe01f5dbd582afd8f7fffde" />
-      <keyword name="weight" id="grading::TestBuilder::weight" ref="classgrading_1_1_test_builder.html#a3b2f336bdf4263885f0ef96d20877eb1" />
-      <keyword name="grading::TestSuite" id="grading::TestSuite" ref="classgrading_1_1_test_suite.html" />
-      <keyword name="TestSuite" id="grading::TestSuite::TestSuite" ref="classgrading_1_1_test_suite.html#ae4855c5911eead0b03f37f7f8c72226c" />
-      <keyword name="add" id="grading::TestSuite::add" ref="classgrading_1_1_test_suite.html#a0d0717051f59926f779ed7a67eefef8b" />
-      <keyword name="add" id="grading::TestSuite::add" ref="classgrading_1_1_test_suite.html#a83cd3b7090e3a7ab3dcc04577a636500" />
-      <keyword name="totalWeight" id="grading::TestSuite::totalWeight" ref="classgrading_1_1_test_suite.html#a370b4e2e35e2d571edb8430f35e71001" />
-      <keyword name="Run" id="grading::TestSuite::Run" ref="classgrading_1_1_test_suite.html#aed19308d0831a296ece062105ccc1688" />
-      <keyword name="grading::TestSuite::Statistics" id="grading::TestSuite::Statistics" ref="structgrading_1_1_test_suite_1_1_statistics.html" />
-      <keyword name="passed" id="grading::TestSuite::Statistics::passed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a63372b8d2455093e8f976b94bf887514" />
-      <keyword name="failed" id="grading::TestSuite::Statistics::failed" ref="structgrading_1_1_test_suite_1_1_statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
-      <keyword name="score" id="grading::TestSuite::Statistics::score" ref="structgrading_1_1_test_suite_1_1_statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
-      <keyword name="total" id="grading::TestSuite::Statistics::total" ref="structgrading_1_1_test_suite_1_1_statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
+      <keyword name="grading::CheckResult" id="grading::CheckResult" ref="classgrading_1_1CheckResult.html" />
+      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1CheckResult.html#ae6870355bbc4c77a9806abb32a9ef4bf" />
+      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1CheckResult.html#a62be6967bcdf4b426063abfcdabb1fdc" />
+      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1CheckResult.html#acc0a42107b9a7340768ecc5d7a8f4552" />
+      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1CheckResult.html#a86b6a6ae2a329d445245c9ae8ad39896" />
+      <keyword name="CheckResult" id="grading::CheckResult::CheckResult" ref="classgrading_1_1CheckResult.html#a2ec2c6c5cd56c815d06e39acfa2b0bad" />
+      <keyword name="operator&lt;&lt;" id="grading::CheckResult::operator&lt;&lt;" ref="classgrading_1_1CheckResult.html#a874fcd2efa6b3603b8cad87e9382f2c9" />
+      <keyword name="operator&lt;&lt;" id="grading::CheckResult::operator&lt;&lt;" ref="classgrading_1_1CheckResult.html#a3545ae30f105104ee618e4036cfda1cd" />
+      <keyword name="error" id="grading::CheckResult::error" ref="classgrading_1_1CheckResult.html#a11a96e2f4455fcb9f4c3aad254197338" />
+      <keyword name="cancel" id="grading::CheckResult::cancel" ref="classgrading_1_1CheckResult.html#ad02c8fb5c001080578f1486b436cb901" />
+      <keyword name="expected" id="grading::CheckResult::expected" ref="classgrading_1_1CheckResult.html#a43c2c304fc2368dc14eca9170e985700" />
+      <keyword name="actual" id="grading::CheckResult::actual" ref="classgrading_1_1CheckResult.html#a0669a9c5b9e898bc79c89dbc51dc766a" />
+      <keyword name="message" id="grading::CheckResult::message" ref="classgrading_1_1CheckResult.html#ac18139025d3746382c1dd44a4a5b363a" />
+      <keyword name="grading::SharedMemory" id="grading::SharedMemory" ref="classgrading_1_1SharedMemory.html" />
+      <keyword name="rawPointer" id="grading::SharedMemory::rawPointer" ref="classgrading_1_1SharedMemory.html#aec3102de425f4ff2f692e8f28d53b01a" />
+      <keyword name="grading::Test" id="grading::Test" ref="classgrading_1_1Test.html" />
+      <keyword name="TagSet" id="grading::Test::TagSet" ref="classgrading_1_1Test.html#a9b4ae08e5e3294d24910d18198a3ac60" />
+      <keyword name="Test" id="grading::Test::Test" ref="classgrading_1_1Test.html#aaea436313497649e4cce2ce35c7eb652" />
+      <keyword name="Test" id="grading::Test::Test" ref="classgrading_1_1Test.html#a427ff2f2da2032285ded61d94c5f73f8" />
+      <keyword name="Test" id="grading::Test::Test" ref="classgrading_1_1Test.html#a829b5558352b9b246617167781384807" />
+      <keyword name="name" id="grading::Test::name" ref="classgrading_1_1Test.html#a4abad0966891ee2ad7047a9ac7bce75c" />
+      <keyword name="description" id="grading::Test::description" ref="classgrading_1_1Test.html#aadcea3975e327c7d6bfce7ca1b24d184" />
+      <keyword name="timeout" id="grading::Test::timeout" ref="classgrading_1_1Test.html#a3c336d7cef69dfe6f6023dc0e0a47b22" />
+      <keyword name="weight" id="grading::Test::weight" ref="classgrading_1_1Test.html#a9183bbd29bbac0d3264530c1a6f75734" />
+      <keyword name="Run" id="grading::Test::Run" ref="classgrading_1_1Test.html#a06d32f69216f34a87b0b0917d1ddea1e" />
+      <keyword name="TestBuilder" id="grading::Test::TestBuilder" ref="classgrading_1_1Test.html#a0d601ee11ceeb73369a7bcda89822b0d" />
+      <keyword name="grading::TestBuilder" id="grading::TestBuilder" ref="classgrading_1_1TestBuilder.html" />
+      <keyword name="TestBuilder" id="grading::TestBuilder::TestBuilder" ref="classgrading_1_1TestBuilder.html#a08e697d22234a038d074f5960d903652" />
+      <keyword name="description" id="grading::TestBuilder::description" ref="classgrading_1_1TestBuilder.html#a11b97de939c74a02fbb9e5ec038d3f11" />
+      <keyword name="desc" id="grading::TestBuilder::desc" ref="classgrading_1_1TestBuilder.html#a06703610689bd7577f971cc0b3fcc8f3" />
+      <keyword name="timeout" id="grading::TestBuilder::timeout" ref="classgrading_1_1TestBuilder.html#a3731235cafe01f5dbd582afd8f7fffde" />
+      <keyword name="weight" id="grading::TestBuilder::weight" ref="classgrading_1_1TestBuilder.html#a3b2f336bdf4263885f0ef96d20877eb1" />
+      <keyword name="grading::TestSuite" id="grading::TestSuite" ref="classgrading_1_1TestSuite.html" />
+      <keyword name="TestSuite" id="grading::TestSuite::TestSuite" ref="classgrading_1_1TestSuite.html#ae4855c5911eead0b03f37f7f8c72226c" />
+      <keyword name="add" id="grading::TestSuite::add" ref="classgrading_1_1TestSuite.html#a0d0717051f59926f779ed7a67eefef8b" />
+      <keyword name="add" id="grading::TestSuite::add" ref="classgrading_1_1TestSuite.html#a83cd3b7090e3a7ab3dcc04577a636500" />
+      <keyword name="totalWeight" id="grading::TestSuite::totalWeight" ref="classgrading_1_1TestSuite.html#a370b4e2e35e2d571edb8430f35e71001" />
+      <keyword name="Run" id="grading::TestSuite::Run" ref="classgrading_1_1TestSuite.html#aed19308d0831a296ece062105ccc1688" />
+      <keyword name="grading::TestSuite::Statistics" id="grading::TestSuite::Statistics" ref="structgrading_1_1TestSuite_1_1Statistics.html" />
+      <keyword name="passed" id="grading::TestSuite::Statistics::passed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a63372b8d2455093e8f976b94bf887514" />
+      <keyword name="failed" id="grading::TestSuite::Statistics::failed" ref="structgrading_1_1TestSuite_1_1Statistics.html#a1311d4b68c2bb2a5adb124ea88cd564a" />
+      <keyword name="score" id="grading::TestSuite::Statistics::score" ref="structgrading_1_1TestSuite_1_1Statistics.html#ab8c8c10bef7d7ec18f31903314682ef5" />
+      <keyword name="total" id="grading::TestSuite::Statistics::total" ref="structgrading_1_1TestSuite_1_1Statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35" />
     </keywords>
     <files>
       <file>tabs.css</file>
@@ -364,20 +356,20 @@
       <file>search/search.css</file>
       <file>search/search.js</file>
       <file>libgrading_8h_source.html</file>
-      <file>_r_e_a_d_m_e_8md_source.html</file>
-      <file>_arguments_8cpp_source.html</file>
+      <file>README_8md_source.html</file>
+      <file>Arguments_8cpp_source.html</file>
       <file>checks_8cpp_source.html</file>
       <file>posix_8cpp_source.html</file>
       <file>private_8h_source.html</file>
-      <file>_test_8cpp_source.html</file>
-      <file>_test_builder_8cpp_source.html</file>
-      <file>_test_result_8cpp_source.html</file>
-      <file>_test_suite_8cpp_source.html</file>
+      <file>Test_8cpp_source.html</file>
+      <file>TestBuilder_8cpp_source.html</file>
+      <file>TestResult_8cpp_source.html</file>
+      <file>TestSuite_8cpp_source.html</file>
       <file>libgrading_8h.html</file>
       <file>libgrading_8h__incl.svg</file>
       <file>libgrading_8h__dep__incl.svg</file>
-      <file>_arguments_8cpp.html</file>
-      <file>_arguments_8cpp__incl.svg</file>
+      <file>Arguments_8cpp.html</file>
+      <file>Arguments_8cpp__incl.svg</file>
       <file>checks_8cpp.html</file>
       <file>checks_8cpp__incl.svg</file>
       <file>posix_8cpp.html</file>
@@ -385,37 +377,33 @@
       <file>private_8h.html</file>
       <file>private_8h__incl.svg</file>
       <file>private_8h__dep__incl.svg</file>
-      <file>_test_8cpp.html</file>
-      <file>_test_8cpp__incl.svg</file>
-      <file>_test_builder_8cpp.html</file>
-      <file>_test_builder_8cpp__incl.svg</file>
-      <file>_test_result_8cpp.html</file>
-      <file>_test_result_8cpp__incl.svg</file>
-      <file>_test_suite_8cpp.html</file>
-      <file>_test_suite_8cpp__incl.svg</file>
+      <file>Test_8cpp.html</file>
+      <file>Test_8cpp__incl.svg</file>
+      <file>TestBuilder_8cpp.html</file>
+      <file>TestBuilder_8cpp__incl.svg</file>
+      <file>TestResult_8cpp.html</file>
+      <file>TestResult_8cpp__incl.svg</file>
+      <file>TestSuite_8cpp.html</file>
+      <file>TestSuite_8cpp__incl.svg</file>
       <file>namespacegrading.html</file>
       <file>namespacegrading_af96907301ae88bb00615efa5793bb104_icgraph.svg</file>
-      <file>namespacegrading_a7e1850cba45d8bced4b418e9eb36163a_icgraph.svg</file>
       <file>namespacegrading_a7f6a40c5d4a973fea01a308e8d06d9d0_cgraph.svg</file>
-      <file>namespacegrading_ae7891f559b352cc4063d6170ac537e30_icgraph.svg</file>
-      <file>namespacegrading_aae91939646bbd1381f50f44f3589ddf9_cgraph.svg</file>
-      <file>classgrading_1_1_check_result.html</file>
-      <file>classgrading_1_1_check_result-members.html</file>
-      <file>classgrading_1_1_shared_memory.html</file>
-      <file>classgrading_1_1_shared_memory_aec3102de425f4ff2f692e8f28d53b01a_icgraph.svg</file>
-      <file>classgrading_1_1_shared_memory-members.html</file>
-      <file>classgrading_1_1_test.html</file>
-      <file>classgrading_1_1_test-members.html</file>
-      <file>classgrading_1_1_test_builder.html</file>
-      <file>classgrading_1_1_test_builder_a06703610689bd7577f971cc0b3fcc8f3_cgraph.svg</file>
-      <file>classgrading_1_1_test_builder_a11b97de939c74a02fbb9e5ec038d3f11_icgraph.svg</file>
-      <file>classgrading_1_1_test_builder-members.html</file>
-      <file>classgrading_1_1_test_suite.html</file>
-      <file>classgrading_1_1_test_suite_aed19308d0831a296ece062105ccc1688_cgraph.svg</file>
-      <file>classgrading_1_1_test_suite_a370b4e2e35e2d571edb8430f35e71001_icgraph.svg</file>
-      <file>classgrading_1_1_test_suite-members.html</file>
-      <file>structgrading_1_1_test_suite_1_1_statistics.html</file>
-      <file>structgrading_1_1_test_suite_1_1_statistics-members.html</file>
+      <file>classgrading_1_1CheckResult.html</file>
+      <file>classgrading_1_1CheckResult-members.html</file>
+      <file>classgrading_1_1SharedMemory.html</file>
+      <file>classgrading_1_1SharedMemory-members.html</file>
+      <file>classgrading_1_1Test.html</file>
+      <file>classgrading_1_1Test-members.html</file>
+      <file>classgrading_1_1TestBuilder.html</file>
+      <file>classgrading_1_1TestBuilder_a06703610689bd7577f971cc0b3fcc8f3_cgraph.svg</file>
+      <file>classgrading_1_1TestBuilder_a11b97de939c74a02fbb9e5ec038d3f11_icgraph.svg</file>
+      <file>classgrading_1_1TestBuilder-members.html</file>
+      <file>classgrading_1_1TestSuite.html</file>
+      <file>classgrading_1_1TestSuite_aed19308d0831a296ece062105ccc1688_cgraph.svg</file>
+      <file>classgrading_1_1TestSuite_a370b4e2e35e2d571edb8430f35e71001_icgraph.svg</file>
+      <file>classgrading_1_1TestSuite-members.html</file>
+      <file>structgrading_1_1TestSuite_1_1Statistics.html</file>
+      <file>structgrading_1_1TestSuite_1_1Statistics-members.html</file>
       <file>graph_legend.svg</file>
       <file>graph_legend.html</file>
       <file>dir_d44c64559bbebec7f509842c48db8b23.html</file>
@@ -430,8 +418,6 @@
       <file>namespacemembers.html</file>
       <file>namespacemembers.html</file>
       <file>namespacemembers.html</file>
-      <file>namespacemembers.html</file>
-      <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
       <file>namespacemembers_func.html</file>
