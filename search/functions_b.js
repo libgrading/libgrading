@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weight',['weight',['../classgrading_1_1TestBuilder.html#a3b2f336bdf4263885f0ef96d20877eb1',1,'grading::TestBuilder::weight()'],['../classgrading_1_1Test.html#a9183bbd29bbac0d3264530c1a6f75734',1,'grading::Test::weight()']]]
+  ['weight',['weight',['../classgrading_1_1TestBuilder.html#afaaa8e7cc9878a5e3200c534df5411e1',1,'grading::TestBuilder::weight()'],['../classgrading_1_1Test.html#adeb71e361e179403c3cacbccd6e8c1bd',1,'grading::Test::weight()']]]
 ];

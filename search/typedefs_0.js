@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tagset',['TagSet',['../classgrading_1_1Test.html#a9b4ae08e5e3294d24910d18198a3ac60',1,'grading::Test']]],
-  ['testclosure',['TestClosure',['../namespacegrading.html#ad6aa40631a1162771cd1600e40e62105',1,'grading']]]
+  ['tagset',['TagSet',['../classgrading_1_1Test.html#a191b633593a0e8e5e09820dc775889f0',1,'grading::Test']]],
+  ['testclosure',['TestClosure',['../namespacegrading.html#a25ef703be30c9118f7ecaa6490602fe9',1,'grading']]]
 ];

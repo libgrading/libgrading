@@ -1,0 +1,5 @@
+<map id="Run" name="Run">
+<area shape="rect" id="node2" href="$namespacegrading.html#aed77613e7ee73c012e02edbcbcb9ec7d" title="Enter unprivileged testing sandbox, if supported. " alt="" coords="103,5,293,33"/>
+<area shape="rect" id="node3" href="$namespacegrading.html#a33c566b4173ebd55bf3df8db7c018a90" title="Run a test in another process. " alt="" coords="125,57,271,85"/>
+<area shape="rect" id="node4" href="$namespacegrading.html#a9cdfc5dd1e8d1d603833c8a9def1af77" title="Run a test in the current process, catching all exceptions. " alt="" coords="341,57,524,85"/>
+</map>

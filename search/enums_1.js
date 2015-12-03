@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['testresult',['TestResult',['../namespacegrading.html#ae890cd55c5a0db0c68f9f683bca07e2c',1,'grading']]],
-  ['testrunstrategy',['TestRunStrategy',['../namespacegrading.html#ac8190bf48f671e9cce3d2253bb2661a2',1,'grading']]]
+  ['testresult',['TestResult',['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642',1,'grading']]],
+  ['testrunstrategy',['TestRunStrategy',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677',1,'grading']]]
 ];
