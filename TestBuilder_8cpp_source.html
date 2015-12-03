@@ -65,6 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -97,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using</span> std::string;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;TestBuilder::TestBuilder(<a class="code" href="classgrading_1_1TestSuite.html">TestSuite</a>&amp; suite, <span class="keywordtype">string</span> name)</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classgrading_1_1TestBuilder.html#a08e697d22234a038d074f5960d903652">   27</a></span>&#160;<a class="code" href="classgrading_1_1TestBuilder.html#a08e697d22234a038d074f5960d903652">TestBuilder::TestBuilder</a>(<a class="code" href="classgrading_1_1TestSuite.html">TestSuite</a>&amp; suite, <span class="keywordtype">string</span> name)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    : suite_(suite), name_(name), timeout_(0), weight_(1)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
@@ -116,9 +117,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="ttc" id="classgrading_1_1TestSuite_html"><div class="ttname"><a href="classgrading_1_1TestSuite.html">grading::TestSuite</a></div><div class="ttdoc">A collection of tests that we can run. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00073">libgrading.h:73</a></div></div>
 <div class="ttc" id="libgrading_8h_html"><div class="ttname"><a href="libgrading_8h.html">libgrading.h</a></div><div class="ttdoc">A library for grading C- and C++-based assignments. </div></div>
+<div class="ttc" id="classgrading_1_1TestBuilder_html_a08e697d22234a038d074f5960d903652"><div class="ttname"><a href="classgrading_1_1TestBuilder.html#a08e697d22234a038d074f5960d903652">grading::TestBuilder::TestBuilder</a></div><div class="ttdeci">TestBuilder(TestSuite &amp;, std::string name)</div><div class="ttdoc">Construct a builder for a named test within a TestSuite. </div><div class="ttdef"><b>Definition:</b> <a href="TestBuilder_8cpp_source.html#l00027">TestBuilder.cpp:27</a></div></div>
 <div class="ttc" id="classgrading_1_1TestSuite_html_a0d0717051f59926f779ed7a67eefef8b"><div class="ttname"><a href="classgrading_1_1TestSuite.html#a0d0717051f59926f779ed7a67eefef8b">grading::TestSuite::add</a></div><div class="ttdeci">TestBuilder add(std::string name)</div><div class="ttdoc">Start creating a test with a given name. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00039">TestSuite.cpp:39</a></div></div>
-<div class="ttc" id="classgrading_1_1Test_html"><div class="ttname"><a href="classgrading_1_1Test.html">grading::Test</a></div><div class="ttdoc">A single, completely-initialized test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00163">libgrading.h:163</a></div></div>
-<div class="ttc" id="classgrading_1_1TestBuilder_html"><div class="ttname"><a href="classgrading_1_1TestBuilder.html">grading::TestBuilder</a></div><div class="ttdoc">An object used to construct a complete Test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00124">libgrading.h:124</a></div></div>
+<div class="ttc" id="classgrading_1_1Test_html"><div class="ttname"><a href="classgrading_1_1Test.html">grading::Test</a></div><div class="ttdoc">A single, completely-initialized test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00167">libgrading.h:167</a></div></div>
+<div class="ttc" id="classgrading_1_1TestBuilder_html"><div class="ttname"><a href="classgrading_1_1TestBuilder.html">grading::TestBuilder</a></div><div class="ttdoc">An object used to construct a complete Test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00127">libgrading.h:127</a></div></div>
 <div class="ttc" id="classgrading_1_1TestBuilder_html_a11b97de939c74a02fbb9e5ec038d3f11"><div class="ttname"><a href="classgrading_1_1TestBuilder.html#a11b97de939c74a02fbb9e5ec038d3f11">grading::TestBuilder::description</a></div><div class="ttdeci">TestBuilder &amp; description(std::string)</div><div class="ttdoc">Set description (which will be printed when run in verbose mode). </div><div class="ttdef"><b>Definition:</b> <a href="TestBuilder_8cpp_source.html#l00039">TestBuilder.cpp:39</a></div></div>
 <div class="ttc" id="namespacegrading_html"><div class="ttname"><a href="namespacegrading.html">grading</a></div><div class="ttdoc">Container for all libgrading names. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00035">libgrading.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

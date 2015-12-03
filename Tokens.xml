@@ -170,6 +170,17 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>usage</Name>
+      <APILanguage>c</APILanguage>
+      <Type>data</Type>
+    </TokenIdentifier>
+    <Path>Arguments_8cpp.html</Path>
+    <Anchor>af23d8c13133fbc8715f459529590ed12</Anchor>
+    <Abstract>Usage strings for command-line arguments. </Abstract>
+    <DeclaredIn>Arguments.cpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>operator&amp;&amp;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
@@ -299,6 +310,42 @@
     <Anchor>af96907301ae88bb00615efa5793bb104</Anchor>
     <Abstract>Fail the current test. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>EnterSandbox</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a5d98269221e6b4c09096d4ae2daa7e79</Anchor>
+    <Abstract>Enter unprivileged testing sandbox, if supported. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ForkTest</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a37c099580cc9e671911f5366b6ae9db5</Anchor>
+    <Abstract>Run a test in another process. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>RunInProcess</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>afb35b03796b42705a1093a6de7fcda92</Anchor>
+    <Abstract>Run a test in the current process, catching all exceptions. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -480,6 +527,42 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>EnterSandbox</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a5d98269221e6b4c09096d4ae2daa7e79</Anchor>
+    <Abstract>Enter unprivileged testing sandbox, if supported. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ForkTest</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a37c099580cc9e671911f5366b6ae9db5</Anchor>
+    <Abstract>Run a test in another process. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>RunInProcess</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>afb35b03796b42705a1093a6de7fcda92</Anchor>
+    <Abstract>Run a test in the current process, catching all exceptions. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>Pass</Name>
       <APILanguage>cpp</APILanguage>
       <Type>econst</Type>
@@ -590,6 +673,84 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>grading::Arguments</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Abstract>Parsed command-line arguments. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Parse</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Anchor>a193b60c24891f195fa3a1bd67cffe788</Anchor>
+    <Abstract>Parse command-line arguments. </Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>error</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Anchor>a0f89a57a90e8b733590d2f2ecc3d9420</Anchor>
+    <Abstract>There was an error parsing command-line arguments. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>help</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Anchor>a33fa419566e36631307119de431ebdb9</Anchor>
+    <Abstract>The --help argument was given. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>verbose</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Anchor>a11357f9491e9c037380828594a0e2593</Anchor>
+    <Abstract>The --verbose argument was given. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>runStrategy</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Anchor>a0d2ea95a780319be4d7334c6c4ae8c5a</Anchor>
+    <Abstract>The TestRunStrategy chosen by the user (e.g., inline). </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>timeout</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1Arguments.html</Path>
+    <Anchor>a4482fb82004d7fda867d48665dac0edd</Anchor>
+    <Abstract>Maximum length of time to wait for any test. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>grading::CheckResult</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -637,6 +798,18 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>CheckResult</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::CheckResult</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1CheckResult.html</Path>
+    <Anchor>a2ec2c6c5cd56c815d06e39acfa2b0bad</Anchor>
+    <Abstract>Move constructor. Steal error result from a temporary CheckResult. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>operator&lt;&lt;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -657,6 +830,66 @@
     <Path>classgrading_1_1CheckResult.html</Path>
     <Anchor>a3545ae30f105104ee618e4036cfda1cd</Anchor>
     <Abstract>Add further error details to this result, should it be a failure. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>error</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::CheckResult</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1CheckResult.html</Path>
+    <Anchor>a11a96e2f4455fcb9f4c3aad254197338</Anchor>
+    <Abstract>Whether or not the check result is erroneous. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>cancel</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::CheckResult</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1CheckResult.html</Path>
+    <Anchor>ad02c8fb5c001080578f1486b436cb901</Anchor>
+    <Abstract>Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&amp;#39;s owner...</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>actual</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::CheckResult</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1CheckResult.html</Path>
+    <Anchor>a0669a9c5b9e898bc79c89dbc51dc766a</Anchor>
+    <Abstract>Value test expected to see (user-readable representation). </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>expected</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::CheckResult</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1CheckResult.html</Path>
+    <Anchor>a43c2c304fc2368dc14eca9170e985700</Anchor>
+    <Abstract>Actual value that was seen (user-readable representation). </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>message</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::CheckResult</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1CheckResult.html</Path>
+    <Anchor>ac18139025d3746382c1dd44a4a5b363a</Anchor>
+    <Abstract>A message to display if the check fails. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -742,6 +975,54 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>name</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Test</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1Test.html</Path>
+    <Anchor>a4abad0966891ee2ad7047a9ac7bce75c</Anchor>
+    <Abstract>User-meaningful test name (ideally a single line or less). </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>description</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Test</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1Test.html</Path>
+    <Anchor>aadcea3975e327c7d6bfce7ca1b24d184</Anchor>
+    <Abstract>A longer test description. May contain newlines. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>timeout</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Test</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1Test.html</Path>
+    <Anchor>a3c336d7cef69dfe6f6023dc0e0a47b22</Anchor>
+    <Abstract>Maximum length of time this test should take (or 0 for unlimited). </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>weight</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Test</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1Test.html</Path>
+    <Anchor>a9183bbd29bbac0d3264530c1a6f75734</Anchor>
+    <Abstract>How much weight to place on this test when calculating final score. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>Run</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -761,6 +1042,18 @@
     </TokenIdentifier>
     <Path>classgrading_1_1TestBuilder.html</Path>
     <Abstract>An object used to construct a complete Test. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TestBuilder</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::TestBuilder</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Anchor>a08e697d22234a038d074f5960d903652</Anchor>
+    <Abstract>Construct a builder for a named test within a TestSuite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -824,6 +1117,30 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>TestSuite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::TestSuite</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1TestSuite.html</Path>
+    <Anchor>af7291e6d8b53443604ee0c1fcf1fadfc</Anchor>
+    <Abstract>Default constructor: create an empty test suite. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TestSuite</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::TestSuite</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1TestSuite.html</Path>
+    <Anchor>a33a6aa92ef066996cbb47f92267a6eed</Anchor>
+    <Abstract>Construct a TestSuite from a brace-enclosed list of Test objects. </Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>add</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
@@ -880,5 +1197,49 @@
     <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
     <Abstract>Summary statistics about the execution of a TestSuite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>passed</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestSuite::Statistics</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Anchor>a63372b8d2455093e8f976b94bf887514</Anchor>
+    <Abstract>tests that passed (unweighted) </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>failed</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestSuite::Statistics</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Anchor>a1311d4b68c2bb2a5adb124ea88cd564a</Anchor>
+    <Abstract>tests that failed (unweighted) </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>score</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestSuite::Statistics</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Anchor>ab8c8c10bef7d7ec18f31903314682ef5</Anchor>
+    <Abstract>weighted (passed/total) score </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>total</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestSuite::Statistics</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Anchor>af43d1f1d3ae079ebaab2a2a69ee29a35</Anchor>
+    <Abstract>total test count (unweighted) </Abstract>
   </Token>
 </Tokens>

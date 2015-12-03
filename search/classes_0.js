@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['checkresult',['CheckResult',['../classgrading_1_1CheckResult.html',1,'grading']]]
+  ['arguments',['Arguments',['../structgrading_1_1Arguments.html',1,'grading']]]
 ];

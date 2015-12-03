@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weight',['weight',['../classgrading_1_1TestBuilder.html#a3b2f336bdf4263885f0ef96d20877eb1',1,'grading::TestBuilder']]]
+  ['parse',['Parse',['../structgrading_1_1Arguments.html#a193b60c24891f195fa3a1bd67cffe788',1,'grading::Arguments']]]
 ];

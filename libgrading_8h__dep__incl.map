@@ -1,6 +1,6 @@
 <map id="include/libgrading.h" name="include/libgrading.h">
 <area shape="rect" id="node2" href="$private_8h.html" title="Internal header file for libgrading. " alt="" coords="237,81,351,109"/>
-<area shape="rect" id="node4" href="$posix_8cpp.html" title="POSIX implementation of grading::MapSharedData and grading::ForkTest. " alt="" coords="5,157,124,185"/>
+<area shape="rect" id="node4" href="$posix_8cpp.html" title="src/posix.cpp" alt="" coords="5,157,124,185"/>
 <area shape="rect" id="node5" href="$Test_8cpp.html" title="Definitions of grading::Test. " alt="" coords="334,157,443,185"/>
 <area shape="rect" id="node6" href="$TestSuite_8cpp.html" title="Definitions of grading::TestSuite. " alt="" coords="467,157,614,185"/>
 <area shape="rect" id="node7" href="$checks_8cpp.html" title="Implementation of various expectation checks. " alt="" coords="477,81,607,109"/>

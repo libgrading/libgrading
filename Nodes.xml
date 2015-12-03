@@ -56,6 +56,37 @@
             <Path>namespacegrading.html</Path>
             <Subnodes>
              <Node>
+              <Name>Arguments</Name>
+              <Path>structgrading_1_1Arguments.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>error</Name>
+                <Path>structgrading_1_1Arguments.html</Path>
+                <Anchor>a0f89a57a90e8b733590d2f2ecc3d9420</Anchor>
+               </Node>
+               <Node>
+                <Name>help</Name>
+                <Path>structgrading_1_1Arguments.html</Path>
+                <Anchor>a33fa419566e36631307119de431ebdb9</Anchor>
+               </Node>
+               <Node>
+                <Name>runStrategy</Name>
+                <Path>structgrading_1_1Arguments.html</Path>
+                <Anchor>a0d2ea95a780319be4d7334c6c4ae8c5a</Anchor>
+               </Node>
+               <Node>
+                <Name>timeout</Name>
+                <Path>structgrading_1_1Arguments.html</Path>
+                <Anchor>a4482fb82004d7fda867d48665dac0edd</Anchor>
+               </Node>
+               <Node>
+                <Name>verbose</Name>
+                <Path>structgrading_1_1Arguments.html</Path>
+                <Anchor>a11357f9491e9c037380828594a0e2593</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>CheckResult</Name>
               <Path>classgrading_1_1CheckResult.html</Path>
               <Subnodes>
@@ -272,7 +303,7 @@
                <Node>
                 <Name>TestSuite</Name>
                 <Path>classgrading_1_1TestSuite.html</Path>
-                <Anchor>ae4855c5911eead0b03f37f7f8c72226c</Anchor>
+                <Anchor>a33a6aa92ef066996cbb47f92267a6eed</Anchor>
                </Node>
                <Node>
                 <Name>add</Name>
@@ -308,6 +339,10 @@
           <Name>Class Hierarchy</Name>
           <Path>hierarchy.html</Path>
           <Subnodes>
+           <Node>
+            <Name>grading::Arguments</Name>
+            <Path>structgrading_1_1Arguments.html</Path>
+           </Node>
            <Node>
             <Name>grading::CheckResult</Name>
             <Path>classgrading_1_1CheckResult.html</Path>
@@ -345,6 +380,10 @@
            <Node>
             <Name>Functions</Name>
             <Path>functions_func.html</Path>
+           </Node>
+           <Node>
+            <Name>Variables</Name>
+            <Path>functions_vars.html</Path>
            </Node>
            <Node>
             <Name>Typedefs</Name>
@@ -408,7 +447,7 @@
                  <Node>
                   <Name>TestSuite</Name>
                   <Path>classgrading_1_1TestSuite.html</Path>
-                  <Anchor>ae4855c5911eead0b03f37f7f8c72226c</Anchor>
+                  <Anchor>a33a6aa92ef066996cbb47f92267a6eed</Anchor>
                  </Node>
                  <Node>
                   <Name>add</Name>
@@ -894,6 +933,37 @@
               <Path>private_8h.html</Path>
               <Subnodes>
                <Node>
+                <Name>Arguments</Name>
+                <Path>structgrading_1_1Arguments.html</Path>
+                <Subnodes>
+                 <Node>
+                  <Name>error</Name>
+                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Anchor>a0f89a57a90e8b733590d2f2ecc3d9420</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>help</Name>
+                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Anchor>a33fa419566e36631307119de431ebdb9</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>runStrategy</Name>
+                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Anchor>a0d2ea95a780319be4d7334c6c4ae8c5a</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>timeout</Name>
+                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Anchor>a4482fb82004d7fda867d48665dac0edd</Anchor>
+                 </Node>
+                 <Node>
+                  <Name>verbose</Name>
+                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Anchor>a11357f9491e9c037380828594a0e2593</Anchor>
+                 </Node>
+                </Subnodes>
+               </Node>
+               <Node>
                 <Name>EnterSandbox</Name>
                 <Path>private_8h.html</Path>
                 <Anchor>a5d98269221e6b4c09096d4ae2daa7e79</Anchor>
@@ -927,6 +997,24 @@
               <Path>TestSuite_8cpp.html</Path>
              </Node>
             </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>File Members</Name>
+          <Path>globals.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>All</Name>
+            <Path>globals.html</Path>
+           </Node>
+           <Node>
+            <Name>Variables</Name>
+            <Path>globals_vars.html</Path>
+           </Node>
+           <Node>
+            <Name>Enumerations</Name>
+            <Path>globals_enum.html</Path>
            </Node>
           </Subnodes>
          </Node>

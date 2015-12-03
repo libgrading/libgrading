@@ -13,6 +13,13 @@
   <topic label="Classes" href="annotated.html">
     <topic label="Class List" href="annotated.html">
       <topic label="grading" href="namespacegrading.html">
+        <topic label="Arguments" href="structgrading_1_1Arguments.html">
+          <topic label="error" href="structgrading_1_1Arguments.html#a0f89a57a90e8b733590d2f2ecc3d9420"/>
+          <topic label="help" href="structgrading_1_1Arguments.html#a33fa419566e36631307119de431ebdb9"/>
+          <topic label="runStrategy" href="structgrading_1_1Arguments.html#a0d2ea95a780319be4d7334c6c4ae8c5a"/>
+          <topic label="timeout" href="structgrading_1_1Arguments.html#a4482fb82004d7fda867d48665dac0edd"/>
+          <topic label="verbose" href="structgrading_1_1Arguments.html#a11357f9491e9c037380828594a0e2593"/>
+        </topic>
         <topic label="CheckResult" href="classgrading_1_1CheckResult.html">
           <topic label="CheckResult" href="classgrading_1_1CheckResult.html#ae6870355bbc4c77a9806abb32a9ef4bf"/>
           <topic label="CheckResult" href="classgrading_1_1CheckResult.html#a62be6967bcdf4b426063abfcdabb1fdc"/>
@@ -60,7 +67,7 @@
             <topic label="total" href="structgrading_1_1TestSuite_1_1Statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35"/>
           </topic>
           <topic label="TestSuite" href="classgrading_1_1TestSuite.html#af7291e6d8b53443604ee0c1fcf1fadfc"/>
-          <topic label="TestSuite" href="classgrading_1_1TestSuite.html#ae4855c5911eead0b03f37f7f8c72226c"/>
+          <topic label="TestSuite" href="classgrading_1_1TestSuite.html#a33a6aa92ef066996cbb47f92267a6eed"/>
           <topic label="add" href="classgrading_1_1TestSuite.html#a0d0717051f59926f779ed7a67eefef8b"/>
           <topic label="add" href="classgrading_1_1TestSuite.html#a83cd3b7090e3a7ab3dcc04577a636500"/>
           <topic label="Run" href="classgrading_1_1TestSuite.html#aed19308d0831a296ece062105ccc1688"/>
@@ -70,6 +77,7 @@
     </topic>
     <topic label="Class Index" href="classes.html"/>
     <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="grading::Arguments" href="structgrading_1_1Arguments.html"/>
       <topic label="grading::CheckResult" href="classgrading_1_1CheckResult.html"/>
       <topic label="grading::SharedMemory" href="classgrading_1_1SharedMemory.html"/>
       <topic label="grading::TestSuite::Statistics" href="structgrading_1_1TestSuite_1_1Statistics.html"/>
@@ -80,6 +88,7 @@
     <topic label="Class Members" href="functions.html">
       <topic label="All" href="functions.html"/>
       <topic label="Functions" href="functions_func.html"/>
+      <topic label="Variables" href="functions_vars.html"/>
       <topic label="Typedefs" href="functions_type.html"/>
     </topic>
   </topic>
@@ -95,7 +104,7 @@
               <topic label="total" href="structgrading_1_1TestSuite_1_1Statistics.html#af43d1f1d3ae079ebaab2a2a69ee29a35"/>
             </topic>
             <topic label="TestSuite" href="classgrading_1_1TestSuite.html#af7291e6d8b53443604ee0c1fcf1fadfc"/>
-            <topic label="TestSuite" href="classgrading_1_1TestSuite.html#ae4855c5911eead0b03f37f7f8c72226c"/>
+            <topic label="TestSuite" href="classgrading_1_1TestSuite.html#a33a6aa92ef066996cbb47f92267a6eed"/>
             <topic label="add" href="classgrading_1_1TestSuite.html#a0d0717051f59926f779ed7a67eefef8b"/>
             <topic label="add" href="classgrading_1_1TestSuite.html#a83cd3b7090e3a7ab3dcc04577a636500"/>
             <topic label="Run" href="classgrading_1_1TestSuite.html#aed19308d0831a296ece062105ccc1688"/>
@@ -203,6 +212,13 @@
         <topic label="posix.cpp" href="posix_8cpp.html">
         </topic>
         <topic label="private.h" href="private_8h.html">
+          <topic label="Arguments" href="structgrading_1_1Arguments.html">
+            <topic label="error" href="structgrading_1_1Arguments.html#a0f89a57a90e8b733590d2f2ecc3d9420"/>
+            <topic label="help" href="structgrading_1_1Arguments.html#a33fa419566e36631307119de431ebdb9"/>
+            <topic label="runStrategy" href="structgrading_1_1Arguments.html#a0d2ea95a780319be4d7334c6c4ae8c5a"/>
+            <topic label="timeout" href="structgrading_1_1Arguments.html#a4482fb82004d7fda867d48665dac0edd"/>
+            <topic label="verbose" href="structgrading_1_1Arguments.html#a11357f9491e9c037380828594a0e2593"/>
+          </topic>
           <topic label="EnterSandbox" href="private_8h.html#a5d98269221e6b4c09096d4ae2daa7e79"/>
           <topic label="ForkTest" href="private_8h.html#a37c099580cc9e671911f5366b6ae9db5"/>
           <topic label="RunInProcess" href="private_8h.html#afb35b03796b42705a1093a6de7fcda92"/>
@@ -212,6 +228,11 @@
         <topic label="TestResult.cpp" href="TestResult_8cpp.html"/>
         <topic label="TestSuite.cpp" href="TestSuite_8cpp.html"/>
       </topic>
+    </topic>
+    <topic label="File Members" href="globals.html">
+      <topic label="All" href="globals.html"/>
+      <topic label="Variables" href="globals_vars.html"/>
+      <topic label="Enumerations" href="globals_enum.html"/>
     </topic>
   </topic>
 </toc>
