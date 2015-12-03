@@ -29,6 +29,7 @@ using namespace grading;
 using std::vector;
 
 
+//! Constants used to identify arguments for optionparser.
 enum Options
 {
 	UNKNOWN,
@@ -38,6 +39,7 @@ enum Options
 	TIMEOUT,
 };
 
+//! Check that a required argument has been passed.
 static option::ArgStatus Required(const option::Option& option, bool msg)
 {
 	if (option.arg != 0)
@@ -49,7 +51,7 @@ static option::ArgStatus Required(const option::Option& option, bool msg)
 	return option::ARG_ILLEGAL;
 }
 
-
+//! Usage strings for command-line arguments.
 const option::Descriptor usage[] =
 {
 	{

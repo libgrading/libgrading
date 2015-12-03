@@ -73,7 +73,10 @@ enum class TestRunStrategy
 class TestSuite
 {
 	public:
+	//! Default constructor: create an empty test suite.
 	TestSuite();
+
+	//! Construct a TestSuite from a brace-enclosed list of Test objects.
 	TestSuite(std::initializer_list<Test>);
 
 	/**
@@ -95,10 +98,10 @@ class TestSuite
 	//! Summary statistics about the execution of a TestSuite.
 	struct Statistics
 	{
-		unsigned int passed;
-		unsigned int failed;
-		float score;
-		unsigned int total;
+		unsigned int passed;    //!< tests that passed (unweighted)
+		unsigned int failed;    //!< tests that failed (unweighted)
+		float score;            //!< weighted (passed/total) score
+		unsigned int total;     //!< total test count (unweighted)
 	};
 
 	/**
@@ -124,6 +127,7 @@ typedef std::function<void ()> TestClosure;
 class TestBuilder
 {
 	public:
+	//! Construct a builder for a named test within a @ref TestSuite.
 	TestBuilder(TestSuite&, std::string name);
 	~TestBuilder();
 
@@ -213,9 +217,16 @@ class Test
 	{
 	}
 
+	//! User-meaningful test name (ideally a single line or less).
 	std::string name() const { return name_; }
+
+	//! A longer test description. May contain newlines.
 	std::string description() const { return description_; }
+
+	//! Maximum length of time this test should take (or 0 for unlimited).
 	time_t timeout() const { return timeout_; }
+
+	//! How much weight to place on this test when calculating final score.
 	unsigned int weight() const { return weight_; }
 
 	/**
@@ -255,6 +266,8 @@ class CheckResult
 	CheckResult(std::string exected, std::string actual);
 
 	CheckResult(const CheckResult&) = delete;
+
+	//! Move constructor. Steal error result from a temporary CheckResult.
 	CheckResult(CheckResult&&);
 
 	~CheckResult();
@@ -270,11 +283,23 @@ class CheckResult
 		return *this;
 	}
 
+	//! Whether or not the check result is erroneous.
 	bool error() const { return reportError_; }
+
+	/**
+	 * Cancel the error: the result is actually ok (e.g., because of a
+	 * logical OR) or else the error's ownership is being transferred
+	 * to another CheckResult.
+	 */
 	void cancel() { reportError_ = false; }
 
-	std::string expected() const { return expected_; }
+	//! Value test expected to see (user-readable representation).
 	std::string actual() const { return actual_; }
+
+	//! Actual value that was seen (user-readable representation).
+	std::string expected() const { return expected_; }
+
+	//! A message to display if the check fails.
 	std::string message() const { return message_.str(); }
 
 	private:

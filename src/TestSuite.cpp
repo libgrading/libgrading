@@ -30,7 +30,7 @@ TestSuite::TestSuite()
 }
 
 
-TestSuite::TestSuite(initializer_list<Test> tests)
+TestSuite::TestSuite(std::initializer_list<Test> tests)
 	: tests_(tests)
 {
 }

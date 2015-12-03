@@ -1,7 +1,9 @@
 /*!
  * @file      posix.cpp
- * @brief     POSIX implementation of @ref grading::MapSharedData and
- *            @ref grading::ForkTest..
+ * @brief     @internal POSIX implementation of
+ *            @ref grading::CheckResult::~CheckResult,
+ *            @ref grading::MapSharedData, @ref grading::ForkTest and
+ *            @ref grading::EnterSandbox.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.

@@ -28,33 +28,41 @@
 namespace grading {
 
 /**
- * @internal Parsed command-line arguments.
+ * Parsed command-line arguments.
  */
 struct Arguments
 {
 	//! Parse command-line arguments.
 	static Arguments Parse(int argc, char *argv[]);
 
+	//! There was an error parsing command-line arguments.
 	const bool error;
+
+	//! The `--help` argument was given.
 	const bool help;
+
+	//! The `--verbose` argument was given.
 	const bool verbose;
 
+	//! The @ref TestRunStrategy chosen by the user (e.g., inline).
 	const TestRunStrategy runStrategy;
+
+	//! Maximum length of time to wait for any test.
 	const time_t timeout;
 };
 
 /**
- * @internal Enter unprivileged testing sandbox, if supported.
+ * Enter unprivileged testing sandbox, if supported.
  */
 void EnterSandbox();
 
 /**
- * @internal Run a test in another process.
+ * Run a test in another process.
  */
 TestResult ForkTest(TestClosure test, time_t timeout);
 
 /**
- * @internal Run a test in the current process, catching all exceptions.
+ * Run a test in the current process, catching all exceptions.
  */
 TestResult RunInProcess(TestClosure test);
 
