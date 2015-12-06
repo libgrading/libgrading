@@ -95,132 +95,135 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="TestSuite_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="private_8h.html">private.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="libgrading_8h.html">libgrading.h</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacegrading.html">grading</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacegrading.html">grading</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">   28</a></span>&#160;<a class="code" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">TestSuite::TestSuite</a>()</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">   29</a></span>&#160;<a class="code" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">TestSuite::TestSuite</a>()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a0bed231a3b0ba8cb3430026c3d9d22c2">   33</a></span>&#160;<a class="code" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">TestSuite::TestSuite</a>(std::initializer_list&lt;Test&gt; tests)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : tests_(tests)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a0bed231a3b0ba8cb3430026c3d9d22c2">   34</a></span>&#160;<a class="code" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">TestSuite::TestSuite</a>(std::initializer_list&lt;Test&gt; tests)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : tests_(tests)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">   39</a></span>&#160;<a class="code" href="classgrading_1_1TestBuilder.html">TestBuilder</a> <a class="code" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">TestSuite::add</a>(<span class="keywordtype">string</span> name)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgrading_1_1TestBuilder.html">TestBuilder</a>(*<span class="keyword">this</span>, name);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">   40</a></span>&#160;<a class="code" href="classgrading_1_1TestBuilder.html">TestBuilder</a> <a class="code" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">TestSuite::add</a>(<span class="keywordtype">string</span> name)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    assert(not name.empty());</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a575b575bb13b2027e9bb19c8ded6c40a">   45</a></span>&#160;<a class="code" href="classgrading_1_1TestSuite.html">TestSuite</a>&amp; <a class="code" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">TestSuite::add</a>(<a class="code" href="classgrading_1_1Test.html">Test</a> test)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    tests_.push_back(move(test));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">   52</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">TestSuite::totalWeight</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> total = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classgrading_1_1Test.html">Test</a>&amp; test : tests_)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        total += test.weight();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> total;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgrading_1_1TestBuilder.html">TestBuilder</a>(*<span class="keyword">this</span>, name);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a575b575bb13b2027e9bb19c8ded6c40a">   48</a></span>&#160;<a class="code" href="classgrading_1_1TestSuite.html">TestSuite</a>&amp; <a class="code" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">TestSuite::add</a>(<a class="code" href="classgrading_1_1Test.html">Test</a> test)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    tests_.push_back(move(test));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">   55</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">TestSuite::totalWeight</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> total = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classgrading_1_1Test.html">Test</a>&amp; test : tests_)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        total += test.weight();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278">   65</a></span>&#160;<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html">TestSuite::Statistics</a> <a class="code" href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278">TestSuite::Run</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])<span class="keyword"> const</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html">Statistics</a> stats = { 0, 0, 0, 0 };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <a class="code" href="structgrading_1_1Arguments.html">Arguments</a> args = <a class="code" href="structgrading_1_1Arguments.html#a7732fee01761ae341c2a811613637372">Arguments::Parse</a>(argc, argv);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (args.<a class="code" href="structgrading_1_1Arguments.html#af27b2dcc5f0d6408269307739fa43ec3">error</a> or args.<a class="code" href="structgrading_1_1Arguments.html#a49fc425ab3b72f3f60b751193b5cff29">help</a>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> stats;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classgrading_1_1Test.html">Test</a>&amp; test : tests_)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> line(80, <span class="charliteral">&#39;-&#39;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> doubleLine(80, <span class="charliteral">&#39;=&#39;</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (args.<a class="code" href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f">verbose</a>)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            cout</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                &lt;&lt; doubleLine &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Running test: &#39;&quot;</span> &lt;&lt; test.name() &lt;&lt; <span class="stringliteral">&quot;&#39;.\n&quot;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Description:\n&quot;</span> &lt;&lt; test.description()</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; line &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                ;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Running test &#39;&quot;</span> &lt;&lt; test.name() &lt;&lt; <span class="stringliteral">&quot;&#39;... &quot;</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46">total</a>++;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642">TestResult</a> result = test.Run(args.<a class="code" href="structgrading_1_1Arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a">runStrategy</a>, args.<a class="code" href="structgrading_1_1Arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8">timeout</a>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (args.<a class="code" href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f">verbose</a>)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            cout</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                &lt;&lt; line &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Test &#39;&quot;</span> &lt;&lt; test.name() &lt;&lt; <span class="stringliteral">&quot;&#39; complete: &quot;</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                &lt;&lt; result &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                &lt;&lt; doubleLine &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                ;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            cout &lt;&lt; result &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span> (result == <a class="code" href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c">TestResult::Pass</a>)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d">passed</a>++;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c">score</a> += test.weight();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a">failed</a>++;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c">score</a> /= <a class="code" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">totalWeight</a>();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> stats;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> total;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278">   68</a></span>&#160;<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html">TestSuite::Statistics</a> <a class="code" href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278">TestSuite::Run</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])<span class="keyword"> const</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html">Statistics</a> stats = { 0, 0, 0, 0 };</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> <a class="code" href="structgrading_1_1Arguments.html">Arguments</a> args = <a class="code" href="structgrading_1_1Arguments.html#a7732fee01761ae341c2a811613637372">Arguments::Parse</a>(argc, argv);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (args.<a class="code" href="structgrading_1_1Arguments.html#af27b2dcc5f0d6408269307739fa43ec3">error</a> or args.<a class="code" href="structgrading_1_1Arguments.html#a49fc425ab3b72f3f60b751193b5cff29">help</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> stats;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classgrading_1_1Test.html">Test</a>&amp; test : tests_)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> line(80, <span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> doubleLine(80, <span class="charliteral">&#39;=&#39;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (args.<a class="code" href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f">verbose</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            cout</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                &lt;&lt; doubleLine &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Running test: &#39;&quot;</span> &lt;&lt; test.name() &lt;&lt; <span class="stringliteral">&quot;&#39;.\n&quot;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Description:\n&quot;</span> &lt;&lt; test.description()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; line &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                ;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Running test &#39;&quot;</span> &lt;&lt; test.name() &lt;&lt; <span class="stringliteral">&quot;&#39;... &quot;</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46">total</a>++;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642">TestResult</a> result = test.Run(args.<a class="code" href="structgrading_1_1Arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a">runStrategy</a>, args.<a class="code" href="structgrading_1_1Arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8">timeout</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">if</span> (args.<a class="code" href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f">verbose</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            cout</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                &lt;&lt; line &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Test &#39;&quot;</span> &lt;&lt; test.name() &lt;&lt; <span class="stringliteral">&quot;&#39; complete: &quot;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                &lt;&lt; result &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                &lt;&lt; doubleLine &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                ;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            cout &lt;&lt; result &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (result == <a class="code" href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c">TestResult::Pass</a>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d">passed</a>++;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c">score</a> += test.weight();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a">failed</a>++;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    stats.<a class="code" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c">score</a> /= <a class="code" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">totalWeight</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> stats;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="ttc" id="structgrading_1_1Arguments_html_a49fc425ab3b72f3f60b751193b5cff29"><div class="ttname"><a href="structgrading_1_1Arguments.html#a49fc425ab3b72f3f60b751193b5cff29">grading::Arguments::help</a></div><div class="ttdeci">const bool help</div><div class="ttdoc">The --help argument was given. </div><div class="ttdef"><b>Definition:</b> <a href="private_8h_source.html#l00042">private.h:42</a></div></div>
 <div class="ttc" id="classgrading_1_1TestSuite_html"><div class="ttname"><a href="classgrading_1_1TestSuite.html">grading::TestSuite</a></div><div class="ttdoc">A collection of tests that we can run. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00073">libgrading.h:73</a></div></div>
 <div class="ttc" id="libgrading_8h_html"><div class="ttname"><a href="libgrading_8h.html">libgrading.h</a></div><div class="ttdoc">A library for grading C- and C++-based assignments. </div></div>
-<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_a1810ba190aa195caf7bb8dcc23bb1c7d"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d">grading::TestSuite::Statistics::passed</a></div><div class="ttdeci">unsigned int passed</div><div class="ttdoc">tests that passed (unweighted) </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00101">libgrading.h:101</a></div></div>
-<div class="ttc" id="classgrading_1_1TestSuite_html_a2b0eee0d73ca97bab412df536ba785e5"><div class="ttname"><a href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">grading::TestSuite::add</a></div><div class="ttdeci">TestBuilder add(std::string name)</div><div class="ttdoc">Start creating a test with a given name. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00039">TestSuite.cpp:39</a></div></div>
+<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_a1810ba190aa195caf7bb8dcc23bb1c7d"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d">grading::TestSuite::Statistics::passed</a></div><div class="ttdeci">unsigned int passed</div><div class="ttdoc">tests that passed (unweighted) </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00105">libgrading.h:105</a></div></div>
+<div class="ttc" id="classgrading_1_1TestSuite_html_a2b0eee0d73ca97bab412df536ba785e5"><div class="ttname"><a href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5">grading::TestSuite::add</a></div><div class="ttdeci">TestBuilder add(std::string name)</div><div class="ttdoc">Start creating a test with a given name. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00040">TestSuite.cpp:40</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="structgrading_1_1Arguments_html"><div class="ttname"><a href="structgrading_1_1Arguments.html">grading::Arguments</a></div><div class="ttdoc">Parsed command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="private_8h_source.html#l00033">private.h:33</a></div></div>
 <div class="ttc" id="private_8h_html"><div class="ttname"><a href="private_8h.html">private.h</a></div><div class="ttdoc">Internal header file for libgrading. </div></div>
 <div class="ttc" id="namespacegrading_html_a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c"><div class="ttname"><a href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c">grading::TestResult::Pass</a></div><div class="ttdoc">the test succeeded </div></div>
-<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_ac22f1c4471429c9a1f0c09efd5fcca3a"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a">grading::TestSuite::Statistics::failed</a></div><div class="ttdeci">unsigned int failed</div><div class="ttdoc">tests that failed (unweighted) </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00102">libgrading.h:102</a></div></div>
+<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_ac22f1c4471429c9a1f0c09efd5fcca3a"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a">grading::TestSuite::Statistics::failed</a></div><div class="ttdeci">unsigned int failed</div><div class="ttdoc">tests that failed (unweighted) </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00106">libgrading.h:106</a></div></div>
 <div class="ttc" id="structgrading_1_1Arguments_html_a7732fee01761ae341c2a811613637372"><div class="ttname"><a href="structgrading_1_1Arguments.html#a7732fee01761ae341c2a811613637372">grading::Arguments::Parse</a></div><div class="ttdeci">static Arguments Parse(int argc, char *argv[])</div><div class="ttdoc">Parse command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="Arguments_8cpp_source.html#l00091">Arguments.cpp:91</a></div></div>
 <div class="ttc" id="structgrading_1_1Arguments_html_a087685f54898c5180dd954bfc1e5fb1f"><div class="ttname"><a href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f">grading::Arguments::verbose</a></div><div class="ttdeci">const bool verbose</div><div class="ttdoc">The --verbose argument was given. </div><div class="ttdef"><b>Definition:</b> <a href="private_8h_source.html#l00045">private.h:45</a></div></div>
-<div class="ttc" id="classgrading_1_1TestSuite_html_a5bccd76db8e344d679d220c2fe002278"><div class="ttname"><a href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278">grading::TestSuite::Run</a></div><div class="ttdeci">Statistics Run(int argc, char *argv[]) const </div><div class="ttdoc">Run all tests, using command-line arguments to guide the testing strategy, timeouts, etc. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00065">TestSuite.cpp:65</a></div></div>
+<div class="ttc" id="classgrading_1_1TestSuite_html_a5bccd76db8e344d679d220c2fe002278"><div class="ttname"><a href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278">grading::TestSuite::Run</a></div><div class="ttdeci">Statistics Run(int argc, char *argv[]) const </div><div class="ttdoc">Run all tests, using command-line arguments to guide the testing strategy, timeouts, etc. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00068">TestSuite.cpp:68</a></div></div>
 <div class="ttc" id="structgrading_1_1Arguments_html_a6bd6ba5bd95b7f4671a0544a81f4948a"><div class="ttname"><a href="structgrading_1_1Arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a">grading::Arguments::runStrategy</a></div><div class="ttdeci">const TestRunStrategy runStrategy</div><div class="ttdoc">The TestRunStrategy chosen by the user (e.g., inline). </div><div class="ttdef"><b>Definition:</b> <a href="private_8h_source.html#l00048">private.h:48</a></div></div>
-<div class="ttc" id="classgrading_1_1TestSuite_html_abc8126fceba23a7a21730d962f483f11"><div class="ttname"><a href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">grading::TestSuite::TestSuite</a></div><div class="ttdeci">TestSuite()</div><div class="ttdoc">Default constructor: create an empty test suite. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00028">TestSuite.cpp:28</a></div></div>
+<div class="ttc" id="classgrading_1_1TestSuite_html_abc8126fceba23a7a21730d962f483f11"><div class="ttname"><a href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11">grading::TestSuite::TestSuite</a></div><div class="ttdeci">TestSuite()</div><div class="ttdoc">Default constructor: create an empty test suite. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00029">TestSuite.cpp:29</a></div></div>
 <div class="ttc" id="structgrading_1_1Arguments_html_a07fb086b85679ba3a1b6f40edec2f4e8"><div class="ttname"><a href="structgrading_1_1Arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8">grading::Arguments::timeout</a></div><div class="ttdeci">const time_t timeout</div><div class="ttdoc">Maximum length of time to wait for any test. </div><div class="ttdef"><b>Definition:</b> <a href="private_8h_source.html#l00051">private.h:51</a></div></div>
-<div class="ttc" id="classgrading_1_1Test_html"><div class="ttname"><a href="classgrading_1_1Test.html">grading::Test</a></div><div class="ttdoc">A single, completely-initialized test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00167">libgrading.h:167</a></div></div>
-<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_af9031f7978e957b9979e78873830ce46"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46">grading::TestSuite::Statistics::total</a></div><div class="ttdeci">unsigned int total</div><div class="ttdoc">total test count (unweighted) </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00104">libgrading.h:104</a></div></div>
+<div class="ttc" id="classgrading_1_1Test_html"><div class="ttname"><a href="classgrading_1_1Test.html">grading::Test</a></div><div class="ttdoc">A single, completely-initialized test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00171">libgrading.h:171</a></div></div>
+<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_af9031f7978e957b9979e78873830ce46"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46">grading::TestSuite::Statistics::total</a></div><div class="ttdeci">unsigned int total</div><div class="ttdoc">total test count (unweighted) </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00108">libgrading.h:108</a></div></div>
 <div class="ttc" id="namespacegrading_html_a2fb7aadc16fed93221d13a7ec3c50642"><div class="ttname"><a href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642">grading::TestResult</a></div><div class="ttdeci">TestResult</div><div class="ttdoc">The result of running one test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00044">libgrading.h:44</a></div></div>
 <div class="ttc" id="structgrading_1_1Arguments_html_af27b2dcc5f0d6408269307739fa43ec3"><div class="ttname"><a href="structgrading_1_1Arguments.html#af27b2dcc5f0d6408269307739fa43ec3">grading::Arguments::error</a></div><div class="ttdeci">const bool error</div><div class="ttdoc">There was an error parsing command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="private_8h_source.html#l00039">private.h:39</a></div></div>
-<div class="ttc" id="classgrading_1_1TestSuite_html_afde9b65cb6534abec8680936047a03aa"><div class="ttname"><a href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">grading::TestSuite::totalWeight</a></div><div class="ttdeci">unsigned int totalWeight() const </div><div class="ttdoc">The total weight of all tests in the suite. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00052">TestSuite.cpp:52</a></div></div>
-<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html">grading::TestSuite::Statistics</a></div><div class="ttdoc">Summary statistics about the execution of a TestSuite. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00099">libgrading.h:99</a></div></div>
-<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_a8c5cd9b525ee73a24b1d9d8e34982d1c"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c">grading::TestSuite::Statistics::score</a></div><div class="ttdeci">float score</div><div class="ttdoc">weighted (passed/total) score </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00103">libgrading.h:103</a></div></div>
-<div class="ttc" id="classgrading_1_1TestBuilder_html"><div class="ttname"><a href="classgrading_1_1TestBuilder.html">grading::TestBuilder</a></div><div class="ttdoc">An object used to construct a complete Test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00127">libgrading.h:127</a></div></div>
+<div class="ttc" id="classgrading_1_1TestSuite_html_afde9b65cb6534abec8680936047a03aa"><div class="ttname"><a href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa">grading::TestSuite::totalWeight</a></div><div class="ttdeci">unsigned int totalWeight() const </div><div class="ttdoc">The total weight of all tests in the suite. </div><div class="ttdef"><b>Definition:</b> <a href="TestSuite_8cpp_source.html#l00055">TestSuite.cpp:55</a></div></div>
+<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html">grading::TestSuite::Statistics</a></div><div class="ttdoc">Summary statistics about the execution of a TestSuite. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00103">libgrading.h:103</a></div></div>
+<div class="ttc" id="structgrading_1_1TestSuite_1_1Statistics_html_a8c5cd9b525ee73a24b1d9d8e34982d1c"><div class="ttname"><a href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c">grading::TestSuite::Statistics::score</a></div><div class="ttdeci">float score</div><div class="ttdoc">weighted (passed/total) score </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00107">libgrading.h:107</a></div></div>
+<div class="ttc" id="classgrading_1_1TestBuilder_html"><div class="ttname"><a href="classgrading_1_1TestBuilder.html">grading::TestBuilder</a></div><div class="ttdoc">An object used to construct a complete Test. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00131">libgrading.h:131</a></div></div>
 <div class="ttc" id="namespacegrading_html"><div class="ttname"><a href="namespacegrading.html">grading</a></div><div class="ttdoc">Container for all libgrading names. </div><div class="ttdef"><b>Definition:</b> <a href="libgrading_8h_source.html#l00035">libgrading.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

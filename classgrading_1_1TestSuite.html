@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Default constructor: create an empty test suite. </p>
 
-<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00028">28</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00029">29</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct a <a class="el" href="classgrading_1_1TestSuite.html" title="A collection of tests that we can run. ">TestSuite</a> from a brace-enclosed list of <a class="el" href="classgrading_1_1Test.html" title="A single, completely-initialized test. ">Test</a> objects. </p>
 
-<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00033">33</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00034">34</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
 
 </div>
 </div>
@@ -191,9 +191,16 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start creating a test with a given name. </p>
-<p>When the <a class="el" href="classgrading_1_1TestBuilder.html">TestBuilder</a> goes out of scope, it will add a complete <a class="el" href="classgrading_1_1Test.html">Test</a> to this suite. </p>
+<p>When the <a class="el" href="classgrading_1_1TestBuilder.html">TestBuilder</a> goes out of scope, it will add a complete <a class="el" href="classgrading_1_1Test.html">Test</a> to this suite.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>user-meaningful test name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b>name</b> should not be empty </dd></dl>
 
-<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00039">39</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00040">40</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +220,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Add an already-complete <a class="el" href="classgrading_1_1Test.html">Test</a> to this suite. </p>
 
-<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00045">45</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00048">48</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
 
 </div>
 </div>
@@ -244,9 +251,9 @@ Public Member Functions</h2></td></tr>
 <p>Run all tests, using command-line arguments to guide the testing strategy, timeouts, etc. </p>
 <dl class="section return"><dt>Returns</dt><dd>summary statistics about the suite run </dd></dl>
 
-<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00065">65</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00068">68</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
 
-<p>References <a class="el" href="private_8h_source.html#l00039">Arguments::error</a>, <a class="el" href="libgrading_8h_source.html#l00102">TestSuite::Statistics::failed</a>, <a class="el" href="private_8h_source.html#l00042">Arguments::help</a>, <a class="el" href="Arguments_8cpp_source.html#l00091">Arguments::Parse()</a>, <a class="el" href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c">grading::Pass</a>, <a class="el" href="libgrading_8h_source.html#l00101">TestSuite::Statistics::passed</a>, <a class="el" href="private_8h_source.html#l00048">Arguments::runStrategy</a>, <a class="el" href="libgrading_8h_source.html#l00103">TestSuite::Statistics::score</a>, <a class="el" href="private_8h_source.html#l00051">Arguments::timeout</a>, <a class="el" href="libgrading_8h_source.html#l00104">TestSuite::Statistics::total</a>, <a class="el" href="TestSuite_8cpp_source.html#l00052">TestSuite::totalWeight()</a>, and <a class="el" href="private_8h_source.html#l00045">Arguments::verbose</a>.</p>
+<p>References <a class="el" href="private_8h_source.html#l00039">Arguments::error</a>, <a class="el" href="libgrading_8h_source.html#l00106">TestSuite::Statistics::failed</a>, <a class="el" href="private_8h_source.html#l00042">Arguments::help</a>, <a class="el" href="Arguments_8cpp_source.html#l00091">Arguments::Parse()</a>, <a class="el" href="namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c">grading::Pass</a>, <a class="el" href="libgrading_8h_source.html#l00105">TestSuite::Statistics::passed</a>, <a class="el" href="private_8h_source.html#l00048">Arguments::runStrategy</a>, <a class="el" href="libgrading_8h_source.html#l00107">TestSuite::Statistics::score</a>, <a class="el" href="private_8h_source.html#l00051">Arguments::timeout</a>, <a class="el" href="libgrading_8h_source.html#l00108">TestSuite::Statistics::total</a>, <a class="el" href="TestSuite_8cpp_source.html#l00055">TestSuite::totalWeight()</a>, and <a class="el" href="private_8h_source.html#l00045">Arguments::verbose</a>.</p>
 
 <p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -274,9 +281,9 @@ Public Member Functions</h2></td></tr>
 
 <p>The total weight of all tests in the suite. </p>
 
-<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00052">52</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TestSuite_8cpp_source.html#l00055">55</a> of file <a class="el" href="TestSuite_8cpp_source.html">TestSuite.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="TestSuite_8cpp_source.html#l00065">TestSuite::Run()</a>.</p>
+<p>Referenced by <a class="el" href="TestSuite_8cpp_source.html#l00068">TestSuite::Run()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>

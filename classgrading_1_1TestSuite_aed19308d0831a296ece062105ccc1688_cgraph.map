@@ -1,4 +1,3 @@
 <map id="grading::TestSuite::Run" name="grading::TestSuite::Run">
-<area shape="rect" id="node2" href="$structgrading_1_1Arguments.html#a193b60c24891f195fa3a1bd67cffe788" title="Parse command&#45;line arguments. " alt="" coords="243,5,409,49"/>
-<area shape="rect" id="node3" href="$classgrading_1_1TestSuite.html#a370b4e2e35e2d571edb8430f35e71001" title="The total weight of all tests in the suite. " alt="" coords="250,73,402,117"/>
+<area shape="rect" id="node2" href="$classgrading_1_1TestSuite.html#a370b4e2e35e2d571edb8430f35e71001" title="The total weight of all tests in the suite. " alt="" coords="243,5,395,49"/>
 </map>
