@@ -21,6 +21,7 @@
 
 #include "private.h"
 #include <libgrading.h>
+#include <cassert>
 using namespace grading;
 using namespace std;
 
@@ -38,6 +39,8 @@ TestSuite::TestSuite(std::initializer_list<Test> tests)
 
 TestBuilder TestSuite::add(string name)
 {
+	assert(not name.empty());
+
 	return TestBuilder(*this, name);
 }
 

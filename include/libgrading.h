@@ -84,6 +84,10 @@ class TestSuite
 	 *
 	 * When the @ref TestBuilder goes out of scope, it will add a complete
 	 * @ref Test to this suite.
+	 *
+	 * @param   name       user-meaningful test name
+	 *
+	 * @pre     @b name should not be empty
 	 */
 	TestBuilder add(std::string name);
 
