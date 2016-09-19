@@ -34,6 +34,7 @@ enum Options
 {
 	UNKNOWN,
 	HELP,
+	SKIP_TESTS,
 	VERBOSE,
 	RUN_STRATEGY,
 	TIMEOUT,
@@ -64,6 +65,12 @@ const option::Descriptor usage[] =
 		"h", "help",
 		option::Arg::None,
 		"  -h, --help          Print usage and exit."
+	},
+	{
+		SKIP_TESTS, 0,
+		"s", "skip",
+		option::Arg::None,
+		"  -s, --skip-tests    Skip test execution (e.g., for build testing.)"
 	},
 	{
 		VERBOSE, 0,
@@ -109,6 +116,7 @@ Arguments Arguments::Parse(int argc, char *argv[])
 		return Arguments { .error = false, .help = true };
 	}
 
+	const bool skip = options[SKIP_TESTS];
 	const bool verbose = options[VERBOSE];
 
 	TestRunStrategy strategy = TestRunStrategy::Sandboxed;
@@ -151,6 +159,7 @@ Arguments Arguments::Parse(int argc, char *argv[])
 	{
 		.error = false,
 		.help = false,
+		.skip = skip,
 		.verbose = verbose,
 		.runStrategy = strategy,
 		.timeout = timeout,

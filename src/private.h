@@ -41,6 +41,9 @@ struct Arguments
 	//! The `--help` argument was given.
 	const bool help;
 
+	//! The `--skip` argument was given.
+	const bool skip;
+
 	//! The `--verbose` argument was given.
 	const bool verbose;
 

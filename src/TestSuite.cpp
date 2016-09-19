@@ -70,7 +70,7 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 	Statistics stats = { 0, 0, 0, 0 };
 
 	const Arguments args = Arguments::Parse(argc, argv);
-	if (args.error or args.help)
+	if (args.error or args.help or args.skip)
 	{
 		return stats;
 	}
