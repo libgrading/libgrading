@@ -1,7 +1,7 @@
 /*!
  * @file      posix.cpp
  * @brief     @internal POSIX implementation of
- *            @ref grading::CheckResult::~CheckResult,
+ *            @ref grading::CheckResult destructor,,
  *            @ref grading::MapSharedData, @ref grading::ForkTest and
  *            @ref grading::EnterSandbox.
  *
@@ -91,11 +91,18 @@ static TestResult ProcessChildStatus(int status)
 
 
 /**
- * @internal @brief A memory-mapped POSIX shared memory segment.
+ * @brief A memory-mapped POSIX shared memory segment.
  */
 class PosixSharedMemory : public SharedMemory
 {
 	public:
+	/**
+	 * Constructor.
+	 *
+	 * @param   fd       descriptor of (existing) shared memory segment
+	 * @param   len      size of the shared memory [B]
+	 * @param   rawPtr   pointer to the mmap'ed region
+	 */
 	PosixSharedMemory(int fd, size_t len, void *rawPtr)
 		: shmfd(fd), length(len), ptr(rawPtr)
 	{
