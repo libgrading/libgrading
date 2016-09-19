@@ -57,272 +57,277 @@
             <Subnodes>
              <Node>
               <Name>Arguments</Name>
-              <Path>structgrading_1_1Arguments.html</Path>
+              <Path>structgrading_1_1_arguments.html</Path>
               <Subnodes>
                <Node>
                 <Name>error</Name>
-                <Path>structgrading_1_1Arguments.html</Path>
+                <Path>structgrading_1_1_arguments.html</Path>
                 <Anchor>af27b2dcc5f0d6408269307739fa43ec3</Anchor>
                </Node>
                <Node>
                 <Name>help</Name>
-                <Path>structgrading_1_1Arguments.html</Path>
+                <Path>structgrading_1_1_arguments.html</Path>
                 <Anchor>a49fc425ab3b72f3f60b751193b5cff29</Anchor>
                </Node>
                <Node>
                 <Name>runStrategy</Name>
-                <Path>structgrading_1_1Arguments.html</Path>
+                <Path>structgrading_1_1_arguments.html</Path>
                 <Anchor>a6bd6ba5bd95b7f4671a0544a81f4948a</Anchor>
                </Node>
                <Node>
+                <Name>skip</Name>
+                <Path>structgrading_1_1_arguments.html</Path>
+                <Anchor>a092180cf24cd4e04d9498e6094c508ee</Anchor>
+               </Node>
+               <Node>
                 <Name>timeout</Name>
-                <Path>structgrading_1_1Arguments.html</Path>
+                <Path>structgrading_1_1_arguments.html</Path>
                 <Anchor>a07fb086b85679ba3a1b6f40edec2f4e8</Anchor>
                </Node>
                <Node>
                 <Name>verbose</Name>
-                <Path>structgrading_1_1Arguments.html</Path>
+                <Path>structgrading_1_1_arguments.html</Path>
                 <Anchor>a087685f54898c5180dd954bfc1e5fb1f</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
               <Name>CheckResult</Name>
-              <Path>classgrading_1_1CheckResult.html</Path>
+              <Path>classgrading_1_1_check_result.html</Path>
               <Subnodes>
                <Node>
                 <Name>CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>aa40a4ffbd2ed79d36078a96dab3e2197</Anchor>
                </Node>
                <Node>
                 <Name>CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>ac4887f6895b7acdf8054786005c04c74</Anchor>
                </Node>
                <Node>
                 <Name>CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a8a31267ec76a136a38bc5e2d6e4896a6</Anchor>
                </Node>
                <Node>
                 <Name>CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>ac661796a29ee2d417d9a5102c7f25da2</Anchor>
                </Node>
                <Node>
                 <Name>CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a5e039b8eb3b849830cdfd2cfa67b4d6f</Anchor>
                </Node>
                <Node>
                 <Name>~CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a4b912fe2241a4192980fbeba9b914515</Anchor>
                </Node>
                <Node>
                 <Name>actual</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a872287484e02407a364d921d96496825</Anchor>
                </Node>
                <Node>
                 <Name>cancel</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a02d5fa6b14e221f3012a794b905be166</Anchor>
                </Node>
                <Node>
                 <Name>error</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a38cc0cf6cb8c20b57ae92558f887569e</Anchor>
                </Node>
                <Node>
                 <Name>expected</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>ae92e3e1afc39f288b59466e7da8614d7</Anchor>
                </Node>
                <Node>
                 <Name>message</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a5679ca29245899bbe1dc3ccd6afe7222</Anchor>
                </Node>
                <Node>
                 <Name>operator&lt;&lt;</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a330241cd86ab1a0bc868b4aa557b57ba</Anchor>
                </Node>
                <Node>
                 <Name>operator&lt;&lt;</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Anchor>a2c07da561db6b1b45860607791b9ba97</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
               <Name>SharedMemory</Name>
-              <Path>classgrading_1_1SharedMemory.html</Path>
+              <Path>classgrading_1_1_shared_memory.html</Path>
               <Subnodes>
                <Node>
                 <Name>~SharedMemory</Name>
-                <Path>classgrading_1_1SharedMemory.html</Path>
+                <Path>classgrading_1_1_shared_memory.html</Path>
                 <Anchor>a31f26ee0737605d6515f78eaacd69299</Anchor>
                </Node>
                <Node>
                 <Name>rawPointer</Name>
-                <Path>classgrading_1_1SharedMemory.html</Path>
+                <Path>classgrading_1_1_shared_memory.html</Path>
                 <Anchor>a9e179bfc0c2500deb211fa3dadea4c9b</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
               <Name>Test</Name>
-              <Path>classgrading_1_1Test.html</Path>
+              <Path>classgrading_1_1_test.html</Path>
               <Subnodes>
                <Node>
                 <Name>TagSet</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a191b633593a0e8e5e09820dc775889f0</Anchor>
                </Node>
                <Node>
                 <Name>Test</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>acf51f543bdde8ba3fa198cc8a8c26f7a</Anchor>
                </Node>
                <Node>
                 <Name>Test</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a4ecb5be84917e6e2dd006d62adf2e8ec</Anchor>
                </Node>
                <Node>
                 <Name>Test</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a180a2a6e9c1656fd1ea37ec3e70bbb9c</Anchor>
                </Node>
                <Node>
                 <Name>description</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a7b5000e45c1386c4e56ef650f6b0ef5b</Anchor>
                </Node>
                <Node>
                 <Name>name</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a37627d5d5bba7f4a8690c71c2ab3cb07</Anchor>
                </Node>
                <Node>
                 <Name>Run</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>ac9a3c81c2bd6eec42a015fbef89e0822</Anchor>
                </Node>
                <Node>
                 <Name>timeout</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a07d528eee9de2abf3d9937a71ed6f3bd</Anchor>
                </Node>
                <Node>
                 <Name>weight</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>adeb71e361e179403c3cacbccd6e8c1bd</Anchor>
                </Node>
                <Node>
                 <Name>TestBuilder</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Anchor>a0d601ee11ceeb73369a7bcda89822b0d</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
               <Name>TestBuilder</Name>
-              <Path>classgrading_1_1TestBuilder.html</Path>
+              <Path>classgrading_1_1_test_builder.html</Path>
               <Subnodes>
                <Node>
                 <Name>TestBuilder</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Anchor>af3eb6a41d8afea7a4664c913ec89bbba</Anchor>
                </Node>
                <Node>
                 <Name>~TestBuilder</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Anchor>a7398da67a7705e6f0593270854299f3c</Anchor>
                </Node>
                <Node>
                 <Name>desc</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Anchor>a69eeccd5df6790033221e369bd40366f</Anchor>
                </Node>
                <Node>
                 <Name>description</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Anchor>a5080f04be569ca7427de494ffbb751df</Anchor>
                </Node>
                <Node>
                 <Name>timeout</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Anchor>a46538f6cf91c6c0347baa6a6fc2c72fb</Anchor>
                </Node>
                <Node>
                 <Name>weight</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Anchor>afaaa8e7cc9878a5e3200c534df5411e1</Anchor>
                </Node>
               </Subnodes>
              </Node>
              <Node>
               <Name>TestSuite</Name>
-              <Path>classgrading_1_1TestSuite.html</Path>
+              <Path>classgrading_1_1_test_suite.html</Path>
               <Subnodes>
                <Node>
                 <Name>Statistics</Name>
-                <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>failed</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>ac22f1c4471429c9a1f0c09efd5fcca3a</Anchor>
                  </Node>
                  <Node>
                   <Name>passed</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>a1810ba190aa195caf7bb8dcc23bb1c7d</Anchor>
                  </Node>
                  <Node>
                   <Name>score</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>a8c5cd9b525ee73a24b1d9d8e34982d1c</Anchor>
                  </Node>
                  <Node>
                   <Name>total</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>af9031f7978e957b9979e78873830ce46</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>TestSuite</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Anchor>abc8126fceba23a7a21730d962f483f11</Anchor>
                </Node>
                <Node>
                 <Name>TestSuite</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Anchor>a0bed231a3b0ba8cb3430026c3d9d22c2</Anchor>
                </Node>
                <Node>
                 <Name>add</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Anchor>a2b0eee0d73ca97bab412df536ba785e5</Anchor>
                </Node>
                <Node>
                 <Name>add</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Anchor>a575b575bb13b2027e9bb19c8ded6c40a</Anchor>
                </Node>
                <Node>
                 <Name>Run</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Anchor>a5bccd76db8e344d679d220c2fe002278</Anchor>
                </Node>
                <Node>
                 <Name>totalWeight</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Anchor>afde9b65cb6534abec8680936047a03aa</Anchor>
                </Node>
               </Subnodes>
@@ -341,31 +346,31 @@
           <Subnodes>
            <Node>
             <Name>Arguments</Name>
-            <Path>structgrading_1_1Arguments.html</Path>
+            <Path>structgrading_1_1_arguments.html</Path>
            </Node>
            <Node>
             <Name>CheckResult</Name>
-            <Path>classgrading_1_1CheckResult.html</Path>
+            <Path>classgrading_1_1_check_result.html</Path>
            </Node>
            <Node>
             <Name>SharedMemory</Name>
-            <Path>classgrading_1_1SharedMemory.html</Path>
+            <Path>classgrading_1_1_shared_memory.html</Path>
            </Node>
            <Node>
             <Name>TestSuite::Statistics</Name>
-            <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+            <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
            </Node>
            <Node>
             <Name>Test</Name>
-            <Path>classgrading_1_1Test.html</Path>
+            <Path>classgrading_1_1_test.html</Path>
            </Node>
            <Node>
             <Name>TestBuilder</Name>
-            <Path>classgrading_1_1TestBuilder.html</Path>
+            <Path>classgrading_1_1_test_builder.html</Path>
            </Node>
            <Node>
             <Name>TestSuite</Name>
-            <Path>classgrading_1_1TestSuite.html</Path>
+            <Path>classgrading_1_1_test_suite.html</Path>
            </Node>
           </Subnodes>
          </Node>
@@ -411,267 +416,267 @@
               <Subnodes>
                <Node>
                 <Name>TestSuite</Name>
-                <Path>classgrading_1_1TestSuite.html</Path>
+                <Path>classgrading_1_1_test_suite.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>Statistics</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Subnodes>
                    <Node>
                     <Name>failed</Name>
-                    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                     <Anchor>ac22f1c4471429c9a1f0c09efd5fcca3a</Anchor>
                    </Node>
                    <Node>
                     <Name>passed</Name>
-                    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                     <Anchor>a1810ba190aa195caf7bb8dcc23bb1c7d</Anchor>
                    </Node>
                    <Node>
                     <Name>score</Name>
-                    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                     <Anchor>a8c5cd9b525ee73a24b1d9d8e34982d1c</Anchor>
                    </Node>
                    <Node>
                     <Name>total</Name>
-                    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                     <Anchor>af9031f7978e957b9979e78873830ce46</Anchor>
                    </Node>
                   </Subnodes>
                  </Node>
                  <Node>
                   <Name>TestSuite</Name>
-                  <Path>classgrading_1_1TestSuite.html</Path>
+                  <Path>classgrading_1_1_test_suite.html</Path>
                   <Anchor>abc8126fceba23a7a21730d962f483f11</Anchor>
                  </Node>
                  <Node>
                   <Name>TestSuite</Name>
-                  <Path>classgrading_1_1TestSuite.html</Path>
+                  <Path>classgrading_1_1_test_suite.html</Path>
                   <Anchor>a0bed231a3b0ba8cb3430026c3d9d22c2</Anchor>
                  </Node>
                  <Node>
                   <Name>add</Name>
-                  <Path>classgrading_1_1TestSuite.html</Path>
+                  <Path>classgrading_1_1_test_suite.html</Path>
                   <Anchor>a2b0eee0d73ca97bab412df536ba785e5</Anchor>
                  </Node>
                  <Node>
                   <Name>add</Name>
-                  <Path>classgrading_1_1TestSuite.html</Path>
+                  <Path>classgrading_1_1_test_suite.html</Path>
                   <Anchor>a575b575bb13b2027e9bb19c8ded6c40a</Anchor>
                  </Node>
                  <Node>
                   <Name>Run</Name>
-                  <Path>classgrading_1_1TestSuite.html</Path>
+                  <Path>classgrading_1_1_test_suite.html</Path>
                   <Anchor>a5bccd76db8e344d679d220c2fe002278</Anchor>
                  </Node>
                  <Node>
                   <Name>totalWeight</Name>
-                  <Path>classgrading_1_1TestSuite.html</Path>
+                  <Path>classgrading_1_1_test_suite.html</Path>
                   <Anchor>afde9b65cb6534abec8680936047a03aa</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>Statistics</Name>
-                <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>failed</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>ac22f1c4471429c9a1f0c09efd5fcca3a</Anchor>
                  </Node>
                  <Node>
                   <Name>passed</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>a1810ba190aa195caf7bb8dcc23bb1c7d</Anchor>
                  </Node>
                  <Node>
                   <Name>score</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>a8c5cd9b525ee73a24b1d9d8e34982d1c</Anchor>
                  </Node>
                  <Node>
                   <Name>total</Name>
-                  <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+                  <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
                   <Anchor>af9031f7978e957b9979e78873830ce46</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>TestBuilder</Name>
-                <Path>classgrading_1_1TestBuilder.html</Path>
+                <Path>classgrading_1_1_test_builder.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>TestBuilder</Name>
-                  <Path>classgrading_1_1TestBuilder.html</Path>
+                  <Path>classgrading_1_1_test_builder.html</Path>
                   <Anchor>af3eb6a41d8afea7a4664c913ec89bbba</Anchor>
                  </Node>
                  <Node>
                   <Name>~TestBuilder</Name>
-                  <Path>classgrading_1_1TestBuilder.html</Path>
+                  <Path>classgrading_1_1_test_builder.html</Path>
                   <Anchor>a7398da67a7705e6f0593270854299f3c</Anchor>
                  </Node>
                  <Node>
                   <Name>desc</Name>
-                  <Path>classgrading_1_1TestBuilder.html</Path>
+                  <Path>classgrading_1_1_test_builder.html</Path>
                   <Anchor>a69eeccd5df6790033221e369bd40366f</Anchor>
                  </Node>
                  <Node>
                   <Name>description</Name>
-                  <Path>classgrading_1_1TestBuilder.html</Path>
+                  <Path>classgrading_1_1_test_builder.html</Path>
                   <Anchor>a5080f04be569ca7427de494ffbb751df</Anchor>
                  </Node>
                  <Node>
                   <Name>timeout</Name>
-                  <Path>classgrading_1_1TestBuilder.html</Path>
+                  <Path>classgrading_1_1_test_builder.html</Path>
                   <Anchor>a46538f6cf91c6c0347baa6a6fc2c72fb</Anchor>
                  </Node>
                  <Node>
                   <Name>weight</Name>
-                  <Path>classgrading_1_1TestBuilder.html</Path>
+                  <Path>classgrading_1_1_test_builder.html</Path>
                   <Anchor>afaaa8e7cc9878a5e3200c534df5411e1</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>Test</Name>
-                <Path>classgrading_1_1Test.html</Path>
+                <Path>classgrading_1_1_test.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>TagSet</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a191b633593a0e8e5e09820dc775889f0</Anchor>
                  </Node>
                  <Node>
                   <Name>Test</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>acf51f543bdde8ba3fa198cc8a8c26f7a</Anchor>
                  </Node>
                  <Node>
                   <Name>Test</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a4ecb5be84917e6e2dd006d62adf2e8ec</Anchor>
                  </Node>
                  <Node>
                   <Name>Test</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a180a2a6e9c1656fd1ea37ec3e70bbb9c</Anchor>
                  </Node>
                  <Node>
                   <Name>description</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a7b5000e45c1386c4e56ef650f6b0ef5b</Anchor>
                  </Node>
                  <Node>
                   <Name>name</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a37627d5d5bba7f4a8690c71c2ab3cb07</Anchor>
                  </Node>
                  <Node>
                   <Name>Run</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>ac9a3c81c2bd6eec42a015fbef89e0822</Anchor>
                  </Node>
                  <Node>
                   <Name>timeout</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a07d528eee9de2abf3d9937a71ed6f3bd</Anchor>
                  </Node>
                  <Node>
                   <Name>weight</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>adeb71e361e179403c3cacbccd6e8c1bd</Anchor>
                  </Node>
                  <Node>
                   <Name>TestBuilder</Name>
-                  <Path>classgrading_1_1Test.html</Path>
+                  <Path>classgrading_1_1_test.html</Path>
                   <Anchor>a0d601ee11ceeb73369a7bcda89822b0d</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>CheckResult</Name>
-                <Path>classgrading_1_1CheckResult.html</Path>
+                <Path>classgrading_1_1_check_result.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>CheckResult</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>aa40a4ffbd2ed79d36078a96dab3e2197</Anchor>
                  </Node>
                  <Node>
                   <Name>CheckResult</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>ac4887f6895b7acdf8054786005c04c74</Anchor>
                  </Node>
                  <Node>
                   <Name>CheckResult</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a8a31267ec76a136a38bc5e2d6e4896a6</Anchor>
                  </Node>
                  <Node>
                   <Name>CheckResult</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>ac661796a29ee2d417d9a5102c7f25da2</Anchor>
                  </Node>
                  <Node>
                   <Name>CheckResult</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a5e039b8eb3b849830cdfd2cfa67b4d6f</Anchor>
                  </Node>
                  <Node>
                   <Name>~CheckResult</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a4b912fe2241a4192980fbeba9b914515</Anchor>
                  </Node>
                  <Node>
                   <Name>actual</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a872287484e02407a364d921d96496825</Anchor>
                  </Node>
                  <Node>
                   <Name>cancel</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a02d5fa6b14e221f3012a794b905be166</Anchor>
                  </Node>
                  <Node>
                   <Name>error</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a38cc0cf6cb8c20b57ae92558f887569e</Anchor>
                  </Node>
                  <Node>
                   <Name>expected</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>ae92e3e1afc39f288b59466e7da8614d7</Anchor>
                  </Node>
                  <Node>
                   <Name>message</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a5679ca29245899bbe1dc3ccd6afe7222</Anchor>
                  </Node>
                  <Node>
                   <Name>operator&lt;&lt;</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a330241cd86ab1a0bc868b4aa557b57ba</Anchor>
                  </Node>
                  <Node>
                   <Name>operator&lt;&lt;</Name>
-                  <Path>classgrading_1_1CheckResult.html</Path>
+                  <Path>classgrading_1_1_check_result.html</Path>
                   <Anchor>a2c07da561db6b1b45860607791b9ba97</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>SharedMemory</Name>
-                <Path>classgrading_1_1SharedMemory.html</Path>
+                <Path>classgrading_1_1_shared_memory.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>~SharedMemory</Name>
-                  <Path>classgrading_1_1SharedMemory.html</Path>
+                  <Path>classgrading_1_1_shared_memory.html</Path>
                   <Anchor>a31f26ee0737605d6515f78eaacd69299</Anchor>
                  </Node>
                  <Node>
                   <Name>rawPointer</Name>
-                  <Path>classgrading_1_1SharedMemory.html</Path>
+                  <Path>classgrading_1_1_shared_memory.html</Path>
                   <Anchor>a9e179bfc0c2500deb211fa3dadea4c9b</Anchor>
                  </Node>
                 </Subnodes>
@@ -820,43 +825,48 @@
             <Subnodes>
              <Node>
               <Name>Arguments.cpp</Name>
-              <Path>Arguments_8cpp.html</Path>
+              <Path>_arguments_8cpp.html</Path>
               <Subnodes>
                <Node>
                 <Name>Options</Name>
-                <Path>Arguments_8cpp.html</Path>
+                <Path>_arguments_8cpp.html</Path>
                 <Anchor>adf7c3ac791f996a56160a12f379cbd99</Anchor>
                 <Subnodes>
                  <Node>
                   <Name>UNKNOWN</Name>
-                  <Path>Arguments_8cpp.html</Path>
+                  <Path>_arguments_8cpp.html</Path>
                   <Anchor>adf7c3ac791f996a56160a12f379cbd99a6ce26a62afab55d7606ad4e92428b30c</Anchor>
                  </Node>
                  <Node>
                   <Name>HELP</Name>
-                  <Path>Arguments_8cpp.html</Path>
+                  <Path>_arguments_8cpp.html</Path>
                   <Anchor>adf7c3ac791f996a56160a12f379cbd99a9f5cb747b2e1f0ea781d2b1f2a5b4824</Anchor>
                  </Node>
                  <Node>
+                  <Name>SKIP_TESTS</Name>
+                  <Path>_arguments_8cpp.html</Path>
+                  <Anchor>adf7c3ac791f996a56160a12f379cbd99a6e597af6f117930f8f37ed6226f96a00</Anchor>
+                 </Node>
+                 <Node>
                   <Name>VERBOSE</Name>
-                  <Path>Arguments_8cpp.html</Path>
+                  <Path>_arguments_8cpp.html</Path>
                   <Anchor>adf7c3ac791f996a56160a12f379cbd99ace3e26676763569084c86b8c3b67d601</Anchor>
                  </Node>
                  <Node>
-                  <Name>STRATEGY</Name>
-                  <Path>Arguments_8cpp.html</Path>
-                  <Anchor>adf7c3ac791f996a56160a12f379cbd99a2c36b9b15642557c7d30a429a9723aad</Anchor>
+                  <Name>RUN_STRATEGY</Name>
+                  <Path>_arguments_8cpp.html</Path>
+                  <Anchor>adf7c3ac791f996a56160a12f379cbd99a414c9eb2f4e2d9b86948e7530e399f20</Anchor>
                  </Node>
                  <Node>
                   <Name>TIMEOUT</Name>
-                  <Path>Arguments_8cpp.html</Path>
+                  <Path>_arguments_8cpp.html</Path>
                   <Anchor>adf7c3ac791f996a56160a12f379cbd99aad9dee005a3d0f9137b2ac1e0869f89b</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
                <Node>
                 <Name>usage</Name>
-                <Path>Arguments_8cpp.html</Path>
+                <Path>_arguments_8cpp.html</Path>
                 <Anchor>af23d8c13133fbc8715f459529590ed12</Anchor>
                </Node>
               </Subnodes>
@@ -934,31 +944,36 @@
               <Subnodes>
                <Node>
                 <Name>Arguments</Name>
-                <Path>structgrading_1_1Arguments.html</Path>
+                <Path>structgrading_1_1_arguments.html</Path>
                 <Subnodes>
                  <Node>
                   <Name>error</Name>
-                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Path>structgrading_1_1_arguments.html</Path>
                   <Anchor>af27b2dcc5f0d6408269307739fa43ec3</Anchor>
                  </Node>
                  <Node>
                   <Name>help</Name>
-                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Path>structgrading_1_1_arguments.html</Path>
                   <Anchor>a49fc425ab3b72f3f60b751193b5cff29</Anchor>
                  </Node>
                  <Node>
                   <Name>runStrategy</Name>
-                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Path>structgrading_1_1_arguments.html</Path>
                   <Anchor>a6bd6ba5bd95b7f4671a0544a81f4948a</Anchor>
                  </Node>
                  <Node>
+                  <Name>skip</Name>
+                  <Path>structgrading_1_1_arguments.html</Path>
+                  <Anchor>a092180cf24cd4e04d9498e6094c508ee</Anchor>
+                 </Node>
+                 <Node>
                   <Name>timeout</Name>
-                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Path>structgrading_1_1_arguments.html</Path>
                   <Anchor>a07fb086b85679ba3a1b6f40edec2f4e8</Anchor>
                  </Node>
                  <Node>
                   <Name>verbose</Name>
-                  <Path>structgrading_1_1Arguments.html</Path>
+                  <Path>structgrading_1_1_arguments.html</Path>
                   <Anchor>a087685f54898c5180dd954bfc1e5fb1f</Anchor>
                  </Node>
                 </Subnodes>
@@ -982,19 +997,19 @@
              </Node>
              <Node>
               <Name>Test.cpp</Name>
-              <Path>Test_8cpp.html</Path>
+              <Path>_test_8cpp.html</Path>
              </Node>
              <Node>
               <Name>TestBuilder.cpp</Name>
-              <Path>TestBuilder_8cpp.html</Path>
+              <Path>_test_builder_8cpp.html</Path>
              </Node>
              <Node>
               <Name>TestResult.cpp</Name>
-              <Path>TestResult_8cpp.html</Path>
+              <Path>_test_result_8cpp.html</Path>
              </Node>
              <Node>
               <Name>TestSuite.cpp</Name>
-              <Path>TestSuite_8cpp.html</Path>
+              <Path>_test_suite_8cpp.html</Path>
              </Node>
             </Subnodes>
            </Node>

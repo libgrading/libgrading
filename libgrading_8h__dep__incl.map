@@ -1,10 +1,10 @@
 <map id="include/libgrading.h" name="include/libgrading.h">
-<area shape="rect" id="node2" href="$private_8h.html" title="Internal header file for libgrading. " alt="" coords="237,81,351,109"/>
-<area shape="rect" id="node4" href="$posix_8cpp.html" title="src/posix.cpp" alt="" coords="5,157,124,185"/>
-<area shape="rect" id="node5" href="$Test_8cpp.html" title="Definitions of grading::Test. " alt="" coords="334,157,443,185"/>
-<area shape="rect" id="node6" href="$TestSuite_8cpp.html" title="Definitions of grading::TestSuite. " alt="" coords="467,157,614,185"/>
-<area shape="rect" id="node7" href="$checks_8cpp.html" title="Implementation of various expectation checks. " alt="" coords="477,81,607,109"/>
-<area shape="rect" id="node8" href="$TestBuilder_8cpp.html" title="Definitions of grading::TestBuilder. " alt="" coords="631,81,789,109"/>
-<area shape="rect" id="node9" href="$TestResult_8cpp.html" title="Definitions of grading::TestResult functions. " alt="" coords="813,81,967,109"/>
-<area shape="rect" id="node3" href="$Arguments_8cpp.html" title="Implementation of grading::Arguments. " alt="" coords="148,157,309,185"/>
+<area shape="rect" id="node2" href="$private_8h.html" title="Internal header file for libgrading. " alt="" coords="217,83,319,111"/>
+<area shape="rect" id="node4" href="$posix_8cpp.html" title="src/posix.cpp" alt="" coords="5,161,112,189"/>
+<area shape="rect" id="node5" href="$_test_8cpp.html" title="Definitions of grading::Test. " alt="" coords="305,161,407,189"/>
+<area shape="rect" id="node6" href="$_test_suite_8cpp.html" title="Definitions of grading::TestSuite. " alt="" coords="431,161,565,189"/>
+<area shape="rect" id="node7" href="$checks_8cpp.html" title="Implementation of various expectation checks. " alt="" coords="445,83,563,111"/>
+<area shape="rect" id="node8" href="$_test_builder_8cpp.html" title="Definitions of grading::TestBuilder. " alt="" coords="587,83,735,111"/>
+<area shape="rect" id="node9" href="$_test_result_8cpp.html" title="Definitions of grading::TestResult functions. " alt="" coords="760,83,904,111"/>
+<area shape="rect" id="node3" href="$_arguments_8cpp.html" title="Implementation of grading::Arguments. " alt="" coords="137,161,281,189"/>
 </map>

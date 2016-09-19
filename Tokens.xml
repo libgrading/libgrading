@@ -174,7 +174,7 @@
       <APILanguage>c</APILanguage>
       <Type>data</Type>
     </TokenIdentifier>
-    <Path>Arguments_8cpp.html</Path>
+    <Path>_arguments_8cpp.html</Path>
     <Anchor>af23d8c13133fbc8715f459529590ed12</Anchor>
     <Abstract>Usage strings for command-line arguments. </Abstract>
     <DeclaredIn>Arguments.cpp</DeclaredIn>
@@ -678,7 +678,7 @@
       <Type>cl</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Abstract>Parsed command-line arguments. </Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
@@ -689,7 +689,7 @@
       <Type>func</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a7732fee01761ae341c2a811613637372</Anchor>
     <Abstract>Parse command-line arguments. </Abstract>
     <DeclaredIn>private.h</DeclaredIn>
@@ -701,7 +701,7 @@
       <Type>data</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>af27b2dcc5f0d6408269307739fa43ec3</Anchor>
     <Abstract>There was an error parsing command-line arguments. </Abstract>
   </Token>
@@ -712,9 +712,20 @@
       <Type>data</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a49fc425ab3b72f3f60b751193b5cff29</Anchor>
     <Abstract>The --help argument was given. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>skip</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_arguments.html</Path>
+    <Anchor>a092180cf24cd4e04d9498e6094c508ee</Anchor>
+    <Abstract>The --skip argument was given. </Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -723,7 +734,7 @@
       <Type>data</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a087685f54898c5180dd954bfc1e5fb1f</Anchor>
     <Abstract>The --verbose argument was given. </Abstract>
   </Token>
@@ -734,7 +745,7 @@
       <Type>data</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a6bd6ba5bd95b7f4671a0544a81f4948a</Anchor>
     <Abstract>The TestRunStrategy chosen by the user (e.g., inline). </Abstract>
   </Token>
@@ -745,7 +756,7 @@
       <Type>data</Type>
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1Arguments.html</Path>
+    <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a07fb086b85679ba3a1b6f40edec2f4e8</Anchor>
     <Abstract>Maximum length of time to wait for any test. </Abstract>
   </Token>
@@ -756,7 +767,7 @@
       <Type>cl</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Abstract>The result of executing a CheckSomething() function. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -767,7 +778,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>aa40a4ffbd2ed79d36078a96dab3e2197</Anchor>
     <Abstract>&quot;All&amp;#39;s-well&quot; constructor (i.e., the check passed). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -779,7 +790,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>ac4887f6895b7acdf8054786005c04c74</Anchor>
     <Abstract>Constructor that takes a simple error message. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -791,7 +802,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a8a31267ec76a136a38bc5e2d6e4896a6</Anchor>
     <Abstract>Constructor that takes an expected and actual value. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -803,7 +814,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a5e039b8eb3b849830cdfd2cfa67b4d6f</Anchor>
     <Abstract>Move constructor. Steal error result from a temporary CheckResult. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -815,7 +826,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a330241cd86ab1a0bc868b4aa557b57ba</Anchor>
     <Abstract>Add further error details to this result, should it be a failure. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -827,7 +838,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a2c07da561db6b1b45860607791b9ba97</Anchor>
     <Abstract>Add further error details to this result, should it be a failure. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -839,7 +850,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a38cc0cf6cb8c20b57ae92558f887569e</Anchor>
     <Abstract>Whether or not the check result is erroneous. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -851,7 +862,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a02d5fa6b14e221f3012a794b905be166</Anchor>
     <Abstract>Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&amp;#39;s owner...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -863,7 +874,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a872287484e02407a364d921d96496825</Anchor>
     <Abstract>Value test expected to see (user-readable representation). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -875,7 +886,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>ae92e3e1afc39f288b59466e7da8614d7</Anchor>
     <Abstract>Actual value that was seen (user-readable representation). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -887,7 +898,7 @@
       <Type>instm</Type>
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1CheckResult.html</Path>
+    <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a5679ca29245899bbe1dc3ccd6afe7222</Anchor>
     <Abstract>A message to display if the check fails. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -899,7 +910,7 @@
       <Type>cl</Type>
       <Scope>grading::SharedMemory</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1SharedMemory.html</Path>
+    <Path>classgrading_1_1_shared_memory.html</Path>
     <Abstract>A representation of a shared memory object. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -910,7 +921,7 @@
       <Type>instm</Type>
       <Scope>grading::SharedMemory</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1SharedMemory.html</Path>
+    <Path>classgrading_1_1_shared_memory.html</Path>
     <Anchor>a9e179bfc0c2500deb211fa3dadea4c9b</Anchor>
     <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -922,7 +933,7 @@
       <Type>cl</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Abstract>A single, completely-initialized test. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -933,7 +944,7 @@
       <Type>tdef</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>a191b633593a0e8e5e09820dc775889f0</Anchor>
     <Abstract>A set of arbitrary tags that can be used when selecting tests. </Abstract>
   </Token>
@@ -944,7 +955,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>acf51f543bdde8ba3fa198cc8a8c26f7a</Anchor>
     <Abstract>Standard constructor. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -956,7 +967,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>a4ecb5be84917e6e2dd006d62adf2e8ec</Anchor>
     <Abstract>Function-plus-expectation constructor. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -968,7 +979,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>a180a2a6e9c1656fd1ea37ec3e70bbb9c</Anchor>
     <Abstract>Function-pointer constructor. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -980,7 +991,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>a37627d5d5bba7f4a8690c71c2ab3cb07</Anchor>
     <Abstract>User-meaningful test name (ideally a single line or less). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -992,7 +1003,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>a7b5000e45c1386c4e56ef650f6b0ef5b</Anchor>
     <Abstract>A longer test description. May contain newlines. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1004,7 +1015,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>a07d528eee9de2abf3d9937a71ed6f3bd</Anchor>
     <Abstract>Maximum length of time this test should take (or 0 for unlimited). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1016,7 +1027,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>adeb71e361e179403c3cacbccd6e8c1bd</Anchor>
     <Abstract>How much weight to place on this test when calculating final score. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1028,7 +1039,7 @@
       <Type>instm</Type>
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1Test.html</Path>
+    <Path>classgrading_1_1_test.html</Path>
     <Anchor>ac9a3c81c2bd6eec42a015fbef89e0822</Anchor>
     <Abstract>Run this test. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1040,7 +1051,7 @@
       <Type>cl</Type>
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Path>classgrading_1_1_test_builder.html</Path>
     <Abstract>An object used to construct a complete Test. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -1051,7 +1062,7 @@
       <Type>instm</Type>
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>af3eb6a41d8afea7a4664c913ec89bbba</Anchor>
     <Abstract>Construct a builder for a named test within a TestSuite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1063,7 +1074,7 @@
       <Type>instm</Type>
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>a5080f04be569ca7427de494ffbb751df</Anchor>
     <Abstract>Set description (which will be printed when run in verbose mode). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1075,7 +1086,7 @@
       <Type>instm</Type>
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>a69eeccd5df6790033221e369bd40366f</Anchor>
     <Abstract>Set description (which will be printed when run in verbose mode). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1087,7 +1098,7 @@
       <Type>instm</Type>
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>a46538f6cf91c6c0347baa6a6fc2c72fb</Anchor>
     <Abstract>Set the test timeout (0 means &quot;run forever&quot;). </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1099,7 +1110,7 @@
       <Type>instm</Type>
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestBuilder.html</Path>
+    <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>afaaa8e7cc9878a5e3200c534df5411e1</Anchor>
     <Abstract>Set the weight accorded to a test. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1111,7 +1122,7 @@
       <Type>cl</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Abstract>A collection of tests that we can run. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -1122,7 +1133,7 @@
       <Type>instm</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>abc8126fceba23a7a21730d962f483f11</Anchor>
     <Abstract>Default constructor: create an empty test suite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1134,7 +1145,7 @@
       <Type>instm</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a0bed231a3b0ba8cb3430026c3d9d22c2</Anchor>
     <Abstract>Construct a TestSuite from a brace-enclosed list of Test objects. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1146,7 +1157,7 @@
       <Type>instm</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a2b0eee0d73ca97bab412df536ba785e5</Anchor>
     <Abstract>Start creating a test with a given name. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1158,7 +1169,7 @@
       <Type>instm</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a575b575bb13b2027e9bb19c8ded6c40a</Anchor>
     <Abstract>Add an already-complete Test to this suite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1170,7 +1181,7 @@
       <Type>instm</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>afde9b65cb6534abec8680936047a03aa</Anchor>
     <Abstract>The total weight of all tests in the suite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1182,7 +1193,7 @@
       <Type>instm</Type>
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
-    <Path>classgrading_1_1TestSuite.html</Path>
+    <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a5bccd76db8e344d679d220c2fe002278</Anchor>
     <Abstract>Run all tests, using command-line arguments to guide the testing strategy, timeouts, etc. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
@@ -1194,7 +1205,7 @@
       <Type>cl</Type>
       <Scope>grading::TestSuite::Statistics</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Abstract>Summary statistics about the execution of a TestSuite. </Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
@@ -1205,7 +1216,7 @@
       <Type>data</Type>
       <Scope>grading::TestSuite::Statistics</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>a1810ba190aa195caf7bb8dcc23bb1c7d</Anchor>
     <Abstract>tests that passed (unweighted) </Abstract>
   </Token>
@@ -1216,7 +1227,7 @@
       <Type>data</Type>
       <Scope>grading::TestSuite::Statistics</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>ac22f1c4471429c9a1f0c09efd5fcca3a</Anchor>
     <Abstract>tests that failed (unweighted) </Abstract>
   </Token>
@@ -1227,7 +1238,7 @@
       <Type>data</Type>
       <Scope>grading::TestSuite::Statistics</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>a8c5cd9b525ee73a24b1d9d8e34982d1c</Anchor>
     <Abstract>weighted (passed/total) score </Abstract>
   </Token>
@@ -1238,7 +1249,7 @@
       <Type>data</Type>
       <Scope>grading::TestSuite::Statistics</Scope>
     </TokenIdentifier>
-    <Path>structgrading_1_1TestSuite_1_1Statistics.html</Path>
+    <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>af9031f7978e957b9979e78873830ce46</Anchor>
     <Abstract>total test count (unweighted) </Abstract>
   </Token>

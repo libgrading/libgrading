@@ -1,5 +1,0 @@
-<map id="grading::Test::Run" name="grading::Test::Run">
-<area shape="rect" id="node2" href="$namespacegrading.html#a5d98269221e6b4c09096d4ae2daa7e79" title="Enter unprivileged testing sandbox, if supported. " alt="" coords="205,5,396,33"/>
-<area shape="rect" id="node3" href="$namespacegrading.html#a37c099580cc9e671911f5366b6ae9db5" title="Run a test in another process. " alt="" coords="227,57,374,85"/>
-<area shape="rect" id="node4" href="$namespacegrading.html#afb35b03796b42705a1093a6de7fcda92" title="Run a test in the current process, catching all exceptions. " alt="" coords="444,57,627,85"/>
-</map>

@@ -1,6 +1,6 @@
 <map id="src/private.h" name="src/private.h">
-<area shape="rect" id="node2" href="$Arguments_8cpp.html" title="Implementation of grading::Arguments. " alt="" coords="5,81,167,109"/>
-<area shape="rect" id="node3" href="$posix_8cpp.html" title="src/posix.cpp" alt="" coords="191,81,309,109"/>
-<area shape="rect" id="node4" href="$Test_8cpp.html" title="Definitions of grading::Test. " alt="" coords="334,81,443,109"/>
-<area shape="rect" id="node5" href="$TestSuite_8cpp.html" title="Definitions of grading::TestSuite. " alt="" coords="467,81,614,109"/>
+<area shape="rect" id="node2" href="$_arguments_8cpp.html" title="Implementation of grading::Arguments. " alt="" coords="5,83,149,111"/>
+<area shape="rect" id="node3" href="$posix_8cpp.html" title="src/posix.cpp" alt="" coords="174,83,281,111"/>
+<area shape="rect" id="node4" href="$_test_8cpp.html" title="Definitions of grading::Test. " alt="" coords="307,83,408,111"/>
+<area shape="rect" id="node5" href="$_test_suite_8cpp.html" title="Definitions of grading::TestSuite. " alt="" coords="433,83,567,111"/>
 </map>

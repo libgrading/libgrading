@@ -1,4 +1,5 @@
 <map id="operator&amp;&amp;" name="operator&amp;&amp;">
-<area shape="rect" id="node2" href="$classgrading_1_1CheckResult.html#a02d5fa6b14e221f3012a794b905be166" title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner..." alt="" coords="160,5,335,49"/>
-<area shape="rect" id="node3" href="$classgrading_1_1CheckResult.html#a5679ca29245899bbe1dc3ccd6afe7222" title="A message to display if the check fails. " alt="" coords="160,73,335,117"/>
+<area shape="rect" id="node2" href="$classgrading_1_1_check_result.html#a872287484e02407a364d921d96496825" title="Value test expected to see (user&#45;readable representation). " alt="" coords="149,5,312,49"/>
+<area shape="rect" id="node3" href="$classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166" title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner..." alt="" coords="149,73,312,117"/>
+<area shape="rect" id="node4" href="$classgrading_1_1_check_result.html#aa40a4ffbd2ed79d36078a96dab3e2197" title="&quot;All&#39;s&#45;well&quot; constructor (i.e., the check passed). " alt="" coords="149,141,312,185"/>
 </map>

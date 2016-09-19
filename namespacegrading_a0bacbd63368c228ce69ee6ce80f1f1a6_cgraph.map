@@ -1,5 +1,0 @@
-<map id="grading::RunTest" name="grading::RunTest">
-<area shape="rect" id="node2" href="$namespacegrading.html#a7e1850cba45d8bced4b418e9eb36163a" title="Map data into the address space that can be shared with other processes. " alt="" coords="185,5,372,37"/>
-<area shape="rect" id="node3" href="$classgrading_1_1_shared_memory.html#aed4149f33e92951014d8dd8c0d1b3b89" title="A pointer to the shared memory, which will be invalidated after this object is destructed. " alt="" coords="188,62,369,114"/>
-<area shape="rect" id="node4" href="$namespacegrading.html#ab096ea85a5a43015bb3552fc6236d4c2" title="Run a test closure in a separate process, capturing segmentation faults and other errors that lead to..." alt="" coords="213,139,344,171"/>
-</map>

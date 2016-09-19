@@ -13,77 +13,78 @@
   <topic label="Classes" href="annotated.html">
     <topic label="Class List" href="annotated.html">
       <topic label="grading" href="namespacegrading.html">
-        <topic label="Arguments" href="structgrading_1_1Arguments.html">
-          <topic label="error" href="structgrading_1_1Arguments.html#af27b2dcc5f0d6408269307739fa43ec3"/>
-          <topic label="help" href="structgrading_1_1Arguments.html#a49fc425ab3b72f3f60b751193b5cff29"/>
-          <topic label="runStrategy" href="structgrading_1_1Arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a"/>
-          <topic label="timeout" href="structgrading_1_1Arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8"/>
-          <topic label="verbose" href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f"/>
+        <topic label="Arguments" href="structgrading_1_1_arguments.html">
+          <topic label="error" href="structgrading_1_1_arguments.html#af27b2dcc5f0d6408269307739fa43ec3"/>
+          <topic label="help" href="structgrading_1_1_arguments.html#a49fc425ab3b72f3f60b751193b5cff29"/>
+          <topic label="runStrategy" href="structgrading_1_1_arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a"/>
+          <topic label="skip" href="structgrading_1_1_arguments.html#a092180cf24cd4e04d9498e6094c508ee"/>
+          <topic label="timeout" href="structgrading_1_1_arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8"/>
+          <topic label="verbose" href="structgrading_1_1_arguments.html#a087685f54898c5180dd954bfc1e5fb1f"/>
         </topic>
-        <topic label="CheckResult" href="classgrading_1_1CheckResult.html">
-          <topic label="CheckResult" href="classgrading_1_1CheckResult.html#aa40a4ffbd2ed79d36078a96dab3e2197"/>
-          <topic label="CheckResult" href="classgrading_1_1CheckResult.html#ac4887f6895b7acdf8054786005c04c74"/>
-          <topic label="CheckResult" href="classgrading_1_1CheckResult.html#a8a31267ec76a136a38bc5e2d6e4896a6"/>
-          <topic label="CheckResult" href="classgrading_1_1CheckResult.html#ac661796a29ee2d417d9a5102c7f25da2"/>
-          <topic label="CheckResult" href="classgrading_1_1CheckResult.html#a5e039b8eb3b849830cdfd2cfa67b4d6f"/>
-          <topic label="~CheckResult" href="classgrading_1_1CheckResult.html#a4b912fe2241a4192980fbeba9b914515"/>
-          <topic label="actual" href="classgrading_1_1CheckResult.html#a872287484e02407a364d921d96496825"/>
-          <topic label="cancel" href="classgrading_1_1CheckResult.html#a02d5fa6b14e221f3012a794b905be166"/>
-          <topic label="error" href="classgrading_1_1CheckResult.html#a38cc0cf6cb8c20b57ae92558f887569e"/>
-          <topic label="expected" href="classgrading_1_1CheckResult.html#ae92e3e1afc39f288b59466e7da8614d7"/>
-          <topic label="message" href="classgrading_1_1CheckResult.html#a5679ca29245899bbe1dc3ccd6afe7222"/>
-          <topic label="operator&lt;&lt;" href="classgrading_1_1CheckResult.html#a330241cd86ab1a0bc868b4aa557b57ba"/>
-          <topic label="operator&lt;&lt;" href="classgrading_1_1CheckResult.html#a2c07da561db6b1b45860607791b9ba97"/>
+        <topic label="CheckResult" href="classgrading_1_1_check_result.html">
+          <topic label="CheckResult" href="classgrading_1_1_check_result.html#aa40a4ffbd2ed79d36078a96dab3e2197"/>
+          <topic label="CheckResult" href="classgrading_1_1_check_result.html#ac4887f6895b7acdf8054786005c04c74"/>
+          <topic label="CheckResult" href="classgrading_1_1_check_result.html#a8a31267ec76a136a38bc5e2d6e4896a6"/>
+          <topic label="CheckResult" href="classgrading_1_1_check_result.html#ac661796a29ee2d417d9a5102c7f25da2"/>
+          <topic label="CheckResult" href="classgrading_1_1_check_result.html#a5e039b8eb3b849830cdfd2cfa67b4d6f"/>
+          <topic label="~CheckResult" href="classgrading_1_1_check_result.html#a4b912fe2241a4192980fbeba9b914515"/>
+          <topic label="actual" href="classgrading_1_1_check_result.html#a872287484e02407a364d921d96496825"/>
+          <topic label="cancel" href="classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166"/>
+          <topic label="error" href="classgrading_1_1_check_result.html#a38cc0cf6cb8c20b57ae92558f887569e"/>
+          <topic label="expected" href="classgrading_1_1_check_result.html#ae92e3e1afc39f288b59466e7da8614d7"/>
+          <topic label="message" href="classgrading_1_1_check_result.html#a5679ca29245899bbe1dc3ccd6afe7222"/>
+          <topic label="operator&lt;&lt;" href="classgrading_1_1_check_result.html#a330241cd86ab1a0bc868b4aa557b57ba"/>
+          <topic label="operator&lt;&lt;" href="classgrading_1_1_check_result.html#a2c07da561db6b1b45860607791b9ba97"/>
         </topic>
-        <topic label="SharedMemory" href="classgrading_1_1SharedMemory.html">
-          <topic label="~SharedMemory" href="classgrading_1_1SharedMemory.html#a31f26ee0737605d6515f78eaacd69299"/>
-          <topic label="rawPointer" href="classgrading_1_1SharedMemory.html#a9e179bfc0c2500deb211fa3dadea4c9b"/>
+        <topic label="SharedMemory" href="classgrading_1_1_shared_memory.html">
+          <topic label="~SharedMemory" href="classgrading_1_1_shared_memory.html#a31f26ee0737605d6515f78eaacd69299"/>
+          <topic label="rawPointer" href="classgrading_1_1_shared_memory.html#a9e179bfc0c2500deb211fa3dadea4c9b"/>
         </topic>
-        <topic label="Test" href="classgrading_1_1Test.html">
-          <topic label="TagSet" href="classgrading_1_1Test.html#a191b633593a0e8e5e09820dc775889f0"/>
-          <topic label="Test" href="classgrading_1_1Test.html#acf51f543bdde8ba3fa198cc8a8c26f7a"/>
-          <topic label="Test" href="classgrading_1_1Test.html#a4ecb5be84917e6e2dd006d62adf2e8ec"/>
-          <topic label="Test" href="classgrading_1_1Test.html#a180a2a6e9c1656fd1ea37ec3e70bbb9c"/>
-          <topic label="description" href="classgrading_1_1Test.html#a7b5000e45c1386c4e56ef650f6b0ef5b"/>
-          <topic label="name" href="classgrading_1_1Test.html#a37627d5d5bba7f4a8690c71c2ab3cb07"/>
-          <topic label="Run" href="classgrading_1_1Test.html#ac9a3c81c2bd6eec42a015fbef89e0822"/>
-          <topic label="timeout" href="classgrading_1_1Test.html#a07d528eee9de2abf3d9937a71ed6f3bd"/>
-          <topic label="weight" href="classgrading_1_1Test.html#adeb71e361e179403c3cacbccd6e8c1bd"/>
-          <topic label="TestBuilder" href="classgrading_1_1Test.html#a0d601ee11ceeb73369a7bcda89822b0d"/>
+        <topic label="Test" href="classgrading_1_1_test.html">
+          <topic label="TagSet" href="classgrading_1_1_test.html#a191b633593a0e8e5e09820dc775889f0"/>
+          <topic label="Test" href="classgrading_1_1_test.html#acf51f543bdde8ba3fa198cc8a8c26f7a"/>
+          <topic label="Test" href="classgrading_1_1_test.html#a4ecb5be84917e6e2dd006d62adf2e8ec"/>
+          <topic label="Test" href="classgrading_1_1_test.html#a180a2a6e9c1656fd1ea37ec3e70bbb9c"/>
+          <topic label="description" href="classgrading_1_1_test.html#a7b5000e45c1386c4e56ef650f6b0ef5b"/>
+          <topic label="name" href="classgrading_1_1_test.html#a37627d5d5bba7f4a8690c71c2ab3cb07"/>
+          <topic label="Run" href="classgrading_1_1_test.html#ac9a3c81c2bd6eec42a015fbef89e0822"/>
+          <topic label="timeout" href="classgrading_1_1_test.html#a07d528eee9de2abf3d9937a71ed6f3bd"/>
+          <topic label="weight" href="classgrading_1_1_test.html#adeb71e361e179403c3cacbccd6e8c1bd"/>
+          <topic label="TestBuilder" href="classgrading_1_1_test.html#a0d601ee11ceeb73369a7bcda89822b0d"/>
         </topic>
-        <topic label="TestBuilder" href="classgrading_1_1TestBuilder.html">
-          <topic label="TestBuilder" href="classgrading_1_1TestBuilder.html#af3eb6a41d8afea7a4664c913ec89bbba"/>
-          <topic label="~TestBuilder" href="classgrading_1_1TestBuilder.html#a7398da67a7705e6f0593270854299f3c"/>
-          <topic label="desc" href="classgrading_1_1TestBuilder.html#a69eeccd5df6790033221e369bd40366f"/>
-          <topic label="description" href="classgrading_1_1TestBuilder.html#a5080f04be569ca7427de494ffbb751df"/>
-          <topic label="timeout" href="classgrading_1_1TestBuilder.html#a46538f6cf91c6c0347baa6a6fc2c72fb"/>
-          <topic label="weight" href="classgrading_1_1TestBuilder.html#afaaa8e7cc9878a5e3200c534df5411e1"/>
+        <topic label="TestBuilder" href="classgrading_1_1_test_builder.html">
+          <topic label="TestBuilder" href="classgrading_1_1_test_builder.html#af3eb6a41d8afea7a4664c913ec89bbba"/>
+          <topic label="~TestBuilder" href="classgrading_1_1_test_builder.html#a7398da67a7705e6f0593270854299f3c"/>
+          <topic label="desc" href="classgrading_1_1_test_builder.html#a69eeccd5df6790033221e369bd40366f"/>
+          <topic label="description" href="classgrading_1_1_test_builder.html#a5080f04be569ca7427de494ffbb751df"/>
+          <topic label="timeout" href="classgrading_1_1_test_builder.html#a46538f6cf91c6c0347baa6a6fc2c72fb"/>
+          <topic label="weight" href="classgrading_1_1_test_builder.html#afaaa8e7cc9878a5e3200c534df5411e1"/>
         </topic>
-        <topic label="TestSuite" href="classgrading_1_1TestSuite.html">
-          <topic label="Statistics" href="structgrading_1_1TestSuite_1_1Statistics.html">
-            <topic label="failed" href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a"/>
-            <topic label="passed" href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d"/>
-            <topic label="score" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c"/>
-            <topic label="total" href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46"/>
+        <topic label="TestSuite" href="classgrading_1_1_test_suite.html">
+          <topic label="Statistics" href="structgrading_1_1_test_suite_1_1_statistics.html">
+            <topic label="failed" href="structgrading_1_1_test_suite_1_1_statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a"/>
+            <topic label="passed" href="structgrading_1_1_test_suite_1_1_statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d"/>
+            <topic label="score" href="structgrading_1_1_test_suite_1_1_statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c"/>
+            <topic label="total" href="structgrading_1_1_test_suite_1_1_statistics.html#af9031f7978e957b9979e78873830ce46"/>
           </topic>
-          <topic label="TestSuite" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11"/>
-          <topic label="TestSuite" href="classgrading_1_1TestSuite.html#a0bed231a3b0ba8cb3430026c3d9d22c2"/>
-          <topic label="add" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5"/>
-          <topic label="add" href="classgrading_1_1TestSuite.html#a575b575bb13b2027e9bb19c8ded6c40a"/>
-          <topic label="Run" href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278"/>
-          <topic label="totalWeight" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa"/>
+          <topic label="TestSuite" href="classgrading_1_1_test_suite.html#abc8126fceba23a7a21730d962f483f11"/>
+          <topic label="TestSuite" href="classgrading_1_1_test_suite.html#a0bed231a3b0ba8cb3430026c3d9d22c2"/>
+          <topic label="add" href="classgrading_1_1_test_suite.html#a2b0eee0d73ca97bab412df536ba785e5"/>
+          <topic label="add" href="classgrading_1_1_test_suite.html#a575b575bb13b2027e9bb19c8ded6c40a"/>
+          <topic label="Run" href="classgrading_1_1_test_suite.html#a5bccd76db8e344d679d220c2fe002278"/>
+          <topic label="totalWeight" href="classgrading_1_1_test_suite.html#afde9b65cb6534abec8680936047a03aa"/>
         </topic>
       </topic>
     </topic>
     <topic label="Class Index" href="classes.html"/>
     <topic label="Class Hierarchy" href="hierarchy.html">
-      <topic label="Arguments" href="structgrading_1_1Arguments.html"/>
-      <topic label="CheckResult" href="classgrading_1_1CheckResult.html"/>
-      <topic label="SharedMemory" href="classgrading_1_1SharedMemory.html"/>
-      <topic label="TestSuite::Statistics" href="structgrading_1_1TestSuite_1_1Statistics.html"/>
-      <topic label="Test" href="classgrading_1_1Test.html"/>
-      <topic label="TestBuilder" href="classgrading_1_1TestBuilder.html"/>
-      <topic label="TestSuite" href="classgrading_1_1TestSuite.html"/>
+      <topic label="Arguments" href="structgrading_1_1_arguments.html"/>
+      <topic label="CheckResult" href="classgrading_1_1_check_result.html"/>
+      <topic label="SharedMemory" href="classgrading_1_1_shared_memory.html"/>
+      <topic label="TestSuite::Statistics" href="structgrading_1_1_test_suite_1_1_statistics.html"/>
+      <topic label="Test" href="classgrading_1_1_test.html"/>
+      <topic label="TestBuilder" href="classgrading_1_1_test_builder.html"/>
+      <topic label="TestSuite" href="classgrading_1_1_test_suite.html"/>
     </topic>
     <topic label="Class Members" href="functions.html">
       <topic label="All" href="functions.html"/>
@@ -96,64 +97,64 @@
     <topic label="File List" href="files.html">
       <topic label="include" href="dir_d44c64559bbebec7f509842c48db8b23.html">
         <topic label="libgrading.h" href="libgrading_8h.html">
-          <topic label="TestSuite" href="classgrading_1_1TestSuite.html">
-            <topic label="Statistics" href="structgrading_1_1TestSuite_1_1Statistics.html">
-              <topic label="failed" href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a"/>
-              <topic label="passed" href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d"/>
-              <topic label="score" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c"/>
-              <topic label="total" href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46"/>
+          <topic label="TestSuite" href="classgrading_1_1_test_suite.html">
+            <topic label="Statistics" href="structgrading_1_1_test_suite_1_1_statistics.html">
+              <topic label="failed" href="structgrading_1_1_test_suite_1_1_statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a"/>
+              <topic label="passed" href="structgrading_1_1_test_suite_1_1_statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d"/>
+              <topic label="score" href="structgrading_1_1_test_suite_1_1_statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c"/>
+              <topic label="total" href="structgrading_1_1_test_suite_1_1_statistics.html#af9031f7978e957b9979e78873830ce46"/>
             </topic>
-            <topic label="TestSuite" href="classgrading_1_1TestSuite.html#abc8126fceba23a7a21730d962f483f11"/>
-            <topic label="TestSuite" href="classgrading_1_1TestSuite.html#a0bed231a3b0ba8cb3430026c3d9d22c2"/>
-            <topic label="add" href="classgrading_1_1TestSuite.html#a2b0eee0d73ca97bab412df536ba785e5"/>
-            <topic label="add" href="classgrading_1_1TestSuite.html#a575b575bb13b2027e9bb19c8ded6c40a"/>
-            <topic label="Run" href="classgrading_1_1TestSuite.html#a5bccd76db8e344d679d220c2fe002278"/>
-            <topic label="totalWeight" href="classgrading_1_1TestSuite.html#afde9b65cb6534abec8680936047a03aa"/>
+            <topic label="TestSuite" href="classgrading_1_1_test_suite.html#abc8126fceba23a7a21730d962f483f11"/>
+            <topic label="TestSuite" href="classgrading_1_1_test_suite.html#a0bed231a3b0ba8cb3430026c3d9d22c2"/>
+            <topic label="add" href="classgrading_1_1_test_suite.html#a2b0eee0d73ca97bab412df536ba785e5"/>
+            <topic label="add" href="classgrading_1_1_test_suite.html#a575b575bb13b2027e9bb19c8ded6c40a"/>
+            <topic label="Run" href="classgrading_1_1_test_suite.html#a5bccd76db8e344d679d220c2fe002278"/>
+            <topic label="totalWeight" href="classgrading_1_1_test_suite.html#afde9b65cb6534abec8680936047a03aa"/>
           </topic>
-          <topic label="Statistics" href="structgrading_1_1TestSuite_1_1Statistics.html">
-            <topic label="failed" href="structgrading_1_1TestSuite_1_1Statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a"/>
-            <topic label="passed" href="structgrading_1_1TestSuite_1_1Statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d"/>
-            <topic label="score" href="structgrading_1_1TestSuite_1_1Statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c"/>
-            <topic label="total" href="structgrading_1_1TestSuite_1_1Statistics.html#af9031f7978e957b9979e78873830ce46"/>
+          <topic label="Statistics" href="structgrading_1_1_test_suite_1_1_statistics.html">
+            <topic label="failed" href="structgrading_1_1_test_suite_1_1_statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a"/>
+            <topic label="passed" href="structgrading_1_1_test_suite_1_1_statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d"/>
+            <topic label="score" href="structgrading_1_1_test_suite_1_1_statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c"/>
+            <topic label="total" href="structgrading_1_1_test_suite_1_1_statistics.html#af9031f7978e957b9979e78873830ce46"/>
           </topic>
-          <topic label="TestBuilder" href="classgrading_1_1TestBuilder.html">
-            <topic label="TestBuilder" href="classgrading_1_1TestBuilder.html#af3eb6a41d8afea7a4664c913ec89bbba"/>
-            <topic label="~TestBuilder" href="classgrading_1_1TestBuilder.html#a7398da67a7705e6f0593270854299f3c"/>
-            <topic label="desc" href="classgrading_1_1TestBuilder.html#a69eeccd5df6790033221e369bd40366f"/>
-            <topic label="description" href="classgrading_1_1TestBuilder.html#a5080f04be569ca7427de494ffbb751df"/>
-            <topic label="timeout" href="classgrading_1_1TestBuilder.html#a46538f6cf91c6c0347baa6a6fc2c72fb"/>
-            <topic label="weight" href="classgrading_1_1TestBuilder.html#afaaa8e7cc9878a5e3200c534df5411e1"/>
+          <topic label="TestBuilder" href="classgrading_1_1_test_builder.html">
+            <topic label="TestBuilder" href="classgrading_1_1_test_builder.html#af3eb6a41d8afea7a4664c913ec89bbba"/>
+            <topic label="~TestBuilder" href="classgrading_1_1_test_builder.html#a7398da67a7705e6f0593270854299f3c"/>
+            <topic label="desc" href="classgrading_1_1_test_builder.html#a69eeccd5df6790033221e369bd40366f"/>
+            <topic label="description" href="classgrading_1_1_test_builder.html#a5080f04be569ca7427de494ffbb751df"/>
+            <topic label="timeout" href="classgrading_1_1_test_builder.html#a46538f6cf91c6c0347baa6a6fc2c72fb"/>
+            <topic label="weight" href="classgrading_1_1_test_builder.html#afaaa8e7cc9878a5e3200c534df5411e1"/>
           </topic>
-          <topic label="Test" href="classgrading_1_1Test.html">
-            <topic label="TagSet" href="classgrading_1_1Test.html#a191b633593a0e8e5e09820dc775889f0"/>
-            <topic label="Test" href="classgrading_1_1Test.html#acf51f543bdde8ba3fa198cc8a8c26f7a"/>
-            <topic label="Test" href="classgrading_1_1Test.html#a4ecb5be84917e6e2dd006d62adf2e8ec"/>
-            <topic label="Test" href="classgrading_1_1Test.html#a180a2a6e9c1656fd1ea37ec3e70bbb9c"/>
-            <topic label="description" href="classgrading_1_1Test.html#a7b5000e45c1386c4e56ef650f6b0ef5b"/>
-            <topic label="name" href="classgrading_1_1Test.html#a37627d5d5bba7f4a8690c71c2ab3cb07"/>
-            <topic label="Run" href="classgrading_1_1Test.html#ac9a3c81c2bd6eec42a015fbef89e0822"/>
-            <topic label="timeout" href="classgrading_1_1Test.html#a07d528eee9de2abf3d9937a71ed6f3bd"/>
-            <topic label="weight" href="classgrading_1_1Test.html#adeb71e361e179403c3cacbccd6e8c1bd"/>
-            <topic label="TestBuilder" href="classgrading_1_1Test.html#a0d601ee11ceeb73369a7bcda89822b0d"/>
+          <topic label="Test" href="classgrading_1_1_test.html">
+            <topic label="TagSet" href="classgrading_1_1_test.html#a191b633593a0e8e5e09820dc775889f0"/>
+            <topic label="Test" href="classgrading_1_1_test.html#acf51f543bdde8ba3fa198cc8a8c26f7a"/>
+            <topic label="Test" href="classgrading_1_1_test.html#a4ecb5be84917e6e2dd006d62adf2e8ec"/>
+            <topic label="Test" href="classgrading_1_1_test.html#a180a2a6e9c1656fd1ea37ec3e70bbb9c"/>
+            <topic label="description" href="classgrading_1_1_test.html#a7b5000e45c1386c4e56ef650f6b0ef5b"/>
+            <topic label="name" href="classgrading_1_1_test.html#a37627d5d5bba7f4a8690c71c2ab3cb07"/>
+            <topic label="Run" href="classgrading_1_1_test.html#ac9a3c81c2bd6eec42a015fbef89e0822"/>
+            <topic label="timeout" href="classgrading_1_1_test.html#a07d528eee9de2abf3d9937a71ed6f3bd"/>
+            <topic label="weight" href="classgrading_1_1_test.html#adeb71e361e179403c3cacbccd6e8c1bd"/>
+            <topic label="TestBuilder" href="classgrading_1_1_test.html#a0d601ee11ceeb73369a7bcda89822b0d"/>
           </topic>
-          <topic label="CheckResult" href="classgrading_1_1CheckResult.html">
-            <topic label="CheckResult" href="classgrading_1_1CheckResult.html#aa40a4ffbd2ed79d36078a96dab3e2197"/>
-            <topic label="CheckResult" href="classgrading_1_1CheckResult.html#ac4887f6895b7acdf8054786005c04c74"/>
-            <topic label="CheckResult" href="classgrading_1_1CheckResult.html#a8a31267ec76a136a38bc5e2d6e4896a6"/>
-            <topic label="CheckResult" href="classgrading_1_1CheckResult.html#ac661796a29ee2d417d9a5102c7f25da2"/>
-            <topic label="CheckResult" href="classgrading_1_1CheckResult.html#a5e039b8eb3b849830cdfd2cfa67b4d6f"/>
-            <topic label="~CheckResult" href="classgrading_1_1CheckResult.html#a4b912fe2241a4192980fbeba9b914515"/>
-            <topic label="actual" href="classgrading_1_1CheckResult.html#a872287484e02407a364d921d96496825"/>
-            <topic label="cancel" href="classgrading_1_1CheckResult.html#a02d5fa6b14e221f3012a794b905be166"/>
-            <topic label="error" href="classgrading_1_1CheckResult.html#a38cc0cf6cb8c20b57ae92558f887569e"/>
-            <topic label="expected" href="classgrading_1_1CheckResult.html#ae92e3e1afc39f288b59466e7da8614d7"/>
-            <topic label="message" href="classgrading_1_1CheckResult.html#a5679ca29245899bbe1dc3ccd6afe7222"/>
-            <topic label="operator&lt;&lt;" href="classgrading_1_1CheckResult.html#a330241cd86ab1a0bc868b4aa557b57ba"/>
-            <topic label="operator&lt;&lt;" href="classgrading_1_1CheckResult.html#a2c07da561db6b1b45860607791b9ba97"/>
+          <topic label="CheckResult" href="classgrading_1_1_check_result.html">
+            <topic label="CheckResult" href="classgrading_1_1_check_result.html#aa40a4ffbd2ed79d36078a96dab3e2197"/>
+            <topic label="CheckResult" href="classgrading_1_1_check_result.html#ac4887f6895b7acdf8054786005c04c74"/>
+            <topic label="CheckResult" href="classgrading_1_1_check_result.html#a8a31267ec76a136a38bc5e2d6e4896a6"/>
+            <topic label="CheckResult" href="classgrading_1_1_check_result.html#ac661796a29ee2d417d9a5102c7f25da2"/>
+            <topic label="CheckResult" href="classgrading_1_1_check_result.html#a5e039b8eb3b849830cdfd2cfa67b4d6f"/>
+            <topic label="~CheckResult" href="classgrading_1_1_check_result.html#a4b912fe2241a4192980fbeba9b914515"/>
+            <topic label="actual" href="classgrading_1_1_check_result.html#a872287484e02407a364d921d96496825"/>
+            <topic label="cancel" href="classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166"/>
+            <topic label="error" href="classgrading_1_1_check_result.html#a38cc0cf6cb8c20b57ae92558f887569e"/>
+            <topic label="expected" href="classgrading_1_1_check_result.html#ae92e3e1afc39f288b59466e7da8614d7"/>
+            <topic label="message" href="classgrading_1_1_check_result.html#a5679ca29245899bbe1dc3ccd6afe7222"/>
+            <topic label="operator&lt;&lt;" href="classgrading_1_1_check_result.html#a330241cd86ab1a0bc868b4aa557b57ba"/>
+            <topic label="operator&lt;&lt;" href="classgrading_1_1_check_result.html#a2c07da561db6b1b45860607791b9ba97"/>
           </topic>
-          <topic label="SharedMemory" href="classgrading_1_1SharedMemory.html">
-            <topic label="~SharedMemory" href="classgrading_1_1SharedMemory.html#a31f26ee0737605d6515f78eaacd69299"/>
-            <topic label="rawPointer" href="classgrading_1_1SharedMemory.html#a9e179bfc0c2500deb211fa3dadea4c9b"/>
+          <topic label="SharedMemory" href="classgrading_1_1_shared_memory.html">
+            <topic label="~SharedMemory" href="classgrading_1_1_shared_memory.html#a31f26ee0737605d6515f78eaacd69299"/>
+            <topic label="rawPointer" href="classgrading_1_1_shared_memory.html#a9e179bfc0c2500deb211fa3dadea4c9b"/>
           </topic>
           <topic label="TestClosure" href="libgrading_8h.html#a25ef703be30c9118f7ecaa6490602fe9"/>
           <topic label="TestResult" href="libgrading_8h.html#a2fb7aadc16fed93221d13a7ec3c50642">
@@ -186,15 +187,16 @@
         </topic>
       </topic>
       <topic label="src" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">
-        <topic label="Arguments.cpp" href="Arguments_8cpp.html">
-          <topic label="Options" href="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99">
-            <topic label="UNKNOWN" href="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a6ce26a62afab55d7606ad4e92428b30c"/>
-            <topic label="HELP" href="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a9f5cb747b2e1f0ea781d2b1f2a5b4824"/>
-            <topic label="VERBOSE" href="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99ace3e26676763569084c86b8c3b67d601"/>
-            <topic label="STRATEGY" href="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a2c36b9b15642557c7d30a429a9723aad"/>
-            <topic label="TIMEOUT" href="Arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99aad9dee005a3d0f9137b2ac1e0869f89b"/>
+        <topic label="Arguments.cpp" href="_arguments_8cpp.html">
+          <topic label="Options" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99">
+            <topic label="UNKNOWN" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a6ce26a62afab55d7606ad4e92428b30c"/>
+            <topic label="HELP" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a9f5cb747b2e1f0ea781d2b1f2a5b4824"/>
+            <topic label="SKIP_TESTS" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a6e597af6f117930f8f37ed6226f96a00"/>
+            <topic label="VERBOSE" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99ace3e26676763569084c86b8c3b67d601"/>
+            <topic label="RUN_STRATEGY" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99a414c9eb2f4e2d9b86948e7530e399f20"/>
+            <topic label="TIMEOUT" href="_arguments_8cpp.html#adf7c3ac791f996a56160a12f379cbd99aad9dee005a3d0f9137b2ac1e0869f89b"/>
           </topic>
-          <topic label="usage" href="Arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12"/>
+          <topic label="usage" href="_arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12"/>
         </topic>
         <topic label="checks.cpp" href="checks_8cpp.html">
           <topic label="Check" href="checks_8cpp.html#a02b06a7a05a39b2a9d36066c7c1b2a96"/>
@@ -212,21 +214,22 @@
         <topic label="posix.cpp" href="posix_8cpp.html">
         </topic>
         <topic label="private.h" href="private_8h.html">
-          <topic label="Arguments" href="structgrading_1_1Arguments.html">
-            <topic label="error" href="structgrading_1_1Arguments.html#af27b2dcc5f0d6408269307739fa43ec3"/>
-            <topic label="help" href="structgrading_1_1Arguments.html#a49fc425ab3b72f3f60b751193b5cff29"/>
-            <topic label="runStrategy" href="structgrading_1_1Arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a"/>
-            <topic label="timeout" href="structgrading_1_1Arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8"/>
-            <topic label="verbose" href="structgrading_1_1Arguments.html#a087685f54898c5180dd954bfc1e5fb1f"/>
+          <topic label="Arguments" href="structgrading_1_1_arguments.html">
+            <topic label="error" href="structgrading_1_1_arguments.html#af27b2dcc5f0d6408269307739fa43ec3"/>
+            <topic label="help" href="structgrading_1_1_arguments.html#a49fc425ab3b72f3f60b751193b5cff29"/>
+            <topic label="runStrategy" href="structgrading_1_1_arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a"/>
+            <topic label="skip" href="structgrading_1_1_arguments.html#a092180cf24cd4e04d9498e6094c508ee"/>
+            <topic label="timeout" href="structgrading_1_1_arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8"/>
+            <topic label="verbose" href="structgrading_1_1_arguments.html#a087685f54898c5180dd954bfc1e5fb1f"/>
           </topic>
           <topic label="EnterSandbox" href="private_8h.html#aed77613e7ee73c012e02edbcbcb9ec7d"/>
           <topic label="ForkTest" href="private_8h.html#a33c566b4173ebd55bf3df8db7c018a90"/>
           <topic label="RunInProcess" href="private_8h.html#a9cdfc5dd1e8d1d603833c8a9def1af77"/>
         </topic>
-        <topic label="Test.cpp" href="Test_8cpp.html"/>
-        <topic label="TestBuilder.cpp" href="TestBuilder_8cpp.html"/>
-        <topic label="TestResult.cpp" href="TestResult_8cpp.html"/>
-        <topic label="TestSuite.cpp" href="TestSuite_8cpp.html"/>
+        <topic label="Test.cpp" href="_test_8cpp.html"/>
+        <topic label="TestBuilder.cpp" href="_test_builder_8cpp.html"/>
+        <topic label="TestResult.cpp" href="_test_result_8cpp.html"/>
+        <topic label="TestSuite.cpp" href="_test_suite_8cpp.html"/>
       </topic>
     </topic>
     <topic label="File Members" href="globals.html">
