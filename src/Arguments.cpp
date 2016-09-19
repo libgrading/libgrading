@@ -35,7 +35,7 @@ enum Options
 	UNKNOWN,
 	HELP,
 	VERBOSE,
-	STRATEGY,
+	RUN_STRATEGY,
 	TIMEOUT,
 };
 
@@ -72,10 +72,10 @@ const option::Descriptor usage[] =
 		"  -v, --verbose       Print details of every test."
 	},
 	{
-		STRATEGY, 0,
-		"s", "strategy",
+		RUN_STRATEGY, 0,
+		"r", "run-strategy",
 		Required,
-		"  -s, --strategy      Strategy for running tests"
+		"  -r, --run-strategy  Strategy for running tests"
 		" (inline, separated, sandboxed)."
 	},
 	{
@@ -112,9 +112,9 @@ Arguments Arguments::Parse(int argc, char *argv[])
 	const bool verbose = options[VERBOSE];
 
 	TestRunStrategy strategy = TestRunStrategy::Sandboxed;
-	if (options[STRATEGY])
+	if (options[RUN_STRATEGY])
 	{
-		const std::string strategyArg = options[STRATEGY].arg;
+		const std::string strategyArg = options[RUN_STRATEGY].arg;
 
 		if (strategyArg == "inline")
 		{
