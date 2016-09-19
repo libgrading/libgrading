@@ -349,6 +349,40 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>PosixSharedMemory</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>PosixSharedMemory</Scope>
+    </TokenIdentifier>
+    <Path>class_posix_shared_memory.html</Path>
+    <Abstract>A memory-mapped POSIX shared memory segment. </Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PosixSharedMemory</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>PosixSharedMemory</Scope>
+    </TokenIdentifier>
+    <Path>class_posix_shared_memory.html</Path>
+    <Anchor>a74f67feb8e5dc7dc2d860805ce8ec7bc</Anchor>
+    <Abstract>Constructor. </Abstract>
+    <DeclaredIn>posix.cpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>rawPointer</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>PosixSharedMemory</Scope>
+    </TokenIdentifier>
+    <Path>class_posix_shared_memory.html</Path>
+    <Anchor>ad7674ab71dd334725730a27c0387d14c</Anchor>
+    <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed. </Abstract>
+    <DeclaredIn>posix.cpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>grading</Name>
       <APILanguage>c</APILanguage>
       <Type>ns</Type>

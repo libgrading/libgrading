@@ -75,12 +75,19 @@
           <topic label="totalWeight" href="classgrading_1_1_test_suite.html#afde9b65cb6534abec8680936047a03aa"/>
         </topic>
       </topic>
+      <topic label="PosixSharedMemory" href="class_posix_shared_memory.html">
+        <topic label="PosixSharedMemory" href="class_posix_shared_memory.html#a74f67feb8e5dc7dc2d860805ce8ec7bc"/>
+        <topic label="~PosixSharedMemory" href="class_posix_shared_memory.html#aef1069fe77481c1c62a4cbf8a1c39ffc"/>
+        <topic label="rawPointer" href="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c"/>
+      </topic>
     </topic>
     <topic label="Class Index" href="classes.html"/>
     <topic label="Class Hierarchy" href="hierarchy.html">
       <topic label="Arguments" href="structgrading_1_1_arguments.html"/>
       <topic label="CheckResult" href="classgrading_1_1_check_result.html"/>
-      <topic label="SharedMemory" href="classgrading_1_1_shared_memory.html"/>
+      <topic label="SharedMemory" href="classgrading_1_1_shared_memory.html">
+        <topic label="PosixSharedMemory" href="class_posix_shared_memory.html"/>
+      </topic>
       <topic label="TestSuite::Statistics" href="structgrading_1_1_test_suite_1_1_statistics.html"/>
       <topic label="Test" href="classgrading_1_1_test.html"/>
       <topic label="TestBuilder" href="classgrading_1_1_test_builder.html"/>
@@ -212,6 +219,11 @@
           <topic label="operator||" href="checks_8cpp.html#a42121054a4fdfcde4dadca294f930adf"/>
         </topic>
         <topic label="posix.cpp" href="posix_8cpp.html">
+          <topic label="PosixSharedMemory" href="class_posix_shared_memory.html">
+            <topic label="PosixSharedMemory" href="class_posix_shared_memory.html#a74f67feb8e5dc7dc2d860805ce8ec7bc"/>
+            <topic label="~PosixSharedMemory" href="class_posix_shared_memory.html#aef1069fe77481c1c62a4cbf8a1c39ffc"/>
+            <topic label="rawPointer" href="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c"/>
+          </topic>
         </topic>
         <topic label="private.h" href="private_8h.html">
           <topic label="Arguments" href="structgrading_1_1_arguments.html">

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>libgrading: SharedMemory Class Reference</title>
+<title>libgrading: PosixSharedMemory Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,45 +84,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacegrading.html">grading</a></li><li class="navelem"><a class="el" href="classgrading_1_1_shared_memory.html">SharedMemory</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classgrading_1_1_shared_memory-members.html">List of all members</a>  </div>
+<a href="class_posix_shared_memory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SharedMemory Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">PosixSharedMemory Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A representation of a shared memory object.  
- <a href="classgrading_1_1_shared_memory.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="libgrading_8h_source.html">libgrading.h</a>&gt;</code></p>
+<p>A memory-mapped POSIX shared memory segment.  
+ <a href="class_posix_shared_memory.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SharedMemory:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for PosixSharedMemory:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classgrading_1_1_shared_memory__inherit__graph.svg" width="200" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_posix_shared_memory__inherit__graph.svg" width="200" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e179bfc0c2500deb211fa3dadea4c9b"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrading_1_1_shared_memory.html#a9e179bfc0c2500deb211fa3dadea4c9b">rawPointer</a> () const  =0</td></tr>
-<tr class="memdesc:a9e179bfc0c2500deb211fa3dadea4c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the shared memory, which will be <b>invalidated</b> after this object is destructed.  <a href="#a9e179bfc0c2500deb211fa3dadea4c9b">More...</a><br /></td></tr>
-<tr class="separator:a9e179bfc0c2500deb211fa3dadea4c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f67feb8e5dc7dc2d860805ce8ec7bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_posix_shared_memory.html#a74f67feb8e5dc7dc2d860805ce8ec7bc">PosixSharedMemory</a> (int fd, size_t len, void *rawPtr)</td></tr>
+<tr class="memdesc:a74f67feb8e5dc7dc2d860805ce8ec7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a74f67feb8e5dc7dc2d860805ce8ec7bc">More...</a><br /></td></tr>
+<tr class="separator:a74f67feb8e5dc7dc2d860805ce8ec7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7674ab71dd334725730a27c0387d14c"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c">rawPointer</a> () const  override</td></tr>
+<tr class="memdesc:ad7674ab71dd334725730a27c0387d14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the shared memory, which will be <b>invalidated</b> after this object is destructed.  <a href="#ad7674ab71dd334725730a27c0387d14c">More...</a><br /></td></tr>
+<tr class="separator:ad7674ab71dd334725730a27c0387d14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A representation of a shared memory object. </p>
-<p>This class is specialized by platform-specific code to represent shared memory in a way that will be cleaned up on destruction (files closed, memory unmapped, etc.). </p>
+<div class="textblock"><p>A memory-mapped POSIX shared memory segment. </p>
 
-<p>Definition at line <a class="el" href="libgrading_8h_source.html#l00376">376</a> of file <a class="el" href="libgrading_8h_source.html">libgrading.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9e179bfc0c2500deb211fa3dadea4c9b"></a>
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00096">96</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a74f67feb8e5dc7dc2d860805ce8ec7bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_posix_shared_memory.html">PosixSharedMemory</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>rawPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>descriptor of (existing) shared memory segment </td></tr>
+    <tr><td class="paramname">len</td><td>size of the shared memory [B] </td></tr>
+    <tr><td class="paramname">rawPtr</td><td>pointer to the mmap'ed region </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00106">106</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad7674ab71dd334725730a27c0387d14c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -138,19 +187,21 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>A pointer to the shared memory, which will be <b>invalidated</b> after this object is destructed. </p>
 
-<p>Implemented in <a class="el" href="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c">PosixSharedMemory</a>.</p>
+<p>Implements <a class="el" href="classgrading_1_1_shared_memory.html#a9e179bfc0c2500deb211fa3dadea4c9b">SharedMemory</a>.</p>
+
+<p>Definition at line <a class="el" href="posix_8cpp_source.html#l00117">117</a> of file <a class="el" href="posix_8cpp_source.html">posix.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="libgrading_8h_source.html">libgrading.h</a></li>
+<li>src/<a class="el" href="posix_8cpp_source.html">posix.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

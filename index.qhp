@@ -82,12 +82,19 @@
                 <section title="totalWeight" ref="classgrading_1_1_test_suite.html#afde9b65cb6534abec8680936047a03aa" />
               </section>
             </section>
+            <section title="PosixSharedMemory" ref="class_posix_shared_memory.html">
+              <section title="PosixSharedMemory" ref="class_posix_shared_memory.html#a74f67feb8e5dc7dc2d860805ce8ec7bc" />
+              <section title="~PosixSharedMemory" ref="class_posix_shared_memory.html#aef1069fe77481c1c62a4cbf8a1c39ffc" />
+              <section title="rawPointer" ref="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c" />
+            </section>
           </section>
           <section title="Class Index" ref="classes.html" />
           <section title="Class Hierarchy" ref="hierarchy.html">
             <section title="Arguments" ref="structgrading_1_1_arguments.html" />
             <section title="CheckResult" ref="classgrading_1_1_check_result.html" />
-            <section title="SharedMemory" ref="classgrading_1_1_shared_memory.html" />
+            <section title="SharedMemory" ref="classgrading_1_1_shared_memory.html">
+              <section title="PosixSharedMemory" ref="class_posix_shared_memory.html" />
+            </section>
             <section title="TestSuite::Statistics" ref="structgrading_1_1_test_suite_1_1_statistics.html" />
             <section title="Test" ref="classgrading_1_1_test.html" />
             <section title="TestBuilder" ref="classgrading_1_1_test_builder.html" />
@@ -218,7 +225,13 @@
                 <section title="operator||" ref="checks_8cpp.html#afab8c0737ae99cfa595261baac5387af" />
                 <section title="operator||" ref="checks_8cpp.html#a42121054a4fdfcde4dadca294f930adf" />
               </section>
-              <section title="posix.cpp" ref="posix_8cpp.html" />
+              <section title="posix.cpp" ref="posix_8cpp.html">
+                <section title="PosixSharedMemory" ref="class_posix_shared_memory.html">
+                  <section title="PosixSharedMemory" ref="class_posix_shared_memory.html#a74f67feb8e5dc7dc2d860805ce8ec7bc" />
+                  <section title="~PosixSharedMemory" ref="class_posix_shared_memory.html#aef1069fe77481c1c62a4cbf8a1c39ffc" />
+                  <section title="rawPointer" ref="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c" />
+                </section>
+              </section>
               <section title="private.h" ref="private_8h.html">
                 <section title="Arguments" ref="structgrading_1_1_arguments.html">
                   <section title="error" ref="structgrading_1_1_arguments.html#af27b2dcc5f0d6408269307739fa43ec3" />
@@ -276,6 +289,9 @@
       <keyword name="EnterSandbox" id="private.h::EnterSandbox" ref="private_8h.html#aed77613e7ee73c012e02edbcbcb9ec7d" />
       <keyword name="ForkTest" id="private.h::ForkTest" ref="private_8h.html#a33c566b4173ebd55bf3df8db7c018a90" />
       <keyword name="RunInProcess" id="private.h::RunInProcess" ref="private_8h.html#a9cdfc5dd1e8d1d603833c8a9def1af77" />
+      <keyword name="PosixSharedMemory" id="PosixSharedMemory" ref="class_posix_shared_memory.html" />
+      <keyword name="PosixSharedMemory" id="PosixSharedMemory::PosixSharedMemory" ref="class_posix_shared_memory.html#a74f67feb8e5dc7dc2d860805ce8ec7bc" />
+      <keyword name="rawPointer" id="PosixSharedMemory::rawPointer" ref="class_posix_shared_memory.html#ad7674ab71dd334725730a27c0387d14c" />
       <keyword name="grading" id="grading" ref="namespacegrading.html" />
       <keyword name="TestClosure" id="grading::TestClosure" ref="namespacegrading.html#a25ef703be30c9118f7ecaa6490602fe9" />
       <keyword name="operator&amp;&amp;" id="grading::operator&amp;&amp;" ref="namespacegrading.html#a2a2d0f24b23462f9b5e5dc59623029de" />
@@ -411,6 +427,9 @@
       <file>_test_result_8cpp__incl.svg</file>
       <file>_test_suite_8cpp.html</file>
       <file>_test_suite_8cpp__incl.svg</file>
+      <file>class_posix_shared_memory.html</file>
+      <file>class_posix_shared_memory__inherit__graph.svg</file>
+      <file>class_posix_shared_memory-members.html</file>
       <file>namespacegrading.html</file>
       <file>namespacegrading_a02b06a7a05a39b2a9d36066c7c1b2a96_cgraph.svg</file>
       <file>namespacegrading_a02b06a7a05a39b2a9d36066c7c1b2a96_icgraph.svg</file>
@@ -448,6 +467,7 @@
       <file>classgrading_1_1_check_result_a5679ca29245899bbe1dc3ccd6afe7222_cgraph.svg</file>
       <file>classgrading_1_1_check_result-members.html</file>
       <file>classgrading_1_1_shared_memory.html</file>
+      <file>classgrading_1_1_shared_memory__inherit__graph.svg</file>
       <file>classgrading_1_1_shared_memory-members.html</file>
       <file>classgrading_1_1_test.html</file>
       <file>classgrading_1_1_test_a37627d5d5bba7f4a8690c71c2ab3cb07_icgraph.svg</file>
