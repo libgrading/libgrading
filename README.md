@@ -13,7 +13,7 @@ To install:
 | OS | Command |
 |----|---------|
 | FreeBSD | `pkg install libgrading` |
-| MacOS   | `brew install trombonehero/homebrew-grading/libgrading` (requires [https://brew.sh/](Homebrew)) |
+| MacOS (w/[Homebrew](https://brew.sh)) | `brew install trombonehero/homebrew-grading/libgrading` |
 
 You can also build from source.
 
