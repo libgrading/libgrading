@@ -7,7 +7,7 @@
       <Subnodes>
        <Node>
         <Name>Namespaces</Name>
-        <Path></Path>
+        <Path>namespaces.html</Path>
         <Subnodes>
          <Node>
           <Name>Namespace List</Name>
@@ -128,7 +128,7 @@
                <Node>
                 <Name>actual</Name>
                 <Path>classgrading_1_1_check_result.html</Path>
-                <Anchor>a872287484e02407a364d921d96496825</Anchor>
+                <Anchor>a67d74ba3c9dda85cb227faec3e90f80d</Anchor>
                </Node>
                <Node>
                 <Name>cancel</Name>
@@ -138,17 +138,17 @@
                <Node>
                 <Name>error</Name>
                 <Path>classgrading_1_1_check_result.html</Path>
-                <Anchor>a38cc0cf6cb8c20b57ae92558f887569e</Anchor>
+                <Anchor>a9db0c25a0b1baac0e7e5cbf5a72d3cdc</Anchor>
                </Node>
                <Node>
                 <Name>expected</Name>
                 <Path>classgrading_1_1_check_result.html</Path>
-                <Anchor>ae92e3e1afc39f288b59466e7da8614d7</Anchor>
+                <Anchor>ac5758afa9a3783010f1deda90d411dbf</Anchor>
                </Node>
                <Node>
                 <Name>message</Name>
                 <Path>classgrading_1_1_check_result.html</Path>
-                <Anchor>a5679ca29245899bbe1dc3ccd6afe7222</Anchor>
+                <Anchor>a9fc62bb96c3174d6d9945644308ecc8c</Anchor>
                </Node>
                <Node>
                 <Name>operator&lt;&lt;</Name>
@@ -174,7 +174,7 @@
                <Node>
                 <Name>rawPointer</Name>
                 <Path>classgrading_1_1_shared_memory.html</Path>
-                <Anchor>a9e179bfc0c2500deb211fa3dadea4c9b</Anchor>
+                <Anchor>a58a344a20dc932deb3a8e095bd557541</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -205,27 +205,27 @@
                <Node>
                 <Name>description</Name>
                 <Path>classgrading_1_1_test.html</Path>
-                <Anchor>a7b5000e45c1386c4e56ef650f6b0ef5b</Anchor>
+                <Anchor>a07ffe70037e0a16554c868bcdd8f83b5</Anchor>
                </Node>
                <Node>
                 <Name>name</Name>
                 <Path>classgrading_1_1_test.html</Path>
-                <Anchor>a37627d5d5bba7f4a8690c71c2ab3cb07</Anchor>
+                <Anchor>a1d89c28bd42ba9a52da008bb69367171</Anchor>
                </Node>
                <Node>
                 <Name>Run</Name>
                 <Path>classgrading_1_1_test.html</Path>
-                <Anchor>ac9a3c81c2bd6eec42a015fbef89e0822</Anchor>
+                <Anchor>a35f66472a58c538166b8325967fc5c00</Anchor>
                </Node>
                <Node>
                 <Name>timeout</Name>
                 <Path>classgrading_1_1_test.html</Path>
-                <Anchor>a07d528eee9de2abf3d9937a71ed6f3bd</Anchor>
+                <Anchor>a020c6e042dce18109e522fdbd722cf1c</Anchor>
                </Node>
                <Node>
                 <Name>weight</Name>
                 <Path>classgrading_1_1_test.html</Path>
-                <Anchor>adeb71e361e179403c3cacbccd6e8c1bd</Anchor>
+                <Anchor>a5bef8b287d3cd146cd7baac1d586ec8d</Anchor>
                </Node>
                <Node>
                 <Name>TestBuilder</Name>
@@ -323,12 +323,12 @@
                <Node>
                 <Name>Run</Name>
                 <Path>classgrading_1_1_test_suite.html</Path>
-                <Anchor>a5bccd76db8e344d679d220c2fe002278</Anchor>
+                <Anchor>a8e131cc39871a01859f64c5490713d73</Anchor>
                </Node>
                <Node>
                 <Name>totalWeight</Name>
                 <Path>classgrading_1_1_test_suite.html</Path>
-                <Anchor>afde9b65cb6534abec8680936047a03aa</Anchor>
+                <Anchor>abdf087198b0210698844fad89ba07acf</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -351,7 +351,7 @@
              <Node>
               <Name>rawPointer</Name>
               <Path>class_posix_shared_memory.html</Path>
-              <Anchor>ad7674ab71dd334725730a27c0387d14c</Anchor>
+              <Anchor>ad6a97ce84380160a384f3ea351ae5636</Anchor>
              </Node>
             </Subnodes>
            </Node>
@@ -427,7 +427,7 @@
        </Node>
        <Node>
         <Name>Files</Name>
-        <Path></Path>
+        <Path>files.html</Path>
         <Subnodes>
          <Node>
           <Name>File List</Name>
@@ -494,12 +494,12 @@
                  <Node>
                   <Name>Run</Name>
                   <Path>classgrading_1_1_test_suite.html</Path>
-                  <Anchor>a5bccd76db8e344d679d220c2fe002278</Anchor>
+                  <Anchor>a8e131cc39871a01859f64c5490713d73</Anchor>
                  </Node>
                  <Node>
                   <Name>totalWeight</Name>
                   <Path>classgrading_1_1_test_suite.html</Path>
-                  <Anchor>afde9b65cb6534abec8680936047a03aa</Anchor>
+                  <Anchor>abdf087198b0210698844fad89ba07acf</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
@@ -592,27 +592,27 @@
                  <Node>
                   <Name>description</Name>
                   <Path>classgrading_1_1_test.html</Path>
-                  <Anchor>a7b5000e45c1386c4e56ef650f6b0ef5b</Anchor>
+                  <Anchor>a07ffe70037e0a16554c868bcdd8f83b5</Anchor>
                  </Node>
                  <Node>
                   <Name>name</Name>
                   <Path>classgrading_1_1_test.html</Path>
-                  <Anchor>a37627d5d5bba7f4a8690c71c2ab3cb07</Anchor>
+                  <Anchor>a1d89c28bd42ba9a52da008bb69367171</Anchor>
                  </Node>
                  <Node>
                   <Name>Run</Name>
                   <Path>classgrading_1_1_test.html</Path>
-                  <Anchor>ac9a3c81c2bd6eec42a015fbef89e0822</Anchor>
+                  <Anchor>a35f66472a58c538166b8325967fc5c00</Anchor>
                  </Node>
                  <Node>
                   <Name>timeout</Name>
                   <Path>classgrading_1_1_test.html</Path>
-                  <Anchor>a07d528eee9de2abf3d9937a71ed6f3bd</Anchor>
+                  <Anchor>a020c6e042dce18109e522fdbd722cf1c</Anchor>
                  </Node>
                  <Node>
                   <Name>weight</Name>
                   <Path>classgrading_1_1_test.html</Path>
-                  <Anchor>adeb71e361e179403c3cacbccd6e8c1bd</Anchor>
+                  <Anchor>a5bef8b287d3cd146cd7baac1d586ec8d</Anchor>
                  </Node>
                  <Node>
                   <Name>TestBuilder</Name>
@@ -658,7 +658,7 @@
                  <Node>
                   <Name>actual</Name>
                   <Path>classgrading_1_1_check_result.html</Path>
-                  <Anchor>a872287484e02407a364d921d96496825</Anchor>
+                  <Anchor>a67d74ba3c9dda85cb227faec3e90f80d</Anchor>
                  </Node>
                  <Node>
                   <Name>cancel</Name>
@@ -668,17 +668,17 @@
                  <Node>
                   <Name>error</Name>
                   <Path>classgrading_1_1_check_result.html</Path>
-                  <Anchor>a38cc0cf6cb8c20b57ae92558f887569e</Anchor>
+                  <Anchor>a9db0c25a0b1baac0e7e5cbf5a72d3cdc</Anchor>
                  </Node>
                  <Node>
                   <Name>expected</Name>
                   <Path>classgrading_1_1_check_result.html</Path>
-                  <Anchor>ae92e3e1afc39f288b59466e7da8614d7</Anchor>
+                  <Anchor>ac5758afa9a3783010f1deda90d411dbf</Anchor>
                  </Node>
                  <Node>
                   <Name>message</Name>
                   <Path>classgrading_1_1_check_result.html</Path>
-                  <Anchor>a5679ca29245899bbe1dc3ccd6afe7222</Anchor>
+                  <Anchor>a9fc62bb96c3174d6d9945644308ecc8c</Anchor>
                  </Node>
                  <Node>
                   <Name>operator&lt;&lt;</Name>
@@ -704,7 +704,7 @@
                  <Node>
                   <Name>rawPointer</Name>
                   <Path>classgrading_1_1_shared_memory.html</Path>
-                  <Anchor>a9e179bfc0c2500deb211fa3dadea4c9b</Anchor>
+                  <Anchor>a58a344a20dc932deb3a8e095bd557541</Anchor>
                  </Node>
                 </Subnodes>
                </Node>
@@ -820,12 +820,12 @@
                <Node>
                 <Name>operator&amp;&amp;</Name>
                 <Path>libgrading_8h.html</Path>
-                <Anchor>a2a2d0f24b23462f9b5e5dc59623029de</Anchor>
+                <Anchor>ad729543d7e7fdfde7a56b39bc95316b4</Anchor>
                </Node>
                <Node>
                 <Name>operator&amp;&amp;</Name>
                 <Path>libgrading_8h.html</Path>
-                <Anchor>a51f854748f27060116140c8cf12cd02a</Anchor>
+                <Anchor>a42541cfbc1677d7b6a9f71aaee7b2004</Anchor>
                </Node>
                <Node>
                 <Name>operator&lt;&lt;</Name>
@@ -940,12 +940,12 @@
                <Node>
                 <Name>operator&amp;&amp;</Name>
                 <Path>checks_8cpp.html</Path>
-                <Anchor>a2a2d0f24b23462f9b5e5dc59623029de</Anchor>
+                <Anchor>aa3746f0c72697e2e700f7de0380a56b4</Anchor>
                </Node>
                <Node>
                 <Name>operator&amp;&amp;</Name>
                 <Path>checks_8cpp.html</Path>
-                <Anchor>a51f854748f27060116140c8cf12cd02a</Anchor>
+                <Anchor>a2d98f5f6c174cb2b08d4d914002bae34</Anchor>
                </Node>
                <Node>
                 <Name>operator||</Name>
@@ -980,7 +980,7 @@
                  <Node>
                   <Name>rawPointer</Name>
                   <Path>class_posix_shared_memory.html</Path>
-                  <Anchor>ad7674ab71dd334725730a27c0387d14c</Anchor>
+                  <Anchor>ad6a97ce84380160a384f3ea351ae5636</Anchor>
                  </Node>
                 </Subnodes>
                </Node>

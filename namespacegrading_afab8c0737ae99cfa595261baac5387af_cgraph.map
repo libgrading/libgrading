@@ -1,5 +1,3 @@
 <map id="operator||" name="operator||">
-<area shape="rect" id="node2" href="$classgrading_1_1_check_result.html#a872287484e02407a364d921d96496825" title="Value test expected to see (user&#45;readable representation). " alt="" coords="139,5,301,49"/>
-<area shape="rect" id="node3" href="$classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166" title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner..." alt="" coords="139,73,301,117"/>
-<area shape="rect" id="node4" href="$classgrading_1_1_check_result.html#aa40a4ffbd2ed79d36078a96dab3e2197" title="&quot;All&#39;s&#45;well&quot; constructor (i.e., the check passed). " alt="" coords="139,141,301,185"/>
+<area shape="rect" id="node2" href="$classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166" title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner..." alt="" coords="138,5,299,57"/>
 </map>

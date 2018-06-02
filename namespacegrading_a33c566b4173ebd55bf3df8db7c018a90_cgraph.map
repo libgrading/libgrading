@@ -1,5 +1,3 @@
 <map id="ForkTest" name="ForkTest">
-<area shape="rect" id="node2" href="$namespacegrading.html#aed77613e7ee73c012e02edbcbcb9ec7d" title="Enter unprivileged testing sandbox, if supported. " alt="" coords="133,5,248,33"/>
-<area shape="rect" id="node3" href="$namespacegrading.html#a9cdfc5dd1e8d1d603833c8a9def1af77" title="Run a test in the current process, catching all exceptions. " alt="" coords="133,57,248,85"/>
-<area shape="rect" id="node4" href="$classgrading_1_1_test.html#a37627d5d5bba7f4a8690c71c2ab3cb07" title="User&#45;meaningful test name (ideally a single line or less). " alt="" coords="296,57,448,85"/>
+<area shape="rect" id="node2" href="$namespacegrading.html#a9cdfc5dd1e8d1d603833c8a9def1af77" title="Run a test in the current process, catching all exceptions. " alt="" coords="130,5,237,37"/>
 </map>
