@@ -87,6 +87,7 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 				<< "Running test: '" << test.name() << "'.\n"
 				<< "Description:\n" << test.description()
 				<< "\n" << line << "\n"
+				<< "Test output:\n" << line << "\n"
 				;
 		}
 		else
