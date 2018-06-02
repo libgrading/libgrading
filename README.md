@@ -6,7 +6,21 @@ programming errors such as infinite loops and segmentation faults.
 
 ## Get it
 
-libgrading is
+libgrading is available as a binary package for FreeBSD and as a custom Homebrew
+tap for MacOS.
+To install:
+
+| OS | Command |
+|----|---------|
+| FreeBSD | `pkg install libgrading` |
+| MacOS   | `brew install trombonehero/homebrew-grading/libgrading` (requires [https://brew.sh/](Homebrew)) |
+
+You can also build from source.
+
+
+## Build it
+
+The libgrading source code is
 [hosted on GitHub](https://github.com/trombonehero/libgrading).
 Releases are available on
 [the GitHub releases page](https://github.com/trombonehero/libgrading/releases),
@@ -16,9 +30,6 @@ and you can always get the most latest version by running either:
 $ git clone https://github.com/trombonehero/libgrading.git
 $ svn checkout https://github.com/trombonehero/libgrading
 ~~~
-
-
-## Build it
 
 First, install [libdistance](http://monkey.org/~jose/software/libdistance/).
 Then:
