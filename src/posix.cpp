@@ -44,7 +44,7 @@ CheckResult::~CheckResult()
 {
 	if (reportError_)
 	{
-		cerr << "\nCheck failed!\n";
+		cerr << "\nCheck failed: " << message_.str() << "\n";
 
 		if (expected_.empty())
 			cerr << "  " << actual_ << "\n";
@@ -56,8 +56,7 @@ CheckResult::~CheckResult()
 				;
 
 		cerr
-			<< "  " << message_.str()
-			<< "\n\n"
+			<< "\n"
 			;
 
 		exit(static_cast<int>(TestResult::Fail));
