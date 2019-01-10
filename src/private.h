@@ -3,7 +3,7 @@
  * @brief     Internal header file for libgrading.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2014 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2014, 2019 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -27,6 +27,15 @@
 
 namespace grading {
 
+
+//! Possible output formats.
+enum class OutputFormat : char
+{
+	Brief,               //!< default (brief) output
+	Verbose,             //!< verbose: full detail, text separators, etc.
+};
+
+
 /**
  * Parsed command-line arguments.
  */
@@ -41,6 +50,9 @@ struct Arguments
 	//! The `--help` argument was given.
 	const bool help;
 
+	//! How to format test outputs.
+	const OutputFormat outputFormat;
+
 	//! The `--skip` argument was given.
 	const bool skip;
 
@@ -53,6 +65,30 @@ struct Arguments
 	//! Maximum length of time to wait for any test.
 	const time_t timeout;
 };
+
+//! Formats test result
+class Formatter
+{
+public:
+	Formatter(std::ostream&);
+	virtual ~Formatter();
+
+	//! Create a new Formatter
+	static std::unique_ptr<Formatter> Create(OutputFormat, std::ostream&);
+
+	//! Called when a test is about to start running
+	virtual void testBeginning(const Test&) {}
+
+	//! Called when a test has finished running
+	virtual void testEnded(const Test&, TestResult) {}
+
+	//! Called when an entire test suite has finished running
+	virtual void suiteComplete(const TestSuite&, TestSuite::Statistics) {}
+
+protected:
+	std::ostream &out_;
+};
+
 
 /**
  * Enter unprivileged testing sandbox, if supported.

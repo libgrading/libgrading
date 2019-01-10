@@ -34,8 +34,8 @@ enum Options
 {
 	UNKNOWN,
 	HELP,
+	OUTPUT_FORMAT,
 	SKIP_TESTS,
-	VERBOSE,
 	RUN_STRATEGY,
 	TIMEOUT,
 };
@@ -67,16 +67,16 @@ const option::Descriptor usage[] =
 		"  -h, --help          Print usage and exit."
 	},
 	{
+		OUTPUT_FORMAT, 0,
+		"f", "format",
+		Required,
+		"  -f, --format        Output format (brief, verbose)."
+	},
+	{
 		SKIP_TESTS, 0,
 		"s", "skip",
 		option::Arg::None,
 		"  -s, --skip-tests    Skip test execution (e.g., for build testing.)"
-	},
-	{
-		VERBOSE, 0,
-		"v", "verbose",
-		option::Arg::None,
-		"  -v, --verbose       Print details of every test."
 	},
 	{
 		RUN_STRATEGY, 0,
@@ -117,7 +117,30 @@ Arguments Arguments::Parse(int argc, char *argv[])
 	}
 
 	const bool skip = options[SKIP_TESTS];
-	const bool verbose = options[VERBOSE];
+
+	OutputFormat format = OutputFormat::Brief;
+	if (options[OUTPUT_FORMAT])
+	{
+		const std::string arg = options[OUTPUT_FORMAT].arg;
+
+		if (arg == "brief")
+		{
+			format = OutputFormat::Brief;
+		}
+		else if (arg == "verbose")
+		{
+			format = OutputFormat::Verbose;
+		}
+		else
+		{
+			std::cerr
+				<< "Invalid --format: '" << arg << "'\n"
+				"Valid options: brief, verbose\n"
+				;
+
+			return Arguments { .error = true };
+		}
+	}
 
 	TestRunStrategy strategy = TestRunStrategy::Sandboxed;
 	if (options[RUN_STRATEGY])
@@ -159,8 +182,8 @@ Arguments Arguments::Parse(int argc, char *argv[])
 	{
 		.error = false,
 		.help = false,
+		.outputFormat = format,
 		.skip = skip,
-		.verbose = verbose,
 		.runStrategy = strategy,
 		.timeout = timeout,
 	};

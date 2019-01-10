@@ -9,6 +9,7 @@ endif ()
 
 add_library(grading SHARED
 	Arguments.cpp
+	Formatter.cpp
 	checks.cpp
 	Test.cpp
 	TestBuilder.cpp

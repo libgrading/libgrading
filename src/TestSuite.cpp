@@ -3,7 +3,7 @@
  * @brief     Definitions of @ref grading::TestSuite.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2015 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2015, 2019 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -75,43 +75,16 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 		return stats;
 	}
 
+	auto f = Formatter::Create(args.outputFormat, cout);
+
 	for (const Test& test : tests_)
 	{
-		const static string line(80, '-');
-		const static string doubleLine(80, '=');
-
-		if (args.verbose)
-		{
-			cout
-				<< doubleLine << "\n"
-				<< "Running test: '" << test.name() << "'.\n"
-				<< "Description:\n" << test.description()
-				<< "\n" << line << "\n"
-				<< "Test output:\n" << line << "\n"
-				;
-		}
-		else
-		{
-			cout << "Running test '" << test.name() << "'... ";
-		}
-
+		f->testBeginning(test);
 		stats.total++;
 
 		TestResult result = test.Run(args.runStrategy, args.timeout);
 
-		if (args.verbose)
-		{
-			cout
-				<< line << "\n"
-				<< "Test '" << test.name() << "' complete: "
-				<< result << ".\n"
-				<< doubleLine << "\n\n"
-				;
-		}
-		else
-		{
-			cout << result << "." << std::endl;
-		}
+		f->testEnded(test, result);
 
 		if (result == TestResult::Pass)
 		{
@@ -125,5 +98,7 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 	}
 
 	stats.score /= totalWeight();
+	f->suiteComplete(*this, stats);
+
 	return stats;
 }
