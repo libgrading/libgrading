@@ -32,6 +32,7 @@ namespace grading {
 enum class OutputFormat : char
 {
 	Brief,               //!< default (brief) output
+	Gradescope,          //!< Gradescope JSON
 	Verbose,             //!< verbose: full detail, text separators, etc.
 };
 

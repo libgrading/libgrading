@@ -70,7 +70,8 @@ const option::Descriptor usage[] =
 		OUTPUT_FORMAT, 0,
 		"f", "format",
 		Required,
-		"  -f, --format        Output format (brief, verbose)."
+		"  -f, --format        Output format"
+		" (brief, gradescope, verbose)."
 	},
 	{
 		SKIP_TESTS, 0,
@@ -127,6 +128,10 @@ Arguments Arguments::Parse(int argc, char *argv[])
 		{
 			format = OutputFormat::Brief;
 		}
+		else if (arg == "gradescope")
+		{
+			format = OutputFormat::Gradescope;
+		}
 		else if (arg == "verbose")
 		{
 			format = OutputFormat::Verbose;
@@ -135,7 +140,7 @@ Arguments Arguments::Parse(int argc, char *argv[])
 		{
 			std::cerr
 				<< "Invalid --format: '" << arg << "'\n"
-				"Valid options: brief, verbose\n"
+				"Valid options: brief, gradescope, verbose\n"
 				;
 
 			return Arguments { .error = true };

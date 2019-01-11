@@ -42,6 +42,25 @@ public:
 	                           TestSuite::Statistics) override;
 };
 
+class GradescopeFormatter : public Formatter
+{
+public:
+	GradescopeFormatter(std::ostream &os) : Formatter(os) {}
+
+	virtual void testEnded(const Test &test, const TestResult&) override;
+	virtual void suiteComplete(const TestSuite&,
+	                           TestSuite::Statistics) override;
+
+private:
+	struct Result
+	{
+		const std::string name;
+		const TestResult result;
+	};
+
+	std::vector<Result> testResults;
+};
+
 class VerboseFormatter : public Formatter
 {
 public:
@@ -76,6 +95,9 @@ unique_ptr<Formatter> Formatter::Create(OutputFormat format, ostream &out)
 	case OutputFormat::Brief:
 		return unique_ptr<Formatter>(new BriefFormatter(out));
 
+	case OutputFormat::Gradescope:
+		return unique_ptr<Formatter>(new GradescopeFormatter(out));
+
 	case OutputFormat::Verbose:
 		return unique_ptr<Formatter>(new VerboseFormatter(out));
 	}
@@ -104,6 +126,71 @@ void BriefFormatter::suiteComplete(const TestSuite&,
 			<< stats.total << " tests\n"
 			;
 	}
+}
+
+
+void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
+{
+	string output = "Test description:\\n" + test.description();
+	output += "\n\nTest output:\n";
+
+	// Escape newline characters
+	ssize_t pos = 0;
+	do
+	{
+		pos = output.find('\n', pos);
+		if (pos != string::npos)
+		{
+			output.replace(pos, 1, "\\n");
+		}
+	}
+	while (pos != string::npos);
+
+	testResults.push_back({
+		.name = test.name(),
+		.result = std::move(result),
+	});
+}
+
+void GradescopeFormatter::suiteComplete(const TestSuite&,
+                                        TestSuite::Statistics stats)
+{
+	out_ << "{";
+	out_ << "\"score\":" << stats.score << ",";
+
+	out_ << "\"tests\":[";
+
+	// Sigh, JSON with your lack of support for trailing commas...
+	for (int i = 0; i < testResults.size(); i++)
+	{
+		const Result &r = testResults[i];
+
+		out_
+			<< "{"
+
+			<< "\"name\":\"" << r.name << "\","
+
+			<< "\"score\":"
+			<< ((r.result.status == TestExitStatus::Pass) ? 1 : 0)
+			<< ","
+
+			<< "\"output\":\""
+			<< r.result.output
+			<< r.result.errorOutput
+			<< "\""
+
+			<< "}"
+			;
+
+
+		if ((i + 1) < testResults.size())
+		{
+			out_ << ",";
+		}
+	}
+
+	out_ << "]";
+	out_ << "}\n";
 }
 
 
