@@ -103,21 +103,9 @@ const TestSuite tests =
 	},
 };
 
-const static unsigned int ExpectedPasses = 1;
-
 
 int main(int argc, char* argv[])
 {
-	const TestSuite::Statistics stats = tests.Run(argc, argv);
-
-	if (stats.total > 0)
-	{
-		cout
-			<< "Passed " << stats.passed << " out of "
-			<< stats.total << " tests"
-			<< " (expected: " << ExpectedPasses << ")\n"
-			;
-	}
-
+	tests.Run(argc, argv);
 	return 0;
 }
