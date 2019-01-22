@@ -1,18 +1,16 @@
-foreach (testname skip test)
-	set(test_binary "test-${testname}")
+set (CFLAGS "-Wno-missing-prototypes -Wno-global-constructors -Wno-exit-time-destructors")
+set (LIBPATH "LD_LIBRARY_PATH=${CMAKE_BINARY_DIR}/src")
 
-	add_executable(${test_binary} "${testname}.cpp")
+function (add_libgrading_test name)
+	set(binary "test-${name}")
 
-	set_target_properties(${test_binary} PROPERTIES
-		COMPILE_FLAGS
-			"-Wno-missing-prototypes -Wno-global-constructors -Wno-exit-time-destructors"
-	)
+	add_executable(${binary} "${name}.cpp")
+	set_target_properties(${binary} PROPERTIES COMPILE_FLAGS ${CFLAGS})
+	target_link_libraries(${binary} grading)
 
-	target_link_libraries(${test_binary} grading)
-endforeach (testname)
+	add_test(NAME ${name} COMMAND ${binary} ${ARGN})
+	set_tests_properties(${name} PROPERTIES ENVIRONMENT ${LIBPATH})
+endfunction (add_libgrading_test)
 
-add_test(NAME skip COMMAND test-skip --skip)
-add_test(NAME tests COMMAND test-test)
-
-set_tests_properties(tests PROPERTIES
-	ENVIRONMENT "LD_LIBRARY_PATH=${CMAKE_BINARY_DIR}/src")
+add_libgrading_test(skip --skip)
+add_libgrading_test(test)
