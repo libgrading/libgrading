@@ -365,30 +365,6 @@ CheckResult Fail(std::string message);
 //! Output a human-readable representation of a @ref TestResult.
 std::ostream& operator << (std::ostream&, TestResult);
 
-
-/**
- * A representation of a shared memory object.
- *
- * This class is specialized by platform-specific code to represent
- * shared memory in a way that will be cleaned up on destruction
- * (files closed, memory unmapped, etc.).
- */
-class SharedMemory
-{
-	public:
-	virtual ~SharedMemory() {}
-
-	/**
-	 * A pointer to the shared memory, which will be @b invalidated
-	 * after this object is destructed.
-	 */
-	virtual void* rawPointer() const = 0;
-};
-
-
-//! Map data into the address space that can be shared with other processes.
-std::unique_ptr<SharedMemory> MapSharedData(size_t size);
-
 } // namespace grading
 
 #endif
