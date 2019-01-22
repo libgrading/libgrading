@@ -128,7 +128,7 @@ unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 #if defined (__BSD_VISIBLE)
 	int fd = shm_open(SHM_ANON, O_RDWR, 0600);
 #else
-	char tmpnameTemplate[] = "libgrading.XXXXXX";
+	char tmpnameTemplate[] = "/tmp/libgrading.XXXXXX";
 	int fd = mkstemp(tmpnameTemplate);
 #endif
 
