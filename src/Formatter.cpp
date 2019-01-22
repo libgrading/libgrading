@@ -55,7 +55,8 @@ private:
 	struct Result
 	{
 		const std::string name;
-		const TestResult result;
+		const TestExitStatus status;
+		const std::string output;
 	};
 
 	std::vector<Result> testResults;
@@ -133,6 +134,7 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 {
 	string output = "Test description:\\n" + test.description();
 	output += "\n\nTest output:\n";
+	output += result.output + result.errorOutput;
 
 	// Escape newline characters
 	ssize_t pos = 0;
@@ -148,7 +150,8 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 
 	testResults.push_back({
 		.name = test.name(),
-		.result = std::move(result),
+		.status = result.status,
+		.output = std::move(output),
 	});
 }
 
@@ -171,12 +174,15 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
 			<< "\"name\":\"" << r.name << "\","
 
 			<< "\"score\":"
-			<< ((r.result.status == TestExitStatus::Pass) ? 1 : 0)
+			<< ((r.status == TestExitStatus::Pass) ? 1 : 0)
+			<< ","
+
+			<< "\"visibility\":"
+			<< "\"after_published\""
 			<< ","
 
 			<< "\"output\":\""
-			<< r.result.output
-			<< r.result.errorOutput
+			<< r.output
 			<< "\""
 
 			<< "}"
