@@ -113,6 +113,7 @@ class PosixSharedMemory : public SharedMemory
 		close(shmfd);
 	}
 
+	int fd() const { return shmfd; }
 	virtual void *rawPointer() const override { return ptr; }
 
 	private:
@@ -158,12 +159,40 @@ TestResult grading::ForkTest(TestClosure test, time_t timeout)
 	std::cerr.flush();
 	std::clog.flush();
 
+	fflush(stdout);
+	fflush(stderr);
+
+	auto out = MapSharedData(10 * 4096);
+	if (not out)
+	{
+		return TestExitStatus::OtherError;
+	}
+
+	auto err = MapSharedData(10 * 4096);
+	if (not err)
+	{
+		return TestExitStatus::OtherError;
+	}
+
 	pid_t child = fork();
 
 	if (child == 0)
 	{
-		TestExitStatus result = RunInProcess(test);
-		exit(static_cast<int>(result));
+		// Install shared file(s) as stdout and stderr
+		int fd = dynamic_cast<const PosixSharedMemory&>(*out).fd();
+		if (fd < 0 or dup2(fd, STDOUT_FILENO) < 0)
+		{
+			return TestExitStatus::OtherError;
+		}
+
+		fd = dynamic_cast<const PosixSharedMemory&>(*err).fd();
+		if (fd < 0 or dup2(fd, STDERR_FILENO) < 0)
+		{
+			return TestExitStatus::OtherError;
+		}
+
+		TestExitStatus status = RunInProcess(test);
+		exit(static_cast<int>(status));
 	}
 	else
 	{
@@ -199,7 +228,9 @@ TestResult grading::ForkTest(TestClosure test, time_t timeout)
 			usleep(100);
 		}
 
-		return ProcessChildStatus(status);
+		return TestResult(ProcessChildStatus(status),
+			string(static_cast<char*>(out->rawPointer())),
+			string(static_cast<char*>(err->rawPointer())));
 	}
 }
 

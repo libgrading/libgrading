@@ -44,6 +44,9 @@ struct Expectation
 //! This function contains a logical error or two.
 int FunctionUnderTest(const int v[], unsigned int index)
 {
+	cout << "This is stdout from FunctionUnderTest(v, " << index << ").\n";
+	cerr << "This is stderr from FunctionUnderTest(v, " << index << ").\n";
+
 	return v[index * 10000000 + 1];
 }
 
