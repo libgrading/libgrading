@@ -124,11 +124,31 @@ class PosixSharedMemory : public SharedMemory
 
 unique_ptr<SharedMemory> grading::MapSharedData(size_t len)
 {
-	int shmfd = shm_open("shm.tmp", 0, O_RDWR);
-	void *map = mmap(0, len, PROT_READ | PROT_WRITE,
-	                 MAP_ANON | MAP_SHARED, shmfd, 0);
+#if defined (__BSD_VISIBLE)
+	int fd = shm_open(SHM_ANON, O_RDWR, 0600);
+#else
+	char tmpnameTemplate[] = "libgrading.XXXXXX";
+	int fd = mkstemp(tmpnameTemplate);
+#endif
 
-	return unique_ptr<SharedMemory>(new PosixSharedMemory(shmfd, len, map));
+	if (fd < 0)
+	{
+		return nullptr;
+	}
+
+	if (ftruncate(fd, len) != 0)
+	{
+		close(fd);
+		return nullptr;
+	}
+
+	void *map = mmap(0, len, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+	if (map == MAP_FAILED)
+	{
+		return nullptr;
+	}
+
+	return unique_ptr<SharedMemory>(new PosixSharedMemory(fd, len, map));
 }
 
 
@@ -142,7 +162,7 @@ TestResult grading::ForkTest(TestClosure test, time_t timeout)
 
 	if (child == 0)
 	{
-		TestResult result = RunInProcess(test);
+		TestExitStatus result = RunInProcess(test);
 		exit(static_cast<int>(result));
 	}
 	else
