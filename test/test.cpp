@@ -37,7 +37,7 @@ struct Expectation
 	const int value;
 
 	//! This field is used to test the tester:
-	const TestResult expectedTestResult;
+	const TestExitStatus expectedStatus;
 };
 
 
@@ -67,7 +67,7 @@ const TestSuite tests =
 		" - FunctionUnderTest will return the correct value\n"
 		" - this test should pass",
 		TestStudentFn,
-		{ Fibbonacci, 0, 1, TestResult::Pass },
+		{ Fibbonacci, 0, 1, TestExitStatus::Pass },
 	},
 
 	{
@@ -76,7 +76,7 @@ const TestSuite tests =
 		" - FunctionUnderTest will return the wrong number\n"
 		" - this test should fail",
 		TestStudentFn,
-		{ EvenNumbers, 0, 2, TestResult::Fail },
+		{ EvenNumbers, 0, 2, TestExitStatus::Fail },
 		0, 10
 	},
 

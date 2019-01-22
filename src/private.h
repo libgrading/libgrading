@@ -80,7 +80,7 @@ public:
 	virtual void testBeginning(const Test&) {}
 
 	//! Called when a test has finished running
-	virtual void testEnded(const Test&, TestResult) {}
+	virtual void testEnded(const Test&, const TestResult&) {}
 
 	//! Called when an entire test suite has finished running
 	virtual void suiteComplete(const TestSuite&, TestSuite::Statistics) {}
@@ -126,8 +126,11 @@ TestResult ForkTest(TestClosure test, time_t timeout);
 
 /**
  * Run a test in the current process, catching all exceptions.
+ *
+ * This function returns a TestExitStatus, not a TestResult. Redirecting
+ * stdout and stderr, if desired, is the responsibility of the caller.
  */
-TestResult RunInProcess(TestClosure test);
+TestExitStatus RunInProcess(TestClosure test);
 
 } // namespace grading
 

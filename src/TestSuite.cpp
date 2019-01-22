@@ -86,7 +86,7 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 
 		f->testEnded(test, result);
 
-		if (result == TestResult::Pass)
+		if (result.status == TestExitStatus::Pass)
 		{
 			stats.passed++;
 			stats.score += test.weight();

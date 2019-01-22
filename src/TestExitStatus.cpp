@@ -1,6 +1,6 @@
 /*!
- * @file      TestResult.cpp
- * @brief     Definitions of @ref grading::TestResult functions.
+ * @file      TestExitStatus.cpp
+ * @brief     Definitions of @ref grading::TestExitStatus functions.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
@@ -23,21 +23,28 @@
 #include <ostream>
 
 
-std::ostream& grading::operator << (std::ostream& out, TestResult result)
+std::ostream& grading::operator << (std::ostream& out, TestExitStatus result)
 {
 	switch (result)
 	{
-		case TestResult::Pass:       out << "passed"; break;
-		case TestResult::Fail:       out << "failed"; break;
-		case TestResult::Abort:      out << "aborted"; break;
-		case TestResult::Segfault:
+		case TestExitStatus::Pass:       out << "passed"; break;
+		case TestExitStatus::Fail:       out << "failed"; break;
+		case TestExitStatus::Abort:      out << "aborted"; break;
+		case TestExitStatus::Segfault:
 			out << "segmentation fault";
 			break;
-		case TestResult::Timeout :   out << "timeout"; break;
-		case TestResult::UncaughtException:
+
+		case TestExitStatus::Timeout:
+			out << "timeout";
+			break;
+
+		case TestExitStatus::UncaughtException:
 			out << "uncaught exception";
 			break;
-		case TestResult::OtherError: out << "unknown test error"; break;
+
+		case TestExitStatus::OtherError:
+			out << "unknown test error";
+			break;
 	}
 
 	return out;

@@ -59,28 +59,28 @@ CheckResult::~CheckResult()
 			<< "\n"
 			;
 
-		exit(static_cast<int>(TestResult::Fail));
+		exit(static_cast<int>(TestExitStatus::Fail));
 	}
 }
 
 
-static TestResult ProcessChildStatus(int status)
+static TestExitStatus ProcessChildStatus(int status)
 {
 	if (WIFEXITED(status))
-		return static_cast<TestResult>(WEXITSTATUS(status));
+		return static_cast<TestExitStatus>(WEXITSTATUS(status));
 
 	if (WIFSIGNALED(status))
 	{
 		switch (WTERMSIG(status))
 		{
 			case SIGABRT:
-			return TestResult::Abort;
+			return TestExitStatus::Abort;
 
 			case SIGSEGV:
-			return TestResult::Segfault;
+			return TestExitStatus::Segfault;
 
 			default:
-			return TestResult::OtherError;
+			return TestExitStatus::OtherError;
 		}
 	}
 
@@ -173,7 +173,7 @@ TestResult grading::ForkTest(TestClosure test, time_t timeout)
 			{
 				kill(child, SIGKILL);
 				waitpid(child, &status, 0);
-				return TestResult::Timeout;
+				return TestExitStatus::Timeout;
 			}
 
 			usleep(100);

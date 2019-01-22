@@ -40,8 +40,8 @@ class TestBuilder;
 class TestSuite;
 
 
-//! The result of running one test.
-enum class TestResult : char
+//! How a test finished executing.
+enum class TestExitStatus
 {
 	Pass,                //!< the test succeeded
 	Fail,                //!< the test failed
@@ -50,6 +50,20 @@ enum class TestResult : char
 	Timeout,             //!< the test took too long to run
 	UncaughtException,   //!< the test threw an exception
 	OtherError           //!< the test terminated for another reason
+};
+
+
+//! The result of running one test.
+struct TestResult
+{
+	TestResult(TestExitStatus s, std::string out = "", std::string err = "")
+		: status(s), output(std::move(out)), errorOutput(std::move(err))
+	{
+	}
+
+	const TestExitStatus status;
+	const std::string output;
+	const std::string errorOutput;
 };
 
 
@@ -362,8 +376,8 @@ CheckResult CheckString(std::string expected, std::string actual,
 CheckResult Fail(std::string message);
 
 
-//! Output a human-readable representation of a @ref TestResult.
-std::ostream& operator << (std::ostream&, TestResult);
+//! Output a human-readable representation of a @ref TestExitStatus.
+std::ostream& operator << (std::ostream&, TestExitStatus);
 
 } // namespace grading
 

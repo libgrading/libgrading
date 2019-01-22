@@ -37,7 +37,7 @@ public:
 	BriefFormatter(std::ostream &os) : Formatter(os) {}
 
 	virtual void testBeginning(const Test &test) override;
-	virtual void testEnded(const Test &test, TestResult result) override;
+	virtual void testEnded(const Test &test, const TestResult&) override;
 	virtual void suiteComplete(const TestSuite&,
 	                           TestSuite::Statistics) override;
 };
@@ -48,7 +48,7 @@ public:
 	VerboseFormatter(std::ostream &os);
 
 	virtual void testBeginning(const Test &test) override;
-	virtual void testEnded(const Test &test, TestResult result) override;
+	virtual void testEnded(const Test &test, const TestResult&) override;
 	virtual void suiteComplete(const TestSuite&,
 	                           TestSuite::Statistics) override;
 
@@ -89,9 +89,9 @@ void BriefFormatter::testBeginning(const Test &test)
 	out_ << "Running test '" << test.name() << "'... ";
 }
 
-void BriefFormatter::testEnded(const Test &test, TestResult result)
+void BriefFormatter::testEnded(const Test &test, const TestResult &result)
 {
-	out_ << result << "." << std::endl;
+	out_ << result.status << "." << std::endl;
 }
 
 void BriefFormatter::suiteComplete(const TestSuite&,
@@ -117,20 +117,37 @@ void VerboseFormatter::testBeginning(const Test &test)
 	out_
 		<< doubleLine_ << "\n"
 		<< "Running test: '" << test.name() << "'.\n"
-		<< "Description:\n" << test.description()
-		<< "\n" << line_ << "\n"
-		<< "Test output:\n" << line_ << "\n"
+		<< "Description:\n" << test.description() << "\n"
 		;
 }
 
-void VerboseFormatter::testEnded(const Test &test, TestResult result)
+void VerboseFormatter::testEnded(const Test &test, const TestResult &result)
 {
-	out_
-		<< line_ << "\n"
-		<< "Test '" << test.name() << "' complete: "
-		<< result << ".\n"
-		<< doubleLine_ << "\n\n"
-		;
+	out_ << "Result: " << result.status << "\n";
+
+	if (not result.output.empty())
+	{
+		out_
+			<< line_ << "\n"
+			<< "Standard output (stdout/cout):\n"
+			<< line_ << "\n"
+			<< result.output
+			<< line_ << "\n"
+			;
+	}
+
+	if (not result.errorOutput.empty())
+	{
+		out_
+			<< line_ << "\n"
+			<< "Error output (stderr/cerr):\n"
+			<< line_ << "\n"
+			<< result.errorOutput
+			<< line_ << "\n"
+			;
+	}
+
+	out_ << doubleLine_ << "\n\n";
 }
 
 void VerboseFormatter::suiteComplete(const TestSuite&,

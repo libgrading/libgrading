@@ -3,7 +3,7 @@
  * @brief     Definitions of @ref grading::Test.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2015 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2015, 2019 Jonathan Anderson. All rights reserved.
  * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -47,7 +47,7 @@ TestResult Test::Run(TestRunStrategy strategy, time_t timeout) const
 	{
 		case TestRunStrategy::Inline:
 			test_();
-			return TestResult::Pass;
+			return TestExitStatus::Pass;
 
 		case TestRunStrategy::Separated:
 			return ForkTest(test_, timeout);
@@ -66,12 +66,12 @@ TestResult Test::Run(TestRunStrategy strategy, time_t timeout) const
 }
 
 
-TestResult grading::RunInProcess(TestClosure test)
+TestExitStatus grading::RunInProcess(TestClosure test)
 {
 	try
 	{
 		test();
-		return TestResult::Pass;
+		return TestExitStatus::Pass;
 	}
 	catch (const std::exception& e)
 	{
@@ -80,12 +80,12 @@ TestResult grading::RunInProcess(TestClosure test)
 			<< e.what() << std::endl
 			;
 
-		return TestResult::UncaughtException;
+		return TestExitStatus::UncaughtException;
 	}
 	catch (int i)
 	{
 		std::cerr << "caught int: " << i << std::endl;
-		return TestResult::UncaughtException;
+		return TestExitStatus::UncaughtException;
 	}
 	catch (const std::string& s)
 	{
@@ -93,11 +93,11 @@ TestResult grading::RunInProcess(TestClosure test)
 			<< "caught string: '" << s << "'"
 			<< std::endl;
 
-		return TestResult::UncaughtException;
+		return TestExitStatus::UncaughtException;
 	}
 	catch (...)
 	{
 		std::cerr << "uncaught exception!" << std::endl;
-		return TestResult::UncaughtException;
+		return TestExitStatus::UncaughtException;
 	}
 }

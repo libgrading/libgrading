@@ -13,7 +13,7 @@ add_library(grading SHARED
 	checks.cpp
 	Test.cpp
 	TestBuilder.cpp
-	TestResult.cpp
+	TestExitStatus.cpp
 	TestSuite.cpp
 	${PLATFORM_SOURCES}
 )
