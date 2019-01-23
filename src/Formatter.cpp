@@ -159,8 +159,6 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
                                         TestSuite::Statistics stats)
 {
 	out_ << "{";
-	out_ << "\"score\":" << stats.score << ",";
-
 	out_ << "\"tests\":[";
 
 	// Sigh, JSON with your lack of support for trailing commas...
