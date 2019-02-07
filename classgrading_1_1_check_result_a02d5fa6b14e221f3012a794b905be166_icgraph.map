@@ -1,4 +1,5 @@
 <map id="cancel" name="cancel">
-<area shape="rect" id="node2" href="$namespacegrading.html#aa3746f0c72697e2e700f7de0380a56b4" title="Combine the results of two checks using a product (AND): both must pass. " alt="" coords="116,5,274,37"/>
-<area shape="rect" id="node3" href="$namespacegrading.html#afab8c0737ae99cfa595261baac5387af" title="Combine the results of two checks using a sum (OR): at least one must pass. " alt="" coords="123,61,267,93"/>
+<area shape="rect" id="node1" title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner..." alt="" coords="215,33,278,65"/>
+<area shape="rect" id="node2" href="$namespacegrading.html#a13433f91d386d33fa69a7fa80a01059c" title="Combine the results of two checks using a product (AND): both must pass." alt="" coords="5,5,167,37"/>
+<area shape="rect" id="node3" href="$namespacegrading.html#afab8c0737ae99cfa595261baac5387af" title="Combine the results of two checks using a sum (OR): at least one must pass." alt="" coords="14,61,158,93"/>
 </map>

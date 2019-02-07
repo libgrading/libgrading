@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['runstrategy',['runStrategy',['../structgrading_1_1_arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a',1,'grading::Arguments']]]
+  ['passed',['passed',['../structgrading_1_1_test_suite_1_1_statistics.html#a1810ba190aa195caf7bb8dcc23bb1c7d',1,'grading::TestSuite::Statistics']]]
 ];

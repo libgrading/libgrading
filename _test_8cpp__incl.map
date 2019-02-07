@@ -1,4 +1,13 @@
 <map id="src/Test.cpp" name="src/Test.cpp">
-<area shape="rect" id="node2" href="$libgrading_8h.html" title="A library for grading C&#45; and C++&#45;based assignments. " alt="" coords="300,165,401,197"/>
-<area shape="rect" id="node10" href="$private_8h.html" title="Internal header file for libgrading. " alt="" coords="350,85,429,117"/>
+<area shape="rect" id="node1" title="Definitions of grading::Test." alt="" coords="339,5,439,37"/>
+<area shape="rect" id="node2" href="$libgrading_8h.html" title="A library for grading C&#45; and C++&#45;based assignments." alt="" coords="300,165,401,197"/>
+<area shape="rect" id="node10" href="$private_8h.html" title="Internal header file for libgrading." alt="" coords="350,85,429,117"/>
+<area shape="rect" id="node11" title=" " alt="" coords="452,85,519,117"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,245,91,277"/>
+<area shape="rect" id="node4" title=" " alt="" coords="115,245,192,277"/>
+<area shape="rect" id="node5" title=" " alt="" coords="216,245,291,277"/>
+<area shape="rect" id="node6" title=" " alt="" coords="315,245,386,277"/>
+<area shape="rect" id="node7" title=" " alt="" coords="411,245,469,277"/>
+<area shape="rect" id="node8" title=" " alt="" coords="493,245,609,277"/>
+<area shape="rect" id="node9" title=" " alt="" coords="633,245,695,277"/>
 </map>

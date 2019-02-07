@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verbose',['verbose',['../structgrading_1_1_arguments.html#a087685f54898c5180dd954bfc1e5fb1f',1,'grading::Arguments']]]
+  ['usage',['usage',['../_arguments_8cpp.html#af23d8c13133fbc8715f459529590ed12',1,'Arguments.cpp']]]
 ];

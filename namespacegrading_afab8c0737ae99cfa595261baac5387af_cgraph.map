@@ -1,3 +1,4 @@
 <map id="operator||" name="operator||">
+<area shape="rect" id="node1" title="Combine the results of two checks using a sum (OR): at least one must pass." alt="" coords="5,15,90,47"/>
 <area shape="rect" id="node2" href="$classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166" title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner..." alt="" coords="138,5,299,57"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="Parse" name="Parse">
-<area shape="rect" id="node2" href="$classgrading_1_1_test_suite.html#a8e131cc39871a01859f64c5490713d73" title="Run all tests, using command&#45;line arguments to guide the testing strategy, timeouts, etc. " alt="" coords="110,5,283,37"/>
+<area shape="rect" id="node1" title="Parse command&#45;line arguments." alt="" coords="226,5,283,37"/>
+<area shape="rect" id="node2" href="$classgrading_1_1_test_suite.html#a8e131cc39871a01859f64c5490713d73" title="Run all tests, using command&#45;line arguments to guide the testing strategy, timeouts,..." alt="" coords="5,5,178,37"/>
 </map>

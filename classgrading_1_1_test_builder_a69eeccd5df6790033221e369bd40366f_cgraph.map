@@ -1,3 +1,4 @@
 <map id="desc" name="desc">
-<area shape="rect" id="node2" href="$classgrading_1_1_test_builder.html#a5080f04be569ca7427de494ffbb751df" title="Set description (which will be printed when run in verbose mode). " alt="" coords="105,5,199,37"/>
+<area shape="rect" id="node1" title="Set description (which will be printed when run in verbose mode)." alt="" coords="5,5,57,37"/>
+<area shape="rect" id="node2" href="$classgrading_1_1_test_builder.html#a5080f04be569ca7427de494ffbb751df" title="Set description (which will be printed when run in verbose mode)." alt="" coords="105,5,199,37"/>
 </map>

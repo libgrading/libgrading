@@ -1,4 +1,7 @@
 <map id="Run" name="Run">
-<area shape="rect" id="node2" href="$structgrading_1_1_arguments.html#a7732fee01761ae341c2a811613637372" title="Parse command&#45;line arguments. " alt="" coords="100,5,252,57"/>
-<area shape="rect" id="node3" href="$classgrading_1_1_test_suite.html#abdf087198b0210698844fad89ba07acf" title="The total weight of all tests in the suite. " alt="" coords="127,82,225,114"/>
+<area shape="rect" id="node1" title="Run all tests, using command&#45;line arguments to guide the testing strategy, timeouts,..." alt="" coords="5,91,52,123"/>
+<area shape="rect" id="node2" href="$classgrading_1_1_formatter.html#a1a51f34c4f8f006846c959bc2c5f0051" title="Create a new Formatter." alt="" coords="103,5,248,57"/>
+<area shape="rect" id="node3" href="$structgrading_1_1_arguments.html#a7732fee01761ae341c2a811613637372" title="Parse command&#45;line arguments." alt="" coords="100,81,252,133"/>
+<area shape="rect" id="node5" href="$classgrading_1_1_test_suite.html#abdf087198b0210698844fad89ba07acf" title="The total weight of all tests in the suite." alt="" coords="127,158,225,190"/>
+<area shape="rect" id="node4" href="$structgrading_1_1_arguments.html#a55d503e59b653b12f7dd7b0fd3ec3788" title="Construct a &quot;failed to parse normal arguments&quot; object." alt="" coords="300,81,452,133"/>
 </map>

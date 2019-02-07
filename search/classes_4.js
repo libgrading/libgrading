@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['test',['Test',['../classgrading_1_1_test.html',1,'grading']]],
-  ['testbuilder',['TestBuilder',['../classgrading_1_1_test_builder.html',1,'grading']]],
-  ['testsuite',['TestSuite',['../classgrading_1_1_test_suite.html',1,'grading']]]
+  ['sharedmemory',['SharedMemory',['../classgrading_1_1_shared_memory.html',1,'grading']]],
+  ['statistics',['Statistics',['../structgrading_1_1_test_suite_1_1_statistics.html',1,'grading::TestSuite']]]
 ];

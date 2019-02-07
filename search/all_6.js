@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['help',['help',['../structgrading_1_1_arguments.html#a49fc425ab3b72f3f60b751193b5cff29',1,'grading::Arguments']]]
+  ['gradescope',['Gradescope',['../namespacegrading.html#ac93a4f248eef13f6fa50ae1d3221c3dfae2177cedacbf6d9b0a205117e614a3ca',1,'grading']]],
+  ['grading',['grading',['../namespacegrading.html',1,'']]]
 ];

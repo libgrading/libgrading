@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['othererror',['OtherError',['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642a611572ba77cbd55463aeb65f1f77a052',1,'grading']]]
+  ['gradescope',['Gradescope',['../namespacegrading.html#ac93a4f248eef13f6fa50ae1d3221c3dfae2177cedacbf6d9b0a205117e614a3ca',1,'grading']]]
 ];

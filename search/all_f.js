@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['tagset',['TagSet',['../classgrading_1_1_test.html#a191b633593a0e8e5e09820dc775889f0',1,'grading::Test']]],
-  ['test',['Test',['../classgrading_1_1_test.html',1,'Test'],['../classgrading_1_1_test.html#acf51f543bdde8ba3fa198cc8a8c26f7a',1,'grading::Test::Test(std::string name, std::string description, TestClosure, time_t timeout=0, unsigned int weight=1, TagSet tags=TagSet())'],['../classgrading_1_1_test.html#a4ecb5be84917e6e2dd006d62adf2e8ec',1,'grading::Test::Test(std::string name, std::string description, std::function&lt; void(const Expectation &amp;)&gt; fn, Expectation e, time_t timeout=0, unsigned int weight=1)'],['../classgrading_1_1_test.html#a180a2a6e9c1656fd1ea37ec3e70bbb9c',1,'grading::Test::Test(std::string name, std::string description, void(*fn)(const Expectation &amp;), Expectation e, time_t timeout=0, unsigned int weight=1)']]],
-  ['test_2ecpp',['Test.cpp',['../_test_8cpp.html',1,'']]],
-  ['testbuilder',['TestBuilder',['../classgrading_1_1_test_builder.html',1,'TestBuilder'],['../classgrading_1_1_test_builder.html#af3eb6a41d8afea7a4664c913ec89bbba',1,'grading::TestBuilder::TestBuilder()']]],
-  ['testbuilder_2ecpp',['TestBuilder.cpp',['../_test_builder_8cpp.html',1,'']]],
-  ['testclosure',['TestClosure',['../namespacegrading.html#a25ef703be30c9118f7ecaa6490602fe9',1,'grading']]],
-  ['testresult',['TestResult',['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642',1,'grading']]],
-  ['testresult_2ecpp',['TestResult.cpp',['../_test_result_8cpp.html',1,'']]],
-  ['testrunstrategy',['TestRunStrategy',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677',1,'grading']]],
-  ['testsuite',['TestSuite',['../classgrading_1_1_test_suite.html',1,'TestSuite'],['../classgrading_1_1_test_suite.html#abc8126fceba23a7a21730d962f483f11',1,'grading::TestSuite::TestSuite()'],['../classgrading_1_1_test_suite.html#a0bed231a3b0ba8cb3430026c3d9d22c2',1,'grading::TestSuite::TestSuite(std::initializer_list&lt; Test &gt;)']]],
-  ['testsuite_2ecpp',['TestSuite.cpp',['../_test_suite_8cpp.html',1,'']]],
-  ['timeout',['timeout',['../structgrading_1_1_arguments.html#a07fb086b85679ba3a1b6f40edec2f4e8',1,'grading::Arguments::timeout()'],['../classgrading_1_1_test_builder.html#a46538f6cf91c6c0347baa6a6fc2c72fb',1,'grading::TestBuilder::timeout()'],['../classgrading_1_1_test.html#a020c6e042dce18109e522fdbd722cf1c',1,'grading::Test::timeout()'],['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ac85a251cc457840f1e032f1b733e9398',1,'grading::Timeout()']]],
-  ['total',['total',['../structgrading_1_1_test_suite_1_1_statistics.html#af9031f7978e957b9979e78873830ce46',1,'grading::TestSuite::Statistics']]],
-  ['totalweight',['totalWeight',['../classgrading_1_1_test_suite.html#abdf087198b0210698844fad89ba07acf',1,'grading::TestSuite']]]
+  ['sandboxed',['Sandboxed',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677a7b8a250802343eae5e2d3b3fd34aea64',1,'grading']]],
+  ['score',['score',['../structgrading_1_1_test_suite_1_1_statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c',1,'grading::TestSuite::Statistics']]],
+  ['segfault',['Segfault',['../namespacegrading.html#aa9cf5c0e9bdde51b3ef189809a62929da6dec3eff895251a583a6983d621296b4',1,'grading']]],
+  ['separated',['Separated',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677a606970f24025625f40867ff6d152fa1e',1,'grading']]],
+  ['sharedmemory',['SharedMemory',['../classgrading_1_1_shared_memory.html',1,'grading']]],
+  ['skip',['skip',['../structgrading_1_1_arguments.html#a092180cf24cd4e04d9498e6094c508ee',1,'grading::Arguments']]],
+  ['statistics',['Statistics',['../structgrading_1_1_test_suite_1_1_statistics.html',1,'grading::TestSuite']]],
+  ['status',['status',['../structgrading_1_1_test_result.html#adae2d2908dc0589c3c57f07c99a4ec9a',1,'grading::TestResult']]],
+  ['suitecomplete',['suiteComplete',['../classgrading_1_1_formatter.html#a4ceb28ad905957a42997f29cf2456365',1,'grading::Formatter']]]
 ];

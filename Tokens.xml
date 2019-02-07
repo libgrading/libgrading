@@ -9,31 +9,31 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a25ef703be30c9118f7ecaa6490602fe9</Anchor>
-    <Abstract>A closure that wraps a single test case. </Abstract>
+    <Abstract>A closure that wraps a single test case.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
+      <Name>operator &amp;&amp;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>ad729543d7e7fdfde7a56b39bc95316b4</Anchor>
-    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
+    <Anchor>a13433f91d386d33fa69a7fa80a01059c</Anchor>
+    <Abstract>Combine the results of two checks using a product (AND): both must pass.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
+      <Name>operator &amp;&amp;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a42541cfbc1677d7b6a9f71aaee7b2004</Anchor>
-    <Abstract>L-value version of above. </Abstract>
+    <Anchor>ae9c51aa8a4969d603b1c66cc1a89a656</Anchor>
+    <Abstract>L-value version of above.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -45,7 +45,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>afab8c0737ae99cfa595261baac5387af</Anchor>
-    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -57,7 +57,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a42121054a4fdfcde4dadca294f930adf</Anchor>
-    <Abstract>L-value version of above. </Abstract>
+    <Abstract>L-value version of above.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -69,7 +69,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a02b06a7a05a39b2a9d36066c7c1b2a96</Anchor>
-    <Abstract>Check an arbitrary condition, failing the test if false. </Abstract>
+    <Abstract>Check an arbitrary condition, failing the test if false.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -81,7 +81,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a1718d44f68e8dca72ca3e9fc874ed856</Anchor>
-    <Abstract>Check that two integers are equal, failing the test if they are not. </Abstract>
+    <Abstract>Check that two integers are equal, failing the test if they are not.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -93,7 +93,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a4e80ff15169ee05c6d87c2096e834d9a</Anchor>
-    <Abstract>Check that two floating-point numbers are equal within some tolerance. </Abstract>
+    <Abstract>Check that two floating-point numbers are equal within some tolerance.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -105,7 +105,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a6a748b83bd55765d8dc2dd705e52137e</Anchor>
-    <Abstract>Check that a pointer is not equal to nullptr. </Abstract>
+    <Abstract>Check that a pointer is not equal to nullptr.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -117,7 +117,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>ab80ca5498aeecda6cd1f7cb92a8f6018</Anchor>
-    <Abstract>Check that a pointer is equal to nullptr. </Abstract>
+    <Abstract>Check that a pointer is equal to nullptr.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -129,7 +129,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a60adb41dad219d6cbf3c27bf477bd638</Anchor>
-    <Abstract>Check that two strings are (approximately) equal. </Abstract>
+    <Abstract>Check that two strings are (approximately) equal.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -141,7 +141,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a395448d7484928cd96ef99470b0d9109</Anchor>
-    <Abstract>Fail the current test. </Abstract>
+    <Abstract>Fail the current test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -152,8 +152,151 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>ab60215986fc07d2b182735c01cee0656</Anchor>
-    <Abstract>Output a human-readable representation of a TestResult. </Abstract>
+    <Anchor>a79cd49e5ad3ef544a7eb339ca7639d70</Anchor>
+    <Abstract>Output a human-readable representation of a TestExitStatus.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>usage</Name>
+      <APILanguage>c</APILanguage>
+      <Type>data</Type>
+    </TokenIdentifier>
+    <Path>_arguments_8cpp.html</Path>
+    <Anchor>af23d8c13133fbc8715f459529590ed12</Anchor>
+    <Abstract>Usage strings for command-line arguments.</Abstract>
+    <DeclaredIn>Arguments.cpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator &amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a13433f91d386d33fa69a7fa80a01059c</Anchor>
+    <Abstract>Combine the results of two checks using a product (AND): both must pass.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator &amp;&amp;</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ae9c51aa8a4969d603b1c66cc1a89a656</Anchor>
+    <Abstract>L-value version of above.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>afab8c0737ae99cfa595261baac5387af</Anchor>
+    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>operator||</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a42121054a4fdfcde4dadca294f930adf</Anchor>
+    <Abstract>L-value version of above.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Check</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a02b06a7a05a39b2a9d36066c7c1b2a96</Anchor>
+    <Abstract>Check an arbitrary condition, failing the test if false.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckInt</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a1718d44f68e8dca72ca3e9fc874ed856</Anchor>
+    <Abstract>Check that two integers are equal, failing the test if they are not.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckNonNull</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a6a748b83bd55765d8dc2dd705e52137e</Anchor>
+    <Abstract>Check that a pointer is not equal to nullptr.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckNull</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ab80ca5498aeecda6cd1f7cb92a8f6018</Anchor>
+    <Abstract>Check that a pointer is equal to nullptr.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckFloat</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a4e80ff15169ee05c6d87c2096e834d9a</Anchor>
+    <Abstract>Check that two floating-point numbers are equal within some tolerance.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>CheckString</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a60adb41dad219d6cbf3c27bf477bd638</Anchor>
+    <Abstract>Check that two strings are (approximately) equal.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Fail</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>a395448d7484928cd96ef99470b0d9109</Anchor>
+    <Abstract>Fail the current test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -165,151 +308,8 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a125c5e8b85f83dcab13826e5da373d54</Anchor>
-    <Abstract>Map data into the address space that can be shared with other processes. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>usage</Name>
-      <APILanguage>c</APILanguage>
-      <Type>data</Type>
-    </TokenIdentifier>
-    <Path>_arguments_8cpp.html</Path>
-    <Anchor>af23d8c13133fbc8715f459529590ed12</Anchor>
-    <Abstract>Usage strings for command-line arguments. </Abstract>
-    <DeclaredIn>Arguments.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>aa3746f0c72697e2e700f7de0380a56b4</Anchor>
-    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
-    <DeclaredIn>checks.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a2d98f5f6c174cb2b08d4d914002bae34</Anchor>
-    <Abstract>L-value version of above. </Abstract>
-    <DeclaredIn>checks.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>operator||</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>afab8c0737ae99cfa595261baac5387af</Anchor>
-    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>operator||</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a42121054a4fdfcde4dadca294f930adf</Anchor>
-    <Abstract>L-value version of above. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>Check</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a02b06a7a05a39b2a9d36066c7c1b2a96</Anchor>
-    <Abstract>Check an arbitrary condition, failing the test if false. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>CheckInt</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a1718d44f68e8dca72ca3e9fc874ed856</Anchor>
-    <Abstract>Check that two integers are equal, failing the test if they are not. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>CheckNonNull</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a6a748b83bd55765d8dc2dd705e52137e</Anchor>
-    <Abstract>Check that a pointer is not equal to nullptr. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>CheckNull</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>ab80ca5498aeecda6cd1f7cb92a8f6018</Anchor>
-    <Abstract>Check that a pointer is equal to nullptr. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>CheckFloat</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a4e80ff15169ee05c6d87c2096e834d9a</Anchor>
-    <Abstract>Check that two floating-point numbers are equal within some tolerance. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>CheckString</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a60adb41dad219d6cbf3c27bf477bd638</Anchor>
-    <Abstract>Check that two strings are (approximately) equal. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>Fail</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a395448d7484928cd96ef99470b0d9109</Anchor>
-    <Abstract>Fail the current test. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
+    <Abstract>Map data into the address space that can be shared with other processes.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -320,7 +320,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>aed77613e7ee73c012e02edbcbcb9ec7d</Anchor>
-    <Abstract>Enter unprivileged testing sandbox, if supported. </Abstract>
+    <Abstract>Enter unprivileged testing sandbox, if supported.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -332,7 +332,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a33c566b4173ebd55bf3df8db7c018a90</Anchor>
-    <Abstract>Run a test in another process. </Abstract>
+    <Abstract>Run a test in another process.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -343,8 +343,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a9cdfc5dd1e8d1d603833c8a9def1af77</Anchor>
-    <Abstract>Run a test in the current process, catching all exceptions. </Abstract>
+    <Anchor>a4cb6923cc6515542df2609ad10e79e2c</Anchor>
+    <Abstract>Run a test in the current process, catching all exceptions.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -355,7 +355,7 @@
       <Scope>PosixSharedMemory</Scope>
     </TokenIdentifier>
     <Path>class_posix_shared_memory.html</Path>
-    <Abstract>A memory-mapped POSIX shared memory segment. </Abstract>
+    <Abstract>A memory-mapped POSIX shared memory segment.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -366,7 +366,19 @@
     </TokenIdentifier>
     <Path>class_posix_shared_memory.html</Path>
     <Anchor>a74f67feb8e5dc7dc2d860805ce8ec7bc</Anchor>
-    <Abstract>Constructor. </Abstract>
+    <Abstract>Constructor.</Abstract>
+    <DeclaredIn>posix.cpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fd</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>PosixSharedMemory</Scope>
+    </TokenIdentifier>
+    <Path>class_posix_shared_memory.html</Path>
+    <Anchor>ace5c4071ee8893901bb818bbcab739b2</Anchor>
+    <Abstract>Retrieve shared memory&apos;s file descriptor (POSIX-specific)</Abstract>
     <DeclaredIn>posix.cpp</DeclaredIn>
   </Token>
   <Token>
@@ -378,8 +390,17 @@
     </TokenIdentifier>
     <Path>class_posix_shared_memory.html</Path>
     <Anchor>ad6a97ce84380160a384f3ea351ae5636</Anchor>
-    <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed. </Abstract>
+    <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed.</Abstract>
     <DeclaredIn>posix.cpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>anonymous_namespace{Formatter.cpp}</Name>
+      <APILanguage>c</APILanguage>
+      <Type>ns</Type>
+      <Scope>anonymous_namespace{Formatter.cpp}</Scope>
+    </TokenIdentifier>
+    <Path>namespaceanonymous__namespace_02_formatter_8cpp_03.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -389,7 +410,7 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Abstract>Container for all libgrading names. </Abstract>
+    <Abstract>Container for all libgrading names.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -400,31 +421,31 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a25ef703be30c9118f7ecaa6490602fe9</Anchor>
-    <Abstract>A closure that wraps a single test case. </Abstract>
+    <Abstract>A closure that wraps a single test case.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
+      <Name>operator &amp;&amp;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>ad729543d7e7fdfde7a56b39bc95316b4</Anchor>
-    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
+    <Anchor>a13433f91d386d33fa69a7fa80a01059c</Anchor>
+    <Abstract>Combine the results of two checks using a product (AND): both must pass.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
+      <Name>operator &amp;&amp;</Name>
       <APILanguage>cpp</APILanguage>
       <Type>func</Type>
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a42541cfbc1677d7b6a9f71aaee7b2004</Anchor>
-    <Abstract>L-value version of above. </Abstract>
+    <Anchor>ae9c51aa8a4969d603b1c66cc1a89a656</Anchor>
+    <Abstract>L-value version of above.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -436,7 +457,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>afab8c0737ae99cfa595261baac5387af</Anchor>
-    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass. </Abstract>
+    <Abstract>Combine the results of two checks using a sum (OR): at least one must pass.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -448,7 +469,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a42121054a4fdfcde4dadca294f930adf</Anchor>
-    <Abstract>L-value version of above. </Abstract>
+    <Abstract>L-value version of above.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -460,7 +481,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a02b06a7a05a39b2a9d36066c7c1b2a96</Anchor>
-    <Abstract>Check an arbitrary condition, failing the test if false. </Abstract>
+    <Abstract>Check an arbitrary condition, failing the test if false.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -472,7 +493,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a1718d44f68e8dca72ca3e9fc874ed856</Anchor>
-    <Abstract>Check that two integers are equal, failing the test if they are not. </Abstract>
+    <Abstract>Check that two integers are equal, failing the test if they are not.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -484,7 +505,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a4e80ff15169ee05c6d87c2096e834d9a</Anchor>
-    <Abstract>Check that two floating-point numbers are equal within some tolerance. </Abstract>
+    <Abstract>Check that two floating-point numbers are equal within some tolerance.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -496,7 +517,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a6a748b83bd55765d8dc2dd705e52137e</Anchor>
-    <Abstract>Check that a pointer is not equal to nullptr. </Abstract>
+    <Abstract>Check that a pointer is not equal to nullptr.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -508,7 +529,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>ab80ca5498aeecda6cd1f7cb92a8f6018</Anchor>
-    <Abstract>Check that a pointer is equal to nullptr. </Abstract>
+    <Abstract>Check that a pointer is equal to nullptr.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -520,7 +541,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a60adb41dad219d6cbf3c27bf477bd638</Anchor>
-    <Abstract>Check that two strings are (approximately) equal. </Abstract>
+    <Abstract>Check that two strings are (approximately) equal.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -532,7 +553,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a395448d7484928cd96ef99470b0d9109</Anchor>
-    <Abstract>Fail the current test. </Abstract>
+    <Abstract>Fail the current test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -543,8 +564,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>ab60215986fc07d2b182735c01cee0656</Anchor>
-    <Abstract>Output a human-readable representation of a TestResult. </Abstract>
+    <Anchor>a79cd49e5ad3ef544a7eb339ca7639d70</Anchor>
+    <Abstract>Output a human-readable representation of a TestExitStatus.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -556,32 +577,8 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a125c5e8b85f83dcab13826e5da373d54</Anchor>
-    <Abstract>Map data into the address space that can be shared with other processes. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>aa3746f0c72697e2e700f7de0380a56b4</Anchor>
-    <Abstract>Combine the results of two checks using a product (AND): both must pass. </Abstract>
-    <DeclaredIn>checks.cpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>operator&amp;&amp;</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>func</Type>
-      <Scope>grading</Scope>
-    </TokenIdentifier>
-    <Path>namespacegrading.html</Path>
-    <Anchor>a2d98f5f6c174cb2b08d4d914002bae34</Anchor>
-    <Abstract>L-value version of above. </Abstract>
-    <DeclaredIn>checks.cpp</DeclaredIn>
+    <Abstract>Map data into the address space that can be shared with other processes.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -592,7 +589,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>aed77613e7ee73c012e02edbcbcb9ec7d</Anchor>
-    <Abstract>Enter unprivileged testing sandbox, if supported. </Abstract>
+    <Abstract>Enter unprivileged testing sandbox, if supported.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -604,7 +601,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a33c566b4173ebd55bf3df8db7c018a90</Anchor>
-    <Abstract>Run a test in another process. </Abstract>
+    <Abstract>Run a test in another process.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -615,9 +612,42 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a9cdfc5dd1e8d1d603833c8a9def1af77</Anchor>
-    <Abstract>Run a test in the current process, catching all exceptions. </Abstract>
+    <Anchor>a4cb6923cc6515542df2609ad10e79e2c</Anchor>
+    <Abstract>Run a test in the current process, catching all exceptions.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Brief</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>econst</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ac93a4f248eef13f6fa50ae1d3221c3dfa210a2592d5931ebaafe8d0b8380cfccf</Anchor>
+    <Abstract>default (brief) output</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Gradescope</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>econst</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ac93a4f248eef13f6fa50ae1d3221c3dfae2177cedacbf6d9b0a205117e614a3ca</Anchor>
+    <Abstract>Gradescope JSON.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Verbose</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>econst</Type>
+      <Scope>grading</Scope>
+    </TokenIdentifier>
+    <Path>namespacegrading.html</Path>
+    <Anchor>ac93a4f248eef13f6fa50ae1d3221c3dfad4a9fa383ab700c5bdd6f31cf7df0faf</Anchor>
+    <Abstract>verbose: full detail, text separators, etc.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -627,8 +657,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c</Anchor>
-    <Abstract>the test succeeded </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929dab9b57aae83585e17ede4570dcede353c</Anchor>
+    <Abstract>the test succeeded</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -638,8 +668,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642aceaa0734f0b3c738120c67344d8f3ec1</Anchor>
-    <Abstract>the test failed </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929daceaa0734f0b3c738120c67344d8f3ec1</Anchor>
+    <Abstract>the test failed</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -649,8 +679,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642a727b63583e01fa2b3952dab580c84dc2</Anchor>
-    <Abstract>the test was aborted (e.g., assert() fired) </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929da727b63583e01fa2b3952dab580c84dc2</Anchor>
+    <Abstract>the test was aborted (e.g., assert() fired)</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -660,8 +690,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642a6dec3eff895251a583a6983d621296b4</Anchor>
-    <Abstract>the test caused a segmentation fault </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929da6dec3eff895251a583a6983d621296b4</Anchor>
+    <Abstract>the test caused a segmentation fault</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -671,8 +701,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642ac85a251cc457840f1e032f1b733e9398</Anchor>
-    <Abstract>the test took too long to run </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929dac85a251cc457840f1e032f1b733e9398</Anchor>
+    <Abstract>the test took too long to run</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -682,8 +712,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642a0e027d34871285a5efcb61de6f31bd8d</Anchor>
-    <Abstract>the test threw an exception </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929da0e027d34871285a5efcb61de6f31bd8d</Anchor>
+    <Abstract>the test threw an exception</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -693,8 +723,8 @@
       <Scope>grading</Scope>
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
-    <Anchor>a2fb7aadc16fed93221d13a7ec3c50642a611572ba77cbd55463aeb65f1f77a052</Anchor>
-    <Abstract>the test terminated for another reason </Abstract>
+    <Anchor>aa9cf5c0e9bdde51b3ef189809a62929da611572ba77cbd55463aeb65f1f77a052</Anchor>
+    <Abstract>the test terminated for another reason</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -705,7 +735,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a003d17e26c05ff16d0abb469ca779677a0125cf5f3ca38b312ca5d3b511c45a13</Anchor>
-    <Abstract>In the same process, in the current call stack. </Abstract>
+    <Abstract>In the same process, in the current call stack.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -716,7 +746,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a003d17e26c05ff16d0abb469ca779677a606970f24025625f40867ff6d152fa1e</Anchor>
-    <Abstract>In separate but unsandboxed processes. </Abstract>
+    <Abstract>In separate but unsandboxed processes.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -727,7 +757,7 @@
     </TokenIdentifier>
     <Path>namespacegrading.html</Path>
     <Anchor>a003d17e26c05ff16d0abb469ca779677a7b8a250802343eae5e2d3b3fd34aea64</Anchor>
-    <Abstract>In a separate, sandboxed process (if supported). </Abstract>
+    <Abstract>In a separate, sandboxed process (if supported).</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -737,7 +767,31 @@
       <Scope>grading::Arguments</Scope>
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
-    <Abstract>Parsed command-line arguments. </Abstract>
+    <Abstract>Parsed command-line arguments.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Arguments</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_arguments.html</Path>
+    <Anchor>a55d503e59b653b12f7dd7b0fd3ec3788</Anchor>
+    <Abstract>Construct a &quot;failed to parse normal arguments&quot; object.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Arguments</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_arguments.html</Path>
+    <Anchor>ae9a60a1890e103a6dd4ee63664a5018f</Anchor>
+    <Abstract>Normal Arguments constructor.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -749,7 +803,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a7732fee01761ae341c2a811613637372</Anchor>
-    <Abstract>Parse command-line arguments. </Abstract>
+    <Abstract>Parse command-line arguments.</Abstract>
     <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
@@ -761,7 +815,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>af27b2dcc5f0d6408269307739fa43ec3</Anchor>
-    <Abstract>There was an error parsing command-line arguments. </Abstract>
+    <Abstract>There was an error parsing command-line arguments.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -772,7 +826,18 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a49fc425ab3b72f3f60b751193b5cff29</Anchor>
-    <Abstract>The --help argument was given. </Abstract>
+    <Abstract>The --help argument was given.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>outputFormat</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Arguments</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_arguments.html</Path>
+    <Anchor>ab31866238472281b1c63db0f8f435830</Anchor>
+    <Abstract>How to format test outputs.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -783,18 +848,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a092180cf24cd4e04d9498e6094c508ee</Anchor>
-    <Abstract>The --skip argument was given. </Abstract>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>verbose</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>data</Type>
-      <Scope>grading::Arguments</Scope>
-    </TokenIdentifier>
-    <Path>structgrading_1_1_arguments.html</Path>
-    <Anchor>a087685f54898c5180dd954bfc1e5fb1f</Anchor>
-    <Abstract>The --verbose argument was given. </Abstract>
+    <Abstract>The --skip argument was given.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -805,7 +859,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a6bd6ba5bd95b7f4671a0544a81f4948a</Anchor>
-    <Abstract>The TestRunStrategy chosen by the user (e.g., inline). </Abstract>
+    <Abstract>The TestRunStrategy chosen by the user (e.g., inline).</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -816,7 +870,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_arguments.html</Path>
     <Anchor>a07fb086b85679ba3a1b6f40edec2f4e8</Anchor>
-    <Abstract>Maximum length of time to wait for any test. </Abstract>
+    <Abstract>Maximum length of time to wait for any test.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -826,7 +880,7 @@
       <Scope>grading::CheckResult</Scope>
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
-    <Abstract>The result of executing a CheckSomething() function. </Abstract>
+    <Abstract>The result of executing a CheckSomething() function.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -838,7 +892,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>aa40a4ffbd2ed79d36078a96dab3e2197</Anchor>
-    <Abstract>&quot;All&amp;#39;s-well&quot; constructor (i.e., the check passed). </Abstract>
+    <Abstract>&quot;All&apos;s-well&quot; constructor (i.e., the check passed).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -850,7 +904,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>ac4887f6895b7acdf8054786005c04c74</Anchor>
-    <Abstract>Constructor that takes a simple error message. </Abstract>
+    <Abstract>Constructor that takes a simple error message.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -862,7 +916,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a8a31267ec76a136a38bc5e2d6e4896a6</Anchor>
-    <Abstract>Constructor that takes an expected and actual value. </Abstract>
+    <Abstract>Constructor that takes an expected and actual value.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -874,7 +928,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a5e039b8eb3b849830cdfd2cfa67b4d6f</Anchor>
-    <Abstract>Move constructor. Steal error result from a temporary CheckResult. </Abstract>
+    <Abstract>Move constructor. Steal error result from a temporary CheckResult.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -886,7 +940,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a330241cd86ab1a0bc868b4aa557b57ba</Anchor>
-    <Abstract>Add further error details to this result, should it be a failure. </Abstract>
+    <Abstract>Add further error details to this result, should it be a failure.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -898,7 +952,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a2c07da561db6b1b45860607791b9ba97</Anchor>
-    <Abstract>Add further error details to this result, should it be a failure. </Abstract>
+    <Abstract>Add further error details to this result, should it be a failure.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -910,7 +964,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a9db0c25a0b1baac0e7e5cbf5a72d3cdc</Anchor>
-    <Abstract>Whether or not the check result is erroneous. </Abstract>
+    <Abstract>Whether or not the check result is erroneous.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -922,7 +976,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a02d5fa6b14e221f3012a794b905be166</Anchor>
-    <Abstract>Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&amp;#39;s owner...</Abstract>
+    <Abstract>Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&apos;s owner...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -934,7 +988,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a67d74ba3c9dda85cb227faec3e90f80d</Anchor>
-    <Abstract>Value test expected to see (user-readable representation). </Abstract>
+    <Abstract>Value test expected to see (user-readable representation).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -946,7 +1000,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>ac5758afa9a3783010f1deda90d411dbf</Anchor>
-    <Abstract>Actual value that was seen (user-readable representation). </Abstract>
+    <Abstract>Actual value that was seen (user-readable representation).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -958,8 +1012,102 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_check_result.html</Path>
     <Anchor>a9fc62bb96c3174d6d9945644308ecc8c</Anchor>
-    <Abstract>A message to display if the check fails. </Abstract>
+    <Abstract>A message to display if the check fails.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>grading::Formatter</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Abstract>Formats test result.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Formatter</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>a93b557e266f810e916db9f04564720aa</Anchor>
+    <Abstract>Construct with a std::ostream.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>~Formatter</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>ae3cdbf5333b6ad66f73d82c9eb0d4050</Anchor>
+    <Abstract>Destructor: virtual to squash warning.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>testBeginning</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>ac5400bbc8cfab65c744403900285b493</Anchor>
+    <Abstract>Called when a test is about to start running.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>testEnded</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>a49fe4b9be3acd2bcbcce5707d3b31bce</Anchor>
+    <Abstract>Called when a test has finished running.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>suiteComplete</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>a4ceb28ad905957a42997f29cf2456365</Anchor>
+    <Abstract>Called when an entire test suite has finished running.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Create</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>clm</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>a1a51f34c4f8f006846c959bc2c5f0051</Anchor>
+    <Abstract>Create a new Formatter.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>out_</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::Formatter</Scope>
+    </TokenIdentifier>
+    <Path>classgrading_1_1_formatter.html</Path>
+    <Anchor>ad5310b3c5233a8a5cabf946e8ad42b6d</Anchor>
+    <Abstract>Stream to which formatted output should be written.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -969,8 +1117,8 @@
       <Scope>grading::SharedMemory</Scope>
     </TokenIdentifier>
     <Path>classgrading_1_1_shared_memory.html</Path>
-    <Abstract>A representation of a shared memory object. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
+    <Abstract>A representation of a shared memory object.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -981,8 +1129,8 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_shared_memory.html</Path>
     <Anchor>a58a344a20dc932deb3a8e095bd557541</Anchor>
-    <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed. </Abstract>
-    <DeclaredIn>libgrading.h</DeclaredIn>
+    <Abstract>A pointer to the shared memory, which will be invalidated after this object is destructed.</Abstract>
+    <DeclaredIn>private.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -992,7 +1140,7 @@
       <Scope>grading::Test</Scope>
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
-    <Abstract>A single, completely-initialized test. </Abstract>
+    <Abstract>A single, completely-initialized test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1004,7 +1152,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a191b633593a0e8e5e09820dc775889f0</Anchor>
-    <Abstract>A set of arbitrary tags that can be used when selecting tests. </Abstract>
+    <Abstract>A set of arbitrary tags that can be used when selecting tests.</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1015,7 +1163,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>acf51f543bdde8ba3fa198cc8a8c26f7a</Anchor>
-    <Abstract>Standard constructor. </Abstract>
+    <Abstract>Standard constructor.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1027,7 +1175,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a4ecb5be84917e6e2dd006d62adf2e8ec</Anchor>
-    <Abstract>Function-plus-expectation constructor. </Abstract>
+    <Abstract>Function-plus-expectation constructor.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1039,7 +1187,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a180a2a6e9c1656fd1ea37ec3e70bbb9c</Anchor>
-    <Abstract>Function-pointer constructor. </Abstract>
+    <Abstract>Function-pointer constructor.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1051,7 +1199,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a1d89c28bd42ba9a52da008bb69367171</Anchor>
-    <Abstract>User-meaningful test name (ideally a single line or less). </Abstract>
+    <Abstract>User-meaningful test name (ideally a single line or less).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1063,7 +1211,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a07ffe70037e0a16554c868bcdd8f83b5</Anchor>
-    <Abstract>A longer test description. May contain newlines. </Abstract>
+    <Abstract>A longer test description. May contain newlines.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1075,7 +1223,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a020c6e042dce18109e522fdbd722cf1c</Anchor>
-    <Abstract>Maximum length of time this test should take (or 0 for unlimited). </Abstract>
+    <Abstract>Maximum length of time this test should take (or 0 for unlimited).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1087,7 +1235,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a5bef8b287d3cd146cd7baac1d586ec8d</Anchor>
-    <Abstract>How much weight to place on this test when calculating final score. </Abstract>
+    <Abstract>How much weight to place on this test when calculating final score.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1099,7 +1247,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test.html</Path>
     <Anchor>a35f66472a58c538166b8325967fc5c00</Anchor>
-    <Abstract>Run this test. </Abstract>
+    <Abstract>Run this test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1110,7 +1258,7 @@
       <Scope>grading::TestBuilder</Scope>
     </TokenIdentifier>
     <Path>classgrading_1_1_test_builder.html</Path>
-    <Abstract>An object used to construct a complete Test. </Abstract>
+    <Abstract>An object used to construct a complete Test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1122,7 +1270,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>af3eb6a41d8afea7a4664c913ec89bbba</Anchor>
-    <Abstract>Construct a builder for a named test within a TestSuite. </Abstract>
+    <Abstract>Construct a builder for a named test within a TestSuite.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1134,7 +1282,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>a5080f04be569ca7427de494ffbb751df</Anchor>
-    <Abstract>Set description (which will be printed when run in verbose mode). </Abstract>
+    <Abstract>Set description (which will be printed when run in verbose mode).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1146,7 +1294,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>a69eeccd5df6790033221e369bd40366f</Anchor>
-    <Abstract>Set description (which will be printed when run in verbose mode). </Abstract>
+    <Abstract>Set description (which will be printed when run in verbose mode).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1158,7 +1306,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>a46538f6cf91c6c0347baa6a6fc2c72fb</Anchor>
-    <Abstract>Set the test timeout (0 means &quot;run forever&quot;). </Abstract>
+    <Abstract>Set the test timeout (0 means &quot;run forever&quot;).</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1170,8 +1318,64 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_builder.html</Path>
     <Anchor>afaaa8e7cc9878a5e3200c534df5411e1</Anchor>
-    <Abstract>Set the weight accorded to a test. </Abstract>
+    <Abstract>Set the weight accorded to a test.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>grading::TestResult</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>grading::TestResult</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_test_result.html</Path>
+    <Abstract>The result of running one test.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TestResult</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>func</Type>
+      <Scope>grading::TestResult</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_test_result.html</Path>
+    <Anchor>addb90762afce90003bde89c973477452</Anchor>
+    <Abstract>Constructor: requires an exit status at minimum.</Abstract>
+    <DeclaredIn>libgrading.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>status</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestResult</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_test_result.html</Path>
+    <Anchor>adae2d2908dc0589c3c57f07c99a4ec9a</Anchor>
+    <Abstract>how the test ended</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>output</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestResult</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_test_result.html</Path>
+    <Anchor>ab03b6d3c2b54b8fdfa4aca96547019d9</Anchor>
+    <Abstract>stdout from test execution</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>errorOutput</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>data</Type>
+      <Scope>grading::TestResult</Scope>
+    </TokenIdentifier>
+    <Path>structgrading_1_1_test_result.html</Path>
+    <Anchor>a5bc39d024f1620c079909979915b15ac</Anchor>
+    <Abstract>stderr from test execution</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1181,7 +1385,7 @@
       <Scope>grading::TestSuite</Scope>
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
-    <Abstract>A collection of tests that we can run. </Abstract>
+    <Abstract>A collection of tests that we can run.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1193,7 +1397,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>abc8126fceba23a7a21730d962f483f11</Anchor>
-    <Abstract>Default constructor: create an empty test suite. </Abstract>
+    <Abstract>Default constructor: create an empty test suite.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1205,7 +1409,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a0bed231a3b0ba8cb3430026c3d9d22c2</Anchor>
-    <Abstract>Construct a TestSuite from a brace-enclosed list of Test objects. </Abstract>
+    <Abstract>Construct a TestSuite from a brace-enclosed list of Test objects.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1217,7 +1421,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a2b0eee0d73ca97bab412df536ba785e5</Anchor>
-    <Abstract>Start creating a test with a given name. </Abstract>
+    <Abstract>Start creating a test with a given name.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1229,7 +1433,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a575b575bb13b2027e9bb19c8ded6c40a</Anchor>
-    <Abstract>Add an already-complete Test to this suite. </Abstract>
+    <Abstract>Add an already-complete Test to this suite.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1241,7 +1445,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>abdf087198b0210698844fad89ba07acf</Anchor>
-    <Abstract>The total weight of all tests in the suite. </Abstract>
+    <Abstract>The total weight of all tests in the suite.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1253,7 +1457,7 @@
     </TokenIdentifier>
     <Path>classgrading_1_1_test_suite.html</Path>
     <Anchor>a8e131cc39871a01859f64c5490713d73</Anchor>
-    <Abstract>Run all tests, using command-line arguments to guide the testing strategy, timeouts, etc. </Abstract>
+    <Abstract>Run all tests, using command-line arguments to guide the testing strategy, timeouts,...</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1264,7 +1468,7 @@
       <Scope>grading::TestSuite::Statistics</Scope>
     </TokenIdentifier>
     <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
-    <Abstract>Summary statistics about the execution of a TestSuite. </Abstract>
+    <Abstract>Summary statistics about the execution of a TestSuite.</Abstract>
     <DeclaredIn>libgrading.h</DeclaredIn>
   </Token>
   <Token>
@@ -1276,7 +1480,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>a1810ba190aa195caf7bb8dcc23bb1c7d</Anchor>
-    <Abstract>tests that passed (unweighted) </Abstract>
+    <Abstract>tests that passed (unweighted)</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1287,7 +1491,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>ac22f1c4471429c9a1f0c09efd5fcca3a</Anchor>
-    <Abstract>tests that failed (unweighted) </Abstract>
+    <Abstract>tests that failed (unweighted)</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1298,7 +1502,7 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>a8c5cd9b525ee73a24b1d9d8e34982d1c</Anchor>
-    <Abstract>weighted (passed/total) score </Abstract>
+    <Abstract>weighted (passed/total) score</Abstract>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1309,6 +1513,6 @@
     </TokenIdentifier>
     <Path>structgrading_1_1_test_suite_1_1_statistics.html</Path>
     <Anchor>af9031f7978e957b9979e78873830ce46</Anchor>
-    <Abstract>total test count (unweighted) </Abstract>
+    <Abstract>total test count (unweighted)</Abstract>
   </Token>
 </Tokens>

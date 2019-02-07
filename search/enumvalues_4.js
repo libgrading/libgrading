@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pass',['Pass',['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642ab9b57aae83585e17ede4570dcede353c',1,'grading']]]
+  ['inline',['Inline',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677a0125cf5f3ca38b312ca5d3b511c45a13',1,'grading']]]
 ];

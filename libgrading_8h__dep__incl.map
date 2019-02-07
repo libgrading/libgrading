@@ -1,10 +1,12 @@
 <map id="include/libgrading.h" name="include/libgrading.h">
-<area shape="rect" id="node2" href="$private_8h.html" title="Internal header file for libgrading. " alt="" coords="218,85,320,117"/>
-<area shape="rect" id="node4" href="$posix_8cpp.html" title="src/posix.cpp" alt="" coords="5,165,114,197"/>
-<area shape="rect" id="node5" href="$_test_8cpp.html" title="Definitions of grading::Test. " alt="" coords="307,165,407,197"/>
-<area shape="rect" id="node6" href="$_test_suite_8cpp.html" title="Definitions of grading::TestSuite. " alt="" coords="430,165,563,197"/>
-<area shape="rect" id="node7" href="$checks_8cpp.html" title="Implementation of various expectation checks. " alt="" coords="445,85,562,117"/>
-<area shape="rect" id="node8" href="$_test_builder_8cpp.html" title="Definitions of grading::TestBuilder. " alt="" coords="586,85,731,117"/>
-<area shape="rect" id="node9" href="$_test_result_8cpp.html" title="Definitions of grading::TestResult functions. " alt="" coords="755,85,895,117"/>
-<area shape="rect" id="node3" href="$_arguments_8cpp.html" title="Implementation of grading::Arguments. " alt="" coords="137,165,283,197"/>
+<area shape="rect" id="node1" title="A library for grading C&#45; and C++&#45;based assignments." alt="" coords="408,5,561,37"/>
+<area shape="rect" id="node2" href="$private_8h.html" title="Internal header file for libgrading." alt="" coords="320,85,422,117"/>
+<area shape="rect" id="node4" href="$_formatter_8cpp.html" title="Definitions of grading::Formatter." alt="" coords="5,165,143,197"/>
+<area shape="rect" id="node5" href="$posix_8cpp.html" title=" " alt="" coords="167,165,275,197"/>
+<area shape="rect" id="node6" href="$_test_8cpp.html" title="Definitions of grading::Test." alt="" coords="468,165,568,197"/>
+<area shape="rect" id="node7" href="$_test_suite_8cpp.html" title="Definitions of grading::TestSuite." alt="" coords="592,165,724,197"/>
+<area shape="rect" id="node8" href="$checks_8cpp.html" title="Implementation of various expectation checks." alt="" coords="547,85,665,117"/>
+<area shape="rect" id="node9" href="$_test_builder_8cpp.html" title="Definitions of grading::TestBuilder." alt="" coords="688,85,833,117"/>
+<area shape="rect" id="node10" href="$_test_exit_status_8cpp.html" title="Definitions of grading::TestExitStatus functions." alt="" coords="857,85,1021,117"/>
+<area shape="rect" id="node3" href="$_arguments_8cpp.html" title="Implementation of grading::Arguments." alt="" coords="299,165,444,197"/>
 </map>

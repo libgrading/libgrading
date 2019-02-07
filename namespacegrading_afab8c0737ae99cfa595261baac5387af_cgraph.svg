@@ -8,15 +8,18 @@
  viewBox="0.00 0.00 228.14 47.05" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 43.0519)">
 <title>operator||</title>
-<!-- Node39 -->
+<!-- Node36 -->
 <g id="node1" class="node">
-<title>Node39</title>
+<title>Node36</title>
+<g id="a_node1"><a xlink:title="Combine the results of two checks using a sum (OR): at least one must pass.">
 <polygon fill="#bfbfbf" stroke="#000000" points="0,-8.013 0,-31.039 63.432,-31.039 63.432,-8.013 0,-8.013"/>
 <text text-anchor="middle" x="31.716" y="-18.239" font-family="Avenir-Book" font-size="11.00" fill="#000000">operator||</text>
+</a>
 </g>
-<!-- Node40 -->
+</g>
+<!-- Node37 -->
 <g id="node2" class="node">
-<title>Node40</title>
+<title>Node37</title>
 <g id="a_node2"><a xlink:href="classgrading_1_1_check_result.html#a02d5fa6b14e221f3012a794b905be166" target="_top" xlink:title="Cancel the error: the result is actually ok (e.g., because of a logical OR) or else the error&#39;s owner...">
 <polygon fill="none" stroke="#000000" points="99.432,-.5 99.432,-38.5519 220.141,-38.5519 220.141,-.5 99.432,-.5"/>
 <text text-anchor="start" x="107.432" y="-25.7519" font-family="Avenir-Book" font-size="11.00" fill="#000000">grading::CheckResult</text>
@@ -24,9 +27,9 @@
 </a>
 </g>
 </g>
-<!-- Node39&#45;&gt;Node40 -->
+<!-- Node36&#45;&gt;Node37 -->
 <g id="edge1" class="edge">
-<title>Node39&#45;&gt;Node40</title>
+<title>Node36&#45;&gt;Node37</title>
 <path fill="none" stroke="#191970" d="M63.7032,-19.526C71.5625,-19.526 80.2895,-19.526 89.1873,-19.526"/>
 <polygon fill="#191970" stroke="#191970" points="89.2687,-23.0261 99.2687,-19.526 89.2687,-16.0261 89.2687,-23.0261"/>
 </g>

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['fail',['Fail',['../namespacegrading.html#a395448d7484928cd96ef99470b0d9109',1,'grading::Fail(std::string message)'],['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642aceaa0734f0b3c738120c67344d8f3ec1',1,'grading::Fail()']]],
-  ['failed',['failed',['../structgrading_1_1_test_suite_1_1_statistics.html#ac22f1c4471429c9a1f0c09efd5fcca3a',1,'grading::TestSuite::Statistics']]],
-  ['forktest',['ForkTest',['../namespacegrading.html#a33c566b4173ebd55bf3df8db7c018a90',1,'grading']]]
+  ['entersandbox',['EnterSandbox',['../namespacegrading.html#aed77613e7ee73c012e02edbcbcb9ec7d',1,'grading']]],
+  ['error',['error',['../structgrading_1_1_arguments.html#af27b2dcc5f0d6408269307739fa43ec3',1,'grading::Arguments::error()'],['../classgrading_1_1_check_result.html#a9db0c25a0b1baac0e7e5cbf5a72d3cdc',1,'grading::CheckResult::error()']]],
+  ['erroroutput',['errorOutput',['../structgrading_1_1_test_result.html#a5bc39d024f1620c079909979915b15ac',1,'grading::TestResult']]],
+  ['expected',['expected',['../classgrading_1_1_check_result.html#ac5758afa9a3783010f1deda90d411dbf',1,'grading::CheckResult']]]
 ];

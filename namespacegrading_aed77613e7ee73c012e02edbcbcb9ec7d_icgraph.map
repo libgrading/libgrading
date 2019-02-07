@@ -1,3 +1,4 @@
 <map id="EnterSandbox" name="EnterSandbox">
-<area shape="rect" id="node2" href="$classgrading_1_1_test.html#a35f66472a58c538166b8325967fc5c00" title="Run this test. " alt="" coords="167,5,307,37"/>
+<area shape="rect" id="node1" title="Enter unprivileged testing sandbox, if supported." alt="" coords="193,5,307,37"/>
+<area shape="rect" id="node2" href="$classgrading_1_1_test.html#a35f66472a58c538166b8325967fc5c00" title="Run this test." alt="" coords="5,5,145,37"/>
 </map>

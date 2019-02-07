@@ -11,14 +11,20 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
+<g id="a_node1"><a xlink:title="A library for grading C&#45; and C++&#45;based assignments.">
 <polygon fill="#bfbfbf" stroke="#000000" points="201.447,-60.526 201.447,-83.5519 316.623,-83.5519 316.623,-60.526 201.447,-60.526"/>
 <text text-anchor="middle" x="259.035" y="-70.7519" font-family="Avenir-Book" font-size="11.00" fill="#000000">include/libgrading.h</text>
+</a>
+</g>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
+<g id="a_node2"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="0,-.5 0,-23.526 64.07,-23.526 64.07,-.5 0,-.5"/>
 <text text-anchor="middle" x="32.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">functional</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
@@ -29,8 +35,11 @@
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
+<g id="a_node3"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="81.959,-.5 81.959,-23.526 140.111,-23.526 140.111,-.5 81.959,-.5"/>
 <text text-anchor="middle" x="111.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">iostream</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
@@ -41,8 +50,11 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
+<g id="a_node4"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="157.8665,-.5 157.8665,-23.526 214.2035,-23.526 214.2035,-.5 157.8665,-.5"/>
 <text text-anchor="middle" x="186.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">memory</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
@@ -53,8 +65,11 @@
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
+<g id="a_node5"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="232.1975,-.5 232.1975,-23.526 285.8725,-23.526 285.8725,-.5 232.1975,-.5"/>
 <text text-anchor="middle" x="259.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">sstream</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
@@ -65,8 +80,11 @@
 <!-- Node5 -->
 <g id="node6" class="node">
 <title>Node5</title>
+<g id="a_node6"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="304.3015,-.5 304.3015,-23.526 347.7685,-23.526 347.7685,-.5 304.3015,-.5"/>
 <text text-anchor="middle" x="326.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">string</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
@@ -77,8 +95,11 @@
 <!-- Node6 -->
 <g id="node7" class="node">
 <title>Node6</title>
+<g id="a_node7"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="365.3895,-.5 365.3895,-23.526 452.6805,-23.526 452.6805,-.5 365.3895,-.5"/>
 <text text-anchor="middle" x="409.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">unordered_set</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
@@ -89,8 +110,11 @@
 <!-- Node7 -->
 <g id="node8" class="node">
 <title>Node7</title>
+<g id="a_node8"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="470.7615,-.5 470.7615,-23.526 517.3085,-23.526 517.3085,-.5 470.7615,-.5"/>
 <text text-anchor="middle" x="494.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">vector</text>
+</a>
+</g>
 </g>
 <!-- Node0&#45;&gt;Node7 -->
 <g id="edge7" class="edge">

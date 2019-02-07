@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['sandboxed',['Sandboxed',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677a7b8a250802343eae5e2d3b3fd34aea64',1,'grading']]],
-  ['score',['score',['../structgrading_1_1_test_suite_1_1_statistics.html#a8c5cd9b525ee73a24b1d9d8e34982d1c',1,'grading::TestSuite::Statistics']]],
-  ['segfault',['Segfault',['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642a6dec3eff895251a583a6983d621296b4',1,'grading']]],
-  ['separated',['Separated',['../namespacegrading.html#a003d17e26c05ff16d0abb469ca779677a606970f24025625f40867ff6d152fa1e',1,'grading']]],
-  ['sharedmemory',['SharedMemory',['../classgrading_1_1_shared_memory.html',1,'grading']]],
-  ['skip',['skip',['../structgrading_1_1_arguments.html#a092180cf24cd4e04d9498e6094c508ee',1,'grading::Arguments']]],
-  ['statistics',['Statistics',['../structgrading_1_1_test_suite_1_1_statistics.html',1,'grading::TestSuite']]]
+  ['rawpointer',['rawPointer',['../class_posix_shared_memory.html#ad6a97ce84380160a384f3ea351ae5636',1,'PosixSharedMemory::rawPointer()'],['../classgrading_1_1_shared_memory.html#a58a344a20dc932deb3a8e095bd557541',1,'grading::SharedMemory::rawPointer()']]],
+  ['run',['Run',['../classgrading_1_1_test_suite.html#a8e131cc39871a01859f64c5490713d73',1,'grading::TestSuite::Run()'],['../classgrading_1_1_test.html#a35f66472a58c538166b8325967fc5c00',1,'grading::Test::Run()']]],
+  ['runinprocess',['RunInProcess',['../namespacegrading.html#a4cb6923cc6515542df2609ad10e79e2c',1,'grading']]],
+  ['runstrategy',['runStrategy',['../structgrading_1_1_arguments.html#a6bd6ba5bd95b7f4671a0544a81f4948a',1,'grading::Arguments']]]
 ];

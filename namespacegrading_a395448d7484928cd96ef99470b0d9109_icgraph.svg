@@ -11,23 +11,26 @@
 <!-- Node16 -->
 <g id="node1" class="node">
 <title>Node16</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-.5 0,-23.526 33.105,-23.526 33.105,-.5 0,-.5"/>
-<text text-anchor="middle" x="16.5525" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">Fail</text>
+<g id="a_node1"><a xlink:title="Fail the current test.">
+<polygon fill="#bfbfbf" stroke="#000000" points="109.2,-.5 109.2,-23.526 142.305,-23.526 142.305,-.5 109.2,-.5"/>
+<text text-anchor="middle" x="125.7525" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">Fail</text>
+</a>
+</g>
 </g>
 <!-- Node17 -->
 <g id="node2" class="node">
 <title>Node17</title>
-<g id="a_node2"><a xlink:href="namespacegrading.html#ab60215986fc07d2b182735c01cee0656" target="_top" xlink:title="Output a human&#45;readable representation of a TestResult. ">
-<polygon fill="none" stroke="#000000" points="69.105,-.5 69.105,-23.526 142.305,-23.526 142.305,-.5 69.105,-.5"/>
-<text text-anchor="middle" x="105.705" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">operator&lt;&lt;</text>
+<g id="a_node2"><a xlink:href="namespacegrading.html#a79cd49e5ad3ef544a7eb339ca7639d70" target="_top" xlink:title="Output a human&#45;readable representation of a TestExitStatus.">
+<polygon fill="none" stroke="#000000" points="0,-.5 0,-23.526 73.2,-23.526 73.2,-.5 0,-.5"/>
+<text text-anchor="middle" x="36.6" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">operator&lt;&lt;</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge1" class="edge">
 <title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M43.5833,-12.013C51.6089,-12.013 60.5374,-12.013 69.0654,-12.013"/>
-<polygon fill="#191970" stroke="#191970" points="43.3214,-8.5131 33.3214,-12.013 43.3214,-15.5131 43.3214,-8.5131"/>
+<path fill="none" stroke="#191970" d="M98.7217,-12.013C90.6961,-12.013 81.7676,-12.013 73.2396,-12.013"/>
+<polygon fill="#191970" stroke="#191970" points="98.9836,-15.5131 108.9836,-12.013 98.9836,-8.5131 98.9836,-15.5131"/>
 </g>
 </g>
 </svg>

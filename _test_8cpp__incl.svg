@@ -57,13 +57,16 @@ var sectionId = 'dynsection-0';
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="221.6045,-180.5779 221.6045,-203.6039 296.4655,-203.6039 296.4655,-180.5779 221.6045,-180.5779"/>
-<text text-anchor="middle" x="259.035" y="-190.8039" font-family="Avenir-Book" font-size="11.00" fill="#000000">src/Test.cpp</text>
+<g id="a_node1"><a xlink:title="Definitions of grading::Test.">
+<polygon fill="#bfbfbf" stroke="#000000" points="250.6045,-180.5779 250.6045,-203.6039 325.4655,-203.6039 325.4655,-180.5779 250.6045,-180.5779"/>
+<text text-anchor="middle" x="288.035" y="-190.8039" font-family="Avenir-Book" font-size="11.00" fill="#000000">src/Test.cpp</text>
+</a>
+</g>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="libgrading_8h.html" target="_top" xlink:title="A library for grading C&#45; and C++&#45;based assignments. ">
+<g id="a_node2"><a xlink:href="libgrading_8h.html" target="_top" xlink:title="A library for grading C&#45; and C++&#45;based assignments.">
 <polygon fill="none" stroke="#000000" points="221.3075,-60.526 221.3075,-83.5519 296.7625,-83.5519 296.7625,-60.526 221.3075,-60.526"/>
 <text text-anchor="middle" x="259.035" y="-70.7519" font-family="Avenir-Book" font-size="11.00" fill="#000000">libgrading.h</text>
 </a>
@@ -72,13 +75,13 @@ var sectionId = 'dynsection-0';
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node0&#45;&gt;Node1</title>
-<path fill="none" stroke="#191970" d="M256.2011,-180.3381C254.0228,-170.6702 251.1962,-156.5756 250.035,-144.0779 249.0471,-133.4455 249.0471,-130.6844 250.035,-120.0519 250.8424,-111.3621 252.455,-101.9003 254.0949,-93.6913"/>
-<polygon fill="#191970" stroke="#191970" points="257.5434,-94.3012 256.2011,-83.7917 250.6967,-92.8444 257.5434,-94.3012"/>
+<path fill="none" stroke="#191970" d="M275.0901,-180.489C266.1437,-171.5483 254.9943,-158.3352 250.035,-144.0779 244.3038,-127.6015 247.4004,-107.8839 251.4546,-93.2459"/>
+<polygon fill="#191970" stroke="#191970" points="254.8256,-94.1925 254.4634,-83.6039 248.1434,-92.1073 254.8256,-94.1925"/>
 </g>
 <!-- Node9 -->
 <g id="node10" class="node">
 <title>Node9</title>
-<g id="a_node10"><a xlink:href="private_8h.html" target="_top" xlink:title="Internal header file for libgrading. ">
+<g id="a_node10"><a xlink:href="private_8h.html" target="_top" xlink:title="Internal header file for libgrading.">
 <polygon fill="none" stroke="#000000" points="258.552,-120.5519 258.552,-143.5779 317.518,-143.5779 317.518,-120.5519 258.552,-120.5519"/>
 <text text-anchor="middle" x="288.035" y="-130.7779" font-family="Avenir-Book" font-size="11.00" fill="#000000">private.h</text>
 </a>
@@ -87,14 +90,32 @@ var sectionId = 'dynsection-0';
 <!-- Node0&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node0&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M264.6265,-180.5173C268.4378,-172.6284 273.5898,-161.9645 278.0902,-152.6493"/>
-<polygon fill="#191970" stroke="#191970" points="281.2619,-154.1298 282.4607,-143.603 274.959,-151.0847 281.2619,-154.1298"/>
+<path fill="none" stroke="#191970" d="M288.035,-180.5173C288.035,-172.9606 288.035,-162.8576 288.035,-153.8328"/>
+<polygon fill="#191970" stroke="#191970" points="291.5351,-153.603 288.035,-143.603 284.5351,-153.603 291.5351,-153.603"/>
+</g>
+<!-- Node10 -->
+<g id="node11" class="node">
+<title>Node10</title>
+<g id="a_node11"><a xlink:title=" ">
+<polygon fill="none" stroke="#bfbfbf" points="335.1335,-120.5519 335.1335,-143.5779 384.9365,-143.5779 384.9365,-120.5519 335.1335,-120.5519"/>
+<text text-anchor="middle" x="360.035" y="-130.7779" font-family="Avenir-Book" font-size="11.00" fill="#000000">cassert</text>
+</a>
+</g>
+</g>
+<!-- Node0&#45;&gt;Node10 -->
+<g id="edge11" class="edge">
+<title>Node0&#45;&gt;Node10</title>
+<path fill="none" stroke="#191970" d="M301.9173,-180.5173C312.2763,-171.881 326.6245,-159.919 338.4723,-150.0417"/>
+<polygon fill="#191970" stroke="#191970" points="340.7557,-152.6948 346.1953,-143.603 336.2732,-147.3182 340.7557,-152.6948"/>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
+<g id="a_node3"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="0,-.5 0,-23.526 64.07,-23.526 64.07,-.5 0,-.5"/>
 <text text-anchor="middle" x="32.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">functional</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
@@ -105,8 +126,11 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
+<g id="a_node4"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="81.959,-.5 81.959,-23.526 140.111,-23.526 140.111,-.5 81.959,-.5"/>
 <text text-anchor="middle" x="111.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">iostream</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
@@ -117,8 +141,11 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
+<g id="a_node5"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="157.8665,-.5 157.8665,-23.526 214.2035,-23.526 214.2035,-.5 157.8665,-.5"/>
 <text text-anchor="middle" x="186.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">memory</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
@@ -129,8 +156,11 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="node6" class="node">
 <title>Node5</title>
+<g id="a_node6"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="232.1975,-.5 232.1975,-23.526 285.8725,-23.526 285.8725,-.5 232.1975,-.5"/>
 <text text-anchor="middle" x="259.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">sstream</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
@@ -141,8 +171,11 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="node7" class="node">
 <title>Node6</title>
+<g id="a_node7"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="304.3015,-.5 304.3015,-23.526 347.7685,-23.526 347.7685,-.5 304.3015,-.5"/>
 <text text-anchor="middle" x="326.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">string</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
@@ -153,8 +186,11 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="node8" class="node">
 <title>Node7</title>
+<g id="a_node8"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="365.3895,-.5 365.3895,-23.526 452.6805,-23.526 452.6805,-.5 365.3895,-.5"/>
 <text text-anchor="middle" x="409.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">unordered_set</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
@@ -165,8 +201,11 @@ var sectionId = 'dynsection-0';
 <!-- Node8 -->
 <g id="node9" class="node">
 <title>Node8</title>
+<g id="a_node9"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="470.7615,-.5 470.7615,-23.526 517.3085,-23.526 517.3085,-.5 470.7615,-.5"/>
 <text text-anchor="middle" x="494.035" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">vector</text>
+</a>
+</g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge8" class="edge">

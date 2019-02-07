@@ -11,13 +11,16 @@
 <!-- Node2 -->
 <g id="node1" class="node">
 <title>Node2</title>
+<g id="a_node1"><a xlink:title="Set description (which will be printed when run in verbose mode).">
 <polygon fill="#bfbfbf" stroke="#000000" points="0,-.5 0,-23.526 38.825,-23.526 38.825,-.5 0,-.5"/>
 <text text-anchor="middle" x="19.4125" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">desc</text>
+</a>
+</g>
 </g>
 <!-- Node3 -->
 <g id="node2" class="node">
 <title>Node3</title>
-<g id="a_node2"><a xlink:href="classgrading_1_1_test_builder.html#a5080f04be569ca7427de494ffbb751df" target="_top" xlink:title="Set description (which will be printed when run in verbose mode). ">
+<g id="a_node2"><a xlink:href="classgrading_1_1_test_builder.html#a5080f04be569ca7427de494ffbb751df" target="_top" xlink:title="Set description (which will be printed when run in verbose mode).">
 <polygon fill="none" stroke="#000000" points="74.825,-.5 74.825,-23.526 145.594,-23.526 145.594,-.5 74.825,-.5"/>
 <text text-anchor="middle" x="110.2095" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">description</text>
 </a>

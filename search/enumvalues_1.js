@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fail',['Fail',['../namespacegrading.html#a2fb7aadc16fed93221d13a7ec3c50642aceaa0734f0b3c738120c67344d8f3ec1',1,'grading']]]
+  ['brief',['Brief',['../namespacegrading.html#ac93a4f248eef13f6fa50ae1d3221c3dfa210a2592d5931ebaafe8d0b8380cfccf',1,'grading']]]
 ];

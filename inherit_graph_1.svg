@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classgrading_1_1_check_result.html" target="_top" xlink:title="The result of executing a CheckSomething() function. ">
+<g id="a_node1"><a xlink:href="classgrading_1_1_check_result.html" target="_top" xlink:title="The result of executing a CheckSomething() function.">
 <polygon fill="none" stroke="#000000" points="0,-.5 0,-23.526 76.313,-23.526 76.313,-.5 0,-.5"/>
 <text text-anchor="middle" x="38.1565" y="-10.726" font-family="Avenir-Book" font-size="11.00" fill="#000000">CheckResult</text>
 </a>

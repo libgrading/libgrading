@@ -1,3 +1,4 @@
 <map id="SharedMemory" name="SharedMemory">
-<area shape="rect" id="node2" href="$class_posix_shared_memory.html" title="A memory&#45;mapped POSIX shared memory segment. " alt="" coords="5,167,192,300"/>
+<area shape="rect" id="node1" title="A representation of a shared memory object." alt="" coords="22,5,175,119"/>
+<area shape="rect" id="node2" href="$class_posix_shared_memory.html" title="A memory&#45;mapped POSIX shared memory segment." alt="" coords="5,167,192,320"/>
 </map>
