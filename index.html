@@ -70,17 +70,14 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>This is a simple library for grading C- and C++-language assignments. It runs each test case in a child process in order to capture common programming errors such as infinite loops and segmentation faults.</p>
 <h2>Get it</h2>
-<p>libgrading is available as a binary package for FreeBSD and as a custom Homebrew tap for MacOS. To install:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">OS  </th><th class="markdownTableHeadNone">Command   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">FreeBSD  </td><td class="markdownTableBodyNone"><code>pkg install libgrading</code>   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">MacOS (w/<a href="https://brew.sh">Homebrew</a>)  </td><td class="markdownTableBodyNone"><code>brew install trombonehero/homebrew-grading/libgrading</code>   </td></tr>
-</table>
-<p>You can also build from source.</p>
-<h2>Build it</h2>
+<p>libgrading is available as a binary package for FreeBSD, a Homebrew tap for macOS and a PPA for Ubuntu Linux. You can also build from source.</p>
+<h3>FreeBSD</h3>
+<p>You can install a binary package with <code>pkg install libgrading</code> or compile the <code>devel/libgrading</code> port <a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/ports-using.html">from source</a>.</p>
+<h3>macOS</h3>
+<p>First, install <a href="https://brew.sh">Homebrew</a>. Then, run <code>brew install trombonehero/homebrew-grading/libgrading</code>.</p>
+<h3>Ubuntu 18.04</h3>
+<p>You can install a binary package from my <a href="https://launchpad.net/~professor-jon/+archive/ubuntu/grading-software">grading software PPA</a>:</p>
+<div class="fragment"><div class="line">sudo add-apt-repository ppa:professor-jon/grading-software</div><div class="line">sudo apt-get update</div><div class="line">sudo apt install libgrading-dev</div></div><!-- fragment --><h2>Build it</h2>
 <p>The libgrading source code is <a href="https://github.com/trombonehero/libgrading">hosted on GitHub</a>. Releases are available on <a href="https://github.com/trombonehero/libgrading/releases">the GitHub releases page</a>, and you can always get the most latest version by running either:</p>
 <div class="fragment"><div class="line">$ git clone https://github.com/trombonehero/libgrading.git</div><div class="line">$ svn checkout https://github.com/trombonehero/libgrading</div></div><!-- fragment --><p>First, install <a href="http://monkey.org/~jose/software/libdistance/">libdistance</a>. Then:</p>
 <div class="fragment"><div class="line">$ mkdir build</div><div class="line">$ cd build</div><div class="line">$ cmake ..       # or cmake -G Ninja ..</div><div class="line">$ make           # or ninja</div></div><!-- fragment --><h2>Use it</h2>
