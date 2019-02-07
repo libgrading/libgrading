@@ -157,8 +157,13 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 void GradescopeFormatter::suiteComplete(const TestSuite&,
                                         TestSuite::Statistics stats)
 {
-	out_ << "{";
-	out_ << "\"tests\":[";
+	out_
+		<< "{"
+
+		<< "\"stdout_visibility\":\"visible\","
+
+		<< "\"tests\":["
+		;
 
 	// Sigh, JSON with your lack of support for trailing commas...
 	for (size_t i = 0; i < testResults.size(); i++)
