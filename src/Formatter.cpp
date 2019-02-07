@@ -157,6 +157,10 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 void GradescopeFormatter::suiteComplete(const TestSuite&,
                                         TestSuite::Statistics stats)
 {
+	//
+	// Format output according to specifications at
+	// https://gradescope-autograders.readthedocs.io/en/latest/specs
+	//
 	out_
 		<< "{"
 
