@@ -4,7 +4,6 @@
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
- * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy

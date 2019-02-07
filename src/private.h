@@ -4,7 +4,6 @@
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014, 2019 Jonathan Anderson. All rights reserved.
- * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy
@@ -45,7 +44,10 @@ struct Arguments
 	//! Parse command-line arguments.
 	static Arguments Parse(int argc, char *argv[]);
 
+	//! Construct a "failed to parse normal arguments" object
 	Arguments(bool help = false);
+
+	//! Normal Arguments constructor
 	Arguments(bool error, bool help, OutputFormat, bool skip,
 	          TestRunStrategy, time_t timeout);
 
@@ -72,8 +74,8 @@ struct Arguments
 class Formatter
 {
 public:
-	Formatter(std::ostream&);
-	virtual ~Formatter();
+	Formatter(std::ostream&);     //!< Construct with a std::ostream
+	virtual ~Formatter();         //!< Destructor: virtual to squash warning
 
 	//! Create a new Formatter
 	static std::unique_ptr<Formatter> Create(OutputFormat, std::ostream&);
@@ -88,6 +90,7 @@ public:
 	virtual void suiteComplete(const TestSuite&, TestSuite::Statistics) {}
 
 protected:
+	//! Stream to which formatted output should be written
 	std::ostream &out_;
 };
 

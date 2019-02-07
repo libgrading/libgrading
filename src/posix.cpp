@@ -7,7 +7,6 @@
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
- * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy
@@ -113,6 +112,7 @@ class PosixSharedMemory : public SharedMemory
 		close(shmfd);
 	}
 
+	//! Retrieve shared memory's file descriptor (POSIX-specific)
 	int fd() const { return shmfd; }
 	virtual void *rawPointer() const override { return ptr; }
 

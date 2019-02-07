@@ -4,7 +4,6 @@
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
  * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
- * @license   Apache License, Version 2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy
@@ -56,14 +55,15 @@ enum class TestExitStatus
 //! The result of running one test.
 struct TestResult
 {
+	//! Constructor: requires an exit status at minimum.
 	TestResult(TestExitStatus s, std::string out = "", std::string err = "")
 		: status(s), output(std::move(out)), errorOutput(std::move(err))
 	{
 	}
 
-	const TestExitStatus status;
-	const std::string output;
-	const std::string errorOutput;
+	const TestExitStatus status;     //!< how the test ended
+	const std::string output;        //!< stdout from test execution
+	const std::string errorOutput;   //!< stderr from test execution
 };
 
 
