@@ -57,9 +57,6 @@ struct Arguments
 	//! The `--skip` argument was given.
 	const bool skip;
 
-	//! The `--verbose` argument was given.
-	const bool verbose;
-
 	//! The @ref TestRunStrategy chosen by the user (e.g., inline).
 	const TestRunStrategy runStrategy;
 
