@@ -109,12 +109,12 @@ Arguments Arguments::Parse(int argc, char *argv[])
 	                     options.data(), buffer.data());
 
 	if (parse.error())
-		return Arguments { .error = true };
+		return Arguments();
 
 	if (options[HELP])
 	{
 		option::printUsage(std::cerr, usage);
-		return Arguments { .error = false, .help = true };
+		return Arguments();
 	}
 
 	const bool skip = options[SKIP_TESTS];
@@ -143,7 +143,7 @@ Arguments Arguments::Parse(int argc, char *argv[])
 				"Valid options: brief, gradescope, verbose\n"
 				;
 
-			return Arguments { .error = true };
+			return Arguments();
 		}
 	}
 
@@ -172,7 +172,7 @@ Arguments Arguments::Parse(int argc, char *argv[])
 				"inline, separated, sandboxed)\n"
 				;
 
-			return Arguments { .error = true };
+			return Arguments();
 		}
 	}
 
@@ -183,13 +183,20 @@ Arguments Arguments::Parse(int argc, char *argv[])
 		timeout = std::atol(arg.c_str());
 	}
 
-	return Arguments
-	{
-		.error = false,
-		.help = false,
-		.outputFormat = format,
-		.skip = skip,
-		.runStrategy = strategy,
-		.timeout = timeout,
-	};
+	return Arguments(false, false, format, skip, strategy, timeout);
+}
+
+
+Arguments::Arguments(bool help)
+	: error(false), help(help), outputFormat(OutputFormat::Verbose),
+	  skip(false), runStrategy(TestRunStrategy::Inline), timeout(0)
+{
+}
+
+
+Arguments::Arguments(bool error, bool help, OutputFormat format, bool skip,
+                     TestRunStrategy strategy, time_t timeout)
+	: error(error), help(help), outputFormat(format), skip(skip),
+	  runStrategy(strategy), timeout(timeout)
+{
 }

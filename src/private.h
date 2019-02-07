@@ -45,6 +45,10 @@ struct Arguments
 	//! Parse command-line arguments.
 	static Arguments Parse(int argc, char *argv[]);
 
+	Arguments(bool help = false);
+	Arguments(bool error, bool help, OutputFormat, bool skip,
+	          TestRunStrategy, time_t timeout);
+
 	//! There was an error parsing command-line arguments.
 	const bool error;
 
