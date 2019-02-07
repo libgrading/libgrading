@@ -6,16 +6,32 @@ programming errors such as infinite loops and segmentation faults.
 
 ## Get it
 
-libgrading is available as a binary package for FreeBSD and as a custom Homebrew
-tap for MacOS.
-To install:
-
-| OS | Command |
-|----|---------|
-| FreeBSD | `pkg install libgrading` |
-| MacOS (w/[Homebrew](https://brew.sh)) | `brew install trombonehero/homebrew-grading/libgrading` |
-
+libgrading is available as a binary package for FreeBSD, a Homebrew tap for
+macOS and a PPA for Ubuntu Linux.
 You can also build from source.
+
+### FreeBSD
+
+You can install a binary package with `pkg install libgrading`
+or compile the `devel/libgrading` port
+[from source](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/ports-using.html).
+
+### macOS
+
+First, install [Homebrew](https://brew.sh).
+Then, run
+`brew install trombonehero/homebrew-grading/libgrading`.
+
+### Ubuntu 18.04
+
+You can install a binary package from my
+[grading software PPA](https://launchpad.net/~professor-jon/+archive/ubuntu/grading-software):
+
+```terminal
+sudo add-apt-repository ppa:professor-jon/grading-software
+sudo apt-get update
+sudo apt install libgrading-dev
+```
 
 
 ## Build it
