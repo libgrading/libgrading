@@ -184,7 +184,7 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
 			<< ","
 
 			<< "\"visibility\":"
-			<< "\"after_published\""
+			<< "\"visible\""
 			<< ","
 
 			<< "\"output\":\""
