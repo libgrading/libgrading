@@ -20,7 +20,10 @@
  */
 
 #include <libgrading.h>
+
 #include "private.h"
+
+#include <cassert>
 
 using namespace grading;
 using std::string;
@@ -63,6 +66,8 @@ TestResult Test::Run(TestRunStrategy strategy, time_t timeout) const
 			return ForkTest(t, timeout);
 		}
 	}
+
+	assert(false && "unreachable");
 }
 
 
