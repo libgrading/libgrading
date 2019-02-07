@@ -137,7 +137,7 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 	output += result.output + result.errorOutput;
 
 	// Escape newline characters
-	ssize_t pos = 0;
+	size_t pos = 0;
 	do
 	{
 		pos = output.find('\n', pos);
@@ -162,7 +162,7 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
 	out_ << "\"tests\":[";
 
 	// Sigh, JSON with your lack of support for trailing commas...
-	for (int i = 0; i < testResults.size(); i++)
+	for (size_t i = 0; i < testResults.size(); i++)
 	{
 		const Result &r = testResults[i];
 
