@@ -1,0 +1,17 @@
+libgrading (0.1.5ubuntu1) bionic; urgency=medium
+
+  * Add build dependency on CMake.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Thu, 07 Feb 2019 07:12:44 -0800
+
+libgrading (0.1.5) bionic; urgency=medium
+
+  * Add SOVERSION to shared library.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Thu, 07 Feb 2019 05:08:45 -0800
+
+libgrading (0.1.4) bionic; urgency=medium
+
+  * Initial release
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Wed, 06 Feb 2019 21:07:00 -0330

@@ -1,0 +1,28 @@
+Source: libgrading
+Priority: optional
+Maintainer: Jonathan Anderson <jonathan.anderson@mun.ca>
+Build-Depends: debhelper (>= 10), cmake (>= 2.8), libdistance-dev (>= 0.2.3)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/trombonehero/libgrading
+Vcs-Git: https://github.com/trombonehero/libgrading
+
+Package: libgrading-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: no
+Depends: libgrading0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: development files for libgrading
+ This is a simple library for grading C- and C++-language assignments. It runs
+ each test case in a child process in order to capture common programming
+ errors such as infinite loops and segmentation faults.
+
+Package: libgrading0
+Section: libdevel
+Architecture: any
+Multi-Arch: no
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: simple library for grading C- and C++-language assignments
+ This is a simple library for grading C- and C++-language assignments. It runs
+ each test case in a child process in order to capture common programming
+ errors such as infinite loops and segmentation faults.
