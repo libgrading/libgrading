@@ -19,6 +19,10 @@ add_library(grading SHARED
 )
 
 target_link_libraries(grading ${LIBDISTANCE})
+set_target_properties(grading PROPERTIES
+	SOVERSION 0.1.4
+	VERSION 0.1.4
+)
 
 if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux")
 	target_link_libraries(grading rt)
