@@ -236,7 +236,13 @@ TestResult grading::ForkTest(TestClosure test, time_t timeout)
 
 
 #ifdef __FreeBSD__
+#include <sys/param.h>
+
+#if __FreeBSD_version >= 1001511
 #include <sys/capsicum.h>
+#else
+#include <sys/capability.h>
+#endif
 
 #include <err.h>
 #include <errno.h>
