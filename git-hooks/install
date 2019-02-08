@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Setting Git hooks directory to 'git-hooks'..."
+git config core.hooksPath git-hooks
