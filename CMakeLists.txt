@@ -3,6 +3,10 @@ project (libgrading)
 
 include (CTest)
 
+include (version.cmake)
+message(STATUS "Building from Git tag: ${GIT_TAG}")
+string(SUBSTRING ${GIT_TAG} 1 -1 VERSION_STRING)
+
 #
 # We use libdistance for fuzzy string matching.
 #
