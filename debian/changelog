@@ -1,3 +1,14 @@
+libgrading (0.1.6) bionic; urgency=medium
+
+  * Fix up some Doxygen warnings.
+  * Update installation instructions.
+  * Make Gradescope stdout visible by default.
+  * Add link to Gradescope autograder specs.
+  * Make test results/outputs visible by default.
+  * Pull in website updates.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Thu, 07 Feb 2019 13:14:37 -0800
+
 libgrading (0.1.5ubuntu1) bionic; urgency=medium
 
   * Add build dependency on CMake.
