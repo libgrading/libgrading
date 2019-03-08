@@ -135,8 +135,19 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 	output += "\n\nTest output:\n";
 	output += result.output + result.errorOutput;
 
-	// Escape newline characters
+	// Escape tabs and newlines
 	size_t pos = 0;
+	do
+	{
+		pos = output.find('\t', pos);
+		if (pos != string::npos)
+		{
+			output.replace(pos, 1, "\\t");
+		}
+	}
+	while (pos != string::npos);
+
+	pos = 0;
 	do
 	{
 		pos = output.find('\n', pos);
