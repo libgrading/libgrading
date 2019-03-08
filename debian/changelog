@@ -1,3 +1,9 @@
+libgrading (0.1.8) bionic; urgency=medium
+
+  * Escape tab characters, too.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Fri, 08 Mar 2019 19:51:41 -0330
+
 libgrading (0.1.7) bionic; urgency=medium
 
   * Fixes builds on old versions of FreeBSD.
