@@ -44,7 +44,7 @@ public:
 class GradescopeFormatter : public Formatter
 {
 public:
-	GradescopeFormatter(std::ostream &os) : Formatter(os) {}
+	GradescopeFormatter(std::ostream &os) : Formatter(os), line_(80, '-') {}
 
 	virtual void testEnded(const Test &test, const TestResult&) override;
 	virtual void suiteComplete(const TestSuite&,
@@ -58,6 +58,7 @@ private:
 		const std::string output;
 	};
 
+	const string line_;
 	std::vector<Result> testResults;
 };
 
@@ -132,8 +133,11 @@ void BriefFormatter::suiteComplete(const TestSuite&,
 void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 {
 	string output = "Test description:\\n" + test.description();
-	output += "\n\nTest output:\n";
-	output += result.output + result.errorOutput;
+	output += "\n\n" + line_ + "\nConsole output:\n" + line_ + "\n";
+	output += result.output;
+	output += "\n" + line_ + "\nError output:\n" + line_ + "\n";
+	output += result.errorOutput;
+	output += "\n" + line_ + "\n";
 
 	// Escape tabs and newlines
 	size_t pos = 0;
