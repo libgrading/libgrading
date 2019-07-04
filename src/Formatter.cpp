@@ -132,12 +132,18 @@ void BriefFormatter::suiteComplete(const TestSuite&,
 
 void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 {
-	string output = "Test description:\\n" + test.description();
-	output += "\n\n" + line_ + "\nConsole output:\n" + line_ + "\n";
-	output += result.output;
-	output += "\n" + line_ + "\nError output:\n" + line_ + "\n";
-	output += result.errorOutput;
-	output += "\n" + line_ + "\n";
+	ostringstream oss;
+	oss
+		<< "Test description:\\n" << test.description()
+		<< "\n\n" << line_ << "\nConsole output:\n" << line_ << "\n"
+		<< result.output
+		<< "\n" << line_ << "\nError output:\n" << line_ << "\n"
+		<< result.errorOutput
+		<< "\n" << line_ << "\n"
+		<< "Result: " << result.status << "\n"
+		;
+
+	string output = oss.str();
 
 	// Escape tabs and newlines
 	size_t pos = 0;
