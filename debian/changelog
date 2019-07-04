@@ -1,3 +1,9 @@
+libgrading (0.2.0) bionic; urgency=medium
+
+  * Output test result explicitly.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Wed, 03 Jul 2019 18:57:06 -0700
+
 libgrading (0.1.9) bionic; urgency=medium
 
   * Make Gradescope output vs error output clearer.
