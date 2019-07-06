@@ -145,7 +145,7 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 
 	string output = oss.str();
 
-	// Escape tabs and newlines
+	// Escape tabs, newlines and double quotes
 	size_t pos = 0;
 	do
 	{
@@ -164,6 +164,18 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 		if (pos != string::npos)
 		{
 			output.replace(pos, 1, "\\n");
+		}
+	}
+	while (pos != string::npos);
+
+	pos = 0;
+	do
+	{
+		pos = output.find('\"', pos);
+		if (pos != string::npos)
+		{
+			output.replace(pos, 1, "\\\"");
+			pos += 2;   // skip over newly-escaped quote
 		}
 	}
 	while (pos != string::npos);
