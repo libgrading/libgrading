@@ -1,3 +1,9 @@
+libgrading (0.2.1) bionic; urgency=medium
+
+  * Escape double quotes in Gradescoope output.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Fri, 05 Jul 2019 19:36:46 -0700
+
 libgrading (0.2.0) bionic; urgency=medium
 
   * Output test result explicitly.
