@@ -1,10 +1,10 @@
 <map id="include/libgrading.h" name="include/libgrading.h">
-<area shape="rect" id="node1" title="A library for grading C&#45; and C++&#45;based assignments." alt="" coords="274,5,427,37"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,85,91,117"/>
-<area shape="rect" id="node3" title=" " alt="" coords="115,85,192,117"/>
-<area shape="rect" id="node4" title=" " alt="" coords="216,85,291,117"/>
-<area shape="rect" id="node5" title=" " alt="" coords="315,85,386,117"/>
-<area shape="rect" id="node6" title=" " alt="" coords="411,85,469,117"/>
-<area shape="rect" id="node7" title=" " alt="" coords="493,85,609,117"/>
-<area shape="rect" id="node8" title=" " alt="" coords="633,85,695,117"/>
+<area shape="rect" id="node1" title="A library for grading C&#45; and C++&#45;based assignments." alt="" coords="303,5,477,33"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,103,109"/>
+<area shape="rect" id="node3" title=" " alt="" coords="127,81,215,109"/>
+<area shape="rect" id="node4" title=" " alt="" coords="239,81,325,109"/>
+<area shape="rect" id="node5" title=" " alt="" coords="349,81,431,109"/>
+<area shape="rect" id="node6" title=" " alt="" coords="455,81,522,109"/>
+<area shape="rect" id="node7" title=" " alt="" coords="547,81,679,109"/>
+<area shape="rect" id="node8" title=" " alt="" coords="703,81,773,109"/>
 </map>

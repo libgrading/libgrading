@@ -1,4 +1,4 @@
 <map id="Fail" name="Fail">
-<area shape="rect" id="node1" title="Fail the current test." alt="" coords="151,5,195,37"/>
-<area shape="rect" id="node2" href="$namespacegrading.html#a79cd49e5ad3ef544a7eb339ca7639d70" title="Output a human&#45;readable representation of a TestExitStatus." alt="" coords="5,5,103,37"/>
+<area shape="rect" id="node1" title="Fail the current test." alt="" coords="165,5,212,33"/>
+<area shape="rect" id="node2" href="$namespacegrading.html#a79cd49e5ad3ef544a7eb339ca7639d70" title="Output a human&#45;readable representation of a TestExitStatus." alt="" coords="5,5,117,33"/>
 </map>

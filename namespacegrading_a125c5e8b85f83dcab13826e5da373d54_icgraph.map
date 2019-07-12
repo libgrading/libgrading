@@ -1,5 +1,5 @@
 <map id="MapSharedData" name="MapSharedData">
-<area shape="rect" id="node1" title="Map data into the address space that can be shared with other processes." alt="" coords="317,5,445,37"/>
-<area shape="rect" id="node2" href="$namespacegrading.html#a33c566b4173ebd55bf3df8db7c018a90" title="Run a test in another process." alt="" coords="193,5,269,37"/>
-<area shape="rect" id="node3" href="$classgrading_1_1_test.html#a35f66472a58c538166b8325967fc5c00" title="Run this test." alt="" coords="5,5,145,37"/>
+<area shape="rect" id="node1" title="Map data into the address space that can be shared with other processes." alt="" coords="345,5,489,33"/>
+<area shape="rect" id="node2" href="$namespacegrading.html#a33c566b4173ebd55bf3df8db7c018a90" title="Run a test in another process." alt="" coords="213,5,297,33"/>
+<area shape="rect" id="node3" href="$classgrading_1_1Test.html#a35f66472a58c538166b8325967fc5c00" title="Run this test." alt="" coords="5,5,165,33"/>
 </map>

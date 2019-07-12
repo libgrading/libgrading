@@ -1,0 +1,4 @@
+<map id="message" name="message">
+<area shape="rect" id="node1" title="A message to display if the check fails." alt="" coords="237,5,328,33"/>
+<area shape="rect" id="node2" href="$namespacegrading.html#a13433f91d386d33fa69a7fa80a01059c" title="Combine the results of two checks using a product (AND): both must pass." alt="" coords="5,5,189,33"/>
+</map>

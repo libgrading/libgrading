@@ -1,0 +1,8 @@
+<map id="Run" name="Run">
+<area shape="rect" id="node1" title="Run this test." alt="" coords="5,57,56,85"/>
+<area shape="rect" id="node2" href="$namespacegrading.html#aed77613e7ee73c012e02edbcbcb9ec7d" title="Enter unprivileged testing sandbox, if supported." alt="" coords="104,5,303,33"/>
+<area shape="rect" id="node3" href="$namespacegrading.html#a33c566b4173ebd55bf3df8db7c018a90" title="Run a test in another process." alt="" coords="127,57,280,85"/>
+<area shape="rect" id="node6" href="$classgrading_1_1Test.html#a020c6e042dce18109e522fdbd722cf1c" title="Maximum length of time this test should take (or 0 for unlimited)." alt="" coords="163,109,244,137"/>
+<area shape="rect" id="node4" href="$namespacegrading.html#a125c5e8b85f83dcab13826e5da373d54" title="Map data into the address space that can be shared with other processes." alt="" coords="351,32,564,60"/>
+<area shape="rect" id="node5" href="$namespacegrading.html#a4cb6923cc6515542df2609ad10e79e2c" title="Run a test in the current process, catching all exceptions." alt="" coords="362,84,553,112"/>
+</map>

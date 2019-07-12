@@ -1,4 +1,4 @@
 <map id="ForkTest" name="ForkTest">
-<area shape="rect" id="node1" title="Run a test in another process." alt="" coords="193,5,269,37"/>
-<area shape="rect" id="node2" href="$classgrading_1_1_test.html#a35f66472a58c538166b8325967fc5c00" title="Run this test." alt="" coords="5,5,145,37"/>
+<area shape="rect" id="node1" title="Run a test in another process." alt="" coords="213,5,297,33"/>
+<area shape="rect" id="node2" href="$classgrading_1_1Test.html#a35f66472a58c538166b8325967fc5c00" title="Run this test." alt="" coords="5,5,165,33"/>
 </map>
