@@ -162,11 +162,11 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 		// Escape \t and \n according to C style.
 		else if (c == '\t')
 		{
-			output << "\\t";
+			output << "\\\\t";
 		}
 		else if (c == '\n')
 		{
-			output << "\\t";
+			output << "\\\\n";
 		}
 		else
 		{
