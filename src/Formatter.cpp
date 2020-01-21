@@ -23,6 +23,8 @@
 #include <libgrading.h>
 
 #include <cassert>
+#include <cctype>
+#include <sstream>
 
 using namespace grading;
 using namespace std;
@@ -143,47 +145,43 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 		<< "Result: " << result.status << "\n"
 		;
 
-	string output = oss.str();
-
-	// Escape tabs, newlines and double quotes
-	size_t pos = 0;
-	do
+	// Escape non-printing characters.
+	ostringstream output;
+	for (char c : oss.str())
 	{
-		pos = output.find('\t', pos);
-		if (pos != string::npos)
+		// Escape " even though it's printable: don't leave JSON string.
+		if (c == '\"')
 		{
-			output.replace(pos, 1, "\\t");
+			output << "\\\"";
+		}
+		// Print printable things literally.
+		else if (isprint(static_cast<unsigned char>(c)))
+		{
+			output << c;
+		}
+		// Escape \t and \n according to C style.
+		else if (c == '\t')
+		{
+			output << "\\t";
+		}
+		else if (c == '\n')
+		{
+			output << "\\t";
+		}
+		else
+		{
+			// Interpret other bytes as hex.
+			const auto uc = static_cast<unsigned char>(c);
+			const auto n = static_cast<unsigned int>(uc);
+
+			output << std::hex << "0x" << n;
 		}
 	}
-	while (pos != string::npos);
-
-	pos = 0;
-	do
-	{
-		pos = output.find('\n', pos);
-		if (pos != string::npos)
-		{
-			output.replace(pos, 1, "\\n");
-		}
-	}
-	while (pos != string::npos);
-
-	pos = 0;
-	do
-	{
-		pos = output.find('\"', pos);
-		if (pos != string::npos)
-		{
-			output.replace(pos, 1, "\\\"");
-			pos += 2;   // skip over newly-escaped quote
-		}
-	}
-	while (pos != string::npos);
 
 	testResults.push_back({
 		.name = test.name(),
 		.status = result.status,
-		.output = std::move(output),
+		.output = output.str(),
 	});
 }
 
