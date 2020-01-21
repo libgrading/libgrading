@@ -1,3 +1,9 @@
+libgrading (0.2.3) bionic; urgency=medium
+
+  * Fix escaping of whitespace control chars.
+
+ -- Jonathan Anderson (MUN) <jonathan.anderson@mun.ca>  Tue, 21 Jan 2020 17:17:00 -0330
+
 libgrading (0.2.2) bionic; urgency=medium
 
   * Improve JSON string escaping.
