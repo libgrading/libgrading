@@ -136,7 +136,7 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 {
 	ostringstream oss;
 	oss
-		<< "Test description:\\n" << test.description()
+		<< "Test description:\n" << test.description()
 		<< "\n\n" << line_ << "\nConsole output:\n" << line_ << "\n"
 		<< result.output
 		<< "\n" << line_ << "\nError output:\n" << line_ << "\n"
@@ -162,11 +162,11 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 		// Escape \t and \n according to C style.
 		else if (c == '\t')
 		{
-			output << "\\\\t";
+			output << "\\t";
 		}
 		else if (c == '\n')
 		{
-			output << "\\\\n";
+			output << "\\n";
 		}
 		else
 		{
