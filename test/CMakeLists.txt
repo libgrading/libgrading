@@ -15,4 +15,5 @@ function (add_libgrading_test name)
 endfunction (add_libgrading_test)
 
 add_libgrading_test(skip --skip)
+add_libgrading_test(gradescope --format=gradescope)
 add_libgrading_test(test)
