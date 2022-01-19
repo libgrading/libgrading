@@ -215,6 +215,8 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
 			<< ((r.status == TestExitStatus::Pass) ? 1 : 0)
 			<< ","
 
+			<< "\"max_score\":1,"
+
 			<< "\"output\":\""
 			<< r.output
 			<< "\""
