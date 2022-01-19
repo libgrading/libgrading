@@ -1,3 +1,10 @@
+libgrading (0.2.5) bionic; urgency=medium
+
+  * Add maximum score for each test.
+  * Move Gradescope test visibility to top level.
+
+ -- Jonathan Anderson <jonathan.anderson@mun.ca>  Tue, 18 Jan 2022 22:05:00 -0330
+
 libgrading (0.2.4) bionic; urgency=medium
 
   * Relax Gradescope JSON escaping a little bit.
