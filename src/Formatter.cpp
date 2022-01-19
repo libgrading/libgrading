@@ -196,6 +196,7 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
 		<< "{"
 
 		<< "\"stdout_visibility\":\"visible\","
+		<< "\"visibility\":\"visible\","
 
 		<< "\"tests\":["
 		;
@@ -212,10 +213,6 @@ void GradescopeFormatter::suiteComplete(const TestSuite&,
 
 			<< "\"score\":"
 			<< ((r.status == TestExitStatus::Pass) ? 1 : 0)
-			<< ","
-
-			<< "\"visibility\":"
-			<< "\"visible\""
 			<< ","
 
 			<< "\"output\":\""
