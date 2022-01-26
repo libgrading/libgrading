@@ -15,9 +15,10 @@ libgrading-image: build-libgrading clang-image
 	docker build -t $(LIB_IMAGE):clang --build-arg base=$(CLANG_IMAGE) libgrading
 
 build-libgrading:
-	mkdir -p libgrading/build
-	cd libgrading/build && cmake -D CMAKE_BUILD_TYPE=Release ../../..
-	make -C libgrading/build
+	mkdir -p libgrading/libgrading
+	cp ../CMakeLists.txt ../*.cmake libgrading/libgrading/
+	cp -r ../doc ../include ../src ../test ../vendor \
+		libgrading/libgrading/
 
 clang-image:
 	docker build -t $(CLANG_IMAGE) gradescope-clang
