@@ -3,7 +3,7 @@
  * @brief     Definitions of @ref grading::TestSuite.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2015, 2019 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2015, 2019, 2022 Jonathan Anderson. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy
@@ -36,11 +36,18 @@ TestSuite::TestSuite(std::initializer_list<Test> tests)
 }
 
 
-TestBuilder TestSuite::add(string name)
+TestSuite::TestSuite(std::initializer_list<TestBuilder> builders)
 {
-	assert(not name.empty());
+	for (const TestBuilder &tb : builders)
+	{
+		tests_.push_back(tb.build());
+	}
+}
 
-	return TestBuilder(*this, name);
+
+TestSuite& TestSuite::add(TestBuilder b)
+{
+	return this->add(b.build());
 }
 
 

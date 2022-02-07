@@ -3,7 +3,7 @@
  * @brief     Definitions of @ref grading::TestBuilder.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2015 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2015, 2022 Jonathan Anderson. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy
@@ -23,15 +23,29 @@ using namespace grading;
 using std::string;
 
 
-TestBuilder::TestBuilder(TestSuite& suite, string name)
-	: suite_(suite), name_(name), timeout_(0), weight_(1)
+TestBuilder::TestBuilder(string name)
+	: name_(name), timeout_(0), weight_(1)
 {
 }
 
 
-TestBuilder::~TestBuilder()
+Test TestBuilder::build() const
 {
-	suite_.add(Test(name_, description_, test_, timeout_, weight_));
+	return Test(name_, description_, test_, timeout_, weight_, tags_);
+}
+
+
+TestBuilder& TestBuilder::tags(TagSet tags)
+{
+	tags_.insert(tags.begin(), tags.end());
+	return *this;
+}
+
+
+TestBuilder& TestBuilder::test(TestClosure t)
+{
+	test_ = t;
+	return *this;
 }
 
 

@@ -3,7 +3,7 @@
  * @brief     A library for grading C- and C++-based assignments.
  *
  * @author    Jonathan Anderson <jonathan.anderson@mun.ca>
- * @copyright (c) 2014-2015 Jonathan Anderson. All rights reserved.
+ * @copyright (c) 2014-2015, 2022 Jonathan Anderson
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License.  You may obtain a copy
@@ -93,8 +93,11 @@ class TestSuite
 	//! Construct a TestSuite from a brace-enclosed list of Test objects.
 	TestSuite(std::initializer_list<Test>);
 
+	//! Construct a TestSuite from a brace-enclosed list of TestBuilders.
+	TestSuite(std::initializer_list<TestBuilder>);
+
 	/**
-	 * Start creating a test with a given name.
+	 * Add a Test defined by a TestBuilder to the suite.
 	 *
 	 * When the @ref TestBuilder goes out of scope, it will add a complete
 	 * @ref Test to this suite.
@@ -103,7 +106,7 @@ class TestSuite
 	 *
 	 * @pre     @b name should not be empty
 	 */
-	TestBuilder add(std::string name);
+	TestSuite& add(TestBuilder);
 
 	/**
 	 * Add an already-complete @ref Test to this suite.
@@ -140,20 +143,37 @@ typedef std::function<void ()> TestClosure;
 
 
 /**
+ * A set of arbitrary tags that can describe tests.
+ *
+ * Tag-informed test running isn't implemented yet, but we will soon
+ * be able to output tags to, e.g., Gradescope output.
+ */
+typedef std::unordered_set<std::string> TagSet;
+
+
+/**
  * An object used to construct a complete @ref Test.
  */
 class TestBuilder
 {
 	public:
-	//! Construct a builder for a named test within a @ref TestSuite.
-	TestBuilder(TestSuite&, std::string name);
-	~TestBuilder();
+	//! Construct a builder for a named test.
+	TestBuilder(std::string name);
+
+	//! Build a test from this TestBuilder.
+	Test build() const;
 
 	//! Set description (which will be printed when run in verbose mode).
 	TestBuilder& description(std::string);
 
 	//! Set description (which will be printed when run in verbose mode).
 	TestBuilder& desc(std::string d) { return description(d); }
+
+	//! Add tags to the test under construction.
+	TestBuilder& tags(TagSet);
+
+	//! Add test details.
+	TestBuilder& test(TestClosure);
 
 	//! Set the test timeout (0 means "run forever").
 	TestBuilder& timeout(time_t);
@@ -169,13 +189,12 @@ class TestBuilder
 	TestBuilder& weight(unsigned int);
 
 	private:
-	TestSuite& suite_;
-
 	const std::string name_;
 	std::string description_;
 	TestClosure test_;
 	time_t timeout_;
 	unsigned int weight_;
+	TagSet tags_;
 };
 
 
@@ -185,14 +204,6 @@ class TestBuilder
 class Test
 {
 	public:
-	/**
-	 * A set of arbitrary tags that can be used when selecting tests.
-	 *
-	 * Tag-informed test running isn't implemented yet, but we want to be
-	 * able to select, e.g., only the short tests or only the bonus tests.
-	 */
-	typedef std::unordered_set<std::string> TagSet;
-
 	/**
 	 * Standard constructor.
 	 *
