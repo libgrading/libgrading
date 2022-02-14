@@ -58,6 +58,7 @@ private:
 		const std::string name;
 		const TestExitStatus status;
 		const std::string output;
+		const TagSet tags;
 	};
 
 	const string line_;
@@ -182,6 +183,7 @@ void GradescopeFormatter::testEnded(const Test &test, const TestResult &result)
 		.name = test.name(),
 		.status = result.status,
 		.output = output.str(),
+		.tags = test.tags(),
 	});
 }
 

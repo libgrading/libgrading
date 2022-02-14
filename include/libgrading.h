@@ -252,6 +252,9 @@ class Test
 	//! A longer test description. May contain newlines.
 	std::string description() const { return description_; }
 
+	//! User-defined tags on this test.
+	TagSet tags() const { return tags_; }
+
 	//! Maximum length of time this test should take (or 0 for unlimited).
 	time_t timeout() const { return timeout_; }
 
