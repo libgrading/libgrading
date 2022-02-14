@@ -7,7 +7,8 @@ RUN add-apt-repository ppa:professor-jon/grading-software
 RUN apt-get update
 RUN apt-get install -y cmake libdistance-dev
 
-COPY libgrading /libgrading
+RUN mkdir /libgrading
+COPY . /libgrading/
 
 # Build libgrading
 RUN mkdir /libgrading/build && \
