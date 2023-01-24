@@ -10,7 +10,7 @@ GENERATOR=	Unix Makefiles
 
 endif
 
-BASE_GS_IMAGE=	gradescope/auto-builds
+BASE_GS_IMAGE=	gradescope/autograder-base
 CLANG_IMAGE=	libgrading/gradescope-clang
 LIB_IMAGE=	libgrading/gradescope-libgrading
 
