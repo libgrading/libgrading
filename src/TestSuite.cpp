@@ -22,7 +22,6 @@
 #include <libgrading.h>
 #include <cassert>
 using namespace grading;
-using namespace std;
 
 
 TestSuite::TestSuite()
@@ -81,7 +80,7 @@ TestSuite::Statistics TestSuite::Run(int argc, char *argv[]) const
 		return stats;
 	}
 
-	auto f = Formatter::Create(args.outputFormat, cout);
+	auto f = Formatter::Create(args.outputFormat, std::cout);
 
 	for (const Test& test : tests_)
 	{
