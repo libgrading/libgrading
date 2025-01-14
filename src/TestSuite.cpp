@@ -53,7 +53,7 @@ TestSuite& TestSuite::add(TestBuilder b)
 
 TestSuite& TestSuite::add(Test test)
 {
-	tests_.push_back(move(test));
+	tests_.push_back(std::move(test));
 	return *this;
 }
 
