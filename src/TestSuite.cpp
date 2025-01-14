@@ -20,7 +20,7 @@
 
 #include "private.h"
 #include <libgrading.h>
-#include <cassert>
+
 using namespace grading;
 
 
