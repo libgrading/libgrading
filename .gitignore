@@ -1,2 +1,3 @@
+.clangd
 build
 obj-*-linux-gnu
