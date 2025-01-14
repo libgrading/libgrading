@@ -10,8 +10,21 @@ string(SUBSTRING ${GIT_TAG} 1 -1 VERSION_STRING)
 #
 # We use libdistance for fuzzy string matching.
 #
-find_path(LIBDISTANCE_INCLUDE_DIR distance.h)
-find_library(LIBDISTANCE distance)
+find_path(LIBDISTANCE_INCLUDE_DIR
+	distance.h
+	PATHS
+		/opt/local/include
+		/opt/homebrew/include
+		/usr/local/include
+)
+
+find_library(LIBDISTANCE
+	distance
+	PATHS
+		/opt/local/lib
+		/opt/homebrew/lib
+		/usr/local/lib
+)
 
 if (LIBDISTANCE_INCLUDE_DIR)
 	message("-- Found distance.h in ${LIBDISTANCE_INCLUDE_DIR}")
